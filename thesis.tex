@@ -487,7 +487,7 @@ Conflicts between parallel tasks often occur from read-after-write
 hazards; if a task alters a value read by a different parallel task
 can result in unexpected program execution.  This section looks at
 static and dynamic techniques for automatically finding parallel task
-locations, boundries, and conflicts.
+locations, boundaries, and conflicts.
 
 \subsection{Automatic Parallelization by Static Analysis}
 
@@ -586,10 +586,10 @@ Figure~\ref{fig:parallelpseudocoarse}.
 \label{fig:parallelpseudoseq}
 \end{figure}
 
-Figure~\ref{fig:parallelpseudomedcntl} contains an illustractoin of
+Figure~\ref{fig:parallelpseudomedcntl} contains an illustration of
 the execution of the pseudo-code in Figure~\ref{fig:parallelpseudosrc}
 using medium-to-fine grained parallel tasks bounded by control flow
-constructs.  This illustration assumes a static, likly points-to,
+constructs.  This illustration assumes a static, likely points-to,
 analysis finds that line 6 does not alter the heap locations read by
 line 5.  Even if this is not the case, and line 5 depends on a value
 written by line 6, it may still possible to create parallel software
@@ -617,7 +617,7 @@ of a program, and thus can see how control flow dependencies are
 resolved. This illustration in Figure~\ref{fig:parallelpseudocoarse}
 show the pseudo-code in Figure~\ref{fig:parallelpseudosrc} could be
 parallelized if a dynamic analysis were able to extract all potential
-parallel instructions.  Note that the fine grained paralllel tasks
+parallel instructions.  Note that the fine grained parallel tasks
 from Figure~\ref{fig:parallelpseudomedcntl} are still executed as
 parallel tasks in Figure~\ref{fig:parallelpseudocoarse} spawned from
 Task 2.
@@ -630,11 +630,11 @@ Task 2.
 \label{fig:parallelpseudocoarse}
 \end{figure}
 
-An illustraction of dynamic exection of the pseudo code in
+An illustration of dynamic execution of the pseudo code in
 Figure~\ref{fig:parallelpseudosrc} is shown in
 Figure~\ref{fig:parallelpseudocoarsedyn}.  The \textit{for} loop from
 the static code is shown partially unrolled in the the dynamic
-exeuction illustration.
+execution illustration.
 
 \begin{figure}
 \begin{center}
@@ -706,7 +706,7 @@ to C and Java objects that contain thousands of instructions, but work
 by Warg \textit{et. al.} found limited gains were realized from
 objects with more than 100 instructions~\cite{warg:2001:pact}.
 
-TLS can greatly improve program performace, regardless of the
+TLS can greatly improve program performance, regardless of the
 granularity limitations. For example, TLS performance gains from a TLS
 system that uses perform control, data dependence, and data value
 speculation~\cite{kejariwal:2007:tap}, are shown in Figure
@@ -751,17 +751,17 @@ allocation~\cite{minjang:10:micro}. This section explores tools that
 use run-time program information, much like TLS, for finding potential
 parallel tasks and task conflicts.
 
-Commerical applications that use dyanmic information to help find
+Commercial applications that use dynamic information to help find
 potential parallelism generally keep the science behind these systems
 a secret~\cite{cogswell:2010:eweek, vectorfabrics:11:ws}.  A limited
 number of tools have recently emerged from the research community, and
 are easier to explore for this section.
 
-Alchemist is a dynamic profile based tool that deterimines potential
-parallizable regions at runtime.  Dependence conflicts are also
+Alchemist is a dynamic profile based tool that locates potential
+parallelizable regions at run-time.  Dependence conflicts are also
 located and presented to a user for manual
 parallelization~\cite{zhang:09:cgo}.  The Alchemist tool restricts
-parallel tasks to regions bounded by artifical constructs, like
+parallel tasks to regions bounded by artificial constructs, like
 \textit{if-than-else} branches or loops.
 
 Recent research into parallel extraction tools include
@@ -783,17 +783,17 @@ following reasons: (1) it is unclear how to find task boundaries
 without constructs; (2) constructs help trace compression; and, (3)
 frequently executed code blocks are often contained inside loops.
 
-\noindent\paragraph{Constructs Create Boundries}
+\noindent\paragraph{Constructs Create Boundaries}
 
-Artifical constructs are an easy way to define a parallel task
-boundries.  If the user defined a task to be contained in a function
-call, than that paraellel task should be easy for the user to
-identify.  Using technqiues prior to the work in this thesis, it is
-not clear how to define the boundries of these parallel
+Artificial constructs are an easy way to define a parallel task
+boundaries.  If the user defined a task to be contained in a function
+call, than that parallel task should be easy for the user to
+identify.  Using techniques prior to the work in this thesis, it is
+not clear how to define the boundaries of these parallel
 tasks~\cite{jeon:2011:hotpar, garcia:2011:pldi}.  Further, some works
-include the ``ease of thread extraction'' in calulations for desiding
+include the ``ease of thread extraction'' in calculations for deciding
 if a task is worth parallelizing~\cite{garcia:2011:pldi}.
-Unfortunaly, there may be groups of instructions that could be a
+Unfortunately, there may be groups of instructions that could be a
 parallel task, but are not contained by an construct in the static
 code.
 
@@ -823,19 +823,19 @@ data the original tool designer found to be relevant.
 \noindent\paragraph{Constructs Define Hot-Code}
 
 The Kremlin tool~\cite{garcia:2011:pldi} can find parallel tasks, and
-generates metrics for the ease of extraction, and the refrequency of
+generates metrics for the ease of extraction, and the frequency of
 execution.  The ease of extraction metric is mostly a reflection of
-the nubmer of potental conflicts.  The frequency of exectuion value
+the number of potential conflicts.  The frequency of execution value
 can help the user focus parallelization efforts only highly
-exectuined, or hot, regions of code.  Loops created by \textit{for} or
+executed, or hot, regions of code.  Loops created by \textit{for} or
 \textit{while} constructs are often the source of hot code
 regions~\cite{bala:2000:pldi}.  However, a loop may contain an
-expesive operation, such as memory allocation or file IO, and may not
-be executied frequelty.  Furthermore, a loop may contain instructions
-that are worthly of paralelization, but are included in a loop that
-also may conflict with another parrallel task.  Conflicts make tasks
+expensive operation, such as memory allocation or file IO, and may not
+be executed frequently.  Furthermore, a loop may contain instructions
+that are worthy of parallelization, but are included in a loop that
+also may conflict with another parallel task.  Conflicts make tasks
 difficult to parallelize; some tools and may reduce the value of a
-potential parallel task with conflicts, or elimiate such tasks
+potential parallel task with conflicts, or eliminate such tasks
 altogether~\cite{garcia:2011:pldi}.
 
 This thesis presents a system for finding, analyzing, and extracting
@@ -846,7 +846,7 @@ analysis, thereby allowing new analysis to quickly be tested and
 executed on a benchmark suite, without the additional step of
 re-running each benchmark.  In fact, the ability to quickly develop new
 analysis allows this system to be rapidly adapted to new tasks, such
-as finding irrelevant code in dynamic traces.  For modern multicore
+as finding irrelevant code in dynamic traces.  For modern multi-core
 systems, the work in this thesis can find parallel tasks outside of
 artificial constructs at a granularity of hundreds to millions of
 instructions.
@@ -896,7 +896,7 @@ path.  However, information that is difficult to aggregate, like cache
 misses or CPU temperatures, will be removed from the WPP
 representation.
 
-\subsection{Sequitur Compression}
+\subsection{SEQUITUR Compression}
 
 The Sequitur compression algorithm is useful for compressing
 instruction level dynamic traces into an analyzable
