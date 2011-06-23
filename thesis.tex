@@ -757,20 +757,22 @@ a secret~\cite{cogswell:2010:eweek, vectorfabrics:11:ws}.  A limited
 number of tools have recently emerged from the research community, and
 are easier to explore for this section.
 
-The SD3~\cite{minjang:10:micro} tool performs inter-region dependence
-analyses similar to those discussed in this work.  The regions located
-by SD3 are defined stride-compression, and therefore are generally
-limited to locating potential parallelizable regions in loops.  Many
-recent advances in parallel task boundary locations are also limited to
-parallelism bounded by explicit constructs~\cite{jeon:2011:hotpar,
-  garcia:2011:pldi}.
-
 Alchemist is a dynamic profile based tool that deterimines potential
 parallizable regions at runtime.  Dependence conflicts are also
 located and presented to a user for manual
 parallelization~\cite{zhang:09:cgo}.  The Alchemist tool restricts
 parallel tasks to regions bounded by artifical constructs, like
-if-than-else branches or loops.
+\textit{if-than-else} branches or loops.
+
+Recent research into parallel extraction tools include
+SD3~\cite{minjang:10:micro}, Parkour~\cite{jeon:2011:hotpar}, and
+Kremlin~\cite{garcia:2011:pldi}. The SD3 tool performs inter-region
+dependence analyses similar to those discussed in this work.  The
+regions located by SD3 are defined stride-compression, and therefore
+are generally limited to locating potential parallelizable regions in
+loops.  Many recent advances in parallel task boundary locations are
+also limited to parallelism bounded by explicit
+constructs~\cite{jeon:2011:hotpar, garcia:2011:pldi}.
 
 Most tools that use dynamic program information to aid parallel
 programming are restricted to parallel tasks that can be bounded by
@@ -801,15 +803,40 @@ Dynamic program analysis often require some information about program
 execution to be visible for the life of the program execution, both
 for off-line and on-line analysis.  Dynamic trace information can grow
 very large (e.g. gigabytes), and requires some form of analyzable
-compression.  A potential parallelel task that is bounded by a static
+compression.  A potential parallel task that is bounded by a static
 construct can be stored for later analysis by only storing the static
-information. Multiple occurances of the same construction may require
-storing addionatl context information, or mulitple occurances may be
+information. Multiple occurrences of the same construction may require
+storing additional context information, or multiple occurrences may be
 ignored~\cite{minjang:10:micro, jeon:2011:hotpar, garcia:2011:pldi}.
 Storing only instances of the static code requires much less space
-than a trace of the dynamic execution.
+than a trace of the dynamic execution, but at the cost of a loss of
+precision and flexibility.  For example, if the tool stores only static
+data than it would be difficult to know how many times that region of
+code was executed. The execution count can be valuable for finding hot
+code regions.  If the tool also includes an execution count number per
+static region, there is likely some additional data lost that could
+become useful in the future.  The process of creating an abstraction
+of the dynamic execution by storing only static data and limited
+contexts limits future analysis to what may be performed using only
+data the original tool designer found to be relevant.
 
-\noindent\paragraph{Constructs Help Compression}
+\noindent\paragraph{Constructs Define Hot-Code}
+
+The Kremlin tool~\cite{garcia:2011:pldi} can find parallel tasks, and
+generates metrics for the ease of extraction, and the refrequency of
+execution.  The ease of extraction metric is mostly a reflection of
+the nubmer of potental conflicts.  The frequency of exectuion value
+can help the user focus parallelization efforts only highly
+exectuined, or hot, regions of code.  Loops created by \textit{for} or
+\textit{while} constructs are often the source of hot code
+regions~\cite{bala:2000:pldi}.  However, a loop may contain an
+expesive operation, such as memory allocation or file IO, and may not
+be executied frequelty.  Furthermore, a loop may contain instructions
+that are worthly of paralelization, but are included in a loop that
+also may conflict with another parrallel task.  Conflicts make tasks
+difficult to parallelize; some tools and may reduce the value of a
+potential parallel task with conflicts, or elimiate such tasks
+altogether~\cite{garcia:2011:pldi}.
 
 This thesis presents a system for finding, analyzing, and extracting
 potential parallel regions from serial codes.  The tool presented by
