@@ -757,32 +757,6 @@ a secret~\cite{cogswell:2010:eweek, vectorfabrics:11:ws}.  A limited
 number of tools have recently emerged from the research community, and
 are easier to explore for this section.
 
-Alchemist is a dynamic profile based tool that deterimines potential
-parallizable regions at runtime.  Dependence conflicts are also
-located and presented to a user for manual
-parallelization~\cite{zhang:09:cgo}.  The Alchemist tool restricts
-parallel tasks to regions bounded by artifical constructs, like
-if-than-else branches or loops.
-
-Many tools that use dynamic program information to aid parallel
-programming bound parallel tasks to artificial constructions that are
-present in the static code during analysis~\cite{zhang:09:cgo,
-  minjang:10:micro, jeon:2011:hotpar, garcia:2011:pldi}.  This
-limitation is likely in place for the following reasons: 1), it is
-unclear how to find task boundaries without constructs, 2) constructs
-help trace compression, and 3) hot code blocks are often contained inside
-loops.
-
-Artifical constructs are an easy way to define a parallel task
-boundries.  to First, it is unclear how to define the boundaries of
-parallel tasks~\cite{jeon:2011:hotpar, garcia:2011:pldi} without
-constructs.
-
-prior works have found only limited benefit
-when looking outside of constructs like \textit{for} loops or
-\textit{if} statements~\cite{rinard:93:computer,rul:2008:sc}.Using
-arti
-
 The SD3~\cite{minjang:10:micro} tool performs inter-region dependence
 analyses similar to those discussed in this work.  The regions located
 by SD3 are defined stride-compression, and therefore are generally
@@ -790,6 +764,52 @@ limited to locating potential parallelizable regions in loops.  Many
 recent advances in parallel task boundary locations are also limited to
 parallelism bounded by explicit constructs~\cite{jeon:2011:hotpar,
   garcia:2011:pldi}.
+
+Alchemist is a dynamic profile based tool that deterimines potential
+parallizable regions at runtime.  Dependence conflicts are also
+located and presented to a user for manual
+parallelization~\cite{zhang:09:cgo}.  The Alchemist tool restricts
+parallel tasks to regions bounded by artifical constructs, like
+if-than-else branches or loops.
+
+Most tools that use dynamic program information to aid parallel
+programming are restricted to parallel tasks that can be bounded by
+\textit{if-than-else} blocks, \textit{for} or \textit{while} loops, or
+function calls~\cite{zhang:09:cgo, minjang:10:micro, jeon:2011:hotpar,
+  garcia:2011:pldi}.  This limitation is likely in place for the
+following reasons: (1) it is unclear how to find task boundaries
+without constructs; (2) constructs help trace compression; and, (3)
+frequently executed code blocks are often contained inside loops.
+
+\noindent\paragraph{Constructs Create Boundries}
+
+Artifical constructs are an easy way to define a parallel task
+boundries.  If the user defined a task to be contained in a function
+call, than that paraellel task should be easy for the user to
+identify.  Using technqiues prior to the work in this thesis, it is
+not clear how to define the boundries of these parallel
+tasks~\cite{jeon:2011:hotpar, garcia:2011:pldi}.  Further, some works
+include the ``ease of thread extraction'' in calulations for desiding
+if a task is worth parallelizing~\cite{garcia:2011:pldi}.
+Unfortunaly, there may be groups of instructions that could be a
+parallel task, but are not contained by an construct in the static
+code.
+
+\noindent\paragraph{Constructs Help Compression}
+
+Dynamic program analysis often require some information about program
+execution to be visible for the life of the program execution, both
+for off-line and on-line analysis.  Dynamic trace information can grow
+very large (e.g. gigabytes), and requires some form of analyzable
+compression.  A potential parallelel task that is bounded by a static
+construct can be stored for later analysis by only storing the static
+information. Multiple occurances of the same construction may require
+storing addionatl context information, or mulitple occurances may be
+ignored~\cite{minjang:10:micro, jeon:2011:hotpar, garcia:2011:pldi}.
+Storing only instances of the static code requires much less space
+than a trace of the dynamic execution.
+
+\noindent\paragraph{Constructs Help Compression}
 
 This thesis presents a system for finding, analyzing, and extracting
 potential parallel regions from serial codes.  The tool presented by
