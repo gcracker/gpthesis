@@ -561,8 +561,8 @@ in another heap memory location.  It is likely that a static analysis
 would need to classify this memory write location as all possible heap
 location values, or \textit{top} using a lattice that also represents
 the empty set $\emptyset$ as \textit{bottom}~\cite{Tarski:1955kx,
-  Davey:2002fj}.  Top is commonly written as $\top$, and bottom is
-represented by $\bot$.  If line 6 in
+  Davey:2002fj}.  Top may also be written as $\top$, and bottom may be
+seen in this thesis as the symbol $\bot$.  If line 6 in
 Figure~\ref{fig:parallelpseudosrc} is found to be $\top$ by a static
 analysis, it will cause line 6 to conflict with all other heap memory
 writes, and add line 6 to the dependence chain of a heap memory read.
@@ -571,7 +571,7 @@ auto-parallelization.
 
 The example code also contains potential parallelism that is not
 bounded by a programming construct.  For example, if the value of
-\textit{b + c} in line 6, \textit{arrayB[b + c] = i}, is less than
+\textit{b + c} in the line \textit{arrayB[b + c] = i} is less than
 four, than the instructions \textit{ a = \&(arrayB[4])} followed by
 \textit{print(*a)}, and the loop \textit{For (i = 0; i <
   arrayB.size(); ++i)} may be able to execute in parallel.  This
