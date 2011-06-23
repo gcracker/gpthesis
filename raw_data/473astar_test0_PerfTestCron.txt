@@ -1,0 +1,5640 @@
+Performance Tests
+Using {DIN,RDY} set from file:/home/ubuntu/ddPerfTestInput/473astar_test0_dinvsrdy_1000mil_syscalls_O0.dd
+Using {DIN,DIN} set from file:/home/ubuntu/ddPerfTestInput/473astar_test0_dinvsdin_1000mil_syscalls_O0.dd
+Using regions from file:/home/ubuntu/ddPerfTestInput/473astar_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+
+Region 0 -> 1 Naive Size:189228
+Slicing Complete. Time for 0 slices:0.089414
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:189228
+Slicing Complete. Time for 0 slices:0.000040
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:244683
+
+Region 0 -> 2 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9
+Slicing Complete. Time for 0 slices:0.000010
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 3 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:576639
+Slicing Complete. Time for 0 slices:0.000045
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 4 Naive Size:6465005
+Slicing Complete. Time for 105 slices:3.517935
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:6465005
+Slicing Complete. Time for 0 slices:0.000055
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:16728188
+
+Region 0 -> 5 Naive Size:1674
+Slicing Complete. Time for 0 slices:0.008058
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1674
+Slicing Complete. Time for 0 slices:0.000023
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:2775
+
+Region 0 -> 6 Naive Size:1665
+Slicing Complete. Time for 0 slices:0.004118
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1665
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:2775
+
+Region 0 -> 7 Naive Size:740
+Slicing Complete. Time for 0 slices:0.004113
+Simple Reverse Slice Interfer Size:740
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.001107
+Simple Forward Slice Interfer Set:740
+Simple Dep Removal Forward Slice Set:2035
+
+Region 0 -> 8 Naive Size:740
+Slicing Complete. Time for 0 slices:0.001043
+Simple Reverse Slice Interfer Size:555
+Simple Dep Removal Reverse Slice Size:2220
+Slicing Complete. Time for 0 slices:0.000681
+Simple Forward Slice Interfer Set:555
+Simple Dep Removal Forward Slice Set:185
+
+Region 0 -> 9 Naive Size:1295
+Slicing Complete. Time for 0 slices:0.027526
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:2590
+Slicing Complete. Time for 0 slices:0.000025
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:5524
+
+Region 0 -> 10 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1164
+Slicing Complete. Time for 0 slices:0.000015
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15816
+Slicing Complete. Time for 0 slices:0.000026
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:16174
+Slicing Complete. Time for 0 slices:0.000028
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000043
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:88951
+Slicing Complete. Time for 0 slices:0.000044
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13618
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 16 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:139454
+Slicing Complete. Time for 0 slices:0.000044
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 17 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:139097
+Slicing Complete. Time for 0 slices:0.000045
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10420
+Slicing Complete. Time for 0 slices:0.000025
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000043
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000030
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:90774
+Slicing Complete. Time for 0 slices:0.000045
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 22 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3165512
+Slicing Complete. Time for 0 slices:0.000056
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 23 Naive Size:3345
+Time for 1000 slices:46.166909
+Time for 2000 slices:46.387463
+Time for 3000 slices:46.537814
+Time for 4000 slices:46.689087
+Time for 5000 slices:46.846786
+Slicing Complete. Time for 5195 slices:46.879315
+Simple Reverse Slice Interfer Size:3345
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 343766 slices:819.742635
+Simple Forward Slice Interfer Set:2543708
+Simple Dep Removal Forward Slice Set:11934854
+
+Region 0 -> 24 Naive Size:0
+Slicing Complete. Time for 102 slices:2.036293
+Simple Reverse Slice Interfer Size:60
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 179798 slices:120.996241
+Simple Forward Slice Interfer Set:179843
+Simple Dep Removal Forward Slice Set:972624
+
+Region 0 -> 25 Naive Size:0
+Slicing Complete. Time for 78 slices:0.186108
+Simple Reverse Slice Interfer Size:60
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 319132 slices:178.950151
+Simple Forward Slice Interfer Set:319212
+Simple Dep Removal Forward Slice Set:10257
+
+Region 0 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:192943
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3822387
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5502116
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000050
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000052
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:142112
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:32648
+Slicing Complete. Time for 0 slices:0.000050
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:27427
+Slicing Complete. Time for 0 slices:0.000042
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 35 Naive Size:3075269
+Time for 1000 slices:286.056505
+Time for 2000 slices:366.990906
+Time for 3000 slices:373.790703
+Time for 4000 slices:380.469886
+Time for 5000 slices:385.847963
+Time for 6000 slices:389.776057
+Time for 7000 slices:394.101947
+Time for 8000 slices:400.761025
+Time for 9000 slices:409.066695
+Time for 10000 slices:416.265025
+Time for 11000 slices:423.395371
+Time for 12000 slices:477.074522
+Time for 13000 slices:495.052483
+Time for 14000 slices:557.586478
+Time for 15000 slices:560.422766
+Time for 16000 slices:562.620968
+Time for 17000 slices:564.758746
+Time for 18000 slices:566.343298
+Time for 19000 slices:566.921614
+Time for 20000 slices:567.457007
+Time for 21000 slices:567.982550
+Time for 22000 slices:568.522249
+Time for 23000 slices:569.058301
+Time for 24000 slices:569.566726
+Time for 25000 slices:570.053130
+Time for 26000 slices:570.392782
+Time for 27000 slices:570.673678
+Time for 28000 slices:570.956098
+Time for 29000 slices:571.228904
+Time for 30000 slices:571.500099
+Time for 31000 slices:571.763845
+Time for 32000 slices:572.023325
+Time for 33000 slices:572.283689
+Time for 34000 slices:572.549067
+Time for 35000 slices:572.822536
+Time for 36000 slices:573.090473
+Time for 37000 slices:573.361922
+Time for 38000 slices:573.637807
+Time for 39000 slices:573.918533
+Time for 40000 slices:574.199077
+Time for 41000 slices:574.476441
+Time for 42000 slices:574.756111
+Time for 43000 slices:575.038317
+Time for 44000 slices:575.317230
+Time for 45000 slices:575.601962
+Time for 46000 slices:619.672196
+Time for 47000 slices:619.892825
+Time for 48000 slices:620.113685
+Time for 49000 slices:620.336464
+Time for 50000 slices:620.564339
+Time for 51000 slices:620.779154
+Time for 52000 slices:621.000690
+Time for 53000 slices:621.224887
+Time for 54000 slices:621.454097
+Time for 55000 slices:621.685631
+Time for 56000 slices:621.916759
+Time for 57000 slices:622.152515
+Time for 58000 slices:622.388758
+Time for 59000 slices:622.622104
+Time for 60000 slices:622.859496
+Time for 61000 slices:623.092785
+Time for 62000 slices:623.327678
+Time for 63000 slices:623.567570
+Time for 64000 slices:623.783636
+Time for 65000 slices:623.932933
+Time for 66000 slices:624.079370
+Time for 67000 slices:624.229126
+Time for 68000 slices:624.380728
+Time for 69000 slices:624.538826
+Time for 70000 slices:624.693756
+Time for 71000 slices:624.837028
+Time for 72000 slices:624.980905
+Time for 73000 slices:625.126327
+Time for 74000 slices:625.274174
+Time for 75000 slices:625.421864
+Time for 76000 slices:625.570037
+Time for 77000 slices:625.721449
+Time for 78000 slices:625.872526
+Time for 79000 slices:626.027472
+Time for 80000 slices:626.182103
+Time for 81000 slices:626.333530
+Time for 82000 slices:626.486402
+Time for 83000 slices:626.640239
+Time for 84000 slices:626.795725
+Time for 85000 slices:626.952398
+Time for 86000 slices:627.108869
+Time for 87000 slices:627.266828
+Time for 88000 slices:627.425979
+Time for 89000 slices:627.586439
+Time for 90000 slices:627.749334
+Time for 91000 slices:627.913923
+Time for 92000 slices:628.071742
+Time for 93000 slices:628.227443
+Time for 94000 slices:628.386473
+Time for 95000 slices:628.545978
+Time for 96000 slices:628.707733
+Time for 97000 slices:628.870726
+Time for 98000 slices:629.033733
+Time for 99000 slices:629.193341
+Time for 100000 slices:629.357771
+Time for 101000 slices:629.525064
+Time for 102000 slices:629.694109
+Time for 103000 slices:629.864835
+Time for 104000 slices:630.030531
+Time for 105000 slices:630.197230
+Time for 106000 slices:630.368128
+Time for 107000 slices:630.538739
+Time for 108000 slices:630.712727
+Time for 109000 slices:630.886896
+Time for 110000 slices:631.060945
+Time for 111000 slices:631.236337
+Time for 112000 slices:631.414092
+Time for 113000 slices:631.592760
+Time for 114000 slices:631.775166
+Time for 115000 slices:631.937105
+Time for 116000 slices:632.096709
+Time for 117000 slices:632.258793
+Time for 118000 slices:632.420110
+Time for 119000 slices:632.585077
+Time for 120000 slices:632.751375
+Time for 121000 slices:632.915939
+Time for 122000 slices:633.082390
+Time for 123000 slices:633.250116
+Time for 124000 slices:633.420231
+Time for 125000 slices:633.594070
+Time for 126000 slices:633.759207
+Time for 127000 slices:633.932620
+Time for 128000 slices:634.103905
+Time for 129000 slices:634.277423
+Time for 130000 slices:634.452573
+Time for 131000 slices:634.625923
+Time for 132000 slices:634.800341
+Time for 133000 slices:634.977921
+Time for 134000 slices:635.156086
+Time for 135000 slices:635.337524
+Time for 136000 slices:678.374162
+Time for 137000 slices:678.505621
+Time for 138000 slices:678.635444
+Time for 139000 slices:678.765348
+Time for 140000 slices:678.896297
+Time for 141000 slices:679.029085
+Time for 142000 slices:679.157912
+Time for 143000 slices:679.289490
+Time for 144000 slices:679.422158
+Time for 145000 slices:679.556790
+Time for 146000 slices:679.694297
+Time for 147000 slices:679.826943
+Time for 148000 slices:679.961141
+Time for 149000 slices:680.097820
+Time for 150000 slices:680.234806
+Time for 151000 slices:680.373963
+Time for 152000 slices:680.511628
+Time for 153000 slices:680.649847
+Time for 154000 slices:680.790917
+Time for 155000 slices:680.931289
+Time for 156000 slices:681.075931
+Time for 157000 slices:681.216535
+Time for 158000 slices:681.351830
+Time for 159000 slices:681.489503
+Time for 160000 slices:681.627559
+Time for 161000 slices:681.767848
+Time for 162000 slices:681.910844
+Time for 163000 slices:682.050442
+Time for 164000 slices:682.192489
+Time for 165000 slices:682.335925
+Time for 166000 slices:682.481184
+Time for 167000 slices:682.629343
+Time for 168000 slices:682.771200
+Time for 169000 slices:682.916699
+Time for 170000 slices:683.062980
+Time for 171000 slices:683.211391
+Time for 172000 slices:683.362316
+Time for 173000 slices:683.510349
+Time for 174000 slices:683.660210
+Time for 175000 slices:683.812222
+Time for 176000 slices:683.964737
+Time for 177000 slices:684.119928
+Time for 178000 slices:684.278971
+Time for 179000 slices:684.429215
+Time for 180000 slices:684.578643
+Time for 181000 slices:684.730756
+Time for 182000 slices:684.882754
+Time for 183000 slices:685.036026
+Time for 184000 slices:685.191550
+Time for 185000 slices:685.345492
+Time for 186000 slices:685.501044
+Time for 187000 slices:685.657323
+Time for 188000 slices:685.816079
+Time for 189000 slices:685.976114
+Time for 190000 slices:686.136969
+Time for 191000 slices:686.297297
+Time for 192000 slices:686.455651
+Time for 193000 slices:686.614762
+Time for 194000 slices:686.775607
+Time for 195000 slices:686.936773
+Time for 196000 slices:687.101115
+Time for 197000 slices:687.267682
+Time for 198000 slices:687.430826
+Time for 199000 slices:687.597060
+Time for 200000 slices:687.766149
+Time for 201000 slices:687.935089
+Time for 202000 slices:688.106310
+Time for 203000 slices:688.277842
+Time for 204000 slices:688.432399
+Time for 205000 slices:688.589965
+Time for 206000 slices:688.750907
+Time for 207000 slices:688.915152
+Time for 208000 slices:689.078328
+Time for 209000 slices:689.244290
+Time for 210000 slices:689.405866
+Time for 211000 slices:689.570309
+Time for 212000 slices:689.736843
+Time for 213000 slices:689.902908
+Time for 214000 slices:690.072410
+Time for 215000 slices:690.243342
+Time for 216000 slices:690.409064
+Time for 217000 slices:690.577771
+Time for 218000 slices:690.747767
+Time for 219000 slices:690.918353
+Time for 220000 slices:691.091493
+Time for 221000 slices:691.266361
+Time for 222000 slices:691.437987
+Time for 223000 slices:691.612169
+Time for 224000 slices:691.789443
+Time for 225000 slices:691.965885
+Time for 226000 slices:692.146015
+Time for 227000 slices:692.326591
+Time for 228000 slices:692.497966
+Time for 229000 slices:692.671643
+Time for 230000 slices:692.848048
+Time for 231000 slices:693.024437
+Time for 232000 slices:693.204609
+Time for 233000 slices:693.384287
+Time for 234000 slices:693.570658
+Time for 235000 slices:693.759260
+Time for 236000 slices:693.938863
+Time for 237000 slices:694.117043
+Time for 238000 slices:694.299213
+Time for 239000 slices:694.478585
+Time for 240000 slices:737.596610
+Time for 241000 slices:737.737423
+Time for 242000 slices:737.871893
+Slicing Complete. Time for 242242 slices:737.905260
+Simple Reverse Slice Interfer Size:6808032
+Simple Dep Removal Reverse Slice Size:975
+Slicing Complete. Time for 304447 slices:776.139489
+Simple Forward Slice Interfer Set:567155
+Simple Dep Removal Forward Slice Set:2508114
+
+Region 0 -> 36 Naive Size:1863635
+Slicing Complete. Time for 0 slices:1.105508
+Simple Reverse Slice Interfer Size:1863635
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.369277
+Simple Forward Slice Interfer Set:1863635
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 37 Naive Size:4857368
+Time for 1000 slices:68.784876
+Time for 2000 slices:71.747719
+Time for 3000 slices:74.732237
+Time for 4000 slices:77.736370
+Time for 5000 slices:81.104394
+Time for 6000 slices:93.366014
+Time for 7000 slices:155.187938
+Time for 8000 slices:155.747910
+Time for 9000 slices:156.341083
+Time for 10000 slices:156.937582
+Time for 11000 slices:157.545759
+Time for 12000 slices:158.068043
+Time for 13000 slices:158.513811
+Time for 14000 slices:158.963536
+Time for 15000 slices:159.422962
+Time for 16000 slices:159.883152
+Time for 17000 slices:160.308619
+Time for 18000 slices:160.712816
+Time for 19000 slices:160.977928
+Time for 20000 slices:161.156961
+Time for 21000 slices:161.337685
+Time for 22000 slices:161.528330
+Time for 23000 slices:161.692904
+Time for 24000 slices:161.859644
+Time for 25000 slices:162.025808
+Time for 26000 slices:162.194488
+Time for 27000 slices:162.368061
+Time for 28000 slices:162.537522
+Time for 29000 slices:162.710007
+Time for 30000 slices:162.885717
+Time for 31000 slices:163.061653
+Time for 32000 slices:163.240061
+Time for 33000 slices:163.408833
+Time for 34000 slices:163.581544
+Time for 35000 slices:163.756636
+Time for 36000 slices:163.934646
+Time for 37000 slices:164.115848
+Time for 38000 slices:164.293428
+Time for 39000 slices:164.474495
+Time for 40000 slices:164.658465
+Time for 41000 slices:164.843186
+Time for 42000 slices:225.374430
+Time for 43000 slices:225.505573
+Time for 44000 slices:225.636988
+Time for 45000 slices:225.768153
+Time for 46000 slices:225.899568
+Time for 47000 slices:226.032846
+Time for 48000 slices:226.163303
+Time for 49000 slices:226.295734
+Time for 50000 slices:226.428507
+Time for 51000 slices:226.563491
+Time for 52000 slices:226.699404
+Time for 53000 slices:226.832405
+Time for 54000 slices:226.967905
+Time for 55000 slices:227.103630
+Time for 56000 slices:227.242062
+Time for 57000 slices:227.380184
+Time for 58000 slices:227.518399
+Time for 59000 slices:227.658505
+Time for 60000 slices:227.799555
+Time for 61000 slices:227.943786
+Time for 62000 slices:228.084203
+Time for 63000 slices:228.219636
+Time for 64000 slices:228.357487
+Time for 65000 slices:228.496062
+Time for 66000 slices:228.636417
+Time for 67000 slices:228.775474
+Time for 68000 slices:228.916332
+Time for 69000 slices:229.059055
+Time for 70000 slices:229.204467
+Time for 71000 slices:229.350651
+Time for 72000 slices:229.495106
+Time for 73000 slices:229.638658
+Time for 74000 slices:229.784355
+Time for 75000 slices:229.930410
+Time for 76000 slices:230.078064
+Time for 77000 slices:230.228513
+Time for 78000 slices:230.375567
+Time for 79000 slices:230.525587
+Time for 80000 slices:230.679200
+Time for 81000 slices:230.831827
+Time for 82000 slices:230.986782
+Time for 83000 slices:231.144844
+Time for 84000 slices:231.291097
+Time for 85000 slices:231.440266
+Time for 86000 slices:231.592945
+Time for 87000 slices:231.742747
+Time for 88000 slices:231.896650
+Time for 89000 slices:232.052449
+Time for 90000 slices:232.205311
+Time for 91000 slices:232.356923
+Time for 92000 slices:232.514061
+Time for 93000 slices:232.673412
+Time for 94000 slices:232.834134
+Time for 95000 slices:232.999795
+Time for 96000 slices:233.154318
+Time for 97000 slices:233.313339
+Time for 98000 slices:233.474771
+Time for 99000 slices:233.637874
+Time for 100000 slices:233.803296
+Time for 101000 slices:233.968018
+Time for 102000 slices:234.133458
+Time for 103000 slices:234.301475
+Time for 104000 slices:234.470304
+Time for 105000 slices:234.641452
+Time for 106000 slices:234.814908
+Time for 107000 slices:234.964721
+Time for 108000 slices:235.117926
+Time for 109000 slices:235.272892
+Time for 110000 slices:235.428441
+Time for 111000 slices:235.586646
+Time for 112000 slices:235.744987
+Time for 113000 slices:235.903239
+Time for 114000 slices:236.064926
+Time for 115000 slices:236.228213
+Time for 116000 slices:236.398365
+Time for 117000 slices:236.565719
+Time for 118000 slices:236.727636
+Time for 119000 slices:236.889795
+Time for 120000 slices:237.053684
+Time for 121000 slices:237.219078
+Time for 122000 slices:237.387527
+Time for 123000 slices:237.552271
+Time for 124000 slices:237.720846
+Time for 125000 slices:237.890686
+Time for 126000 slices:238.063212
+Time for 127000 slices:238.238151
+Time for 128000 slices:238.404921
+Time for 129000 slices:238.570198
+Time for 130000 slices:238.739398
+Time for 131000 slices:238.908070
+Time for 132000 slices:239.079816
+Time for 133000 slices:239.252536
+Time for 134000 slices:239.424767
+Time for 135000 slices:239.600329
+Time for 136000 slices:239.776025
+Time for 137000 slices:239.954896
+Time for 138000 slices:240.135065
+Time for 139000 slices:240.307713
+Time for 140000 slices:240.483271
+Time for 141000 slices:240.661441
+Time for 142000 slices:240.841436
+Time for 143000 slices:241.026285
+Time for 144000 slices:241.205466
+Time for 145000 slices:241.389096
+Time for 146000 slices:241.575147
+Time for 147000 slices:285.851834
+Time for 148000 slices:285.992514
+Time for 149000 slices:286.124822
+Time for 150000 slices:286.253799
+Time for 151000 slices:286.384806
+Time for 152000 slices:286.514090
+Time for 153000 slices:286.646062
+Time for 154000 slices:286.778838
+Time for 155000 slices:286.911596
+Time for 156000 slices:287.045659
+Time for 157000 slices:287.179761
+Time for 158000 slices:287.316038
+Time for 159000 slices:287.453616
+Time for 160000 slices:287.588348
+Time for 161000 slices:287.723893
+Time for 162000 slices:287.860264
+Time for 163000 slices:287.998375
+Time for 164000 slices:288.140269
+Time for 165000 slices:288.276437
+Time for 166000 slices:288.416748
+Time for 167000 slices:288.560439
+Time for 168000 slices:288.701772
+Time for 169000 slices:288.846477
+Time for 170000 slices:288.993492
+Time for 171000 slices:289.130217
+Time for 172000 slices:289.269815
+Time for 173000 slices:289.413290
+Time for 174000 slices:289.554568
+Time for 175000 slices:289.699511
+Time for 176000 slices:289.847113
+Time for 177000 slices:289.990477
+Time for 178000 slices:290.136567
+Time for 179000 slices:290.285612
+Time for 180000 slices:290.433506
+Time for 181000 slices:290.584476
+Time for 182000 slices:290.737352
+Time for 183000 slices:290.885669
+Time for 184000 slices:291.034030
+Time for 185000 slices:291.184868
+Time for 186000 slices:291.336402
+Time for 187000 slices:291.490189
+Time for 188000 slices:291.645380
+Time for 189000 slices:291.800387
+Time for 190000 slices:291.954707
+Time for 191000 slices:292.111597
+Time for 192000 slices:292.270209
+Time for 193000 slices:292.431255
+Time for 194000 slices:292.592749
+Time for 195000 slices:292.749146
+Time for 196000 slices:292.909441
+Time for 197000 slices:293.060753
+Time for 198000 slices:293.212057
+Time for 199000 slices:293.364532
+Time for 200000 slices:293.519389
+Time for 201000 slices:293.674758
+Time for 202000 slices:293.829569
+Time for 203000 slices:293.986426
+Time for 204000 slices:294.145198
+Time for 205000 slices:294.304731
+Time for 206000 slices:294.467586
+Time for 207000 slices:294.627822
+Time for 208000 slices:294.787211
+Time for 209000 slices:294.947621
+Time for 210000 slices:295.109981
+Time for 211000 slices:295.277229
+Time for 212000 slices:295.446421
+Time for 213000 slices:295.613218
+Time for 214000 slices:295.779564
+Time for 215000 slices:295.945815
+Time for 216000 slices:296.114595
+Time for 217000 slices:296.285676
+Time for 218000 slices:296.458325
+Time for 219000 slices:296.628290
+Time for 220000 slices:296.793610
+Time for 221000 slices:296.959985
+Time for 222000 slices:297.127550
+Time for 223000 slices:297.295567
+Time for 224000 slices:297.467862
+Time for 225000 slices:297.641229
+Time for 226000 slices:297.815717
+Time for 227000 slices:297.995394
+Time for 228000 slices:298.162760
+Time for 229000 slices:298.333158
+Time for 230000 slices:298.507563
+Time for 231000 slices:298.674038
+Time for 232000 slices:298.853497
+Time for 233000 slices:299.034087
+Slicing Complete. Time for 233965 slices:299.205615
+Simple Reverse Slice Interfer Size:4855538
+Simple Dep Removal Reverse Slice Size:1830
+Slicing Complete. Time for 274424 slices:393.073028
+Simple Forward Slice Interfer Set:3443424
+Simple Dep Removal Forward Slice Set:4312566
+
+Region 0 -> 38 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 0 -> 39 Naive Size:420
+Time for 1000 slices:0.775228
+Slicing Complete. Time for 1095 slices:0.790406
+Simple Reverse Slice Interfer Size:7442
+Simple Dep Removal Reverse Slice Size:30295
+Slicing Complete. Time for 234800 slices:125.647634
+Simple Forward Slice Interfer Set:241147
+Simple Dep Removal Forward Slice Set:4363
+
+Region 0 -> 40 Naive Size:0
+Time for 1000 slices:1.324509
+Time for 2000 slices:3.680435
+Time for 3000 slices:6.046002
+Time for 4000 slices:8.423870
+Time for 5000 slices:11.290689
+Time for 6000 slices:23.089562
+Slicing Complete. Time for 6883 slices:83.980141
+Simple Reverse Slice Interfer Size:18552
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 5 slices:0.001458
+Simple Forward Slice Interfer Set:18558
+Simple Dep Removal Forward Slice Set:11737
+
+Region 0 -> 41 Naive Size:0
+Time for 1000 slices:1.534896
+Time for 2000 slices:4.127767
+Time for 3000 slices:6.729659
+Time for 4000 slices:9.321704
+Time for 5000 slices:12.403180
+Time for 6000 slices:24.401789
+Time for 7000 slices:85.641114
+Time for 8000 slices:85.938299
+Time for 9000 slices:86.233313
+Time for 10000 slices:135.437193
+Time for 11000 slices:135.647316
+Time for 12000 slices:135.813530
+Time for 13000 slices:135.943045
+Slicing Complete. Time for 13103 slices:135.957342
+Simple Reverse Slice Interfer Size:24707
+Simple Dep Removal Reverse Slice Size:336
+Slicing Complete. Time for 0 slices:0.000667
+Simple Forward Slice Interfer Set:128
+Simple Dep Removal Forward Slice Set:28
+
+Region 0 -> 42 Naive Size:0
+Time for 1000 slices:1.258086
+Time for 2000 slices:3.575546
+Time for 3000 slices:5.907436
+Time for 4000 slices:8.233297
+Time for 5000 slices:11.061972
+Time for 6000 slices:22.807430
+Slicing Complete. Time for 6883 slices:83.722128
+Simple Reverse Slice Interfer Size:11587
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 7 slices:0.001455
+Simple Forward Slice Interfer Set:11595
+Simple Dep Removal Forward Slice Set:18672
+
+Region 0 -> 43 Naive Size:0
+Time for 1000 slices:1.228743
+Time for 2000 slices:3.514880
+Time for 3000 slices:5.818160
+Time for 4000 slices:8.122088
+Time for 5000 slices:10.924926
+Time for 6000 slices:22.632162
+Slicing Complete. Time for 6883 slices:83.450376
+Simple Reverse Slice Interfer Size:198
+Simple Dep Removal Reverse Slice Size:1350
+Slicing Complete. Time for 9 slices:0.001346
+Simple Forward Slice Interfer Set:10
+Simple Dep Removal Forward Slice Set:30257
+
+Region 0 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.001687
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1112
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:392
+
+Region 0 -> 45 Naive Size:0
+Time for 1000 slices:7.641418
+Time for 2000 slices:10.121763
+Time for 3000 slices:11.693225
+Time for 4000 slices:13.093894
+Time for 5000 slices:14.511421
+Time for 6000 slices:15.899516
+Time for 7000 slices:17.363634
+Time for 8000 slices:20.219024
+Time for 9000 slices:24.244231
+Time for 10000 slices:28.272187
+Time for 11000 slices:32.329207
+Time for 12000 slices:37.220269
+Time for 13000 slices:100.726386
+Time for 14000 slices:162.238778
+Time for 15000 slices:163.193550
+Time for 16000 slices:164.108108
+Time for 17000 slices:164.955996
+Time for 18000 slices:165.531500
+Time for 19000 slices:166.018255
+Time for 20000 slices:166.467326
+Time for 21000 slices:166.906618
+Time for 22000 slices:167.357772
+Time for 23000 slices:167.797911
+Time for 24000 slices:168.241722
+Time for 25000 slices:168.701134
+Time for 26000 slices:169.107719
+Time for 27000 slices:169.480064
+Time for 28000 slices:169.806591
+Slicing Complete. Time for 28600 slices:169.973345
+Simple Reverse Slice Interfer Size:29875
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 336926 slices:240.113811
+Simple Forward Slice Interfer Set:560095
+Simple Dep Removal Forward Slice Set:238699
+
+Region 0 -> 46 Naive Size:626382
+Slicing Complete. Time for 18 slices:2.249842
+Simple Reverse Slice Interfer Size:620882
+Simple Dep Removal Reverse Slice Size:168895
+Slicing Complete. Time for 107297 slices:84.810172
+Simple Forward Slice Interfer Set:1201148
+Simple Dep Removal Forward Slice Set:2458417
+
+Region 1 -> 2 Naive Size:5379324
+Time for 1000 slices:1.981393
+Time for 2000 slices:2.537817
+Time for 3000 slices:3.076601
+Time for 4000 slices:3.618421
+Time for 5000 slices:4.149198
+Time for 6000 slices:4.691536
+Time for 7000 slices:5.234701
+Time for 8000 slices:5.792943
+Time for 9000 slices:57.852121
+Time for 10000 slices:58.281656
+Time for 11000 slices:58.714588
+Time for 12000 slices:59.173934
+Time for 13000 slices:59.630010
+Time for 14000 slices:60.070480
+Time for 15000 slices:60.525488
+Time for 16000 slices:60.978004
+Time for 17000 slices:61.444877
+Time for 18000 slices:61.901414
+Time for 19000 slices:62.401838
+Time for 20000 slices:62.922743
+Time for 21000 slices:63.518939
+Time for 22000 slices:64.106709
+Time for 23000 slices:64.714065
+Time for 24000 slices:65.333804
+Time for 25000 slices:65.978454
+Time for 26000 slices:66.657447
+Time for 27000 slices:67.360274
+Time for 28000 slices:68.119284
+Time for 29000 slices:69.001213
+Time for 30000 slices:70.153236
+Time for 31000 slices:70.773240
+Time for 32000 slices:71.405770
+Time for 33000 slices:72.030519
+Time for 34000 slices:72.739580
+Time for 35000 slices:73.462805
+Time for 36000 slices:74.260518
+Time for 37000 slices:75.188016
+Time for 38000 slices:77.426443
+Time for 39000 slices:124.777462
+Time for 40000 slices:125.295740
+Time for 41000 slices:125.699350
+Time for 42000 slices:125.903002
+Time for 43000 slices:126.100238
+Time for 44000 slices:126.298486
+Time for 45000 slices:126.492777
+Time for 46000 slices:126.689798
+Time for 47000 slices:126.886921
+Time for 48000 slices:127.086692
+Time for 49000 slices:127.301699
+Time for 50000 slices:127.538977
+Time for 51000 slices:127.778453
+Time for 52000 slices:128.020568
+Time for 53000 slices:128.263250
+Time for 54000 slices:128.571048
+Time for 55000 slices:128.898445
+Time for 56000 slices:129.345739
+Time for 57000 slices:130.016038
+Time for 58000 slices:132.007898
+Slicing Complete. Time for 58061 slices:132.027967
+Simple Reverse Slice Interfer Size:29978
+Simple Dep Removal Reverse Slice Size:5349346
+Slicing Complete. Time for 6757 slices:1.209621
+Simple Forward Slice Interfer Set:15853
+Simple Dep Removal Forward Slice Set:5402227
+
+Region 1 -> 3 Naive Size:244674
+Time for 1000 slices:2.265157
+Time for 2000 slices:2.517062
+Time for 3000 slices:2.780865
+Time for 4000 slices:3.037857
+Time for 5000 slices:3.288120
+Time for 6000 slices:3.535391
+Time for 7000 slices:3.777264
+Time for 8000 slices:4.027214
+Time for 9000 slices:4.267936
+Time for 10000 slices:4.488667
+Time for 11000 slices:4.717863
+Time for 12000 slices:4.948286
+Time for 13000 slices:5.182710
+Time for 14000 slices:5.414229
+Time for 15000 slices:5.648372
+Time for 16000 slices:5.885674
+Time for 17000 slices:6.128073
+Time for 18000 slices:6.374347
+Time for 19000 slices:6.606993
+Time for 20000 slices:6.844200
+Time for 21000 slices:7.179520
+Time for 22000 slices:7.558670
+Time for 23000 slices:7.947926
+Time for 24000 slices:8.339393
+Time for 25000 slices:8.743381
+Time for 26000 slices:9.148533
+Time for 27000 slices:9.534024
+Time for 28000 slices:9.952017
+Time for 29000 slices:10.372127
+Time for 30000 slices:10.836465
+Time for 31000 slices:11.316488
+Time for 32000 slices:11.811388
+Time for 33000 slices:12.308458
+Time for 34000 slices:12.801631
+Time for 35000 slices:13.348148
+Time for 36000 slices:13.902325
+Time for 37000 slices:14.487508
+Time for 38000 slices:15.211106
+Time for 39000 slices:16.975661
+Time for 40000 slices:17.365316
+Time for 41000 slices:17.572543
+Time for 42000 slices:17.796427
+Time for 43000 slices:18.022617
+Time for 44000 slices:18.243970
+Time for 45000 slices:18.492502
+Time for 46000 slices:68.460707
+Time for 47000 slices:68.658247
+Time for 48000 slices:68.852392
+Time for 49000 slices:69.046661
+Time for 50000 slices:69.239807
+Time for 51000 slices:69.433681
+Time for 52000 slices:69.629107
+Time for 53000 slices:69.829060
+Time for 54000 slices:70.035551
+Time for 55000 slices:70.270948
+Time for 56000 slices:70.507854
+Time for 57000 slices:70.745791
+Time for 58000 slices:70.986072
+Time for 59000 slices:71.264782
+Time for 60000 slices:71.579437
+Time for 61000 slices:71.938427
+Time for 62000 slices:72.457936
+Time for 63000 slices:74.613366
+Slicing Complete. Time for 63427 slices:74.767474
+Simple Reverse Slice Interfer Size:21584
+Simple Dep Removal Reverse Slice Size:244674
+Slicing Complete. Time for 25826 slices:5.592504
+Simple Forward Slice Interfer Set:69895
+Simple Dep Removal Forward Slice Set:9998983
+
+Region 1 -> 4 Naive Size:0
+Time for 1000 slices:31.338417
+Time for 2000 slices:32.266555
+Time for 3000 slices:33.169701
+Time for 4000 slices:34.108646
+Time for 5000 slices:35.074630
+Time for 6000 slices:35.952805
+Time for 7000 slices:36.876322
+Time for 8000 slices:37.727064
+Time for 9000 slices:38.218564
+Time for 10000 slices:38.424186
+Time for 11000 slices:38.648961
+Time for 12000 slices:38.872009
+Time for 13000 slices:39.098374
+Time for 14000 slices:39.315955
+Time for 15000 slices:39.474598
+Time for 16000 slices:39.634115
+Time for 17000 slices:39.795388
+Time for 18000 slices:39.959679
+Time for 19000 slices:40.126883
+Time for 20000 slices:40.288566
+Time for 21000 slices:40.452869
+Time for 22000 slices:40.620677
+Time for 23000 slices:40.789538
+Time for 24000 slices:40.961135
+Time for 25000 slices:41.130088
+Time for 26000 slices:41.299201
+Slicing Complete. Time for 26419 slices:41.376581
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:21584
+Slicing Complete. Time for 0 slices:0.000050
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:47738211
+
+Region 2 -> 3 Naive Size:5053281
+Time for 1000 slices:1.929366
+Time for 2000 slices:2.231454
+Time for 3000 slices:2.420350
+Time for 4000 slices:56.806037
+Time for 5000 slices:56.938263
+Time for 6000 slices:57.071164
+Time for 7000 slices:57.199084
+Slicing Complete. Time for 7281 slices:57.235053
+Simple Reverse Slice Interfer Size:19413
+Simple Dep Removal Reverse Slice Size:5033868
+Slicing Complete. Time for 153382 slices:74.327480
+Simple Forward Slice Interfer Set:227562
+Simple Dep Removal Forward Slice Set:9411287
+
+Region 2 -> 4 Naive Size:0
+Time for 1000 slices:30.037530
+Time for 2000 slices:30.997421
+Time for 3000 slices:31.916085
+Time for 4000 slices:32.867345
+Time for 5000 slices:33.857421
+Time for 6000 slices:34.750556
+Time for 7000 slices:35.679293
+Time for 8000 slices:36.487895
+Time for 9000 slices:36.983550
+Time for 10000 slices:37.194486
+Time for 11000 slices:37.423497
+Time for 12000 slices:37.649065
+Time for 13000 slices:37.877418
+Time for 14000 slices:38.098082
+Time for 15000 slices:91.193420
+Time for 16000 slices:91.314965
+Time for 17000 slices:91.435045
+Time for 18000 slices:91.555487
+Time for 19000 slices:91.679098
+Time for 20000 slices:91.794959
+Time for 21000 slices:91.914646
+Time for 22000 slices:92.037386
+Time for 23000 slices:92.161800
+Time for 24000 slices:92.289214
+Time for 25000 slices:92.412414
+Time for 26000 slices:92.534829
+Slicing Complete. Time for 26419 slices:92.592397
+Simple Reverse Slice Interfer Size:7
+Simple Dep Removal Reverse Slice Size:5053274
+Slicing Complete. Time for 10429 slices:1.149513
+Simple Forward Slice Interfer Set:10502
+Simple Dep Removal Forward Slice Set:46296848
+
+Region 3 -> 4 Naive Size:10215472
+Time for 1000 slices:29.631702
+Time for 2000 slices:30.516971
+Time for 3000 slices:31.345462
+Time for 4000 slices:32.201086
+Time for 5000 slices:33.091765
+Time for 6000 slices:33.901263
+Time for 7000 slices:34.746892
+Time for 8000 slices:35.557166
+Time for 9000 slices:36.005831
+Time for 10000 slices:36.189647
+Time for 11000 slices:36.387653
+Time for 12000 slices:36.583565
+Time for 13000 slices:36.782375
+Time for 14000 slices:36.974378
+Time for 15000 slices:37.106280
+Time for 16000 slices:37.238765
+Time for 17000 slices:37.372085
+Time for 18000 slices:37.506883
+Time for 19000 slices:37.642891
+Time for 20000 slices:37.774485
+Time for 21000 slices:37.908326
+Time for 22000 slices:38.044288
+Time for 23000 slices:38.182482
+Time for 24000 slices:38.324858
+Time for 25000 slices:38.461455
+Time for 26000 slices:38.597317
+Slicing Complete. Time for 26419 slices:38.659703
+Simple Reverse Slice Interfer Size:2845782
+Simple Dep Removal Reverse Slice Size:7369690
+Slicing Complete. Time for 10413 slices:1.960298
+Simple Forward Slice Interfer Set:10564
+Simple Dep Removal Forward Slice Set:48615426
+
+Region 5 -> 6 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 7 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 8 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 9 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5524
+Slicing Complete. Time for 0 slices:0.000041
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 10 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1164
+Slicing Complete. Time for 0 slices:0.000017
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15816
+Slicing Complete. Time for 0 slices:0.000032
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11351
+Slicing Complete. Time for 0 slices:0.000022
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:18607
+Slicing Complete. Time for 0 slices:0.000046
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:8134
+Slicing Complete. Time for 0 slices:0.000040
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000017
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000039
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:20857
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:31987
+Slicing Complete. Time for 0 slices:0.000054
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3822387
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1682303
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:81291
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10598
+Slicing Complete. Time for 0 slices:0.000040
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 5 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26767
+Slicing Complete. Time for 0 slices:0.000044
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 7 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 8 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 9 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5524
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 10 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1164
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15816
+Slicing Complete. Time for 0 slices:0.000026
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11351
+Slicing Complete. Time for 0 slices:0.000024
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11639
+Slicing Complete. Time for 0 slices:0.000033
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7734
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000037
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13189
+Slicing Complete. Time for 0 slices:0.000037
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3765776
+Slicing Complete. Time for 0 slices:0.000069
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1238436
+Slicing Complete. Time for 0 slices:0.000065
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:71256
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10129
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 6 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26694
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 8 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 9 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5524
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 10 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1164
+Slicing Complete. Time for 0 slices:0.000017
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15816
+Slicing Complete. Time for 0 slices:0.000028
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11351
+Slicing Complete. Time for 0 slices:0.000021
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:22870
+Slicing Complete. Time for 0 slices:0.000044
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:8342
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:25484
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:51681
+Slicing Complete. Time for 0 slices:0.000057
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3822387
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1839126
+Slicing Complete. Time for 0 slices:0.000083
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000057
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000085
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:84958
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10742
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 7 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26811
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 9 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5524
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 10 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1164
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15816
+Slicing Complete. Time for 0 slices:0.000026
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11351
+Slicing Complete. Time for 0 slices:0.000020
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:28285
+Slicing Complete. Time for 0 slices:0.000047
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:8618
+Slicing Complete. Time for 0 slices:0.000037
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000015
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:31382
+Slicing Complete. Time for 0 slices:0.000050
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:67165
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3640900
+Slicing Complete. Time for 0 slices:0.000071
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1982980
+Slicing Complete. Time for 0 slices:0.000065
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:87918
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10866
+Slicing Complete. Time for 0 slices:0.000037
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 8 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26840
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 10 Naive Size:1164
+Slicing Complete. Time for 0 slices:0.013638
+Simple Reverse Slice Interfer Size:185
+Simple Dep Removal Reverse Slice Size:5339
+Slicing Complete. Time for 1 slices:0.001776
+Simple Forward Slice Interfer Set:370
+Simple Dep Removal Forward Slice Set:794
+
+Region 9 -> 11 Naive Size:5228
+Slicing Complete. Time for 0 slices:0.022273
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5228
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:15816
+
+Region 9 -> 12 Naive Size:296
+Slicing Complete. Time for 0 slices:0.009865
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:296
+Slicing Complete. Time for 0 slices:0.000020
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:11351
+
+Region 9 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5320
+Slicing Complete. Time for 0 slices:0.000020
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7270
+Slicing Complete. Time for 0 slices:0.000032
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000040
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:6058
+Slicing Complete. Time for 0 slices:0.000023
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3822387
+Slicing Complete. Time for 0 slices:0.000069
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:829342
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:62013
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9642
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 9 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26677
+Slicing Complete. Time for 0 slices:0.000037
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 11 Naive Size:0
+Slicing Complete. Time for 0 slices:0.012829
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:350
+Slicing Complete. Time for 0 slices:0.000024
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:15816
+
+Region 10 -> 12 Naive Size:0
+Slicing Complete. Time for 0 slices:0.009826
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:20
+Slicing Complete. Time for 0 slices:0.000018
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:11351
+
+Region 10 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000023
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:74228
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9167
+Slicing Complete. Time for 0 slices:0.000027
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7550
+Slicing Complete. Time for 0 slices:0.000033
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4848
+Slicing Complete. Time for 0 slices:0.000016
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10395
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3417171
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1029634
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:66634
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9875
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 10 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26688
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 12 Naive Size:11151
+Slicing Complete. Time for 0 slices:0.012856
+Simple Reverse Slice Interfer Size:11151
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 173 slices:0.103385
+Simple Forward Slice Interfer Set:15505
+Simple Dep Removal Forward Slice Set:311
+
+Region 11 -> 13 Naive Size:4665
+Slicing Complete. Time for 163 slices:0.288882
+Simple Reverse Slice Interfer Size:9913
+Simple Dep Removal Reverse Slice Size:5362
+Slicing Complete. Time for 165 slices:0.078629
+Simple Forward Slice Interfer Set:7787
+Simple Dep Removal Forward Slice Set:66441
+
+Region 11 -> 14 Naive Size:0
+Slicing Complete. Time for 0 slices:0.007938
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:124
+Slicing Complete. Time for 0 slices:0.000015
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:2870
+
+Region 11 -> 15 Naive Size:0
+Slicing Complete. Time for 8 slices:0.085108
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10298
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:7014
+
+Region 11 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.010920
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10330
+Slicing Complete. Time for 0 slices:0.000030
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:4848
+
+Region 11 -> 19 Naive Size:0
+Slicing Complete. Time for 1 slices:0.109448
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9401
+Slicing Complete. Time for 0 slices:0.000033
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:63699
+
+Region 11 -> 20 Naive Size:0
+Slicing Complete. Time for 8 slices:0.074619
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:929
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:13139
+
+Region 11 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3226
+Slicing Complete. Time for 0 slices:0.000017
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3822387
+Slicing Complete. Time for 0 slices:0.000069
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:679456
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:58875
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9484
+Slicing Complete. Time for 0 slices:0.000034
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 11 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:25164
+Slicing Complete. Time for 0 slices:0.000035
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 13 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:69563
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 14 Naive Size:5023
+Slicing Complete. Time for 0 slices:0.147533
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5023
+Slicing Complete. Time for 0 slices:0.000033
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:87310
+
+Region 12 -> 15 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:6320
+Slicing Complete. Time for 0 slices:0.000032
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5572
+Slicing Complete. Time for 0 slices:0.000018
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:63699
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:13139
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:90251
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:192855
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3360021
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5197360
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:182110
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:48134
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:187402
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:142112
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:32648
+Slicing Complete. Time for 0 slices:0.000057
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 12 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:27425
+Slicing Complete. Time for 0 slices:0.000047
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 13 -> 15 Naive Size:6296
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:68353
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 13 -> 18 Naive Size:4848
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:69563
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 13 -> 19 Naive Size:63699
+Slicing Complete. Time for 1 slices:0.072676
+Simple Reverse Slice Interfer Size:10
+Simple Dep Removal Reverse Slice Size:67542
+Slicing Complete. Time for 8 slices:0.002076
+Simple Forward Slice Interfer Set:14
+Simple Dep Removal Forward Slice Set:63685
+
+Region 13 -> 20 Naive Size:1793
+Slicing Complete. Time for 8 slices:0.006104
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:69563
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:1793
+
+Region 13 -> 27 Naive Size:63324
+Slicing Complete. Time for 22 slices:4.159844
+Simple Reverse Slice Interfer Size:63324
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 7282 slices:45.550701
+Simple Forward Slice Interfer Set:1664023
+Simple Dep Removal Forward Slice Set:1610425
+
+Region 13 -> 28 Naive Size:2341
+Time for 1000 slices:0.609801
+Time for 2000 slices:0.830827
+Slicing Complete. Time for 2388 slices:0.914302
+Simple Reverse Slice Interfer Size:2319
+Simple Dep Removal Reverse Slice Size:22
+Slicing Complete. Time for 746 slices:2.074635
+Simple Forward Slice Interfer Set:84701
+Simple Dep Removal Forward Slice Set:98279
+
+Region 13 -> 29 Naive Size:3898
+Time for 1000 slices:0.392939
+Time for 2000 slices:0.577950
+Slicing Complete. Time for 2388 slices:0.646441
+Simple Reverse Slice Interfer Size:1044
+Simple Dep Removal Reverse Slice Size:68497
+Slicing Complete. Time for 746 slices:0.605512
+Simple Forward Slice Interfer Set:28873
+Simple Dep Removal Forward Slice Set:53503
+
+Region 13 -> 30 Naive Size:0
+Slicing Complete. Time for 577 slices:0.499215
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:67222
+Slicing Complete. Time for 0 slices:0.000065
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:46318
+
+Region 13 -> 31 Naive Size:0
+Slicing Complete. Time for 74 slices:0.263083
+Simple Reverse Slice Interfer Size:130
+Simple Dep Removal Reverse Slice Size:59166
+Slicing Complete. Time for 13 slices:0.010881
+Simple Forward Slice Interfer Set:168
+Simple Dep Removal Forward Slice Set:162904
+
+Region 13 -> 32 Naive Size:0
+Slicing Complete. Time for 1 slices:0.106029
+Simple Reverse Slice Interfer Size:10
+Simple Dep Removal Reverse Slice Size:10365
+Slicing Complete. Time for 8 slices:0.001783
+Simple Forward Slice Interfer Set:14
+Simple Dep Removal Forward Slice Set:48500
+
+Region 13 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.016209
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10
+Slicing Complete. Time for 0 slices:0.000024
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:8916
+
+Region 13 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:23741
+Slicing Complete. Time for 0 slices:0.000039
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 15 Naive Size:6804
+Slicing Complete. Time for 8 slices:0.032148
+Simple Reverse Slice Interfer Size:972
+Simple Dep Removal Reverse Slice Size:87951
+Slicing Complete. Time for 0 slices:0.002647
+Simple Forward Slice Interfer Set:910
+Simple Dep Removal Forward Slice Set:5694
+
+Region 14 -> 16 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 18 Naive Size:5572
+Slicing Complete. Time for 0 slices:0.015073
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:87310
+Slicing Complete. Time for 0 slices:0.000067
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:5572
+
+Region 14 -> 20 Naive Size:2842
+Slicing Complete. Time for 0 slices:0.006486
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:2842
+Slicing Complete. Time for 0 slices:0.000021
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:2870
+
+Region 14 -> 21 Naive Size:84205
+Slicing Complete. Time for 0 slices:0.166317
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:85043
+Slicing Complete. Time for 0 slices:0.000065
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:90774
+
+Region 14 -> 22 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:97269
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 26 Naive Size:966
+Time for 1000 slices:0.882631
+Time for 2000 slices:1.158987
+Time for 3000 slices:63.323174
+Time for 4000 slices:63.548608
+Time for 5000 slices:63.764406
+Time for 6000 slices:63.990361
+Time for 7000 slices:64.203295
+Time for 8000 slices:64.433616
+Time for 9000 slices:64.715581
+Time for 10000 slices:65.114421
+Time for 11000 slices:65.289858
+Time for 12000 slices:65.431630
+Time for 13000 slices:65.577221
+Time for 14000 slices:65.721628
+Time for 15000 slices:65.869329
+Time for 16000 slices:66.017242
+Time for 17000 slices:66.163465
+Time for 18000 slices:66.315181
+Time for 19000 slices:66.466496
+Time for 20000 slices:66.623138
+Time for 21000 slices:66.778735
+Time for 22000 slices:66.929866
+Time for 23000 slices:67.083136
+Slicing Complete. Time for 23448 slices:67.151813
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1038
+Slicing Complete. Time for 0 slices:0.000027
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:192943
+
+Region 14 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4957281
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:86365
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:23340
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 14 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:2275
+Slicing Complete. Time for 0 slices:0.000025
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 16 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 18 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:14
+Slicing Complete. Time for 0 slices:0.000011
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 20 Naive Size:518
+Slicing Complete. Time for 0 slices:0.000013
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7922
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:90774
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 22 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:78283
+Slicing Complete. Time for 0 slices:0.000050
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:192943
+Slicing Complete. Time for 0 slices:0.000052
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:2814460
+Slicing Complete. Time for 0 slices:0.000055
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5460777
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:128571
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:163072
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:141017
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:32633
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 15 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:26499
+Slicing Complete. Time for 0 slices:0.000042
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 16 -> 17 Naive Size:138529
+Slicing Complete. Time for 0 slices:0.315878
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:138529
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:138979
+
+Region 16 -> 22 Naive Size:925
+Slicing Complete. Time for 496 slices:6.096748
+Simple Reverse Slice Interfer Size:925
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 12240 slices:3.767684
+Simple Forward Slice Interfer Set:60615
+Simple Dep Removal Forward Slice Set:3057684
+
+Region 16 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4
+Slicing Complete. Time for 0 slices:0.000012
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 16 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:42729
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 16 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:925
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 17 -> 22 Naive Size:139097
+Time for 1000 slices:2.259233
+Time for 2000 slices:2.434189
+Time for 3000 slices:2.598024
+Time for 4000 slices:2.754354
+Time for 5000 slices:2.914062
+Time for 6000 slices:3.078242
+Time for 7000 slices:3.246811
+Time for 8000 slices:3.410950
+Time for 9000 slices:3.580759
+Time for 10000 slices:3.750867
+Time for 11000 slices:3.922795
+Time for 12000 slices:4.092844
+Time for 13000 slices:4.258696
+Time for 14000 slices:4.430992
+Time for 15000 slices:4.602447
+Time for 16000 slices:4.777745
+Time for 17000 slices:4.950588
+Time for 18000 slices:5.128416
+Time for 19000 slices:5.308351
+Time for 20000 slices:5.490652
+Time for 21000 slices:5.670864
+Time for 22000 slices:5.839624
+Time for 23000 slices:6.013343
+Time for 24000 slices:6.186444
+Time for 25000 slices:6.366847
+Time for 26000 slices:6.545097
+Time for 27000 slices:6.722625
+Time for 28000 slices:6.904018
+Time for 29000 slices:7.087228
+Time for 30000 slices:7.276018
+Time for 31000 slices:7.459080
+Time for 32000 slices:7.643564
+Time for 33000 slices:7.829825
+Time for 34000 slices:8.021312
+Time for 35000 slices:8.214720
+Time for 36000 slices:8.406943
+Time for 37000 slices:8.600143
+Time for 38000 slices:8.794592
+Time for 39000 slices:8.994109
+Time for 40000 slices:9.169952
+Time for 41000 slices:9.350327
+Time for 42000 slices:9.531449
+Time for 43000 slices:9.718871
+Time for 44000 slices:9.906675
+Time for 45000 slices:10.092761
+Time for 46000 slices:10.282172
+Time for 47000 slices:10.473308
+Time for 48000 slices:10.669287
+Time for 49000 slices:10.856738
+Time for 50000 slices:11.045613
+Time for 51000 slices:11.233560
+Time for 52000 slices:11.428952
+Time for 53000 slices:11.626371
+Time for 54000 slices:11.822572
+Time for 55000 slices:12.021824
+Time for 56000 slices:12.223741
+Time for 57000 slices:12.431709
+Time for 58000 slices:12.628078
+Time for 59000 slices:12.827616
+Time for 60000 slices:13.027545
+Time for 61000 slices:13.226877
+Time for 62000 slices:13.428033
+Time for 63000 slices:13.628665
+Time for 64000 slices:13.836892
+Time for 65000 slices:14.043011
+Time for 66000 slices:14.253259
+Time for 67000 slices:14.457173
+Time for 68000 slices:68.001488
+Time for 69000 slices:68.159143
+Time for 70000 slices:68.315013
+Time for 71000 slices:68.465700
+Time for 72000 slices:68.616247
+Time for 73000 slices:68.772240
+Time for 74000 slices:68.926005
+Time for 75000 slices:69.082355
+Time for 76000 slices:69.223532
+Time for 77000 slices:69.366295
+Time for 78000 slices:69.511858
+Time for 79000 slices:69.658285
+Time for 80000 slices:69.807752
+Time for 81000 slices:69.955166
+Time for 82000 slices:70.108339
+Time for 83000 slices:70.262890
+Time for 84000 slices:70.421579
+Time for 85000 slices:70.573288
+Time for 86000 slices:70.726531
+Time for 87000 slices:70.882429
+Time for 88000 slices:71.041722
+Time for 89000 slices:71.203296
+Time for 90000 slices:71.359196
+Time for 91000 slices:71.520447
+Time for 92000 slices:71.683338
+Time for 93000 slices:71.851023
+Time for 94000 slices:72.011436
+Time for 95000 slices:72.168728
+Time for 96000 slices:72.329350
+Time for 97000 slices:72.492273
+Time for 98000 slices:72.657457
+Time for 99000 slices:72.821592
+Time for 100000 slices:72.989652
+Time for 101000 slices:73.159386
+Time for 102000 slices:73.332972
+Time for 103000 slices:73.503943
+Time for 104000 slices:73.671420
+Time for 105000 slices:73.843008
+Time for 106000 slices:74.016244
+Time for 107000 slices:74.195032
+Time for 108000 slices:74.370993
+Time for 109000 slices:74.553399
+Time for 110000 slices:74.736328
+Time for 111000 slices:74.922950
+Time for 112000 slices:75.088987
+Time for 113000 slices:75.222264
+Time for 114000 slices:75.357686
+Time for 115000 slices:75.495682
+Time for 116000 slices:75.636262
+Time for 117000 slices:75.773599
+Time for 118000 slices:75.912579
+Time for 119000 slices:76.053543
+Time for 120000 slices:76.198056
+Time for 121000 slices:76.340487
+Time for 122000 slices:76.478671
+Time for 123000 slices:76.621072
+Time for 124000 slices:76.763388
+Time for 125000 slices:76.909862
+Time for 126000 slices:77.054508
+Time for 127000 slices:77.202723
+Time for 128000 slices:77.351261
+Time for 129000 slices:77.500639
+Time for 130000 slices:77.650714
+Time for 131000 slices:77.793182
+Time for 132000 slices:77.939251
+Time for 133000 slices:78.087116
+Time for 134000 slices:78.238941
+Time for 135000 slices:78.390169
+Time for 136000 slices:78.541039
+Time for 137000 slices:78.694340
+Time for 138000 slices:78.848934
+Time for 139000 slices:79.007563
+Time for 140000 slices:79.158811
+Time for 141000 slices:79.312717
+Time for 142000 slices:79.468852
+Time for 143000 slices:79.629182
+Time for 144000 slices:79.790504
+Time for 145000 slices:79.950168
+Time for 146000 slices:80.114507
+Time for 147000 slices:80.278894
+Time for 148000 slices:80.446873
+Time for 149000 slices:80.601910
+Time for 150000 slices:80.755299
+Time for 151000 slices:80.909285
+Time for 152000 slices:81.064920
+Time for 153000 slices:81.223476
+Time for 154000 slices:81.380083
+Time for 155000 slices:81.541651
+Time for 156000 slices:81.701720
+Time for 157000 slices:81.866854
+Time for 158000 slices:82.025114
+Time for 159000 slices:82.184709
+Time for 160000 slices:82.345388
+Time for 161000 slices:82.507694
+Time for 162000 slices:82.673868
+Time for 163000 slices:82.839168
+Time for 164000 slices:83.007192
+Time for 165000 slices:83.174404
+Time for 166000 slices:83.346910
+Time for 167000 slices:83.511516
+Time for 168000 slices:83.675285
+Time for 169000 slices:83.840871
+Time for 170000 slices:84.008932
+Time for 171000 slices:84.180355
+Time for 172000 slices:84.349080
+Time for 173000 slices:131.501946
+Time for 174000 slices:131.642605
+Time for 175000 slices:131.783558
+Time for 176000 slices:131.919359
+Time for 177000 slices:132.049359
+Time for 178000 slices:132.182839
+Time for 179000 slices:132.317098
+Time for 180000 slices:132.456570
+Time for 181000 slices:132.587617
+Time for 182000 slices:132.723787
+Time for 183000 slices:132.860408
+Time for 184000 slices:133.000918
+Time for 185000 slices:133.130734
+Time for 186000 slices:133.252111
+Time for 187000 slices:133.376158
+Time for 188000 slices:133.501521
+Time for 189000 slices:133.630834
+Time for 190000 slices:133.755400
+Time for 191000 slices:133.884145
+Time for 192000 slices:134.013685
+Time for 193000 slices:134.147082
+Time for 194000 slices:134.279622
+Time for 195000 slices:134.410295
+Time for 196000 slices:134.545443
+Time for 197000 slices:134.680815
+Time for 198000 slices:134.820420
+Time for 199000 slices:134.956926
+Time for 200000 slices:135.098430
+Time for 201000 slices:135.240233
+Time for 202000 slices:135.385385
+Time for 203000 slices:135.526409
+Time for 204000 slices:135.663811
+Time for 205000 slices:135.804510
+Time for 206000 slices:135.946427
+Time for 207000 slices:136.092821
+Time for 208000 slices:136.232709
+Time for 209000 slices:136.376145
+Time for 210000 slices:136.521064
+Time for 211000 slices:136.668550
+Time for 212000 slices:136.815173
+Time for 213000 slices:136.961903
+Time for 214000 slices:137.110657
+Time for 215000 slices:137.263371
+Time for 216000 slices:137.418987
+Time for 217000 slices:137.566534
+Time for 218000 slices:137.718683
+Time for 219000 slices:137.872323
+Time for 220000 slices:138.030487
+Time for 221000 slices:138.180078
+Time for 222000 slices:138.320644
+Time for 223000 slices:138.466658
+Time for 224000 slices:138.615664
+Time for 225000 slices:138.768646
+Time for 226000 slices:138.915493
+Time for 227000 slices:139.067175
+Time for 228000 slices:139.219267
+Time for 229000 slices:139.375683
+Time for 230000 slices:139.530191
+Time for 231000 slices:139.683447
+Time for 232000 slices:139.841695
+Time for 233000 slices:140.001350
+Time for 234000 slices:140.165989
+Time for 235000 slices:140.324974
+Time for 236000 slices:140.488180
+Time for 237000 slices:140.657634
+Time for 238000 slices:140.837759
+Slicing Complete. Time for 238215 slices:140.930456
+Simple Reverse Slice Interfer Size:139097
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 325838 slices:471.401850
+Simple Forward Slice Interfer Set:2864269
+Simple Dep Removal Forward Slice Set:123140
+
+Region 17 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 19 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:14
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7922
+Slicing Complete. Time for 0 slices:0.000031
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 21 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:90251
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 26 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:192855
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3415531
+Slicing Complete. Time for 0 slices:0.000067
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:5156021
+Slicing Complete. Time for 0 slices:0.000070
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:128607
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:163072
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:142112
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:32648
+Slicing Complete. Time for 0 slices:0.000058
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 18 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:27425
+Slicing Complete. Time for 0 slices:0.000051
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 20 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:14
+Slicing Complete. Time for 0 slices:0.000014
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 27 Naive Size:0
+Slicing Complete. Time for 22 slices:2.977305
+Simple Reverse Slice Interfer Size:14
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 18382 slices:86.133458
+Simple Forward Slice Interfer Set:1151123
+Simple Dep Removal Forward Slice Set:2147963
+
+Region 19 -> 28 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:36514
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 29 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000362
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:14
+Slicing Complete. Time for 0 slices:0.000011
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:36
+
+Region 19 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:163072
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:42479
+Slicing Complete. Time for 0 slices:0.000048
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:8136
+Slicing Complete. Time for 0 slices:0.000024
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 19 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:23247
+Slicing Complete. Time for 0 slices:0.000033
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 20 -> 21 Naive Size:2870
+Slicing Complete. Time for 0 slices:0.009299
+Simple Reverse Slice Interfer Size:2870
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.002800
+Simple Forward Slice Interfer Set:2870
+Simple Dep Removal Forward Slice Set:356
+
+Region 20 -> 27 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3481777
+Slicing Complete. Time for 0 slices:0.000057
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 20 -> 28 Naive Size:5052
+Time for 1000 slices:2.220031
+Time for 2000 slices:2.771671
+Time for 3000 slices:3.190016
+Slicing Complete. Time for 3765 slices:3.338736
+Simple Reverse Slice Interfer Size:7922
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 1283 slices:6.957131
+Simple Forward Slice Interfer Set:251867
+Simple Dep Removal Forward Slice Set:386250
+
+Region 20 -> 29 Naive Size:0
+Time for 1000 slices:0.612596
+Time for 2000 slices:0.852512
+Time for 3000 slices:1.034258
+Slicing Complete. Time for 3230 slices:1.074624
+Simple Reverse Slice Interfer Size:2068
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 1297 slices:1.261911
+Simple Forward Slice Interfer Set:56374
+Simple Dep Removal Forward Slice Set:72233
+
+Region 20 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 20 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:163072
+Slicing Complete. Time for 0 slices:0.000053
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 20 -> 32 Naive Size:0
+Slicing Complete. Time for 1 slices:0.122115
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:7922
+Slicing Complete. Time for 0 slices:0.000029
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:58875
+
+Region 20 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9484
+Slicing Complete. Time for 0 slices:0.000029
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 20 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:25164
+Slicing Complete. Time for 0 slices:0.000032
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 21 -> 26 Naive Size:77585
+Time for 1000 slices:0.783215
+Time for 2000 slices:1.019121
+Time for 3000 slices:1.249130
+Time for 4000 slices:1.481890
+Time for 5000 slices:1.717570
+Time for 6000 slices:1.972233
+Time for 7000 slices:2.197242
+Time for 8000 slices:2.428515
+Slicing Complete. Time for 8291 slices:2.493780
+Simple Reverse Slice Interfer Size:59
+Simple Dep Removal Reverse Slice Size:77526
+Slicing Complete. Time for 8 slices:0.006780
+Simple Forward Slice Interfer Set:98
+Simple Dep Removal Forward Slice Set:192809
+
+Region 21 -> 28 Naive Size:10319
+Slicing Complete. Time for 22 slices:6.124458
+Simple Reverse Slice Interfer Size:10378
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 1825 slices:21.179437
+Simple Forward Slice Interfer Set:688165
+Simple Dep Removal Forward Slice Set:4107315
+
+Region 21 -> 32 Naive Size:0
+Slicing Complete. Time for 1 slices:0.123457
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:10378
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:86365
+
+Region 21 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:23340
+Slicing Complete. Time for 0 slices:0.000052
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 21 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000011
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:2274
+Slicing Complete. Time for 0 slices:0.000025
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 22 -> 23 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:15301
+Slicing Complete. Time for 0 slices:0.000023
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 22 -> 26 Naive Size:4
+Slicing Complete. Time for 3 slices:0.175195
+Simple Reverse Slice Interfer Size:4
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 227 slices:0.177288
+Simple Forward Slice Interfer Set:5510
+Simple Dep Removal Forward Slice Set:108867
+
+Region 22 -> 28 Naive Size:42729
+Time for 1000 slices:0.789524
+Time for 2000 slices:1.096754
+Time for 3000 slices:1.397899
+Slicing Complete. Time for 3931 slices:1.625518
+Simple Reverse Slice Interfer Size:97269
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.030072
+Simple Forward Slice Interfer Set:42729
+Simple Dep Removal Forward Slice Set:0
+
+Region 22 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000011
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:151801
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 23 -> 24 Naive Size:292146
+Time for 1000 slices:1.705473
+Time for 2000 slices:1.979119
+Time for 3000 slices:2.267839
+Time for 4000 slices:2.547259
+Time for 5000 slices:2.820873
+Time for 6000 slices:3.103062
+Time for 7000 slices:3.374874
+Time for 8000 slices:3.655405
+Time for 9000 slices:3.925910
+Time for 10000 slices:4.110931
+Time for 11000 slices:4.301825
+Time for 12000 slices:4.486746
+Time for 13000 slices:4.680690
+Time for 14000 slices:4.868932
+Time for 15000 slices:5.054542
+Time for 16000 slices:5.250880
+Time for 17000 slices:5.442632
+Time for 18000 slices:5.641255
+Time for 19000 slices:5.836411
+Time for 20000 slices:6.033236
+Time for 21000 slices:6.234158
+Time for 22000 slices:6.435004
+Time for 23000 slices:6.639312
+Time for 24000 slices:6.842676
+Time for 25000 slices:7.032015
+Time for 26000 slices:7.229642
+Time for 27000 slices:7.420204
+Time for 28000 slices:7.617347
+Time for 29000 slices:7.812799
+Time for 30000 slices:8.009117
+Time for 31000 slices:8.209222
+Time for 32000 slices:8.407085
+Time for 33000 slices:8.609117
+Time for 34000 slices:8.808342
+Time for 35000 slices:9.004401
+Time for 36000 slices:9.208892
+Time for 37000 slices:9.410730
+Time for 38000 slices:9.618146
+Time for 39000 slices:9.821863
+Time for 40000 slices:10.022951
+Time for 41000 slices:10.228892
+Time for 42000 slices:10.434257
+Time for 43000 slices:10.645041
+Time for 44000 slices:10.851053
+Time for 45000 slices:11.050397
+Time for 46000 slices:69.392590
+Time for 47000 slices:69.543069
+Time for 48000 slices:69.693630
+Time for 49000 slices:69.843983
+Time for 50000 slices:69.992854
+Time for 51000 slices:70.144824
+Time for 52000 slices:70.295626
+Time for 53000 slices:70.456226
+Time for 54000 slices:70.614641
+Time for 55000 slices:70.767510
+Time for 56000 slices:70.926163
+Time for 57000 slices:71.081586
+Time for 58000 slices:71.241567
+Time for 59000 slices:71.402382
+Time for 60000 slices:71.562560
+Time for 61000 slices:71.730136
+Time for 62000 slices:71.895546
+Time for 63000 slices:72.066195
+Time for 64000 slices:72.226115
+Time for 65000 slices:72.364907
+Time for 66000 slices:72.507423
+Time for 67000 slices:72.650774
+Time for 68000 slices:72.794639
+Time for 69000 slices:72.939651
+Time for 70000 slices:73.085046
+Time for 71000 slices:73.231164
+Time for 72000 slices:73.376556
+Time for 73000 slices:73.526980
+Time for 74000 slices:73.677159
+Time for 75000 slices:73.823898
+Time for 76000 slices:73.971644
+Time for 77000 slices:74.119579
+Time for 78000 slices:74.273138
+Time for 79000 slices:74.431393
+Time for 80000 slices:74.578499
+Time for 81000 slices:74.727545
+Time for 82000 slices:74.879852
+Time for 83000 slices:75.033668
+Time for 84000 slices:75.195012
+Time for 85000 slices:75.338696
+Time for 86000 slices:75.486774
+Time for 87000 slices:75.638915
+Time for 88000 slices:75.791872
+Time for 89000 slices:75.948261
+Time for 90000 slices:76.095515
+Time for 91000 slices:76.249597
+Time for 92000 slices:76.404015
+Time for 93000 slices:76.561178
+Time for 94000 slices:76.722907
+Time for 95000 slices:76.872568
+Time for 96000 slices:77.029210
+Time for 97000 slices:77.188735
+Time for 98000 slices:77.351580
+Time for 99000 slices:77.516275
+Time for 100000 slices:77.674349
+Time for 101000 slices:77.835358
+Time for 102000 slices:78.000233
+Time for 103000 slices:78.165255
+Time for 104000 slices:78.336152
+Time for 105000 slices:78.492234
+Time for 106000 slices:78.650400
+Time for 107000 slices:78.813278
+Time for 108000 slices:78.977388
+Time for 109000 slices:79.145434
+Time for 110000 slices:79.313699
+Time for 111000 slices:79.481100
+Time for 112000 slices:79.650598
+Time for 113000 slices:79.818111
+Time for 114000 slices:79.990115
+Time for 115000 slices:80.155782
+Time for 116000 slices:80.321658
+Time for 117000 slices:80.491633
+Time for 118000 slices:80.661516
+Time for 119000 slices:80.833731
+Time for 120000 slices:81.003728
+Time for 121000 slices:81.179381
+Time for 122000 slices:81.356854
+Time for 123000 slices:81.532434
+Time for 124000 slices:81.708769
+Time for 125000 slices:81.879373
+Time for 126000 slices:82.052555
+Time for 127000 slices:82.228296
+Time for 128000 slices:82.399869
+Time for 129000 slices:82.577244
+Time for 130000 slices:82.753481
+Time for 131000 slices:82.931790
+Time for 132000 slices:83.113659
+Time for 133000 slices:83.291928
+Time for 134000 slices:83.475326
+Time for 135000 slices:83.655969
+Time for 136000 slices:83.838064
+Time for 137000 slices:84.024269
+Time for 138000 slices:84.207816
+Time for 139000 slices:84.391651
+Time for 140000 slices:84.575577
+Time for 141000 slices:84.760178
+Time for 142000 slices:84.949786
+Time for 143000 slices:85.143597
+Time for 144000 slices:85.342442
+Time for 145000 slices:85.522599
+Time for 146000 slices:85.701873
+Time for 147000 slices:85.884009
+Time for 148000 slices:86.068834
+Time for 149000 slices:86.253176
+Time for 150000 slices:86.434482
+Time for 151000 slices:133.957868
+Time for 152000 slices:134.102146
+Time for 153000 slices:134.243627
+Time for 154000 slices:134.387807
+Time for 155000 slices:134.525387
+Time for 156000 slices:134.661961
+Time for 157000 slices:134.805342
+Time for 158000 slices:134.949744
+Time for 159000 slices:135.095511
+Time for 160000 slices:135.237138
+Time for 161000 slices:135.381267
+Time for 162000 slices:135.527439
+Time for 163000 slices:135.675254
+Time for 164000 slices:135.827075
+Time for 165000 slices:135.971218
+Time for 166000 slices:136.114750
+Time for 167000 slices:136.265964
+Time for 168000 slices:136.604247
+Time for 169000 slices:136.821413
+Time for 170000 slices:137.030579
+Time for 171000 slices:137.240685
+Time for 172000 slices:137.459626
+Time for 173000 slices:137.678280
+Time for 174000 slices:137.910472
+Time for 175000 slices:138.123120
+Time for 176000 slices:138.335641
+Time for 177000 slices:138.552149
+Time for 178000 slices:138.768250
+Time for 179000 slices:138.990925
+Time for 180000 slices:139.207452
+Time for 181000 slices:139.427468
+Time for 182000 slices:139.663389
+Time for 183000 slices:139.899287
+Time for 184000 slices:140.141312
+Time for 185000 slices:140.355390
+Time for 186000 slices:140.570647
+Time for 187000 slices:140.792170
+Time for 188000 slices:141.019762
+Time for 189000 slices:141.250812
+Time for 190000 slices:141.470537
+Time for 191000 slices:141.689598
+Time for 192000 slices:141.919975
+Time for 193000 slices:142.155987
+Time for 194000 slices:142.401482
+Time for 195000 slices:142.632347
+Time for 196000 slices:142.863533
+Time for 197000 slices:143.088245
+Time for 198000 slices:143.248707
+Time for 199000 slices:143.411589
+Time for 200000 slices:143.577043
+Time for 201000 slices:143.744017
+Time for 202000 slices:143.907747
+Time for 203000 slices:144.074123
+Time for 204000 slices:144.242963
+Time for 205000 slices:144.406171
+Time for 206000 slices:144.569678
+Time for 207000 slices:144.738607
+Time for 208000 slices:144.907024
+Time for 209000 slices:145.079553
+Time for 210000 slices:145.252037
+Time for 211000 slices:145.422331
+Time for 212000 slices:145.598914
+Time for 213000 slices:145.770775
+Time for 214000 slices:145.943980
+Time for 215000 slices:146.113708
+Time for 216000 slices:146.279897
+Time for 217000 slices:146.450042
+Time for 218000 slices:146.617962
+Time for 219000 slices:146.793033
+Time for 220000 slices:146.971503
+Time for 221000 slices:147.145903
+Time for 222000 slices:147.327293
+Time for 223000 slices:147.508640
+Time for 224000 slices:147.690601
+Time for 225000 slices:147.878113
+Time for 226000 slices:148.059076
+Time for 227000 slices:148.240840
+Time for 228000 slices:148.424826
+Time for 229000 slices:148.610955
+Time for 230000 slices:148.797073
+Time for 231000 slices:148.977020
+Time for 232000 slices:149.160551
+Time for 233000 slices:149.344453
+Time for 234000 slices:149.535192
+Time for 235000 slices:149.730817
+Time for 236000 slices:149.912753
+Time for 237000 slices:150.094633
+Time for 238000 slices:150.277032
+Time for 239000 slices:150.465644
+Slicing Complete. Time for 239089 slices:150.484963
+Simple Reverse Slice Interfer Size:292146
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.060487
+Simple Forward Slice Interfer Set:12700
+Simple Dep Removal Forward Slice Set:1700861
+
+Region 23 -> 25 Naive Size:329451
+Time for 1000 slices:2.023580
+Time for 2000 slices:2.314456
+Time for 3000 slices:2.619533
+Time for 4000 slices:2.917756
+Time for 5000 slices:3.214422
+Time for 6000 slices:3.517213
+Time for 7000 slices:3.806177
+Time for 8000 slices:56.720232
+Time for 9000 slices:56.942750
+Time for 10000 slices:57.088808
+Time for 11000 slices:57.240699
+Time for 12000 slices:57.385937
+Time for 13000 slices:57.539091
+Time for 14000 slices:57.686221
+Time for 15000 slices:57.830344
+Time for 16000 slices:57.984171
+Time for 17000 slices:58.135386
+Time for 18000 slices:58.293968
+Time for 19000 slices:58.448146
+Time for 20000 slices:58.603337
+Time for 21000 slices:58.762832
+Time for 22000 slices:58.922039
+Time for 23000 slices:59.084725
+Time for 24000 slices:59.240579
+Time for 25000 slices:59.391275
+Time for 26000 slices:59.548570
+Time for 27000 slices:59.698811
+Time for 28000 slices:59.855735
+Time for 29000 slices:60.011425
+Time for 30000 slices:60.167280
+Time for 31000 slices:60.327201
+Time for 32000 slices:60.486095
+Time for 33000 slices:60.648875
+Time for 34000 slices:60.808575
+Time for 35000 slices:60.965871
+Time for 36000 slices:61.131337
+Time for 37000 slices:61.292104
+Time for 38000 slices:61.457929
+Time for 39000 slices:61.621555
+Time for 40000 slices:61.783115
+Time for 41000 slices:61.948288
+Time for 42000 slices:62.113261
+Time for 43000 slices:62.283301
+Time for 44000 slices:62.448849
+Time for 45000 slices:62.609108
+Time for 46000 slices:62.773815
+Time for 47000 slices:62.938057
+Time for 48000 slices:63.105382
+Time for 49000 slices:63.274786
+Time for 50000 slices:63.444964
+Time for 51000 slices:63.618528
+Time for 52000 slices:63.793239
+Time for 53000 slices:63.977460
+Time for 54000 slices:64.158432
+Time for 55000 slices:64.333935
+Time for 56000 slices:64.515574
+Time for 57000 slices:64.694335
+Time for 58000 slices:64.879490
+Time for 59000 slices:65.063487
+Time for 60000 slices:65.247398
+Time for 61000 slices:65.437931
+Time for 62000 slices:65.625810
+Time for 63000 slices:65.819618
+Time for 64000 slices:66.001036
+Time for 65000 slices:66.158720
+Time for 66000 slices:66.320070
+Time for 67000 slices:66.482527
+Time for 68000 slices:66.644855
+Time for 69000 slices:66.808356
+Time for 70000 slices:66.971251
+Time for 71000 slices:67.135851
+Time for 72000 slices:67.298977
+Time for 73000 slices:67.467125
+Time for 74000 slices:67.634902
+Time for 75000 slices:67.798381
+Time for 76000 slices:67.964233
+Time for 77000 slices:68.130769
+Time for 78000 slices:68.302808
+Time for 79000 slices:68.479568
+Time for 80000 slices:68.644588
+Time for 81000 slices:68.811977
+Time for 82000 slices:68.982523
+Time for 83000 slices:69.154592
+Time for 84000 slices:69.335016
+Time for 85000 slices:69.498172
+Time for 86000 slices:69.665968
+Time for 87000 slices:69.838015
+Time for 88000 slices:70.010337
+Time for 89000 slices:70.185835
+Time for 90000 slices:70.352304
+Time for 91000 slices:70.525451
+Time for 92000 slices:70.698749
+Time for 93000 slices:70.874565
+Time for 94000 slices:71.055048
+Time for 95000 slices:71.223700
+Time for 96000 slices:71.399175
+Time for 97000 slices:71.577691
+Time for 98000 slices:71.759473
+Time for 99000 slices:71.943191
+Time for 100000 slices:72.120484
+Time for 101000 slices:72.300046
+Time for 102000 slices:72.483244
+Time for 103000 slices:72.667289
+Time for 104000 slices:72.857547
+Time for 105000 slices:73.035450
+Time for 106000 slices:73.214225
+Time for 107000 slices:73.397061
+Time for 108000 slices:73.582012
+Time for 109000 slices:73.770790
+Time for 110000 slices:73.960141
+Time for 111000 slices:74.150001
+Time for 112000 slices:121.866920
+Time for 113000 slices:122.011697
+Time for 114000 slices:122.157646
+Time for 115000 slices:122.293890
+Time for 116000 slices:122.429648
+Time for 117000 slices:122.569684
+Time for 118000 slices:122.708091
+Time for 119000 slices:122.848765
+Time for 120000 slices:122.988430
+Time for 121000 slices:123.132564
+Time for 122000 slices:123.279047
+Time for 123000 slices:123.424559
+Time for 124000 slices:123.570724
+Time for 125000 slices:123.709797
+Time for 126000 slices:123.850652
+Time for 127000 slices:123.993513
+Time for 128000 slices:124.132671
+Time for 129000 slices:124.278134
+Time for 130000 slices:124.423002
+Time for 131000 slices:124.569392
+Time for 132000 slices:124.718595
+Time for 133000 slices:124.865250
+Time for 134000 slices:125.017309
+Time for 135000 slices:125.165965
+Time for 136000 slices:125.315805
+Time for 137000 slices:125.467061
+Time for 138000 slices:125.619362
+Time for 139000 slices:125.771984
+Time for 140000 slices:125.923579
+Time for 141000 slices:126.076431
+Time for 142000 slices:126.233158
+Time for 143000 slices:126.392477
+Time for 144000 slices:126.554493
+Time for 145000 slices:126.703218
+Time for 146000 slices:126.850906
+Time for 147000 slices:127.001752
+Time for 148000 slices:127.157277
+Time for 149000 slices:127.310868
+Time for 150000 slices:127.459914
+Time for 151000 slices:127.612904
+Time for 152000 slices:127.768399
+Time for 153000 slices:127.924041
+Time for 154000 slices:128.084279
+Time for 155000 slices:128.239719
+Time for 156000 slices:128.394484
+Time for 157000 slices:128.556412
+Time for 158000 slices:128.719508
+Time for 159000 slices:128.883081
+Time for 160000 slices:129.042643
+Time for 161000 slices:129.204957
+Time for 162000 slices:129.369296
+Time for 163000 slices:129.536453
+Time for 164000 slices:129.706986
+Time for 165000 slices:129.870785
+Time for 166000 slices:130.034230
+Time for 167000 slices:130.204587
+Time for 168000 slices:130.564762
+Time for 169000 slices:130.801236
+Time for 170000 slices:131.031046
+Time for 171000 slices:131.262334
+Time for 172000 slices:131.501843
+Time for 173000 slices:131.740678
+Time for 174000 slices:131.992683
+Time for 175000 slices:132.226133
+Time for 176000 slices:132.461135
+Time for 177000 slices:132.700054
+Time for 178000 slices:132.939008
+Time for 179000 slices:133.181959
+Time for 180000 slices:133.418382
+Time for 181000 slices:133.659539
+Time for 182000 slices:133.916177
+Time for 183000 slices:134.172953
+Time for 184000 slices:134.435468
+Time for 185000 slices:134.669709
+Time for 186000 slices:134.905216
+Time for 187000 slices:135.146024
+Time for 188000 slices:135.393681
+Time for 189000 slices:135.645076
+Time for 190000 slices:135.886071
+Time for 191000 slices:136.125649
+Time for 192000 slices:136.376186
+Time for 193000 slices:136.632218
+Time for 194000 slices:136.896949
+Time for 195000 slices:137.148239
+Time for 196000 slices:137.400766
+Time for 197000 slices:137.645423
+Time for 198000 slices:137.824955
+Time for 199000 slices:138.005448
+Time for 200000 slices:138.186020
+Time for 201000 slices:138.367609
+Time for 202000 slices:138.547469
+Time for 203000 slices:138.729563
+Time for 204000 slices:138.914113
+Time for 205000 slices:139.092403
+Time for 206000 slices:139.271064
+Time for 207000 slices:139.455610
+Time for 208000 slices:139.639595
+Time for 209000 slices:139.828171
+Time for 210000 slices:140.014446
+Time for 211000 slices:140.200836
+Time for 212000 slices:140.393813
+Time for 213000 slices:140.582499
+Time for 214000 slices:140.771697
+Time for 215000 slices:188.566181
+Time for 216000 slices:188.706569
+Time for 217000 slices:188.848685
+Time for 218000 slices:188.985753
+Time for 219000 slices:189.129367
+Time for 220000 slices:189.274493
+Time for 221000 slices:189.414282
+Time for 222000 slices:189.561269
+Time for 223000 slices:189.707751
+Time for 224000 slices:189.855123
+Time for 225000 slices:190.008009
+Time for 226000 slices:190.153115
+Time for 227000 slices:190.299794
+Time for 228000 slices:190.448226
+Time for 229000 slices:190.598800
+Time for 230000 slices:190.749513
+Time for 231000 slices:190.894381
+Time for 232000 slices:191.043466
+Time for 233000 slices:191.192834
+Time for 234000 slices:191.346717
+Time for 235000 slices:191.505067
+Time for 236000 slices:191.651527
+Time for 237000 slices:191.797950
+Time for 238000 slices:191.944874
+Time for 239000 slices:192.098884
+Slicing Complete. Time for 239089 slices:192.115085
+Simple Reverse Slice Interfer Size:1021
+Simple Dep Removal Reverse Slice Size:328430
+Slicing Complete. Time for 290761 slices:188.175484
+Simple Forward Slice Interfer Set:123591
+Simple Dep Removal Forward Slice Set:2086352
+
+Region 24 -> 25 Naive Size:18
+Slicing Complete. Time for 102 slices:0.403847
+Simple Reverse Slice Interfer Size:1039
+Simple Dep Removal Reverse Slice Size:217443
+Slicing Complete. Time for 173084 slices:139.178670
+Simple Forward Slice Interfer Set:400538
+Simple Dep Removal Forward Slice Set:115139
+
+Region 26 -> 28 Naive Size:192939
+Time for 1000 slices:5.998895
+Time for 2000 slices:6.311087
+Time for 3000 slices:6.618444
+Slicing Complete. Time for 3931 slices:6.856493
+Simple Reverse Slice Interfer Size:192943
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 2790 slices:107.803714
+Simple Forward Slice Interfer Set:1690541
+Simple Dep Removal Forward Slice Set:2545603
+
+Region 26 -> 32 Naive Size:0
+Time for 1000 slices:0.722304
+Time for 2000 slices:0.937109
+Time for 3000 slices:1.141477
+Time for 4000 slices:1.346783
+Slicing Complete. Time for 4822 slices:1.507715
+Simple Reverse Slice Interfer Size:28453
+Simple Dep Removal Reverse Slice Size:42041
+Slicing Complete. Time for 8 slices:0.265305
+Simple Forward Slice Interfer Set:12259
+Simple Dep Removal Forward Slice Set:180284
+
+Region 26 -> 33 Naive Size:0
+Time for 1000 slices:0.569765
+Time for 2000 slices:0.740235
+Time for 3000 slices:0.910320
+Time for 4000 slices:1.087773
+Time for 5000 slices:1.282414
+Time for 6000 slices:1.503004
+Slicing Complete. Time for 6924 slices:1.681809
+Simple Reverse Slice Interfer Size:1660
+Simple Dep Removal Reverse Slice Size:9725
+Slicing Complete. Time for 13 slices:0.053010
+Simple Forward Slice Interfer Set:1897
+Simple Dep Removal Forward Slice Set:190870
+
+Region 26 -> 34 Naive Size:0
+Time for 1000 slices:0.527384
+Time for 2000 slices:0.686232
+Time for 3000 slices:0.849035
+Time for 4000 slices:1.014818
+Time for 5000 slices:1.184254
+Time for 6000 slices:1.361786
+Time for 7000 slices:1.545202
+Time for 8000 slices:1.769665
+Time for 9000 slices:2.044637
+Time for 10000 slices:2.436996
+Time for 11000 slices:2.618746
+Time for 12000 slices:2.764679
+Time for 13000 slices:2.914722
+Time for 14000 slices:3.063177
+Time for 15000 slices:3.215539
+Time for 16000 slices:3.368638
+Time for 17000 slices:3.521114
+Time for 18000 slices:3.678604
+Time for 19000 slices:3.833541
+Time for 20000 slices:3.992671
+Time for 21000 slices:4.151207
+Time for 22000 slices:4.306372
+Time for 23000 slices:4.462151
+Time for 24000 slices:4.616497
+Time for 25000 slices:4.773210
+Time for 26000 slices:4.937168
+Time for 27000 slices:5.100660
+Time for 28000 slices:5.266450
+Time for 29000 slices:5.431207
+Time for 30000 slices:5.599472
+Time for 31000 slices:5.757465
+Slicing Complete. Time for 31985 slices:5.905869
+Simple Reverse Slice Interfer Size:451
+Simple Dep Removal Reverse Slice Size:282
+Slicing Complete. Time for 13 slices:0.165594
+Simple Forward Slice Interfer Set:6679
+Simple Dep Removal Forward Slice Set:186264
+
+Region 27 -> 29 Naive Size:11472
+Slicing Complete. Time for 22 slices:2.965217
+Simple Reverse Slice Interfer Size:36
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 4507 slices:2.000307
+Simple Forward Slice Interfer Set:89026
+Simple Dep Removal Forward Slice Set:3183782
+
+Region 27 -> 30 Naive Size:46127
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3284659
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 27 -> 31 Naive Size:163072
+Slicing Complete. Time for 22 slices:1.942483
+Simple Reverse Slice Interfer Size:163072
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 22866 slices:38.679225
+Simple Forward Slice Interfer Set:1405778
+Simple Dep Removal Forward Slice Set:1263211
+
+Region 27 -> 32 Naive Size:28351
+Slicing Complete. Time for 22 slices:2.243795
+Simple Reverse Slice Interfer Size:29563
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 7282 slices:38.410075
+Simple Forward Slice Interfer Set:1686273
+Simple Dep Removal Forward Slice Set:1586535
+
+Region 27 -> 33 Naive Size:2059
+Slicing Complete. Time for 22 slices:2.286522
+Simple Reverse Slice Interfer Size:6750
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 6111 slices:35.717392
+Simple Forward Slice Interfer Set:1573526
+Simple Dep Removal Forward Slice Set:1527482
+
+Region 27 -> 34 Naive Size:21529
+Slicing Complete. Time for 22 slices:2.411854
+Simple Reverse Slice Interfer Size:21529
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 30766 slices:103.198364
+Simple Forward Slice Interfer Set:1693460
+Simple Dep Removal Forward Slice Set:1664921
+
+Region 28 -> 29 Naive Size:169910
+Time for 1000 slices:0.862311
+Time for 2000 slices:1.131247
+Time for 3000 slices:1.329361
+Slicing Complete. Time for 3230 slices:1.373317
+Simple Reverse Slice Interfer Size:128571
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 593 slices:1.291200
+Simple Forward Slice Interfer Set:184183
+Simple Dep Removal Forward Slice Set:57242
+
+Region 28 -> 30 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:9
+Slicing Complete. Time for 0 slices:0.000011
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 28 -> 32 Naive Size:100913
+Time for 1000 slices:6.466598
+Time for 2000 slices:7.099678
+Time for 3000 slices:7.604836
+Time for 4000 slices:7.868180
+Slicing Complete. Time for 4829 slices:8.001246
+Simple Reverse Slice Interfer Size:58226
+Simple Dep Removal Reverse Slice Size:646
+Slicing Complete. Time for 2797 slices:42.027824
+Simple Forward Slice Interfer Set:1410775
+Simple Dep Removal Forward Slice Set:3042747
+
+Region 28 -> 33 Naive Size:11913
+Time for 1000 slices:5.594402
+Time for 2000 slices:6.170722
+Time for 3000 slices:6.634635
+Time for 4000 slices:6.885893
+Slicing Complete. Time for 4830 slices:7.018415
+Simple Reverse Slice Interfer Size:3781
+Simple Dep Removal Reverse Slice Size:51
+Slicing Complete. Time for 2829 slices:39.444506
+Simple Forward Slice Interfer Set:1398561
+Simple Dep Removal Forward Slice Set:3491255
+
+Region 28 -> 34 Naive Size:4454
+Time for 1000 slices:7.141669
+Time for 2000 slices:7.852939
+Time for 3000 slices:8.354952
+Time for 4000 slices:8.625016
+Slicing Complete. Time for 4830 slices:8.761605
+Simple Reverse Slice Interfer Size:4172
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 2803 slices:37.874460
+Simple Forward Slice Interfer Set:1399848
+Simple Dep Removal Forward Slice Set:4060929
+
+Region 29 -> 30 Naive Size:728
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:36
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 29 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000014
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:163072
+Slicing Complete. Time for 0 slices:0.000057
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 29 -> 32 Naive Size:0
+Time for 1000 slices:0.647405
+Time for 2000 slices:0.923236
+Time for 3000 slices:1.134346
+Slicing Complete. Time for 3230 slices:1.181245
+Simple Reverse Slice Interfer Size:3528
+Simple Dep Removal Reverse Slice Size:46600
+Slicing Complete. Time for 1270 slices:1.543927
+Simple Forward Slice Interfer Set:64495
+Simple Dep Removal Forward Slice Set:64112
+
+Region 29 -> 33 Naive Size:0
+Time for 1000 slices:0.621502
+Time for 2000 slices:0.879945
+Time for 3000 slices:1.073973
+Slicing Complete. Time for 3230 slices:1.117044
+Simple Reverse Slice Interfer Size:356
+Simple Dep Removal Reverse Slice Size:3930
+Slicing Complete. Time for 1270 slices:1.489734
+Simple Forward Slice Interfer Set:63107
+Simple Dep Removal Forward Slice Set:65500
+
+Region 29 -> 34 Naive Size:0
+Time for 1000 slices:0.620531
+Time for 2000 slices:0.880143
+Time for 3000 slices:1.074852
+Slicing Complete. Time for 3230 slices:1.118119
+Simple Reverse Slice Interfer Size:174
+Simple Dep Removal Reverse Slice Size:23577
+Slicing Complete. Time for 1297 slices:1.524610
+Simple Forward Slice Interfer Set:62427
+Simple Dep Removal Forward Slice Set:66180
+
+Region 30 -> 31 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:161860
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 30 -> 32 Naive Size:191
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 30 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 30 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 31 -> 32 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:161860
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 31 -> 33 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:161860
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 31 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:161860
+Slicing Complete. Time for 0 slices:0.000062
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 32 -> 33 Naive Size:1228
+Slicing Complete. Time for 1 slices:0.089004
+Simple Reverse Slice Interfer Size:2302
+Simple Dep Removal Reverse Slice Size:836
+Slicing Complete. Time for 7 slices:0.018275
+Simple Forward Slice Interfer Set:3704
+Simple Dep Removal Forward Slice Set:49121
+
+Region 32 -> 34 Naive Size:1444
+Slicing Complete. Time for 1 slices:0.079822
+Simple Reverse Slice Interfer Size:507
+Simple Dep Removal Reverse Slice Size:3061
+Slicing Complete. Time for 7 slices:0.011377
+Simple Forward Slice Interfer Set:1206
+Simple Dep Removal Forward Slice Set:51619
+
+Region 33 -> 34 Naive Size:0
+Slicing Complete. Time for 0 slices:0.001343
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:507
+Slicing Complete. Time for 0 slices:0.000020
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:2302
+
+Region 35 -> 36 Naive Size:0
+Slicing Complete. Time for 0 slices:0.649141
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1287447
+Slicing Complete. Time for 0 slices:0.000068
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:1223767
+
+Region 35 -> 37 Naive Size:0
+Time for 1000 slices:242.337569
+Time for 2000 slices:249.719311
+Time for 3000 slices:256.849776
+Time for 4000 slices:263.976798
+Time for 5000 slices:269.678872
+Time for 6000 slices:273.741660
+Time for 7000 slices:278.202405
+Time for 8000 slices:285.207109
+Time for 9000 slices:293.847432
+Time for 10000 slices:368.008439
+Time for 11000 slices:374.617351
+Time for 12000 slices:382.714402
+Time for 13000 slices:400.646737
+Time for 14000 slices:463.343643
+Time for 15000 slices:466.142398
+Time for 16000 slices:468.271425
+Time for 17000 slices:470.301375
+Time for 18000 slices:471.800232
+Time for 19000 slices:472.398743
+Time for 20000 slices:472.949969
+Time for 21000 slices:473.489814
+Time for 22000 slices:474.044615
+Time for 23000 slices:474.596460
+Time for 24000 slices:475.120268
+Time for 25000 slices:475.625353
+Time for 26000 slices:475.975899
+Time for 27000 slices:476.270512
+Time for 28000 slices:476.568212
+Time for 29000 slices:476.851341
+Time for 30000 slices:526.185639
+Time for 31000 slices:526.410998
+Time for 32000 slices:526.627167
+Time for 33000 slices:526.842107
+Time for 34000 slices:527.059770
+Time for 35000 slices:527.282674
+Time for 36000 slices:527.499743
+Time for 37000 slices:527.719298
+Time for 38000 slices:527.942140
+Time for 39000 slices:528.169486
+Time for 40000 slices:528.395595
+Time for 41000 slices:528.623128
+Time for 42000 slices:528.851687
+Time for 43000 slices:529.082161
+Time for 44000 slices:529.308151
+Time for 45000 slices:529.539904
+Time for 46000 slices:529.773881
+Time for 47000 slices:530.009398
+Time for 48000 slices:530.248628
+Time for 49000 slices:530.491292
+Time for 50000 slices:530.740350
+Time for 51000 slices:530.976746
+Time for 52000 slices:531.218744
+Time for 53000 slices:531.462327
+Time for 54000 slices:531.710789
+Time for 55000 slices:531.962851
+Time for 56000 slices:532.215635
+Time for 57000 slices:532.473274
+Time for 58000 slices:532.728788
+Time for 59000 slices:532.983113
+Time for 60000 slices:533.241407
+Time for 61000 slices:533.496245
+Time for 62000 slices:533.753391
+Time for 63000 slices:534.015796
+Time for 64000 slices:534.254675
+Time for 65000 slices:534.418918
+Time for 66000 slices:534.583031
+Time for 67000 slices:534.746351
+Time for 68000 slices:534.913226
+Time for 69000 slices:535.081558
+Time for 70000 slices:535.248237
+Time for 71000 slices:535.402384
+Time for 72000 slices:535.559738
+Time for 73000 slices:535.717537
+Time for 74000 slices:535.878180
+Time for 75000 slices:536.038722
+Time for 76000 slices:536.202239
+Time for 77000 slices:536.366126
+Time for 78000 slices:536.529742
+Time for 79000 slices:536.702213
+Time for 80000 slices:536.868971
+Time for 81000 slices:537.033403
+Time for 82000 slices:537.204293
+Time for 83000 slices:537.376259
+Time for 84000 slices:537.552927
+Time for 85000 slices:537.723669
+Time for 86000 slices:537.896518
+Time for 87000 slices:538.070905
+Time for 88000 slices:538.243811
+Time for 89000 slices:538.418042
+Time for 90000 slices:538.594362
+Time for 91000 slices:538.773092
+Time for 92000 slices:538.944865
+Time for 93000 slices:539.114262
+Time for 94000 slices:539.286546
+Time for 95000 slices:539.458901
+Time for 96000 slices:539.632867
+Time for 97000 slices:539.808564
+Time for 98000 slices:539.984525
+Time for 99000 slices:540.156921
+Time for 100000 slices:588.464941
+Time for 101000 slices:588.605516
+Time for 102000 slices:588.745492
+Time for 103000 slices:588.884979
+Time for 104000 slices:589.019585
+Time for 105000 slices:589.153415
+Time for 106000 slices:589.290236
+Time for 107000 slices:589.426210
+Time for 108000 slices:589.565366
+Time for 109000 slices:589.704787
+Time for 110000 slices:589.844099
+Time for 111000 slices:589.984626
+Time for 112000 slices:590.127443
+Time for 113000 slices:590.270757
+Time for 114000 slices:590.415850
+Time for 115000 slices:590.548551
+Time for 116000 slices:590.679786
+Time for 117000 slices:590.812881
+Time for 118000 slices:590.945489
+Time for 119000 slices:591.080722
+Time for 120000 slices:591.216757
+Time for 121000 slices:591.352191
+Time for 122000 slices:591.488515
+Time for 123000 slices:591.626290
+Time for 124000 slices:591.766268
+Time for 125000 slices:591.909230
+Time for 126000 slices:592.045023
+Time for 127000 slices:592.184981
+Time for 128000 slices:592.325588
+Time for 129000 slices:592.467418
+Time for 130000 slices:592.614508
+Time for 131000 slices:592.771495
+Time for 132000 slices:592.921787
+Time for 133000 slices:593.069335
+Time for 134000 slices:593.215982
+Time for 135000 slices:593.365417
+Time for 136000 slices:593.512236
+Time for 137000 slices:593.655875
+Time for 138000 slices:593.799732
+Time for 139000 slices:593.945340
+Time for 140000 slices:594.092228
+Time for 141000 slices:594.242012
+Time for 142000 slices:594.389056
+Time for 143000 slices:594.539098
+Time for 144000 slices:594.690444
+Time for 145000 slices:594.843601
+Time for 146000 slices:594.999013
+Time for 147000 slices:595.148759
+Time for 148000 slices:595.300066
+Time for 149000 slices:595.454249
+Time for 150000 slices:595.610349
+Time for 151000 slices:595.767931
+Time for 152000 slices:595.924737
+Time for 153000 slices:596.082457
+Time for 154000 slices:596.243840
+Time for 155000 slices:596.403888
+Time for 156000 slices:596.567633
+Time for 157000 slices:596.728645
+Time for 158000 slices:596.885412
+Time for 159000 slices:597.043414
+Time for 160000 slices:597.205581
+Time for 161000 slices:597.363358
+Time for 162000 slices:597.523416
+Time for 163000 slices:597.680896
+Time for 164000 slices:597.841132
+Time for 165000 slices:598.002974
+Time for 166000 slices:598.166385
+Time for 167000 slices:598.333062
+Time for 168000 slices:598.492094
+Time for 169000 slices:598.654817
+Time for 170000 slices:598.820659
+Time for 171000 slices:598.986707
+Time for 172000 slices:599.154939
+Time for 173000 slices:599.320867
+Time for 174000 slices:599.489309
+Time for 175000 slices:599.660103
+Time for 176000 slices:599.831242
+Time for 177000 slices:600.004449
+Time for 178000 slices:600.180407
+Time for 179000 slices:600.347380
+Time for 180000 slices:600.514216
+Time for 181000 slices:600.683758
+Time for 182000 slices:600.853824
+Time for 183000 slices:601.025878
+Time for 184000 slices:601.200171
+Time for 185000 slices:601.372880
+Time for 186000 slices:601.547117
+Time for 187000 slices:601.722118
+Time for 188000 slices:601.899287
+Time for 189000 slices:602.078133
+Time for 190000 slices:602.257659
+Time for 191000 slices:602.436651
+Time for 192000 slices:602.612289
+Time for 193000 slices:602.790928
+Time for 194000 slices:602.970966
+Time for 195000 slices:603.151761
+Time for 196000 slices:603.334782
+Time for 197000 slices:603.519399
+Time for 198000 slices:603.701994
+Time for 199000 slices:603.887386
+Time for 200000 slices:604.074661
+Time for 201000 slices:604.262342
+Time for 202000 slices:604.452646
+Time for 203000 slices:604.641806
+Time for 204000 slices:604.813048
+Time for 205000 slices:652.983677
+Time for 206000 slices:653.118502
+Time for 207000 slices:653.250198
+Time for 208000 slices:653.382277
+Time for 209000 slices:653.515776
+Time for 210000 slices:653.645493
+Time for 211000 slices:653.777447
+Time for 212000 slices:653.910871
+Time for 213000 slices:654.044084
+Time for 214000 slices:654.179806
+Time for 215000 slices:654.316878
+Time for 216000 slices:654.449954
+Time for 217000 slices:654.585642
+Time for 218000 slices:654.722709
+Time for 219000 slices:654.859359
+Time for 220000 slices:654.997655
+Time for 221000 slices:655.137711
+Time for 222000 slices:655.276042
+Time for 223000 slices:655.416075
+Time for 224000 slices:655.559073
+Time for 225000 slices:655.701130
+Time for 226000 slices:655.844971
+Time for 227000 slices:655.988795
+Time for 228000 slices:656.126857
+Time for 229000 slices:656.267655
+Time for 230000 slices:656.411401
+Time for 231000 slices:656.557897
+Time for 232000 slices:656.703578
+Time for 233000 slices:656.855718
+Time for 234000 slices:657.005818
+Time for 235000 slices:657.155996
+Time for 236000 slices:657.299914
+Time for 237000 slices:657.445438
+Time for 238000 slices:657.592019
+Time for 239000 slices:657.733965
+Time for 240000 slices:657.882316
+Time for 241000 slices:658.035271
+Time for 242000 slices:658.184879
+Slicing Complete. Time for 242242 slices:658.221968
+Simple Reverse Slice Interfer Size:7749537
+Simple Dep Removal Reverse Slice Size:1747
+Slicing Complete. Time for 304425 slices:188.504654
+Simple Forward Slice Interfer Set:568168
+Simple Dep Removal Forward Slice Set:743558
+
+Region 35 -> 38 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:1
+Slicing Complete. Time for 0 slices:0.000010
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 35 -> 39 Naive Size:0
+Time for 1000 slices:4.045191
+Time for 2000 slices:4.799795
+Time for 3000 slices:5.478819
+Time for 4000 slices:6.147838
+Time for 5000 slices:6.825128
+Time for 6000 slices:7.492375
+Time for 7000 slices:8.365876
+Time for 8000 slices:10.629741
+Time for 9000 slices:13.944303
+Time for 10000 slices:17.269760
+Time for 11000 slices:20.598265
+Time for 12000 slices:25.363489
+Time for 13000 slices:39.539700
+Time for 14000 slices:99.137673
+Time for 15000 slices:99.835406
+Time for 16000 slices:153.913358
+Time for 17000 slices:154.295663
+Time for 18000 slices:154.662755
+Time for 19000 slices:154.986567
+Time for 20000 slices:155.291158
+Time for 21000 slices:155.585542
+Time for 22000 slices:155.885071
+Time for 23000 slices:156.192650
+Time for 24000 slices:156.501416
+Time for 25000 slices:156.815360
+Time for 26000 slices:157.077641
+Time for 27000 slices:157.315710
+Time for 28000 slices:157.556367
+Time for 29000 slices:157.781650
+Time for 30000 slices:158.013285
+Time for 31000 slices:158.237403
+Time for 32000 slices:158.457526
+Time for 33000 slices:158.679323
+Time for 34000 slices:158.905706
+Time for 35000 slices:159.140520
+Time for 36000 slices:159.367768
+Time for 37000 slices:159.597287
+Time for 38000 slices:159.831362
+Time for 39000 slices:160.070080
+Time for 40000 slices:160.308457
+Time for 41000 slices:160.547226
+Time for 42000 slices:160.785623
+Time for 43000 slices:161.026249
+Time for 44000 slices:161.263331
+Time for 45000 slices:161.507246
+Time for 46000 slices:161.761283
+Time for 47000 slices:162.014928
+Time for 48000 slices:162.268258
+Time for 49000 slices:162.526498
+Time for 50000 slices:162.789845
+Time for 51000 slices:163.037122
+Time for 52000 slices:163.289587
+Time for 53000 slices:163.543757
+Time for 54000 slices:163.804647
+Time for 55000 slices:164.067943
+Time for 56000 slices:164.333650
+Time for 57000 slices:164.602594
+Time for 58000 slices:164.869467
+Time for 59000 slices:165.137107
+Time for 60000 slices:165.409646
+Time for 61000 slices:165.674637
+Time for 62000 slices:165.943329
+Time for 63000 slices:166.217768
+Time for 64000 slices:166.462643
+Time for 65000 slices:166.627907
+Time for 66000 slices:166.790709
+Time for 67000 slices:166.956468
+Time for 68000 slices:167.124804
+Time for 69000 slices:215.113113
+Time for 70000 slices:215.245015
+Time for 71000 slices:215.364304
+Time for 72000 slices:215.483676
+Time for 73000 slices:215.603427
+Time for 74000 slices:215.725423
+Time for 75000 slices:215.846637
+Time for 76000 slices:215.967888
+Time for 77000 slices:216.091760
+Time for 78000 slices:216.215061
+Time for 79000 slices:216.342604
+Time for 80000 slices:216.469487
+Time for 81000 slices:216.592346
+Time for 82000 slices:216.717709
+Time for 83000 slices:216.844352
+Time for 84000 slices:216.972561
+Time for 85000 slices:217.101134
+Time for 86000 slices:217.229688
+Time for 87000 slices:217.359536
+Time for 88000 slices:217.491020
+Time for 89000 slices:217.623285
+Time for 90000 slices:217.758060
+Time for 91000 slices:217.894537
+Time for 92000 slices:218.024420
+Time for 93000 slices:218.152055
+Time for 94000 slices:218.282684
+Time for 95000 slices:218.413740
+Time for 96000 slices:218.546523
+Time for 97000 slices:218.681602
+Time for 98000 slices:218.816637
+Time for 99000 slices:218.947551
+Time for 100000 slices:219.082910
+Time for 101000 slices:219.221387
+Time for 102000 slices:219.361652
+Time for 103000 slices:219.504063
+Time for 104000 slices:219.640830
+Time for 105000 slices:219.777750
+Time for 106000 slices:219.918164
+Time for 107000 slices:220.058577
+Time for 108000 slices:220.202244
+Time for 109000 slices:220.346008
+Time for 110000 slices:220.490842
+Time for 111000 slices:220.635627
+Time for 112000 slices:220.783481
+Time for 113000 slices:220.932764
+Time for 114000 slices:221.085272
+Time for 115000 slices:221.218468
+Time for 116000 slices:221.348385
+Time for 117000 slices:221.480577
+Time for 118000 slices:221.612210
+Time for 119000 slices:221.746895
+Time for 120000 slices:221.882772
+Time for 121000 slices:222.018776
+Time for 122000 slices:222.158178
+Time for 123000 slices:222.299415
+Time for 124000 slices:222.442164
+Time for 125000 slices:222.595094
+Time for 126000 slices:222.730322
+Time for 127000 slices:222.869078
+Time for 128000 slices:223.009675
+Time for 129000 slices:223.151536
+Time for 130000 slices:223.295085
+Time for 131000 slices:223.438170
+Time for 132000 slices:223.584358
+Time for 133000 slices:223.743757
+Time for 134000 slices:223.892150
+Time for 135000 slices:224.042552
+Time for 136000 slices:224.188955
+Time for 137000 slices:224.330390
+Time for 138000 slices:224.472589
+Time for 139000 slices:224.617062
+Time for 140000 slices:224.763139
+Time for 141000 slices:224.912745
+Time for 142000 slices:225.058872
+Time for 143000 slices:225.209119
+Time for 144000 slices:225.360915
+Time for 145000 slices:225.514858
+Time for 146000 slices:225.672042
+Time for 147000 slices:225.821359
+Time for 148000 slices:225.971811
+Time for 149000 slices:226.125694
+Time for 150000 slices:226.280592
+Time for 151000 slices:226.438689
+Time for 152000 slices:226.596058
+Time for 153000 slices:226.753749
+Time for 154000 slices:226.915176
+Time for 155000 slices:227.075831
+Time for 156000 slices:227.240936
+Time for 157000 slices:227.398769
+Time for 158000 slices:227.548087
+Time for 159000 slices:227.699602
+Time for 160000 slices:227.852342
+Time for 161000 slices:228.007816
+Time for 162000 slices:228.166547
+Time for 163000 slices:228.322425
+Time for 164000 slices:228.480816
+Time for 165000 slices:228.641307
+Time for 166000 slices:228.803288
+Time for 167000 slices:228.969514
+Time for 168000 slices:229.125421
+Time for 169000 slices:229.286255
+Time for 170000 slices:229.448403
+Time for 171000 slices:229.613225
+Time for 172000 slices:229.781882
+Time for 173000 slices:229.948071
+Time for 174000 slices:277.609051
+Time for 175000 slices:277.738599
+Time for 176000 slices:277.865803
+Time for 177000 slices:277.994096
+Time for 178000 slices:278.124198
+Time for 179000 slices:278.246057
+Time for 180000 slices:278.367164
+Time for 181000 slices:278.490356
+Time for 182000 slices:278.614137
+Time for 183000 slices:278.739515
+Time for 184000 slices:278.867629
+Time for 185000 slices:278.993921
+Time for 186000 slices:279.121157
+Time for 187000 slices:279.248929
+Time for 188000 slices:279.378966
+Time for 189000 slices:279.510628
+Time for 190000 slices:279.642567
+Time for 191000 slices:279.774238
+Time for 192000 slices:279.903044
+Time for 193000 slices:280.033898
+Time for 194000 slices:280.166661
+Time for 195000 slices:280.299795
+Time for 196000 slices:280.436755
+Time for 197000 slices:280.573970
+Time for 198000 slices:280.707890
+Time for 199000 slices:280.844694
+Time for 200000 slices:280.984576
+Time for 201000 slices:281.124144
+Time for 202000 slices:281.266750
+Time for 203000 slices:281.408750
+Time for 204000 slices:281.534759
+Time for 205000 slices:281.663896
+Time for 206000 slices:281.797004
+Time for 207000 slices:281.936002
+Time for 208000 slices:282.071077
+Time for 209000 slices:282.213988
+Time for 210000 slices:282.347382
+Time for 211000 slices:282.482822
+Time for 212000 slices:282.620488
+Time for 213000 slices:282.759105
+Time for 214000 slices:282.898959
+Time for 215000 slices:283.039377
+Time for 216000 slices:283.174182
+Time for 217000 slices:283.312713
+Time for 218000 slices:283.452368
+Time for 219000 slices:283.592834
+Time for 220000 slices:283.736206
+Time for 221000 slices:283.881424
+Time for 222000 slices:284.025225
+Time for 223000 slices:284.170172
+Time for 224000 slices:284.317745
+Time for 225000 slices:284.464511
+Time for 226000 slices:284.614919
+Time for 227000 slices:284.766216
+Time for 228000 slices:284.907295
+Time for 229000 slices:285.051451
+Time for 230000 slices:285.197564
+Time for 231000 slices:285.343661
+Time for 232000 slices:285.495492
+Time for 233000 slices:285.645693
+Time for 234000 slices:285.802029
+Time for 235000 slices:285.959622
+Time for 236000 slices:286.110411
+Time for 237000 slices:286.263023
+Time for 238000 slices:286.418090
+Time for 239000 slices:286.567837
+Time for 240000 slices:286.722765
+Time for 241000 slices:286.881722
+Time for 242000 slices:287.049625
+Slicing Complete. Time for 242242 slices:287.091291
+Simple Reverse Slice Interfer Size:241147
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 2936 slices:2.198914
+Simple Forward Slice Interfer Set:52038
+Simple Dep Removal Forward Slice Set:856853
+
+Region 35 -> 40 Naive Size:0
+Time for 1000 slices:3.250965
+Time for 2000 slices:3.878574
+Time for 3000 slices:4.497340
+Time for 4000 slices:5.118934
+Time for 5000 slices:5.744882
+Time for 6000 slices:6.352104
+Time for 7000 slices:7.178286
+Time for 8000 slices:9.406900
+Time for 9000 slices:12.677699
+Time for 10000 slices:15.947477
+Time for 11000 slices:19.227223
+Time for 12000 slices:23.933769
+Time for 13000 slices:91.441963
+Time for 14000 slices:150.651387
+Time for 15000 slices:151.131111
+Time for 16000 slices:151.495039
+Time for 17000 slices:151.780239
+Time for 18000 slices:152.067143
+Time for 19000 slices:152.305232
+Time for 20000 slices:152.520222
+Time for 21000 slices:152.726883
+Time for 22000 slices:152.940039
+Time for 23000 slices:153.156960
+Time for 24000 slices:153.371322
+Time for 25000 slices:153.593477
+Time for 26000 slices:153.756763
+Time for 27000 slices:153.894027
+Time for 28000 slices:154.033473
+Time for 29000 slices:154.173731
+Time for 30000 slices:154.316136
+Time for 31000 slices:154.445514
+Time for 32000 slices:154.569578
+Time for 33000 slices:154.696836
+Time for 34000 slices:154.825245
+Time for 35000 slices:154.955316
+Time for 36000 slices:155.084515
+Time for 37000 slices:155.215393
+Time for 38000 slices:155.349172
+Time for 39000 slices:155.483595
+Time for 40000 slices:155.621249
+Time for 41000 slices:155.752017
+Time for 42000 slices:155.883929
+Time for 43000 slices:156.019368
+Time for 44000 slices:156.155626
+Time for 45000 slices:156.294567
+Time for 46000 slices:156.432435
+Time for 47000 slices:156.572535
+Time for 48000 slices:156.714540
+Time for 49000 slices:156.858457
+Time for 50000 slices:157.004624
+Time for 51000 slices:157.143431
+Time for 52000 slices:157.280785
+Time for 53000 slices:157.419721
+Time for 54000 slices:157.560591
+Time for 55000 slices:157.704652
+Time for 56000 slices:157.846212
+Time for 57000 slices:157.991122
+Time for 58000 slices:158.137599
+Time for 59000 slices:158.285836
+Time for 60000 slices:158.437633
+Time for 61000 slices:158.580223
+Slicing Complete. Time for 61684 slices:158.680269
+Simple Reverse Slice Interfer Size:18356
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 311320 slices:186.084383
+Simple Forward Slice Interfer Set:353796
+Simple Dep Removal Forward Slice Set:221254
+
+Region 35 -> 41 Naive Size:0
+Time for 1000 slices:3.252673
+Time for 2000 slices:3.863576
+Time for 3000 slices:4.469320
+Time for 4000 slices:5.077227
+Time for 5000 slices:5.693924
+Time for 6000 slices:6.289056
+Time for 7000 slices:7.096797
+Time for 8000 slices:9.315401
+Time for 9000 slices:12.634214
+Time for 10000 slices:15.909989
+Time for 11000 slices:19.164874
+Time for 12000 slices:23.872303
+Time for 13000 slices:37.989183
+Time for 14000 slices:97.431259
+Time for 15000 slices:98.042327
+Time for 16000 slices:98.504743
+Time for 17000 slices:98.884207
+Time for 18000 slices:99.266610
+Time for 19000 slices:99.584404
+Slicing Complete. Time for 19996 slices:99.763489
+Simple Reverse Slice Interfer Size:44
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 311314 slices:239.253545
+Simple Forward Slice Interfer Set:353796
+Simple Dep Removal Forward Slice Set:135704
+
+Region 35 -> 42 Naive Size:0
+Time for 1000 slices:3.223711
+Time for 2000 slices:3.779480
+Time for 3000 slices:4.331101
+Time for 4000 slices:4.881357
+Time for 5000 slices:5.437863
+Time for 6000 slices:5.976051
+Time for 7000 slices:6.722232
+Time for 8000 slices:8.810211
+Time for 9000 slices:11.933782
+Time for 10000 slices:15.070806
+Time for 11000 slices:18.225682
+Time for 12000 slices:22.792699
+Time for 13000 slices:36.796270
+Time for 14000 slices:96.464994
+Time for 15000 slices:97.004707
+Time for 16000 slices:97.419795
+Time for 17000 slices:97.751930
+Time for 18000 slices:98.083328
+Time for 19000 slices:98.359123
+Time for 20000 slices:98.607847
+Time for 21000 slices:98.848240
+Time for 22000 slices:99.093494
+Time for 23000 slices:99.342201
+Time for 24000 slices:99.587863
+Time for 25000 slices:99.843589
+Time for 26000 slices:100.031175
+Time for 27000 slices:100.189506
+Time for 28000 slices:100.348655
+Time for 29000 slices:100.508183
+Time for 30000 slices:100.669975
+Time for 31000 slices:100.817327
+Time for 32000 slices:100.959965
+Time for 33000 slices:101.104177
+Time for 34000 slices:101.246783
+Time for 35000 slices:101.391617
+Time for 36000 slices:101.535559
+Slicing Complete. Time for 36072 slices:101.545945
+Simple Reverse Slice Interfer Size:11475
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 311322 slices:192.846791
+Simple Forward Slice Interfer Set:353796
+Simple Dep Removal Forward Slice Set:169932
+
+Region 35 -> 43 Naive Size:0
+Time for 1000 slices:3.252510
+Time for 2000 slices:3.871554
+Time for 3000 slices:4.485501
+Time for 4000 slices:5.097846
+Time for 5000 slices:5.714195
+Time for 6000 slices:6.313534
+Time for 7000 slices:7.132473
+Time for 8000 slices:9.357567
+Time for 9000 slices:12.629846
+Time for 10000 slices:15.895334
+Time for 11000 slices:19.192450
+Time for 12000 slices:23.914588
+Time for 13000 slices:38.066878
+Time for 14000 slices:151.272701
+Time for 15000 slices:151.751309
+Time for 16000 slices:152.114265
+Time for 17000 slices:152.398727
+Time for 18000 slices:152.684893
+Time for 19000 slices:152.921654
+Time for 20000 slices:153.134994
+Time for 21000 slices:153.340654
+Time for 22000 slices:153.552847
+Time for 23000 slices:153.769722
+Time for 24000 slices:153.982608
+Time for 25000 slices:154.202123
+Time for 26000 slices:154.364354
+Time for 27000 slices:154.501121
+Slicing Complete. Time for 27534 slices:154.575483
+Simple Reverse Slice Interfer Size:198
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 311324 slices:187.851034
+Simple Forward Slice Interfer Set:353796
+Simple Dep Removal Forward Slice Set:152832
+
+Region 35 -> 44 Naive Size:0
+Slicing Complete. Time for 27 slices:0.922054
+Simple Reverse Slice Interfer Size:240
+Simple Dep Removal Reverse Slice Size:520
+Slicing Complete. Time for 2905 slices:1.549587
+Simple Forward Slice Interfer Set:39487
+Simple Dep Removal Forward Slice Set:360076
+
+Region 35 -> 45 Naive Size:0
+Time for 1000 slices:7.695632
+Time for 2000 slices:10.241024
+Time for 3000 slices:11.848322
+Time for 4000 slices:13.286491
+Time for 5000 slices:14.738855
+Time for 6000 slices:16.151136
+Time for 7000 slices:17.643991
+Time for 8000 slices:20.587914
+Time for 9000 slices:24.647942
+Time for 10000 slices:28.725330
+Time for 11000 slices:86.721587
+Time for 12000 slices:91.340425
+Time for 13000 slices:105.171891
+Time for 14000 slices:167.072327
+Time for 15000 slices:168.042544
+Time for 16000 slices:168.964794
+Time for 17000 slices:169.798635
+Time for 18000 slices:170.388511
+Time for 19000 slices:170.890702
+Time for 20000 slices:171.353060
+Time for 21000 slices:171.806034
+Time for 22000 slices:172.270648
+Time for 23000 slices:172.727809
+Time for 24000 slices:173.192416
+Time for 25000 slices:173.666079
+Time for 26000 slices:174.086386
+Time for 27000 slices:174.468915
+Time for 28000 slices:174.801876
+Slicing Complete. Time for 28600 slices:174.971357
+Simple Reverse Slice Interfer Size:506628
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 18808 slices:64.586820
+Simple Forward Slice Interfer Set:597748
+Simple Dep Removal Forward Slice Set:105812
+
+Region 35 -> 46 Naive Size:0
+Slicing Complete. Time for 0 slices:0.307618
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:3659565
+Slicing Complete. Time for 0 slices:0.000063
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:582683
+
+Region 37 -> 38 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 37 -> 39 Naive Size:238324
+Time for 1000 slices:1.856249
+Time for 2000 slices:4.496297
+Time for 3000 slices:7.155622
+Time for 4000 slices:9.829355
+Time for 5000 slices:12.930520
+Time for 6000 slices:24.956548
+Time for 7000 slices:86.397557
+Time for 8000 slices:86.735677
+Time for 9000 slices:87.072074
+Time for 10000 slices:87.402827
+Time for 11000 slices:87.735067
+Time for 12000 slices:88.022522
+Time for 13000 slices:88.256988
+Time for 14000 slices:88.495313
+Time for 15000 slices:88.739230
+Time for 16000 slices:88.988983
+Time for 17000 slices:89.236705
+Time for 18000 slices:89.486424
+Time for 19000 slices:89.685789
+Time for 20000 slices:89.843787
+Time for 21000 slices:90.004363
+Time for 22000 slices:90.168948
+Time for 23000 slices:90.305123
+Time for 24000 slices:90.443018
+Time for 25000 slices:90.583856
+Time for 26000 slices:90.726552
+Time for 27000 slices:90.873267
+Time for 28000 slices:91.015923
+Time for 29000 slices:91.162948
+Time for 30000 slices:91.312070
+Time for 31000 slices:91.463494
+Time for 32000 slices:91.617202
+Time for 33000 slices:91.761485
+Time for 34000 slices:91.908641
+Time for 35000 slices:92.058040
+Time for 36000 slices:92.210606
+Time for 37000 slices:146.012598
+Time for 38000 slices:146.135518
+Time for 39000 slices:146.258839
+Time for 40000 slices:146.383452
+Time for 41000 slices:146.507729
+Time for 42000 slices:146.633807
+Time for 43000 slices:146.750359
+Time for 44000 slices:146.869124
+Time for 45000 slices:146.989599
+Time for 46000 slices:147.111494
+Time for 47000 slices:147.236024
+Time for 48000 slices:147.358228
+Time for 49000 slices:147.483097
+Time for 50000 slices:147.608608
+Time for 51000 slices:147.736417
+Time for 52000 slices:147.864015
+Time for 53000 slices:147.987724
+Time for 54000 slices:148.114566
+Time for 55000 slices:148.241899
+Time for 56000 slices:148.372492
+Time for 57000 slices:148.503556
+Time for 58000 slices:148.634922
+Time for 59000 slices:148.768573
+Time for 60000 slices:148.902406
+Time for 61000 slices:149.038916
+Time for 62000 slices:149.170616
+Time for 63000 slices:149.295689
+Time for 64000 slices:149.424111
+Time for 65000 slices:149.553277
+Time for 66000 slices:149.684429
+Time for 67000 slices:149.814306
+Time for 68000 slices:149.946043
+Time for 69000 slices:150.079585
+Time for 70000 slices:150.214790
+Time for 71000 slices:150.350764
+Time for 72000 slices:150.485086
+Time for 73000 slices:150.618381
+Time for 74000 slices:150.754234
+Time for 75000 slices:150.890622
+Time for 76000 slices:151.028945
+Time for 77000 slices:151.170062
+Time for 78000 slices:151.307467
+Time for 79000 slices:151.447549
+Time for 80000 slices:151.589405
+Time for 81000 slices:151.731425
+Time for 82000 slices:151.876700
+Time for 83000 slices:152.025667
+Time for 84000 slices:152.161472
+Time for 85000 slices:152.299881
+Time for 86000 slices:152.442693
+Time for 87000 slices:152.582450
+Time for 88000 slices:152.726176
+Time for 89000 slices:152.871884
+Time for 90000 slices:153.015423
+Time for 91000 slices:153.157950
+Time for 92000 slices:153.305605
+Time for 93000 slices:153.455793
+Time for 94000 slices:153.609111
+Time for 95000 slices:153.765140
+Time for 96000 slices:153.909792
+Time for 97000 slices:154.058916
+Time for 98000 slices:154.210141
+Time for 99000 slices:154.363920
+Time for 100000 slices:154.520391
+Time for 101000 slices:154.676182
+Time for 102000 slices:154.837990
+Time for 103000 slices:155.006774
+Time for 104000 slices:155.170778
+Time for 105000 slices:155.337407
+Time for 106000 slices:155.502325
+Time for 107000 slices:155.638842
+Time for 108000 slices:155.779616
+Time for 109000 slices:155.922376
+Time for 110000 slices:156.065154
+Time for 111000 slices:156.209895
+Time for 112000 slices:156.355592
+Time for 113000 slices:156.501456
+Time for 114000 slices:156.651378
+Time for 115000 slices:156.799847
+Time for 116000 slices:156.952191
+Time for 117000 slices:157.103551
+Time for 118000 slices:157.250866
+Time for 119000 slices:157.400510
+Time for 120000 slices:157.551793
+Time for 121000 slices:157.704518
+Time for 122000 slices:157.860595
+Time for 123000 slices:158.013596
+Time for 124000 slices:158.170189
+Time for 125000 slices:158.327497
+Time for 126000 slices:158.487688
+Time for 127000 slices:158.649974
+Time for 128000 slices:158.803617
+Time for 129000 slices:158.955262
+Time for 130000 slices:159.110318
+Time for 131000 slices:159.264845
+Time for 132000 slices:159.423198
+Time for 133000 slices:159.582272
+Time for 134000 slices:159.740571
+Time for 135000 slices:159.902377
+Time for 136000 slices:160.064462
+Time for 137000 slices:160.230254
+Time for 138000 slices:160.398705
+Time for 139000 slices:160.557708
+Time for 140000 slices:160.720838
+Time for 141000 slices:208.448821
+Time for 142000 slices:208.576742
+Time for 143000 slices:208.705789
+Time for 144000 slices:208.828769
+Time for 145000 slices:208.953766
+Time for 146000 slices:209.080384
+Time for 147000 slices:209.207870
+Time for 148000 slices:209.336659
+Time for 149000 slices:209.457884
+Time for 150000 slices:209.576753
+Time for 151000 slices:209.698606
+Time for 152000 slices:209.819654
+Time for 153000 slices:209.944514
+Time for 154000 slices:210.070084
+Time for 155000 slices:210.195004
+Time for 156000 slices:210.320727
+Time for 157000 slices:210.446810
+Time for 158000 slices:210.575762
+Time for 159000 slices:210.705660
+Time for 160000 slices:210.832255
+Time for 161000 slices:210.960443
+Time for 162000 slices:211.089335
+Time for 163000 slices:211.220915
+Time for 164000 slices:211.356481
+Time for 165000 slices:211.485807
+Time for 166000 slices:211.619296
+Time for 167000 slices:211.756883
+Time for 168000 slices:211.891704
+Time for 169000 slices:212.030493
+Time for 170000 slices:212.171470
+Time for 171000 slices:212.300262
+Time for 172000 slices:212.432844
+Time for 173000 slices:212.568987
+Time for 174000 slices:212.702044
+Time for 175000 slices:212.839508
+Time for 176000 slices:212.979436
+Time for 177000 slices:213.115545
+Time for 178000 slices:213.254481
+Time for 179000 slices:213.397016
+Time for 180000 slices:213.539882
+Time for 181000 slices:213.684228
+Time for 182000 slices:213.830772
+Time for 183000 slices:213.972041
+Time for 184000 slices:214.113061
+Time for 185000 slices:214.256495
+Time for 186000 slices:214.401512
+Time for 187000 slices:214.549630
+Time for 188000 slices:214.697819
+Time for 189000 slices:214.847268
+Time for 190000 slices:214.996362
+Time for 191000 slices:215.147067
+Time for 192000 slices:215.301007
+Time for 193000 slices:215.463687
+Time for 194000 slices:215.626656
+Time for 195000 slices:215.777092
+Time for 196000 slices:215.924514
+Time for 197000 slices:216.068023
+Time for 198000 slices:216.210228
+Time for 199000 slices:216.353487
+Time for 200000 slices:216.498565
+Time for 201000 slices:216.644801
+Time for 202000 slices:216.789972
+Time for 203000 slices:216.937867
+Time for 204000 slices:217.087431
+Time for 205000 slices:217.237921
+Time for 206000 slices:217.391511
+Time for 207000 slices:217.542742
+Time for 208000 slices:217.692371
+Time for 209000 slices:217.842490
+Time for 210000 slices:217.994250
+Time for 211000 slices:218.149040
+Time for 212000 slices:218.304708
+Time for 213000 slices:218.461879
+Time for 214000 slices:218.618698
+Time for 215000 slices:218.775747
+Time for 216000 slices:218.935186
+Time for 217000 slices:219.096704
+Time for 218000 slices:219.259218
+Time for 219000 slices:219.418122
+Time for 220000 slices:219.572141
+Time for 221000 slices:219.727363
+Time for 222000 slices:219.885076
+Time for 223000 slices:220.045078
+Time for 224000 slices:220.208724
+Time for 225000 slices:220.372861
+Time for 226000 slices:220.540120
+Time for 227000 slices:220.711873
+Time for 228000 slices:220.870115
+Time for 229000 slices:221.031847
+Time for 230000 slices:221.197625
+Time for 231000 slices:221.357863
+Time for 232000 slices:221.528298
+Time for 233000 slices:221.700141
+Slicing Complete. Time for 233965 slices:221.864921
+Simple Reverse Slice Interfer Size:241147
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.219972
+Simple Forward Slice Interfer Set:8277
+Simple Dep Removal Forward Slice Set:437265
+
+Region 37 -> 40 Naive Size:0
+Time for 1000 slices:1.868076
+Time for 2000 slices:4.623325
+Time for 3000 slices:7.407845
+Time for 4000 slices:63.033586
+Time for 5000 slices:66.103643
+Time for 6000 slices:78.110756
+Time for 7000 slices:140.262659
+Time for 8000 slices:140.563778
+Time for 9000 slices:140.863741
+Time for 10000 slices:141.157044
+Time for 11000 slices:141.452007
+Time for 12000 slices:141.708452
+Time for 13000 slices:141.918878
+Time for 14000 slices:142.131823
+Time for 15000 slices:142.350868
+Time for 16000 slices:142.576397
+Time for 17000 slices:142.798010
+Time for 18000 slices:143.027997
+Time for 19000 slices:143.207551
+Time for 20000 slices:143.350234
+Time for 21000 slices:143.494225
+Time for 22000 slices:143.641777
+Time for 23000 slices:143.767163
+Time for 24000 slices:143.894874
+Time for 25000 slices:144.024438
+Time for 26000 slices:144.156193
+Time for 27000 slices:144.290473
+Time for 28000 slices:144.421213
+Time for 29000 slices:144.555021
+Time for 30000 slices:144.691564
+Time for 31000 slices:144.831781
+Time for 32000 slices:144.979659
+Time for 33000 slices:145.124772
+Time for 34000 slices:145.266946
+Time for 35000 slices:145.410922
+Time for 36000 slices:145.551509
+Time for 37000 slices:145.693714
+Time for 38000 slices:145.834795
+Time for 39000 slices:145.978305
+Time for 40000 slices:146.124122
+Time for 41000 slices:146.270786
+Time for 42000 slices:146.419834
+Time for 43000 slices:146.556475
+Time for 44000 slices:146.696259
+Time for 45000 slices:146.838063
+Time for 46000 slices:146.981529
+Time for 47000 slices:147.127751
+Time for 48000 slices:147.271935
+Time for 49000 slices:147.419493
+Time for 50000 slices:147.568584
+Time for 51000 slices:147.720321
+Time for 52000 slices:147.872344
+Time for 53000 slices:148.018996
+Slicing Complete. Time for 53407 slices:148.079170
+Simple Reverse Slice Interfer Size:18356
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 6894 slices:1.118544
+Simple Forward Slice Interfer Set:6889
+Simple Dep Removal Forward Slice Set:233754
+
+Region 37 -> 41 Naive Size:0
+Time for 1000 slices:1.807667
+Time for 2000 slices:4.529897
+Time for 3000 slices:7.277027
+Time for 4000 slices:9.999053
+Time for 5000 slices:13.126301
+Time for 6000 slices:25.177506
+Time for 7000 slices:86.650180
+Time for 8000 slices:86.986354
+Time for 9000 slices:87.322304
+Time for 10000 slices:87.650771
+Time for 11000 slices:87.954646
+Time for 12000 slices:88.155904
+Time for 13000 slices:88.316442
+Slicing Complete. Time for 13109 slices:88.335075
+Simple Reverse Slice Interfer Size:44
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 6888 slices:0.956997
+Simple Forward Slice Interfer Set:6889
+Simple Dep Removal Forward Slice Set:191067
+
+Region 37 -> 42 Naive Size:0
+Time for 1000 slices:1.716401
+Time for 2000 slices:4.342544
+Time for 3000 slices:6.983458
+Time for 4000 slices:9.721912
+Time for 5000 slices:12.877350
+Time for 6000 slices:25.006863
+Time for 7000 slices:86.931904
+Time for 8000 slices:87.294379
+Time for 9000 slices:87.631120
+Time for 10000 slices:87.962924
+Time for 11000 slices:88.290224
+Time for 12000 slices:88.568848
+Time for 13000 slices:88.801654
+Time for 14000 slices:89.037533
+Time for 15000 slices:89.272811
+Time for 16000 slices:89.509062
+Time for 17000 slices:89.738912
+Time for 18000 slices:89.967384
+Time for 19000 slices:90.154332
+Time for 20000 slices:90.305395
+Time for 21000 slices:90.458025
+Time for 22000 slices:90.613650
+Time for 23000 slices:90.748528
+Time for 24000 slices:90.885073
+Time for 25000 slices:91.023250
+Time for 26000 slices:91.161743
+Time for 27000 slices:91.302999
+Slicing Complete. Time for 27795 slices:91.413253
+Simple Reverse Slice Interfer Size:11475
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 6896 slices:0.982434
+Simple Forward Slice Interfer Set:6889
+Simple Dep Removal Forward Slice Set:208142
+
+Region 37 -> 43 Naive Size:1296
+Time for 1000 slices:1.718699
+Time for 2000 slices:4.342570
+Time for 3000 slices:7.012206
+Time for 4000 slices:9.831739
+Time for 5000 slices:13.003749
+Time for 6000 slices:25.211533
+Time for 7000 slices:87.084789
+Time for 8000 slices:87.432053
+Time for 9000 slices:87.775107
+Time for 10000 slices:88.112764
+Time for 11000 slices:88.447984
+Time for 12000 slices:88.733081
+Time for 13000 slices:88.967100
+Time for 14000 slices:89.205096
+Time for 15000 slices:89.446587
+Time for 16000 slices:89.689640
+Time for 17000 slices:89.926736
+Time for 18000 slices:90.162393
+Time for 19000 slices:90.355132
+Slicing Complete. Time for 19257 slices:90.396210
+Simple Reverse Slice Interfer Size:198
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 6898 slices:0.986975
+Simple Forward Slice Interfer Set:6889
+Simple Dep Removal Forward Slice Set:199604
+
+Region 37 -> 44 Naive Size:888
+Slicing Complete. Time for 0 slices:0.016388
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:368
+Slicing Complete. Time for 0 slices:0.000029
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:6543
+
+Region 37 -> 45 Naive Size:169017
+Time for 1000 slices:7.911895
+Time for 2000 slices:10.595246
+Time for 3000 slices:12.330906
+Time for 4000 slices:67.563991
+Time for 5000 slices:68.894303
+Time for 6000 slices:70.173615
+Time for 7000 slices:71.537779
+Time for 8000 slices:74.277584
+Time for 9000 slices:78.130411
+Time for 10000 slices:82.042864
+Time for 11000 slices:85.982738
+Time for 12000 slices:90.743187
+Time for 13000 slices:104.754433
+Time for 14000 slices:166.781024
+Time for 15000 slices:167.858038
+Time for 16000 slices:168.875143
+Time for 17000 slices:218.161890
+Time for 18000 slices:218.708403
+Time for 19000 slices:219.159423
+Time for 20000 slices:219.576371
+Time for 21000 slices:219.986405
+Time for 22000 slices:220.406741
+Time for 23000 slices:220.814597
+Time for 24000 slices:221.225293
+Time for 25000 slices:221.661198
+Time for 26000 slices:222.041692
+Time for 27000 slices:222.389220
+Time for 28000 slices:222.692223
+Slicing Complete. Time for 28600 slices:222.847164
+Simple Reverse Slice Interfer Size:206490
+Simple Dep Removal Reverse Slice Size:3
+Slicing Complete. Time for 330037 slices:256.924376
+Simple Forward Slice Interfer Set:589609
+Simple Dep Removal Forward Slice Set:209185
+
+Region 37 -> 46 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:255245
+Slicing Complete. Time for 0 slices:0.000049
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 39 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 40 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 41 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 42 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 43 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 38 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:4
+Slicing Complete. Time for 0 slices:0.000011
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 39 -> 40 Naive Size:0
+Slicing Complete. Time for 0 slices:0.181930
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:18356
+Slicing Complete. Time for 0 slices:0.000029
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:61685
+
+Region 39 -> 41 Naive Size:0
+Slicing Complete. Time for 0 slices:0.062975
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:44
+Slicing Complete. Time for 0 slices:0.000028
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:18998
+
+Region 39 -> 42 Naive Size:0
+Slicing Complete. Time for 0 slices:0.105315
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:11475
+Slicing Complete. Time for 0 slices:0.000029
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:36073
+
+Region 39 -> 43 Naive Size:252
+Slicing Complete. Time for 0 slices:0.084504
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:198
+Slicing Complete. Time for 0 slices:0.000028
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:27535
+
+Region 39 -> 44 Naive Size:224
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:224
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 39 -> 45 Naive Size:0
+Time for 1000 slices:7.679565
+Time for 2000 slices:10.162206
+Time for 3000 slices:11.720096
+Time for 4000 slices:13.111945
+Time for 5000 slices:14.512934
+Time for 6000 slices:15.876185
+Time for 7000 slices:17.228091
+Time for 8000 slices:18.484293
+Time for 9000 slices:19.669487
+Time for 10000 slices:20.841231
+Time for 11000 slices:22.035287
+Time for 12000 slices:23.199126
+Time for 13000 slices:24.288202
+Time for 14000 slices:25.374450
+Time for 15000 slices:26.261022
+Time for 16000 slices:81.598668
+Time for 17000 slices:82.230777
+Time for 18000 slices:82.615224
+Time for 19000 slices:82.957332
+Time for 20000 slices:83.295400
+Time for 21000 slices:83.624665
+Time for 22000 slices:83.959956
+Time for 23000 slices:84.281630
+Time for 24000 slices:84.609889
+Time for 25000 slices:84.952522
+Time for 26000 slices:85.296988
+Time for 27000 slices:85.642292
+Time for 28000 slices:85.942191
+Slicing Complete. Time for 28600 slices:86.095393
+Simple Reverse Slice Interfer Size:27535
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 18874 slices:18.294837
+Simple Forward Slice Interfer Set:401701
+Simple Dep Removal Forward Slice Set:397093
+
+Region 40 -> 41 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 40 -> 42 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 40 -> 43 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 40 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:224
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 40 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:798794
+Slicing Complete. Time for 0 slices:0.000061
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 41 -> 42 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000009
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 41 -> 43 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 41 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:224
+Slicing Complete. Time for 0 slices:0.000014
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 41 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:798794
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 42 -> 43 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.000008
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 42 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:224
+Slicing Complete. Time for 0 slices:0.000014
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 42 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:798794
+Slicing Complete. Time for 0 slices:0.000060
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 43 -> 44 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:224
+Slicing Complete. Time for 0 slices:0.000013
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 43 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:798794
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+Region 44 -> 45 Naive Size:0
+Slicing Complete. Time for 0 slices:0.000010
+Simple Reverse Slice Interfer Size:0
+Simple Dep Removal Reverse Slice Size:754833
+Slicing Complete. Time for 0 slices:0.000059
+Simple Forward Slice Interfer Set:0
+Simple Dep Removal Forward Slice Set:0
+
+#RegionID,Naive
+0,13
+1,3
+2,2
+3,3
+4,2
+5,1
+6,1
+7,1
+8,1
+9,4
+10,1
+11,3
+12,3
+13,8
+14,6
+15,3
+16,2
+17,2
+18,2
+19,1
+20,5
+21,4
+22,4
+23,3
+24,2
+25,2
+26,4
+27,7
+28,9
+29,4
+30,3
+31,1
+32,5
+33,3
+34,3
+35,1
+36,1
+37,5
+39,4
+43,2
+44,2
+45,1
+46,1
+
+#RegionID,Interfer
+0,0
+
+Execution Count: 1000000000
+Naive Count: 40459206
+Naive Performance Gain: 4.045921%
+Simple Interference Count: 32933411
+Simple Interference Performance Gain: 3.293341%

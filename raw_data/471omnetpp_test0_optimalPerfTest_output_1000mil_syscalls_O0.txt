@@ -1,0 +1,48 @@
+Optimal Performance Tests
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_dinvsrdy_1000mil_syscalls_O0.dd
+
+Regions:0->1,Overlap:TL X:0 Y:997427511, BR X:0 Y:737403998
+
+Regions:0->2,Overlap:TL X:0 Y:998636923, BR X:0 Y:737403998
+
+Regions:0->3,Overlap:TL X:0 Y:999846334, BR X:0 Y:697493412
+
+Regions:0->4,Overlap:TL X:0 Y:997427511, BR X:0 Y:737403998
+
+Regions:0->5,Overlap:TL X:0 Y:998636923, BR X:0 Y:691446353
+
+Regions:1->2,Overlap:TL X:1758627 Y:998636923, BR X:1758627 Y:737403998
+Shrunk Regions:1->2,Naive Size:0
+
+
+Regions:1->3,Overlap:TL X:0 Y:999846334, BR X:0 Y:697493412
+
+Regions:1->4,Overlap:TL X:0 Y:997427511, BR X:0 Y:794246347
+
+Regions:1->5,Overlap:TL X:0 Y:998636923, BR X:0 Y:691446353
+
+Regions:2->3,Overlap:TL X:1169823 Y:999846334, BR X:1253938 Y:697493412
+Shrunk Regions:2->3,Naive Size:0
+
+
+Regions:2->4,Overlap:TL X:0 Y:998636923, BR X:0 Y:737403998
+
+Regions:2->5,Overlap:TL X:0 Y:998636923, BR X:0 Y:691446353
+
+Regions:3->4,Overlap:TL X:0 Y:999846334, BR X:0 Y:697493412
+
+Regions:3->5,Overlap:TL X:0 Y:999846334, BR X:0 Y:691446353
+
+Regions:4->5,Overlap:TL X:0 Y:998636923, BR X:0 Y:691446353
+#RegionID,Naive
+0,0
+1,0
+2,0
+3,0
+4,0
+5,0
+
+Execution Count: 1000000000
+Naive Count: 0
+Naive Performance Gain: 0.000000%

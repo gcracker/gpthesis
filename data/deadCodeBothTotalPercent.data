@@ -1,0 +1,5 @@
+#Benchmark,Irrelevant Dependence Percent O0, Irrelevant Dependence Percent O2
+400.perlbench,51,49
+403.gcc,61,56
+464.h264ref,72,46
+471.omnetpp,64,61

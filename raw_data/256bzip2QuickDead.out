@@ -1,0 +1,16 @@
+File Arguments
+/home/ubuntu/256bzip2RunRef1_dinvsrdy_1000mil.dd
+/home/ubuntu/256bzip2RunRef1_dinvsdin_1000mil.dd
+/home/ubuntu/invst/256bzip2_dinvsrdy_invst_quickdead.dd
+17667284992
+Using memory size:17667284992
+Using {DIN,RDY} set from file:/home/ubuntu/256bzip2RunRef1_dinvsrdy_1000mil.dd
+Using {DIN_i,DIN_d} file:/home/ubuntu/256bzip2RunRef1_dinvsdin_1000mil.dd
+Top Din:4564502, Rdy:298303
+Old {DIN,RDY} Size:4564503
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:4243906
+Saving to file:/home/ubuntu/invst/256bzip2_dinvsrdy_invst_quickdead.dd

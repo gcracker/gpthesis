@@ -1,0 +1,50 @@
+Detected Free Memory: 8610689024
+RandSeed:2345037647
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.002282
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.002228
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.003153
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.002637
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.002367
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.002554
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.002285
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.002319
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.002550
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.002984
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,100,0.003080
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/403gcc_test0_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 100 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,100,0.002685

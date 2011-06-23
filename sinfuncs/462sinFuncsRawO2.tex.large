@@ -1,0 +1,8 @@
+main
+quantum_bmeasure
+quantum_frand
+quantum_memman
+quantum_objcode_put
+quantum_real
+quantum_state_collapse
+spec_rand

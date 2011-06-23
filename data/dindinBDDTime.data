@@ -1,0 +1,14 @@
+#Benchmark,BDD Time
+164.gzip,2611
+175.vpr,2979
+176.gcc,4604
+181.mcf,2017
+186.crafty,61
+197.parser,2976
+252.eon,2457
+253.perlbmk,2089
+254.gap,2388
+255.vortex,0
+256.bzip2,18
+300.twolf,2711
+

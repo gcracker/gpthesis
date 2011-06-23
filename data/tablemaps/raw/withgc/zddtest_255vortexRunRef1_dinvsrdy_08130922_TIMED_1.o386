@@ -1,0 +1,100 @@
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 230252416
+Peak number of nodes: 1925448
+Peak number of live nodes: 132
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 5083637
+Number of cache hits: 275407
+Number of cache insertions: 4808230
+Number of cache collisions: 485690
+Number of cache deletions: 4296013
+Cache used slots = 67.83% (expected 68.22%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8421376
+Used buckets in unique table: 1.73% (expected 1.74%)
+Number of BDD and ADD nodes: 132
+Number of ZDD nodes: 193184
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 7317921
+Total number of nodes reclaimed: 1177903
+Garbage collections so far: 6
+Time for garbage collection: 1.51 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Post conversion DEBUG output:
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 230252416
+Peak number of nodes: 1925448
+Peak number of live nodes: 260701
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 5628290
+Number of cache hits: 502701
+Number of cache insertions: 5125589
+Number of cache collisions: 505167
+Number of cache deletions: 4505789
+Cache used slots = 70.02% (expected 70.54%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8421376
+Used buckets in unique table: 2.16% (expected 2.16%)
+Number of BDD and ADD nodes: 260701
+Number of ZDD nodes: 128
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 7578490
+Total number of nodes reclaimed: 1177903
+Garbage collections so far: 7
+Time for garbage collection: 1.65 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Maximum cycle to finish the program: 8292
+Total ops: 407570
+Average IPC: 49.15

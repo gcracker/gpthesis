@@ -1,0 +1,7 @@
+#Benchmark,Irrelevant Dependence Percent
+400.perlbench,49
+401.bzip2,40
+403.gcc,56
+456.hmmer,18
+464.h264ref,46
+471.omnetpp,61

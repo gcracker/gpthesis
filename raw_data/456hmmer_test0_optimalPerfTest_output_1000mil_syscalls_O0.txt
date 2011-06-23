@@ -1,0 +1,12 @@
+Optimal Performance Tests
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/456hmmer_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/456hmmer_test0_dinvsrdy_1000mil_syscalls_O0.dd
+
+Regions:0->1,Overlap:TL X:0 Y:61515492, BR X:0 Y:33882746
+#RegionID,Naive
+0,0
+1,0
+
+Execution Count: 1000000000
+Naive Count: 0
+Naive Performance Gain: 0.000000%

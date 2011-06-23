@@ -1,0 +1,733 @@
+Performance Tests
+Saving parallel overlay DD to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_dinvsrdy_1000mil_syscalls_O0.dd
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_dinvsdin_1000mil_syscalls_O0.dd
+
+Regions:0->1,Overlap:TL X:0 Y:999999600, BR X:0 Y:646666408
+
+Regions:0->2,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:0->3,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:0->4,Overlap:TL X:0 Y:999999600, BR X:0 Y:604999758
+
+Regions:0->5,Overlap:TL X:0 Y:999999600, BR X:0 Y:621666418
+
+Regions:0->6,Overlap:TL X:0 Y:999999600, BR X:0 Y:309999876
+
+Regions:0->7,Overlap:TL X:0 Y:999999600, BR X:0 Y:316666540
+
+Regions:0->8,Overlap:TL X:0 Y:999999600, BR X:0 Y:61666642
+
+Regions:0->9,Overlap:TL X:0 Y:999999600, BR X:0 Y:486666472
+
+Regions:0->10,Overlap:TL X:1757262 Y:999999600, BR X:1824849 Y:696666388
+Shrunk Regions:0->10,Naive Size:534006
+
+Slicing Complete. Time for 0 slices:8.027042
+Forward Slice Size:12263100
+Interference Removal Reverse Slice Size:524255
+Slicing Complete. Time for 498 slices:114.967094
+Interference Removal Forward Slice Set:10391450
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:0->11,Overlap:TL X:1798854 Y:999999600, BR X:1824849 Y:774999690
+Shrunk Regions:0->11,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:7363
+Slicing Complete. Time for 0 slices:0.000014
+Interference Removal Forward Slice Set:0
+
+Regions:0->12,Overlap:TL X:0 Y:999999600, BR X:0 Y:774999690
+
+Regions:0->13,Overlap:TL X:0 Y:999999600, BR X:0 Y:58333310
+
+Regions:0->14,Overlap:TL X:0 Y:999999600, BR X:0 Y:19999992
+
+Regions:0->15,Overlap:TL X:0 Y:999999600, BR X:0 Y:476666476
+
+Regions:0->16,Overlap:TL X:0 Y:999999600, BR X:0 Y:431666494
+
+Regions:0->17,Overlap:TL X:0 Y:999999600, BR X:0 Y:393333176
+
+Regions:0->18,Overlap:TL X:0 Y:999999600, BR X:0 Y:344999862
+
+Regions:0->19,Overlap:TL X:0 Y:999999600, BR X:0 Y:439999824
+
+Regions:0->20,Overlap:TL X:0 Y:999999600, BR X:0 Y:406666504
+
+Regions:1->2,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:1->3,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:1->4,Overlap:TL X:0 Y:998332934, BR X:0 Y:604999758
+
+Regions:1->5,Overlap:TL X:0 Y:986666272, BR X:0 Y:621666418
+
+Regions:1->6,Overlap:TL X:930621 Y:986666272, BR X:956616 Y:309999876
+Shrunk Regions:1->6,Naive Size:499094
+
+Slicing Complete. Time for 0 slices:1.044472
+Forward Slice Size:570796
+Interference Removal Reverse Slice Size:499094
+Slicing Complete. Time for 0 slices:0.000031
+Interference Removal Forward Slice Set:570816
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->7,Overlap:TL X:0 Y:986666272, BR X:0 Y:316666540
+
+Regions:1->8,Overlap:TL X:873432 Y:986666272, BR X:1029402 Y:61666642
+Shrunk Regions:1->8,Naive Size:1978089
+
+Time for 10000 slices:2946.951636
+Slicing Complete. Time for 14979 slices:3714.831575
+Forward Slice Size:55618364
+Interference Removal Reverse Slice Size:1974100
+Slicing Complete. Time for 3795 slices:1854.445269
+Interference Removal Forward Slice Set:20933048
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->9,Overlap:TL X:0 Y:986666272, BR X:0 Y:486666472
+
+Regions:1->10,Overlap:TL X:0 Y:986666272, BR X:0 Y:646666408
+
+Regions:1->11,Overlap:TL X:0 Y:986666272, BR X:0 Y:646666408
+
+Regions:1->12,Overlap:TL X:0 Y:986666272, BR X:0 Y:646666408
+
+Regions:1->13,Overlap:TL X:0 Y:986666272, BR X:0 Y:58333310
+
+Regions:1->14,Overlap:TL X:0 Y:986666272, BR X:0 Y:19999992
+
+Regions:1->15,Overlap:TL X:1060596 Y:986666272, BR X:1096989 Y:476666476
+Shrunk Regions:1->15,Naive Size:7819
+
+Slicing Complete. Time for 120 slices:52.109653
+Forward Slice Size:591001
+Interference Removal Reverse Slice Size:7326
+Slicing Complete. Time for 20 slices:0.007908
+Interference Removal Forward Slice Set:585960
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->16,Overlap:TL X:0 Y:986666272, BR X:0 Y:431666494
+
+Regions:1->17,Overlap:TL X:961815 Y:986666272, BR X:1081392 Y:393333176
+Shrunk Regions:1->17,Naive Size:330324
+
+Time for 10000 slices:1667.754751
+Slicing Complete. Time for 15789 slices:2571.235702
+Forward Slice Size:1090061
+Interference Removal Reverse Slice Size:360431
+Slicing Complete. Time for 0 slices:0.000031
+Interference Removal Forward Slice Set:330324
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->18,Overlap:TL X:1029402 Y:986666272, BR X:1096989 Y:344999862
+Shrunk Regions:1->18,Naive Size:357882
+
+Time for 10000 slices:2033.986802
+Time for 20000 slices:3908.226447
+Time for 30000 slices:5530.572177
+Slicing Complete. Time for 31278 slices:5735.975938
+Forward Slice Size:8119005
+Interference Removal Reverse Slice Size:357882
+Slicing Complete. Time for 291 slices:60.041595
+Interference Removal Forward Slice Set:3699472
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->19,Overlap:TL X:961815 Y:986666272, BR X:1096989 Y:439999824
+Shrunk Regions:1->19,Naive Size:0
+
+Time for 10000 slices:1922.210906
+Time for 20000 slices:3812.488626
+Slicing Complete. Time for 26866 slices:5077.457007
+Forward Slice Size:1163849
+Interference Removal Reverse Slice Size:2549
+Slicing Complete. Time for 0 slices:0.000024
+Interference Removal Forward Slice Set:474590
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:1->20,Overlap:TL X:0 Y:986666272, BR X:0 Y:406666504
+
+Regions:2->3,Overlap:TL X:93582 Y:999999600, BR X:93582 Y:38333318
+Shrunk Regions:2->3,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:7
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:2->4,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->5,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->6,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->7,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->8,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->9,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->10,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->11,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->12,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->13,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->14,Overlap:TL X:0 Y:999999600, BR X:0 Y:19999992
+
+Regions:2->15,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->16,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->17,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->18,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->19,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:2->20,Overlap:TL X:0 Y:999999600, BR X:0 Y:38333318
+
+Regions:3->4,Overlap:TL X:119577 Y:999999600, BR X:140373 Y:481666474
+Shrunk Regions:3->4,Naive Size:54114
+
+Slicing Complete. Time for 0 slices:0.698771
+Forward Slice Size:46009
+Interference Removal Reverse Slice Size:38884
+Slicing Complete. Time for 16297 slices:2861.268066
+Interference Removal Forward Slice Set:53448
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:3->5,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:3->6,Overlap:TL X:0 Y:999999600, BR X:0 Y:309999876
+
+Regions:3->7,Overlap:TL X:0 Y:999999600, BR X:0 Y:316666540
+
+Regions:3->8,Overlap:TL X:0 Y:999999600, BR X:0 Y:61666642
+
+Regions:3->9,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:3->10,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:3->11,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:3->12,Overlap:TL X:0 Y:999999600, BR X:0 Y:481666474
+
+Regions:3->13,Overlap:TL X:0 Y:999999600, BR X:0 Y:58333310
+
+Regions:3->14,Overlap:TL X:103980 Y:999999600, BR X:140373 Y:19999992
+Shrunk Regions:3->14,Naive Size:15956
+
+Slicing Complete. Time for 0 slices:0.028693
+Forward Slice Size:16128
+Interference Removal Reverse Slice Size:93403
+Slicing Complete. Time for 0 slices:0.000028
+Interference Removal Forward Slice Set:15956
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:3->15,Overlap:TL X:0 Y:999999600, BR X:0 Y:476666476
+
+Regions:3->16,Overlap:TL X:0 Y:999999600, BR X:0 Y:431666494
+
+Regions:3->17,Overlap:TL X:0 Y:999999600, BR X:0 Y:393333176
+
+Regions:3->18,Overlap:TL X:0 Y:999999600, BR X:0 Y:344999862
+
+Regions:3->19,Overlap:TL X:0 Y:999999600, BR X:0 Y:439999824
+
+Regions:3->20,Overlap:TL X:0 Y:999999600, BR X:0 Y:406666504
+
+Regions:4->5,Overlap:TL X:0 Y:998332934, BR X:0 Y:604999758
+
+Regions:4->6,Overlap:TL X:0 Y:998332934, BR X:0 Y:309999876
+
+Regions:4->7,Overlap:TL X:0 Y:998332934, BR X:0 Y:316666540
+
+Regions:4->8,Overlap:TL X:0 Y:998332934, BR X:0 Y:61666642
+
+Regions:4->9,Overlap:TL X:0 Y:998332934, BR X:0 Y:486666472
+
+Regions:4->10,Overlap:TL X:0 Y:998332934, BR X:0 Y:604999758
+
+Regions:4->11,Overlap:TL X:0 Y:998332934, BR X:0 Y:604999758
+
+Regions:4->12,Overlap:TL X:0 Y:998332934, BR X:0 Y:604999758
+
+Regions:4->13,Overlap:TL X:145572 Y:998332934, BR X:213159 Y:58333310
+Shrunk Regions:4->13,Naive Size:44340
+
+Slicing Complete. Time for 0 slices:0.055821
+Forward Slice Size:50794
+Interference Removal Reverse Slice Size:95473
+Slicing Complete. Time for 0 slices:0.000031
+Interference Removal Forward Slice Set:44340
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:4->14,Overlap:TL X:119577 Y:998332934, BR X:213159 Y:19999992
+Shrunk Regions:4->14,Naive Size:100674
+
+Slicing Complete. Time for 66 slices:2.460074
+Forward Slice Size:3147887
+Interference Removal Reverse Slice Size:115904
+Slicing Complete. Time for 0 slices:0.000029
+Interference Removal Forward Slice Set:2688845
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:4->15,Overlap:TL X:0 Y:998332934, BR X:0 Y:476666476
+
+Regions:4->16,Overlap:TL X:0 Y:998332934, BR X:0 Y:431666494
+
+Regions:4->17,Overlap:TL X:0 Y:998332934, BR X:0 Y:393333176
+
+Regions:4->18,Overlap:TL X:0 Y:998332934, BR X:0 Y:344999862
+
+Regions:4->19,Overlap:TL X:0 Y:998332934, BR X:0 Y:439999824
+
+Regions:4->20,Overlap:TL X:0 Y:998332934, BR X:0 Y:406666504
+
+Regions:5->6,Overlap:TL X:0 Y:664999734, BR X:0 Y:309999876
+
+Regions:5->7,Overlap:TL X:0 Y:664999734, BR X:0 Y:316666540
+
+Regions:5->8,Overlap:TL X:0 Y:664999734, BR X:0 Y:61666642
+
+Regions:5->9,Overlap:TL X:1377735 Y:664999734, BR X:1627287 Y:486666472
+Shrunk Regions:5->9,Naive Size:7707471
+
+Slicing Complete. Time for 6436 slices:1445.783108
+Forward Slice Size:29454520
+Interference Removal Reverse Slice Size:314
+Slicing Complete. Time for 3786 slices:1164.318987
+Interference Removal Forward Slice Set:15190244
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:5->10,Overlap:TL X:0 Y:801666346, BR X:0 Y:621666418
+
+Regions:5->11,Overlap:TL X:0 Y:909999636, BR X:0 Y:621666418
+
+Regions:5->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:621666418
+
+Regions:5->13,Overlap:TL X:0 Y:664999734, BR X:0 Y:58333310
+
+Regions:5->14,Overlap:TL X:0 Y:664999734, BR X:0 Y:19999992
+
+Regions:5->15,Overlap:TL X:0 Y:664999734, BR X:0 Y:476666476
+
+Regions:5->16,Overlap:TL X:0 Y:664999734, BR X:0 Y:431666494
+
+Regions:5->17,Overlap:TL X:0 Y:664999734, BR X:0 Y:393333176
+
+Regions:5->18,Overlap:TL X:0 Y:664999734, BR X:0 Y:344999862
+
+Regions:5->19,Overlap:TL X:0 Y:664999734, BR X:0 Y:439999824
+
+Regions:5->20,Overlap:TL X:0 Y:664999734, BR X:0 Y:406666504
+
+Regions:6->7,Overlap:TL X:0 Y:594999762, BR X:0 Y:309999876
+
+Regions:6->8,Overlap:TL X:930621 Y:376666516, BR X:956616 Y:61666642
+Shrunk Regions:6->8,Naive Size:570816
+
+Time for 10000 slices:2023.078344
+Slicing Complete. Time for 15027 slices:2979.254257
+Forward Slice Size:3807062
+Interference Removal Reverse Slice Size:328
+Slicing Complete. Time for 0 slices:0.168714
+Interference Removal Forward Slice Set:2944940
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:6->9,Overlap:TL X:0 Y:623333084, BR X:0 Y:309999876
+
+Regions:6->10,Overlap:TL X:0 Y:801666346, BR X:0 Y:309999876
+
+Regions:6->11,Overlap:TL X:0 Y:909999636, BR X:0 Y:309999876
+
+Regions:6->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:309999876
+
+Regions:6->13,Overlap:TL X:0 Y:376666516, BR X:0 Y:58333310
+
+Regions:6->14,Overlap:TL X:0 Y:376666516, BR X:0 Y:19999992
+
+Regions:6->15,Overlap:TL X:0 Y:536666452, BR X:0 Y:309999876
+
+Regions:6->16,Overlap:TL X:0 Y:494999802, BR X:0 Y:309999876
+
+Regions:6->17,Overlap:TL X:0 Y:411666502, BR X:0 Y:309999876
+
+Regions:6->18,Overlap:TL X:0 Y:376666516, BR X:0 Y:309999876
+
+Regions:6->19,Overlap:TL X:0 Y:468333146, BR X:0 Y:309999876
+
+Regions:6->20,Overlap:TL X:0 Y:424999830, BR X:0 Y:309999876
+
+Regions:7->8,Overlap:TL X:790248 Y:594999762, BR X:868233 Y:61666642
+Shrunk Regions:7->8,Naive Size:1822736
+
+Slicing Complete. Time for 57 slices:5.617848
+Forward Slice Size:9476371
+Interference Removal Reverse Slice Size:1808856
+Slicing Complete. Time for 275 slices:57.421681
+Interference Removal Forward Slice Set:8394284
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:7->9,Overlap:TL X:0 Y:623333084, BR X:0 Y:316666540
+
+Regions:7->10,Overlap:TL X:0 Y:801666346, BR X:0 Y:316666540
+
+Regions:7->11,Overlap:TL X:0 Y:909999636, BR X:0 Y:316666540
+
+Regions:7->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:316666540
+
+Regions:7->13,Overlap:TL X:0 Y:594999762, BR X:0 Y:58333310
+
+Regions:7->14,Overlap:TL X:0 Y:594999762, BR X:0 Y:19999992
+
+Regions:7->15,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:7->16,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:7->17,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:7->18,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:7->19,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:7->20,Overlap:TL X:0 Y:594999762, BR X:0 Y:316666540
+
+Regions:8->9,Overlap:TL X:0 Y:623333084, BR X:0 Y:61666642
+
+Regions:8->10,Overlap:TL X:0 Y:801666346, BR X:0 Y:61666642
+
+Regions:8->11,Overlap:TL X:0 Y:909999636, BR X:0 Y:61666642
+
+Regions:8->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:61666642
+
+Regions:8->13,Overlap:TL X:530298 Y:324999870, BR X:571890 Y:58333310
+Shrunk Regions:8->13,Naive Size:142434
+
+Slicing Complete. Time for 1509 slices:277.213227
+Forward Slice Size:7170578
+Interference Removal Reverse Slice Size:1786
+Slicing Complete. Time for 0 slices:2.109999
+Interference Removal Forward Slice Set:30
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:8->14,Overlap:TL X:0 Y:324999870, BR X:0 Y:19999992
+
+Regions:8->15,Overlap:TL X:0 Y:536666452, BR X:0 Y:61666642
+
+Regions:8->16,Overlap:TL X:0 Y:494999802, BR X:0 Y:61666642
+
+Regions:8->17,Overlap:TL X:961815 Y:411666502, BR X:1029402 Y:61666642
+Shrunk Regions:8->17,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6999046
+Slicing Complete. Time for 0 slices:0.000035
+Interference Removal Forward Slice Set:0
+
+Regions:8->18,Overlap:TL X:1029402 Y:363333188, BR X:1029402 Y:61666642
+Shrunk Regions:8->18,Naive Size:14
+
+Slicing Complete. Time for 0 slices:0.000050
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:14
+Slicing Complete. Time for 0 slices:0.000009
+Interference Removal Forward Slice Set:30
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:8->19,Overlap:TL X:961815 Y:468333146, BR X:1029402 Y:61666642
+Shrunk Regions:8->19,Naive Size:1088
+
+Slicing Complete. Time for 1150 slices:262.415663
+Forward Slice Size:8549957
+Interference Removal Reverse Slice Size:0
+
+Regions:8->20,Overlap:TL X:0 Y:424999830, BR X:0 Y:61666642
+
+Regions:9->10,Overlap:TL X:0 Y:801666346, BR X:0 Y:486666472
+
+Regions:9->11,Overlap:TL X:0 Y:909999636, BR X:0 Y:486666472
+
+Regions:9->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:486666472
+
+Regions:9->13,Overlap:TL X:0 Y:623333084, BR X:0 Y:58333310
+
+Regions:9->14,Overlap:TL X:0 Y:623333084, BR X:0 Y:19999992
+
+Regions:9->15,Overlap:TL X:0 Y:623333084, BR X:0 Y:476666476
+
+Regions:9->16,Overlap:TL X:0 Y:623333084, BR X:0 Y:431666494
+
+Regions:9->17,Overlap:TL X:0 Y:623333084, BR X:0 Y:393333176
+
+Regions:9->18,Overlap:TL X:0 Y:623333084, BR X:0 Y:344999862
+
+Regions:9->19,Overlap:TL X:0 Y:623333084, BR X:0 Y:439999824
+
+Regions:9->20,Overlap:TL X:0 Y:623333084, BR X:0 Y:406666504
+
+Regions:10->11,Overlap:TL X:1798854 Y:909999636, BR X:1897635 Y:696666388
+Shrunk Regions:10->11,Naive Size:272
+
+Slicing Complete. Time for 0 slices:3.675958
+Forward Slice Size:9982261
+Interference Removal Reverse Slice Size:272
+Slicing Complete. Time for 0 slices:0.000031
+Interference Removal Forward Slice Set:8704006
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:10->12,Overlap:TL X:0 Y:871666318, BR X:0 Y:696666388
+
+Regions:10->13,Overlap:TL X:0 Y:801666346, BR X:0 Y:58333310
+
+Regions:10->14,Overlap:TL X:0 Y:801666346, BR X:0 Y:19999992
+
+Regions:10->15,Overlap:TL X:0 Y:801666346, BR X:0 Y:476666476
+
+Regions:10->16,Overlap:TL X:0 Y:801666346, BR X:0 Y:431666494
+
+Regions:10->17,Overlap:TL X:0 Y:801666346, BR X:0 Y:393333176
+
+Regions:10->18,Overlap:TL X:0 Y:801666346, BR X:0 Y:344999862
+
+Regions:10->19,Overlap:TL X:0 Y:801666346, BR X:0 Y:439999824
+
+Regions:10->20,Overlap:TL X:0 Y:801666346, BR X:0 Y:406666504
+
+Regions:11->12,Overlap:TL X:1934028 Y:909999636, BR X:1986018 Y:794999682
+Shrunk Regions:11->12,Naive Size:1002
+
+Slicing Complete. Time for 0 slices:0.000056
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1002
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:6912953
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:11->13,Overlap:TL X:0 Y:909999636, BR X:0 Y:58333310
+
+Regions:11->14,Overlap:TL X:0 Y:909999636, BR X:0 Y:19999992
+
+Regions:11->15,Overlap:TL X:0 Y:909999636, BR X:0 Y:476666476
+
+Regions:11->16,Overlap:TL X:0 Y:909999636, BR X:0 Y:431666494
+
+Regions:11->17,Overlap:TL X:0 Y:909999636, BR X:0 Y:393333176
+
+Regions:11->18,Overlap:TL X:0 Y:909999636, BR X:0 Y:344999862
+
+Regions:11->19,Overlap:TL X:0 Y:909999636, BR X:0 Y:439999824
+
+Regions:11->20,Overlap:TL X:0 Y:909999636, BR X:0 Y:406666504
+
+Regions:12->13,Overlap:TL X:0 Y:871666318, BR X:0 Y:58333310
+
+Regions:12->14,Overlap:TL X:0 Y:871666318, BR X:0 Y:19999992
+
+Regions:12->15,Overlap:TL X:0 Y:871666318, BR X:0 Y:476666476
+
+Regions:12->16,Overlap:TL X:0 Y:871666318, BR X:0 Y:431666494
+
+Regions:12->17,Overlap:TL X:0 Y:871666318, BR X:0 Y:393333176
+
+Regions:12->18,Overlap:TL X:0 Y:871666318, BR X:0 Y:344999862
+
+Regions:12->19,Overlap:TL X:0 Y:871666318, BR X:0 Y:439999824
+
+Regions:12->20,Overlap:TL X:0 Y:871666318, BR X:0 Y:406666504
+
+Regions:13->14,Overlap:TL X:145572 Y:78333302, BR X:431517 Y:19999992
+Shrunk Regions:13->14,Naive Size:1089101
+
+Time for 10000 slices:639.467509
+Time for 20000 slices:1031.159355
+Time for 30000 slices:1386.789095
+Time for 40000 slices:1777.536670
+Slicing Complete. Time for 46711 slices:2027.545190
+Forward Slice Size:27298620
+Interference Removal Reverse Slice Size:0
+
+Regions:13->15,Overlap:TL X:0 Y:536666452, BR X:0 Y:58333310
+
+Regions:13->16,Overlap:TL X:0 Y:494999802, BR X:0 Y:58333310
+
+Regions:13->17,Overlap:TL X:0 Y:411666502, BR X:0 Y:58333310
+
+Regions:13->18,Overlap:TL X:0 Y:363333188, BR X:0 Y:58333310
+
+Regions:13->19,Overlap:TL X:0 Y:468333146, BR X:0 Y:58333310
+
+Regions:13->20,Overlap:TL X:0 Y:424999830, BR X:0 Y:58333310
+
+Regions:14->15,Overlap:TL X:0 Y:536666452, BR X:0 Y:19999992
+
+Regions:14->16,Overlap:TL X:0 Y:494999802, BR X:0 Y:19999992
+
+Regions:14->17,Overlap:TL X:0 Y:411666502, BR X:0 Y:19999992
+
+Regions:14->18,Overlap:TL X:0 Y:363333188, BR X:0 Y:19999992
+
+Regions:14->19,Overlap:TL X:0 Y:468333146, BR X:0 Y:19999992
+
+Regions:14->20,Overlap:TL X:0 Y:424999830, BR X:0 Y:19999992
+
+Regions:15->16,Overlap:TL X:0 Y:536666452, BR X:0 Y:431666494
+
+Regions:15->17,Overlap:TL X:1060596 Y:536666452, BR X:1081392 Y:393333176
+Shrunk Regions:15->17,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:287315
+Slicing Complete. Time for 0 slices:0.000043
+Interference Removal Forward Slice Set:0
+
+Regions:15->18,Overlap:TL X:1060596 Y:536666452, BR X:1102188 Y:344999862
+Shrunk Regions:15->18,Naive Size:677648
+
+Time for 10000 slices:2073.221069
+Time for 20000 slices:3976.835089
+Time for 30000 slices:5830.096962
+Slicing Complete. Time for 36239 slices:7014.490523
+Forward Slice Size:7368202
+Interference Removal Reverse Slice Size:0
+
+Regions:15->19,Overlap:TL X:1060596 Y:536666452, BR X:1102188 Y:439999824
+Shrunk Regions:15->19,Naive Size:0
+
+Time for 10000 slices:2249.898457
+Time for 20000 slices:4472.675997
+Time for 30000 slices:6665.505121
+Slicing Complete. Time for 31827 slices:7069.117831
+Forward Slice Size:1254367
+Interference Removal Reverse Slice Size:36624
+Slicing Complete. Time for 582 slices:122.037652
+Interference Removal Forward Slice Set:464976
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:15->20,Overlap:TL X:1102188 Y:536666452, BR X:1102188 Y:406666504
+Shrunk Regions:15->20,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:16->17,Overlap:TL X:0 Y:494999802, BR X:0 Y:393333176
+
+Regions:16->18,Overlap:TL X:0 Y:494999802, BR X:0 Y:344999862
+
+Regions:16->19,Overlap:TL X:0 Y:494999802, BR X:0 Y:431666494
+
+Regions:16->20,Overlap:TL X:0 Y:494999802, BR X:0 Y:406666504
+
+Regions:17->18,Overlap:TL X:1029402 Y:411666502, BR X:1081392 Y:344999862
+Shrunk Regions:17->18,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:3689564
+Slicing Complete. Time for 0 slices:0.000029
+Interference Removal Forward Slice Set:0
+
+Regions:17->19,Overlap:TL X:961815 Y:468333146, BR X:1081392 Y:393333176
+Shrunk Regions:17->19,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:290053
+Slicing Complete. Time for 0 slices:0.000030
+Interference Removal Forward Slice Set:0
+
+Regions:17->20,Overlap:TL X:0 Y:424999830, BR X:0 Y:393333176
+
+Regions:18->19,Overlap:TL X:1029402 Y:468333146, BR X:1112586 Y:344999862
+Shrunk Regions:18->19,Naive Size:473594
+
+Time for 10000 slices:2074.787996
+Time for 20000 slices:3966.133486
+Time for 30000 slices:5880.030804
+Slicing Complete. Time for 36239 slices:7024.716049
+Forward Slice Size:10406046
+Interference Removal Reverse Slice Size:305039
+Slicing Complete. Time for 3096 slices:624.194175
+Interference Removal Forward Slice Set:3559394
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Regions:18->20,Overlap:TL X:1102188 Y:424999830, BR X:1112586 Y:344999862
+Shrunk Regions:18->20,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:19->20,Overlap:TL X:1102188 Y:468333146, BR X:1148979 Y:406666504
+Shrunk Regions:19->20,Naive Size:65802
+
+Slicing Complete. Time for 1218 slices:144.064365
+Forward Slice Size:695604
+Interference Removal Reverse Slice Size:12049
+Slicing Complete. Time for 1556 slices:173.904460
+Interference Removal Forward Slice Set:541263
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+#RegionID,Naive
+0,1
+1,5
+2,0
+3,2
+4,3
+5,1
+6,2
+7,1
+8,6
+9,1
+10,2
+11,2
+12,1
+13,3
+14,3
+15,2
+16,0
+17,1
+18,4
+19,3
+20,1
+
+#RegionID,Interfer
+0,1
+1,6
+2,0
+3,2
+4,3
+5,1
+6,2
+7,1
+8,5
+9,1
+10,2
+11,2
+12,1
+13,2
+14,2
+15,2
+16,0
+17,1
+18,3
+19,4
+20,1
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/483xalancbmk_test0_perftest_output_1000mil_syscalls_O0.dd
+
+Execution Count: 1000000000
+Naive Count: 16474276
+Naive Performance Gain: 1.647428%
+Simple Interference Count: 6075142
+Simple Interference Performance Gain: 0.607514%

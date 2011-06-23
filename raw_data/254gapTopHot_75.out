@@ -1,0 +1,15 @@
+Detected Free Memory: 17629667328
+Top Hot:75
+Using {DIN,HOT} set from file:/home/ubuntu/254gapRunRef1_dinvshot_1000mil.dd
+Using the value 9689898 as a lower bound
+Using {DIN,RDY} file:/home/ubuntu/254gapRunRef1_dinvsrdy_1000mil.dd
+Using {DIN,DIN} file:/home/ubuntu/254gapRunRef1_dinvsrdy_1000mil.dd
+Old DINxRDY Size:19641684
+Building forward slice...
+Slicing Complete. Time for 20 slices:121.900404
+Forward slice building complete
+Building the reverse slice...
+Slicing Complete. Time for 0 slices:0.000030
+Reverse slice building complete
+New DINxRDY Size:0
+Saving to file:/home/ubuntu/254gapRunRef1_dinvsdin_1000mil.dd

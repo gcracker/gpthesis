@@ -1,0 +1,16 @@
+File Arguments
+/home/ubuntu/300twolfRunRef1_dinvsrdy_1000mil.dd
+/home/ubuntu/300twolfRunRef1_dinvsdin_1000mil.dd
+/home/ubuntu/invst/300twolf_dinvsrdy_invst_quickdead.dd
+35429838848
+Using memory size:35429838848
+Using {DIN,RDY} set from file:/home/ubuntu/300twolfRunRef1_dinvsrdy_1000mil.dd
+Using {DIN_i,DIN_d} file:/home/ubuntu/300twolfRunRef1_dinvsdin_1000mil.dd
+Top Din:999999999, Rdy:45006432
+Old {DIN,RDY} Size:1000000000
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:906164276
+Saving to file:/home/ubuntu/invst/300twolf_dinvsrdy_invst_quickdead.dd

@@ -1,0 +1,760 @@
+Instruction level parallelism (ILP) limitations have forced processor manufacturers to develop multi-core platforms with the expectation that programs will be able to exploit thread level parallelism (TLP). Multi-core programming shifts the burden of locating additional performance away from computer hardware to the software developers, who often attempt high-level redesigns focused on exposing thread level parallelism, as well as explore aggressive optimizations for sequential codes.
+
+Precise dynamic analysis can provide useful guidance for program optimization efforts, including efforts to find and extract thread level parallelism.  Unfortunately, finding regions of code amenable to further optimization efforts requires analyzing traces that can quickly grow in size.  Analysis of large dynamic traces (e.g. one billion instructions or more) is often impractical for commodity hardware.
+
+An ideal representation for dynamic trace data would provide compression.  However, decompressing large software traces, even if decompressed data is never permanently stored, would make many analysis impractical.  A better solution would allow analysis of the compressed data, without a costly decompression step. Prior works have developed trace compressors that generate an analyzable representation, but often limit the precision or scope of analyses.
+
+Zero-suppressed binary decision diagram (ZDDs) exhibit many of the desired properties of an ideal trace representation.  This thesis shows: (1) dynamic trace data may be represented by zero-suppressed binary decision diagrams (ZDDs); (2) ZDDs allow many analyses to scale; (3) encoding traces as ZDDs can be performed in a reasonable amount of time; and, (4) ZDD-based analyses, such as irrelevant instruction detection and potential coarse-grained thread level parallelism extraction, can reveal a number of performance opportunities in sequential programs. }
+
+\dedication[Dedication]{	% NEVER use \OnePageChapter here. % To Lea, family, and friends. }
+
+\acknowledgements{\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+
+%  I would like to acknowledge that this thesis only exists in cyberspace.
+
+}
+
+\ToCisShort	% a 1-page Table of Contents ??
+
+\LoFisShort	% a 1-page List of Figures ?? %	\emptyLoF	% no List of Figures at all ??
+
+%\LoTisShort	% a 1-page List of Tables ?? \emptyLoT	% no List of Tables at all ??
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%  footnote style; default=\arabic  (numbered 1,2,3...) %%%%  others:  \roman, \Roman, \alph, \Alph, \fnsymbol %	"\fnsymbol" uses asterisk, dagger, double-dagger, etc. %	\renewcommand{\thefootnote}{\fnsymbol{footnote}} %	\setcounter{footnote}{0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Introduction
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Instruction level parallelism (ILP) limitations have forced processor manufacturers to develop multi-core platforms with the expectation that programs will be able to exploit thread level parallelism (TLP)~\cite{ali-reza:2007:ppopp, intel:2005:dual, intel:2005:dual2}. This shift forces software engineers to try and improve the performance of their applications with high-level redesigns focused on exposing parallelism, as well as explore aggressive optimizations for sequential codes~\cite{park:2001lr, herlihy:2006:oopsla}. Extracting TLP by manual high-level software redesign is often difficult~\cite{herlihy:2008:art}. Instruction level dynamic program analysis can provide useful guidance for program optimization, including efforts to find and extract thread level parallelism. However, optimizations often exist within large dynamic traces~\cite{iyer:05:epic}, and finding opportunities for performance can require the analysis of gigabytes of trace data.  This thesis shows that: (1) Zero-Suppressed Binary Decision Diagrams (ZDDs) enables many analyses to scale; (2) ZDD creation is practical for traces of a billion instructions for a variety of benchmarks; and, (3) ZDD-based analysis, such as irrelevant instruction detection and potential coarse-grained thread level parallelism extraction, can reveal a number of performance opportunities that exist in sequential programs.
+
+SECTION: Dynamic Trace Compression
+
+
+Dynamic trace analysis has been used in prior work for performance tuning and hardware debugging~\cite{wu:94:micro}. Unfortunately, trace files can easily grow to terabytes in size depending on the information collected and the duration of traced execution.  Large dynamic trace sizes (e.g. 1 billion instructions or more) can make analysis and visualization impractical.
+
+Researchers have developed streaming compression algorithms (e.g., Burtscher \textit{et. al.}~\cite{burtscher:05:cgo}) that can compress these traces by a factor of 10 or more.  Unfortunately, these techniques do not speed trace analysis.  Compression techniques force analyzers to stream a decompressed version of the trace through the analysis engine.  Thus, analyses have complexity that depends on the \textit{decompressed} trace size, even though the decompressed trace is never stored on disk.  With large traces, this time-consuming process prohibits certain global analyses and interactive tools. Examples of prohibitively expensive operations include memory-data liveness visualization, hot code visualization, trace slicing~\cite{zhang:04:icse}, and interactive visualization of thread level parallelism.
+
+Ideally, a compressed trace format should allow analyses to operate directly on the compressed representation with complexity that is a function of \textit{compressed} trace size.  Then, if large portions of compressed traces fit in memory, global analyses and interactive visualization become possible.  Larus \textit{et. al.} propose such a technique for \textit{whole program path} analysis~\cite{larus:99:pldi}.  The technique uses the SEQUITUR compression method and works well for finding sequence matches in program execution.  However, \textit{whole program path} analysis does not permit direct application of data-centric analyses (e.g., trace slicing) that are of interest to system designers and programmers. Recent work on stride compression techniques addresses this issue by forming hierarchies based on accessed memory regions~\cite{minjang:10:micro}, but is limited to analyses based on loop-level dependence.
+
+This thesis explores reduced, ordered, binary decision diagram (ROBDDs)~\cite{bryant:86:ieeetc}, originally developed for hardware verification, as a trace representation for dynamic program analysis. BDDs can provide compression for large sets of data whose size would otherwise make analysis intractable.  For example, BDDs in hardware verification and validation allow equivalence checking of circuits with many states in constant time~\cite{brayton:96:cav}.  In program analysis, BDDs have been used to store program contexts for each object in a program analysis lattice object~\cite{whaley:07:thesis}. When BDDs are used for the analysis of large program traces~\cite{price:06:cal,price:08:pact,zhang:04:icse}, the size of dynamic program traces can be reduced by up to 60x when encoded as a BDD~\cite{price:06:cal}.  Further, this compressed representation can be analyzed without decompression, with algorithmic complexity that is a function of the compressed size~\cite{price:06:cal}.  Thus, trace-encoded BDDs provide a solution to the dynamic trace size issue by representing trace information in a compressed, yet analyzable, structure.
+
+SECTION: Dynamic Trace Analysis at Scale
+
+
+Encoding large traces as BDDs can be time consuming, requiring hours to days to complete~\cite{price:08:msthesis}.  This in turn makes tools that use BDD-based representations less effective than otherwise possible.  Prior applications of BDDs depend on three methods to mitigate BDD creation time: (1) search for a variable order that allows for fast BDD creation, (2) tune the tables and caching systems used in many BDD packages, and (3) encode an abstraction of the original data set.  This thesis discusses zero-suppressed BDDs (ZDDs) as an alternative to BDDs in order to reduce creation time for large traces.  Prior work has shown that ZDDs can reduce the final BDD size for sparse data and context data used during static program analysis~\cite{minato:01:STTT, lhotak:08:lcpc}, though this work has not applied ZDDs to compressing dynamic trace data.  This thesis shows that, without any data abstraction, ZDD-based SPEC INT 2000 benchmark traces are 25\% smaller than BDD-based traces.
+
+Traces from a variety of applications need be analyzed to demonstrate the efficacy of ZDD-based dynamic trace analysis.  Reducing trace creation time by 25\%, which intuitively should correspond to the 25\% reduction in representation size, is beneficial, but simply not enough to allow analysis of billions of instructions from a variety of benchmarks.  Initial tests of ZDD creation time proved to be far worse; the 25\% reduction in representation size did not translate to 25\% reduction in creation time.  ZDDs creation time was, for some benchmarks, $3\times$ slower.  Further investigation revealed a modification to the caching mechanism will remove this penalty in most cases.  In fact, ZDD-based trace compression algorithms have a smaller working set size making tuning possible for large traces, which results in a creation time that can be $9\times$ faster than BDD creation time for the same benchmark.  A detailed discussion of ZDD-based trace compression can be found in Chapter~\ref{chap:scale}.
+
+SECTION: Opportunities for Optimization
+
+
+Reducing ZDD creation time is crucial to explore opportunities for optimization in a wide range of program traces. Chapter~\ref{chap:tlpstudy} explores potential coarse-grained thread level parallelism (TLP) that exists in sequential applications. Chapter~\ref{chap:deadcode} demonstrates the use of ZDD-encoded traces to locate irrelevant instruction chains.
+
+\noindent\paragraph{Irrelevant Instruction Elimination}
+
+Irrelevant component elimination has been used in prior work to simplify abstractions for static analysis~\cite{corbett:icsc:2000}. This thesis uses a irrelevant component elimination with ZDD-encoded precise dynamic instruction dependencies.  This thesis will show that ZDD-based irrelevant instruction dependency elimination can locate instructions that fail to the following criteria: (1) the instruction dependence chain should reach the end of the program trace; or, (2) the dependence chain should produce an output through a Linux system call.
+
+ZDD-based irrelevant instruction dependency elimination is designed to iterate irrelevant code calculation until convergence.  However, irrelevant instruction dependency elimination can take days to complete for traces with long dynamic dependency chains. Empirical data presented in this thesis shows that, for all benchmarks in SPEC 2006 INT, the irrelevant instruction elimination algorithm reaches a steady state.  In this state, the number of instruction dependencies removed per slice iteration oscillates, but will not monotonically decrease until the analysis converges.  Thus, it is possible to approximate the number of instructions removed by iterating irrelevant instruction elimination until oscillation is detected.
+
+ZDD-based irrelevant instruction dependency elimination may also be used to filter irrelevant points from program visualizations. However, irrelevant instruction dependency elimination may also be used as a technique for code optimization or compiler evaluation. Chapter~\ref{chap:deadcode} contains a survey of irrelevant code removal from the SPEC 2006 INT benchmarks using both \textit{-O0} and \textit{-O2} optimization levels in the \textit{gcc} compiler.
+
+\noindent\paragraph{Hot-Code Visualization}
+
+In addition to the optimization analyzes presented in this thesis, which include coarse-grained thread level parallel region location and irrelevant instruction elimination, a hot-code visualization algorithm was created to focus optimization efforts on the most frequently executed regions of code.
+
+Hot-code analysis captures static instruction execution frequency and counts the frequency of execution.  The static hot code information is combined with a mapping from $dynamic\ instruction \ \rightarrow \ static\ instructions$ to create a new relation from each dynamic instruction to hot-code value.  The resulting visualizations can be found in Appendix~\ref{appdx:hotcode2000} and Appendix~\ref{appdx:hotcode2006}.
+
+SECTION: Contributions
+
+
+Traces from a variety of applications need be analyzed to demonstrate the efficacy of DD-based dynamic trace analysis. The results in this thesis show that ZDD-based trace compression results in 25\% smaller representation compared to BDD-based traces.  Further, ZDDs have a smaller working set, thus the ZDD creation package can tuned to cache the working set of the trace-ZDD during creation.  This reduces the number of garbage collection operations and removal of useful dead nodes. This reduces ZDD creation by up to 9$\times$.
+
+Hot code analysis can tell developers where to focus optimization and parallelization efforts. In addition to the optimization analyzes presented in this thesis, which include coarse-grained thread level parallel region location and irrelevant instruction elimination, a hot-code visualization algorithm was created to focus optimization efforts on the most frequently executed regions of code.
+
+The results from a survey of irrelevant instructions in the SPEC 2006 INT benchmark shows that over 50\% of instruction dependencies do not produce a value and do not reach the end of the program trace.  It is possible for an instruction to be relevant to program execution but not meet the specified requirements.  Therefore, this thesis also presents results comparing the irrelevant dependence counts from both the \textit{-O0} and \textit{-O2} compiler settings. The irrelevant dependency count from the \textit{-O0}, or non-optimized, compiler setting provides a worst-case value to normalize further comparison operations.  Furthermore, this technique can test the effectiveness of static compiler optimizations, as well as locate potential irrelevant instruction streams.
+
+This thesis explores potential coarse grain TLP that may be exploitable in conjunction with TLS and ILP techniques.  In particular, the thesis examines the SPEC INT 2006 benchmark suite, looking for parallelism with a granularity of thousands of dynamic instructions, and is not restricted to loop-level TLP. The survey presented in Chapter~\ref{chap:tlpstudy} found, on average, 7\% of instructions may be extracted as course-grained parallelism, and for the benchmark 445.gobmk, 44\% of instructions may be extracted as coarse-grained TLP.
+
+\noindent\paragraph{Potential Coarse-Grained Thread Level Parallelism}
+
+An effective, popular, and widely studied mechanism for automatically exploiting parallelism is to dynamically and speculatively thread groups of instructions~\cite{steffan:00:isca,prabhu:03:ppopp,wu:2008:cdp,chen:cc:2004,vachharajani:07:pact,dou:2007:trans,wang:2009:dps,marcuello:00:ipdps,bridges:2007:micro,thies:2007:micro,raman:2010:asplos}. Recent advances in this thread level speculation~(TLS) can parallelize execute over 90\% of some codes~\cite{marcuello:00:ipdps}.  However, TLS predictor accuracy limits TLS to fine-grained or loop-level TLP~\cite{marcuello:00:ipdps,warg:2001:pact,bridges:2007:micro,thies:2007:micro,raman:2010:asplos}.
+
+This thesis explores potential coarse grain TLP that may be exploitable in conjunction with TLS and ILP techniques.  In particular, the thesis examines the SPEC INT 2006 benchmark suite, looking for parallelism with a granularity of thousands of dynamic instructions, and is not restricted to loop-level TLP.  Coarse-grained TLP is located using the ParaMeter dynamic trace visualization tool~\cite{price:08:pact}.  This technique, which is discussed in Section~\ref{sec:parameter}, generates a visualization of program execution, called a DINxRDY (dynamic instruction number by ready time) plot.  This plot visually shows potential coarse grain TLP as lines that overlap on the x-axis.
+
+Potential parallel regions found within DINxRDY plots are further analyzed to expose dependence relationships.  Inter-region dependence conflicts, discussed in Section~\ref{sec:chop} are found by dynamic dependence graph (DDG) slicing~\cite{gallager:91:se,agrawal:90:pldi,agrawal:92:thesis,korel:88:ipl}. Slicing DDGs that contain a large number of instructions (e.g. billions) can take weeks~\cite{agrawal:90:pldi, zhang:03:icse}. To efficiently, and precisely, explore the dependency relationships between two regions of code this thesis extends the DDG \textit{chop} to use the ZDD-compressed trace format.  The dynamic chop~\cite{gupta:2005:ase, krinke:2004:sqc} is often faster than an intersection of a forward and reverse slice and requires no loss of precision.
+
+The survey presented in Chapter~\ref{chap:tlpstudy} found, on average, 7\% of instructions may be extracted as course-grained parallelism, and for the benchmark 445.gobmk, 44\% of instructions may be extracted as coarse-grained TLP.
+
+Finally, a summary of contributions, techniques, and results of this thesis may be found in Chapter~\ref{chap:conclusion}.
+
+Thus, this thesis presents the following contributions:
+
+ A ZDD-based trace compression algorithm with tuning for larg
+ traces, resulting in a 25\% reduction in BDD size and a $9\times$ reduction in trace compression time. A ZDD-based iterative analysis for locating irrelevan
+ instruction dependencies A method to quickly explore coarse-grained parallelism in serial
+ applications. A ZDD-based dependence graph chopping algorithm need for th
+ aforementioned method. A survey of coarse-grained thread level parallelism in the SPEC
+ INT 2006 benchmarks that shows up to 44\% of instructions may be extractable as coarse grain TLP.
+
+SECTION: Hypothesis
+
+
+\emph{ZDD-based dynamic trace analysis can identify hot-code paths, irrelevant instructions, and potential coarse-grained thread level parallelism in sequential codes, and thus create opportunities for program optimization.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Background and Related Works in Parallel Computation
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter presents work relevant to this thesis. This chapter examines some prior works to motivate the contributions in this thesis.
+
+SECTION: Exploration of Parallel Computation
+
+
+The SD3~\cite{minjang:10:micro} tool performs inter-region dependence analyses similar to those discussed in this work.  The regions located by SD3 are defined stride-compression, and therefore are generally limited to locating potential parallelizable regions in loops.  TLP located at the loop level will not likely conflict with the potential coarse-grained TLP found in this work.
+
+There are many works exploring thread-level speculative techniques~\cite{steffan:00:isca,vachharajani:07:pact,warg:2001:pact,wu:2008:cdp,chen:cc:2004,dou:2007:trans,wang:2009:dps,Rangan:2004kx,Ottoni:2005uq}. TLS is often most effective when extracting threads with fewer than 1000 instructions~\cite{marcuello:00:ipdps}.  Therefore, TLS from these prior works should work synergistically with potential coarse-grained TLP found in this work.  Prior work by Ravi~\textit{et. al.} discusses a technique based on transactional memory to expand TLS to coarse-grained threads, but is limited to scientific codes with regular access patterns~\cite{ramaseshan:08:nc}. TLS has been applied to C and Java objects that contain thousands of instructions, but work by Warg \textit{et. al.} found limit gains were realized from objects with more than 100 instructions~\cite{warg:2001:pact}. The potential threads found in this paper are not required to be wholly contained in a loop or object.
+
+The Figure~\ref{fig:tlptlscompare} contains the percent of parallelized instructions found in this work and the performance gained from a TLS system that uses perform control, data dependence, and data value speculation~\cite{kejariwal:2007:tap}. TLS performance values, also shown in Figure ~\ref{fig:tlsperf}, are generated using control, data dependence, and data value speculation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Other Background and Related Works
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This chapter presents work relevant to this thesis.  Trace compression, visualization, and analysis are examined in this chapter. Decision diagram (DD) construction techniques are also discussed.
+
+SECTION: Dynamic Trace Compression
+
+
+Managing large dynamic traces is the key problem when performing whole program analyses. Consider that 1 billion 64bit values need $\approx$ 7.5~GB of uncompressed storage and that traces usually contain billions of instructions~(10-1000s of GB). Therefore, any trace analysis tool must operate on compressed data. Further, analyzing this data many need either sequential or random access mandating different compression techniques. ParaMeter requires rapid random access coupled with good compression.
+
+Researchers have used three methods to reduce trace sizes: (1) abstraction; (2) compression by predictor-based encoding; and, (3) compression by program structure exposing methods, such as run-length encoding or hierarchical grammars.  Stride-based compression techniques have recently emerged as a viable option for some analyses, such has hot-code and memory-conflict location~\cite{minjang:10:micro}.
+
+\subsection{Abstraction and Elimination}
+
+Data abstraction creates an abstract representation for concrete data. Abstract representations can be more compact and easier to analyze. For example, some abstractions applied to concrete dynamic trace data include, but are not limited to, a mapping from instructions to object creation/destruction~\cite{sridharan:07:pldi}, or program slices~\cite{zhang:04:icse}.
+
+Data elimination removes information from a trace that is deemed unnecessary by the original analysis designer.  For example, the whole program path (WPP) trace representation~\cite{larus:99:pldi} aggregates data from multiple occurrences of the same program path.  However, information that is difficult to aggregate, like cache misses or CPU temperatures, will be removed from the WPP representation.
+
+\subsection{Sequitur Compression}
+
+The Sequitur compression algorithm is useful for compressing instruction level dynamic traces into an analyzable representation~\cite{manning:97:dcc}.  However, while Sequitur can rapidly provide an analysis with information about the instruction sequences in a trace, specific instruction information often requires an expensive traversal of the grammar.  Do demonstrate grammar creation, lets generate a grammar for the following sequence of letters: $$ abcdabcdabc $$ We begin by creating a start rule: $$ S \rightarrow abcdabcdabc $$ Sequitur forms a grammar online, thus the algorithm would first detect the repetition of the variables $ab$.  The algorithm then creates a new rule $A \rightarrow ab$: $$ \begin{array}{lcll} S \rightarrow AcdAcdAc\\ A \rightarrow ab\\ \end{array} $$ This processes is repeated for $Ac$, thereby forming a hierarchical grammar: $$ \begin{array}{lcll} S \rightarrow BdBdB\\ A \rightarrow ab\\ B \rightarrow Ac\\ \end{array} $$ This processes is repeated for $Bd$: $$ \begin{array}{lcll} S \rightarrow CCB\\ A \rightarrow ab\\ B \rightarrow Ac\\ C \rightarrow Bd\\ \end{array} $$
+
+\subsection{Sequential Compressed Traces}
+
+Burtscher \textit{et. al.}~\cite{burtscher:05:cgo} in 2005 described a predictor based strategy requiring only mispredictions to be stored in the trace file. The resulting compressed trace file is further compressed with a standard stream compressor such as gzip or bzip2 achieving a 10 times compression factor with rapid streaming decompression. Generating interactive DINxRDY plots from such stream compressed data is impractical as the data must be entirely decompressed for each frame, $\approx 1$ minute on a 2.0~GHz Pentium 4 for each 800x600 pixel plot in a trace containing only 100~million instructions.  Worse, selecting and performing slice analysis on instructions requires two additional passes through the complete data set adding another 2 minutes to the frame's render time.
+
+Work by both Iyer \textit{et. al.}~\cite{iyer:05:epic} and Zhang et al.~\cite{zhang:04:icse} addresses this problem by generating intermediate representations. Iyer's work maintains a stream compressed intermediate representation suitable for working on the current frame, but leaves the navigation problem unsolved.  Zhang et al.~\cite{zhang:04:icse} use a Reduced Ordered Binary Decision Diagrams (ROBDDs, or BDDs) to maintain the \textit{intermediate analysis} results in a compact form in RAM. However, the navigation problem, as well as inquiries into the contents of a DINxRDY plot, is still prohibitively expensive.
+
+SECTION: Reduced Ordered Binary Decision Diagrams
+
+
+Reduced, ordered, binary decision diagrams (BDD) were first described by Akers~\cite{akers:78:itc} and further developed by Bryant~\cite{bryant:86:ieeetc}.  BDDs have been used in many domains including hardware verification~\cite{brayton:96:cav}, cryptography~\cite{krause:02:ec}, static program analyses~\cite{whaley:05:pods,whaley:04:pldi}, and some use in dynamic trace analysis~\cite{zhang:04:icse}.
+
+BDDs can be viewed as compressed versions of binary decision trees. Figure~\ref{fig:bdtree}(a) shows a binary tree for the three variable function $f(x,y,z) = x'y + xy' + z$.  For example, traversing the left edges of the graph we evaluate $f(0,0,0)$ as $0$.  BDDs are a graph data structure in which each node corresponds to a Boolean function (just as each node in a binary decision tree)~\cite{bryant:86:ieeetc}. The following two reduction rules are used to convert a decision tree to an ROBDD (BDD henceforth):
+
+ When two BDD nodes \textit{p} and \textit{q} are identical, edges
+ leading to \textit{q} are changed to lead to \textit{p} and \textit{q} is removed
+
+ If both edges from a node \textit{p} go to
+ child node \textit {q}, then \textit{p} is eliminated and all nodes that go to \textit{p} are redirected to \textit{q}.
+
+The last reduction rule is commonly referred to as the \emph{S-deletion} rule~\cite{minato:01:STTT}. Figure~\ref{fig:robdd}(b) shows the BDD for $f$ under the variable ordering~$(x,y,z)$ with additional compression provided by inverting edges. To compute $f(0,0,0)$ with the BDD, we traverse the $0$, or false, arc of the X node, the false arc of the rightmost Y node and the inverting false arc of the Z node. Because we reached the constant $1$ node through an odd number of inverting arcs, we find $f(0,0,0)=0$ as before.
+
+SECTION: Zero-Suppressed Binary Decision Diagrams
+
+
+For this research I propose using BDDs to represent sets of dynamic program trace information.  The Boolean function that describes the inclusion of a set in a Boolean function is called the \textit{characteristic function}. BDDs can perform many set operations efficiently~\cite{bryant:86:ieeetc}.
+
+However, Minato~\cite{minato:93:dac} found that BDDs were inconvenient for sets of binary vectors.  The tuple based dynamic trace encoding method used by this proposal employs a variation of this binary vector encoding technique.  Specifically, a Minato creates sets of combinations of objects represented by a binary vector, $(x_{n}x_{n-1}x_{n-2}...x_{2}x_{1})$.  In this vector each bit represents the inclusion of the object in the set.  Using BDDs, each bit in the binary vector and a variable in the Boolean formula.  The size of a BDD depends on the number of variables in the encoding, as well as the variable order.  Therefore, it is useful to know the smallest number of relevant bits in a bit vector before performing BDD encoding.  Unfortunately, it is not always possible to know the smallest number of relevant bits for a bit vector.
+
+The following example better illustrates this problem: The vector ${0101}$ has four bits.  If the rightmost bit is the least significant bit, then, in this case, let us assume only the rightmost three bits are actually useful.  It is possible to encode this vector in a BDD with three variables, representing the vector ${101}$.  However, imagine this operation ${101} \wedge {1101}$. The BDD must not contain four variables, but Boolean algebra states the vector ${101}$ contains a \textit{don't care} value for the fourth bit, which is not correct.  Thus, the BDD should be built with a variable for each potential bit in the bit vector.
+
+Minato~\cite{minato:93:dac} proposed a variation on BDDs, called ZDDS, to address this issue, and to reduce the size of BDDs for sparse data sets.  ZDDs are a variant of BDDs where the \textit{S-deletion} compression rule is replaced by the use of the \emph{pD-deletion} compression rule.  In this section we see that ZDDs provide better compression than BDDs for trace data, and over $9\times$ faster creation times.
+
+Zero-suppressed BDDs, or ZDDs, replace the \textit{S-deletion} rule with the \textit{pD-deletion} rule.  This rule states the following: \begin{itemize}
+
+ If the \textit{1} edge from a node \textit{p} leads to a zero
+ terminal node and whose \textit{0} edge a child node \textit {q}, then \textit{p} is eliminated and all nodes that lead to \textit{p} are redirected to \textit{q}.
+
+\end{itemize}
+
+Furthermore, ZDDs do not typically implement the inverting arcs optimization, i.e., ZDDs have no inverting arcs, only plain $then$ and $else$ arcs.  To see how this rule change results in a different decision diagram, consider, once again, the function $f(x,y,z)$ whose binary decision tree was shown in Figure~\ref{fig:bdtree}a. Figure~\ref{fig:rozdd} shows the ZDD for this function. For this function, ZDDs perform worse than BDDs, as most of the values for $(x,y,z)$ cause the function to evaluate to 1.  However, for sparse functions (i.e., those with few 1's in the range), such as trace data, ZDDs provide superior compression.
+
+SECTION: Hot Code Analysis
+
+
+Ammons \textit{et. al.} found that hot code regions often occupy less than 28\% of the overall program code, resulting in up to 98\% of level one cache misses~\cite{ammons:97:sigplan}.  Therefore, hot code information can tell programmers where to focus parallelization efforts.  Using Sequitur-based trace representations, hot path information can be generated by recursively summing the number of occurrences of sub-rules in a grammar~\cite{larus:99:pldi}.
+
+SECTION: Dynamic Trace Analysis
+
+
+Dynamic traces information is simply information collected from a program at run-time.  Software developers can use instruction level dynamic trace analyses to create a picture of their software's run-time behavior, as well as software debugging~\cite{zhang:04:micro}.  However, dynamic traces can grow quickly in size (gigabytes to terabytes) for seconds of program execution. Analysis of large quantities of data can be impractical using commodity hardware~\cite{reiss:01:icse}.
+
+SECTION: DINxRDY Visualizations
+
+
+Though parallelism found in prior studies~\cite{lam:92:isca, wall:93:decwrl, austin:92:isca} is not accessible to ILP techniques~\cite{wall:93:decwrl}, it may yield to thread level parallel (TLP) techniques.  The Dynamic Instruction Number vs. Ready-time~(DINxRDY) plot (originally introduced by Postiff et al.~\cite{postiff:98:um}) can be useful in identifying the potential TLP inherent in many sequential applications.
+
+DINxRDY plots graphically represent parallel structures and expose potential threads for TLP~\cite{iyer:05:epic}.  Consider the hypothetical 5 instruction trace shown in Figure~\ref{fig:ex_dinxrdy}(a).  The vertical axis represents the Dynamic Instruction Number~(DIN) and the horizontal axis represents the earliest time at which an instruction can be scheduled~(ready-time, RDY).  For example, Figure~\ref{fig:ex_dinxrdy}(a) shows that the 3rd instruction in the trace (dynamic instruction 3, or DIN 3) was issued in cycle 3. Figure~\ref{fig:ex_dinxrdy}(b) shows the same trace under an ideal schedule (i.e., one cycle per instruction, perfect branch prediction, infinite hardware resources, etc.) that respects all data dependencies.  This plot shows that DIN~3 is dependent on DIN~2 which in turn is dependent on DIN~1.  Further, the plot shows that DIN~4 is not dependent on DINs 1, 2, or 3 because it is scheduled in the first cycle.  Dependency analysis is needed to decide whether DIN~5 is dependent on DIN~1 or 4.
+
+Iyer \textit{et. al.} observed that lines running from lower left to upper right in DINxRDY plots form dependency chains of relatively nearby instructions in a program~\cite{iyer:05:epic}.  Further, diagonal lines that have overlapping x-extents suggest regions of code that might be convertible to TLP. Figure~\ref{fig:sampledinvrdy} shows a DINxRDY plot for 254.gap with groups of divergent dependency chains~(DDCs) (circled in the figure) suitable for TLP extraction analysis. From Iyer's work~\cite{iyer:05:epic}, we know that these suggest the presence of either data parallelism or pipeline parallelism.
+
+The Dynamic Instruction Number vs. Ready-time~(DINxRDY) plot (originally introduced by Postiff \textit{et. al.} in 1998~\cite{postiff:98:um}) can be a useful in identifying the potential TLP inherent in many sequential applications.  The dynamic instruction number (DIN) is a unique number assigned to each instruction when the instruction executes at run-time.  A single static instruction can execute many times during program execution and each occurrence of that static instruction would generate a new DIN.  The relation from $SIN \rightarrow DIN$ is also stored.
+
+This thesis uses sets $\{DIN_{i}, \{DIN_{d}\}\}$ for program analysis. The $DIN_{i} \rightarrow \{DIN_{d}\}$ relation, also referred to as {DINxDIN} in this thesis, maps an instruction $DIN_i$ to a set of instructions $DIN_{d}$.  The members of the set $DIN_{d}$ have a dependency that is resolved by dynamic instruction $DIN_i$.  Thus, it is possible to use the $DIN_{i} \rightarrow DIN_{d}$ to identify dependency relationships and perform dependence slicing. A full list of ZDD trace tuple types can be found in Appendix~\ref{appdx:tracetypes}.
+
+\subsection{Dynamic Program Slicing}
+
+Numerous works have used dynamic program trace slicing, introduced by Korel \textit{et. al.}~\cite{korel:88:ipl}, to explore program behavior at run-time.  Dynamic slices have been developed for locating the source of observed program bugs~\cite{tip:94:cwi,agrawal:90:pldi}, program testing~\cite{gallager:91:se} and software maintenance~\cite{kamkar:93:sm}. Dynamic traces can quickly grow in size beyond what can be stored and analyzed on commodity hardware~\cite{agrawal:90:pldi, zhang:04:micro, price:06:cal}. Generating slices from large dynamic traces can require days of computation time~\cite{agrawal:90:pldi}.  To reduce slice times, this thesis extends the prior use of dependence chopping~\cite{gupta:2005:ase,krinke:2004:sqc}.
+
+Zhang \textit{et. al.} first explored slicing with BDDs~\cite{zhang:04:icse}. In the work by Zhang, program slice information for each instruction is generated from the dynamic trace information. A variation of technique used to create program slices is also used for the work in this thesis.
+
+\subsection{Hot Code Analysis}
+
+Hot code analysis can tell developers where to focus optimization and parallelization efforts.  Ammons \textit{et. al.} found that hot code regions often occupy less than 28\% of the overall program code, resulting in up to 98\% of level one cache misses~\cite{ammons:97:sigplan}.  Therefore, hot code information can tell programmers where to focus parallelization efforts.  Using Sequitur-based trace representations, hot path information can be generated by recursively summing the number of occurrences of sub-rules in a grammar. Using BDD-encoded traces, hot code information is generated directly from the program execution by maintaining a count of each static instruction's occurrence in the dynamic trace.
+
+SECTION: Parallelism in Computing
+
+
+Until recently, software engineers could gain performance by waiting for processor core performance to improve.  However, manufacturers have been unable to extract performance from uni-processor designs, forcing a trend towards multi-core systems~\cite{sutter:05:ddj}. Tasks can be parallelized using a variety of scopes:
+
+\begin{itemize} System Parallelis
+ Application Parallelis
+ Thread Level Parallelis
+ Instruction Level Parallelis
+ \end{itemize}
+
+With the advent of compute cloud infrastructures, tasks that may be parallelized among systems can be expanded (or reduced) depending on demand~\cite{nurmi:09:ccgrid}.  Application parallelism exists if there is a need, or desire, to run multiple applications at the same time on the same operating system.  Thread level parallel distributes work between regions of the same program, with no programmer stated total order between regions.  Programmers can state an explicit order using synchronization methods such as locks, mutexes or transactions~\cite{larus:tmbook:mcp:2006, gottschlich:10:cgo}.
+
+Limit studies during the 1990s showed that sequential applications have considerable potential parallelism~\cite{lam:92:isca, wall:93:decwrl, austin:92:isca, postiff:98:um} that is amenable to thread level parallelism~(TLP)~\cite{iyer:05:epic} but is not accessible via hardware instruction level parallel techniques~(ILP)~\cite{wall:93:decwrl}. Therefore, the proposed research will focus on software optimization through extraction of thread level parallelism from existing sequential applications.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Dynamic Trace Analysis at Scale
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+SECTION: BDD Compression Time
+
+
+To understand why BDD-based compression is time consuming, this section begins by first describing BDD-based trace representation\cite{price:06:cal}. This section then analyzes the BDD-trace creation algorithm and shows that inefficient trace BDD compression is primarily caused by:
+
+\begin{itemize} Frequent garbage collection of dead BDD nodes
+ The deallocation of potentially reusable dead BDD nodes and
+ corresponding BDD system cache entries \end{itemize}
+
+\subsection{Traces as Boolean Functions}
+
+BDDs represent boolean functions, and thus, to represent traces as BDDs, let us review how to represent trace data as a boolean function~\cite{price:06:cal}.
+
+Observe that boolean functions can encode arbitrary binary data.  For example, if the represented universe, $\Omega$, consists of 4 elements $\Omega = \{a,b,c,d\}$, then a 2-bit encoding can be used to represent each element, $\{a \mapsto 00, b \mapsto 01, c \mapsto 10, d \mapsto 11\}$~\cite{price:06:cal}.  It is possible to create a boolean indicator function (i.e., characteristic function) that evaluates to true for any subset of the $\Omega$ with this encoding.  For example, the indicator function for the set $\{a,b\}$ is $I_{\{a,b\}} = x'$ where $x$ is the variable for the most-significant bit (MSb) of the set encoding and $x'$ is read as not $x$.
+
+\newcommand{\DIN}{\ensuremath{\mathrm{DIN}}} \newcommand{\PC}{\ensuremath{\mathrm{PC}}}
+
+It is possible to extend this simple notion to encode different data sets necessary for representing and analyzing the trace.  All trace data is encoded by a set of tuples $(DIN,data)$ where the DIN is the dynamic instruction number (i.e., the position in the trace, the first instruction has DIN 0, the second DIN 1, and so on).  Therefore, a simple instruction trace is encoded as $(DIN,PC)$, where the PC is the program counter value. Similarly, more complex data relationships can be encoded by simply joining the binary representations of arbitrary tuples into a single equation.
+
+This chapter uses three types of data tuples.  The first is $(DIN,SIN)$, where the $SIN$ is the static instruction number or $PC$ (Note that this thesis will use $PC$ and $SIN$ interchangeably).  The second tuple type is $(DIN,DIN)$, which is used to represent edges of the trace's dynamic data dependence graph.  If a decision diagram (DD) encodes an edge set $E$, if $(10,24)$ is in the edge set then the 24th instruction in the trace depends on the 10th instruction in the trace. If we wish to know the $PC$ of either of these instructions, we can refer to the $(DIN,SIN)$ tuple set.  Finally, this thesis evaluates $(DIN,RDY)$ tuple sets, which encode the ideal schedule for the trace, i.e., for each $DIN$, $RDY$ is the earliest time a scheduler could execute that $DIN$ given an ideal machine~\cite{price:08:pact}.  A description of all tuple members and relation types can be found in Appendix~\ref{appdx:tracetypes}.
+
+\subsection{Boolean Functions as BDDs}
+
+BDDs can be viewed as compressed versions of binary decision trees. Figure~\ref{fig:bdtree}(a) shows a binary tree for the three variable function $f(x,y,z) = x'y + xy' + z$.  For example, traversing the left edges of the graph we evaluate $f(0,0,0)$ as $0$.  BDDs are a graph data structure in which each node corresponds to a boolean function (just as each node in a binary decision tree does)~\cite{bryant:86:ieeetc}. A full discussion of ROBDD creation can be found in Chapter~\ref{chap:background}, but for clarity the two reduction rules for converting a decision tree to an BDD are:
+
+ When two BDD nodes \textit{p} and \textit{q} are identical, edges
+ leading to \textit{q} are changed to lead to \textit{p} and \textit{q} is removed
+
+ If both edges from a node \textit{p} go to
+ child node \textit {q}, then \textit{p} is eliminated and all nodes that go to \textit{p} are redirected to \textit{q}.
+
+The last reduction rule is commonly referred to as the \textit{S-deletion} rule~\cite{minato:01:STTT}. Figure~\ref{fig:robdd}(b) shows the BDD for $f$ under the variable ordering~$(x,y,z)$ with additional compression provided by inverting edges. To compute $f(0,0,0)$ with the BDD, we traverse the $0$, or false, arc of the X node, the false arc of the rightmost Y node and the inverting false arc of the Z node. Because we reached the constant $1$ node through an odd number of inverting arcs, we find $f(0,0,0)=0$ as before. BDD creation is covered in more detail in the literature~\cite{somenzi:09:cu,bryant:86:ieeetc,price:06:cal}.
+
+\subsection{BDD Unique Tables}
+
+Prior work shows how to encode trace data as BDDs.  However, the encoding processes can take an unreasonable amount of time. Inefficient encoding is primarily caused by the interaction of garbage collection and BDD system caches, specifically the unique table and the operation cache.
+
+The \textit{S-deletion} rule used to reduce a binary tree into a BDD is realized through the \textit{unique table}.  The unique table enforces strong canonicity because each new node has a unique location in the table.  If a node is a duplicate of an existing table node (i.e., it represents the same boolean function), the node is reused from the unique table~\cite{bryant:86:ieeetc}. The unique table also increases the efficiency of BDD creation.  If a BDD node already exists the BDD management system, such as CUDD~\cite{somenzi:09:cu} (a state of the art, high-performance, BDD package), saves time by reusing the existing node and avoiding re-computation for the remainder of the nodes below the cached one.
+
+The unique table can be used to tune the overall creation time of the BDD by altering its size.  The size of the unique table must at least be large enough to contain all of the live BDD nodes.  With CUDD, however, nodes contained in the subtable can also be dead. Upon garbage collection, these dead nodes are added to \textit{death row}, which is an additional cache used to hold recently invalidated nodes. The nodes on death row can also be resurrected and reused.
+
+In addition to a simple node cache, BDD packages, including CUDD, also have an operation cache that caches the results of BDD operations. For example, if one requests a computation of $B \land C$ and the result is $A$, then CUDD will cache that $A = B \land C$.  If $B \land C$ is requested again, it will immediately return BDD $A$ from this cache, and perform the potentially exponential recursion required to recompute $A$.  This cache gives BDDs their polynomial time complexity~\cite{bryant:86:ieeetc}.
+
+Unfortunately, garbage collection frees the nodes on death row in order to free memory, which, in turn, evicts corresponding results from the operation cache.  As we will see, the eviction of useful results caused by accumulation of real garbage ultimately hinders BDD creation efficiency.
+
+\subsection{Garbage Collection and Compression Time}
+
+Garbage collection allows BDD packages to control memory consumption and free the dead nodes on death row.  The CUDD package uses a saturating reference counter to keep track of the amount of node use, and to determine if a node is safe to delete.  A reference counting system also aids other BDD functions related to automatic variable ordering.
+
+CUDD uses plain pointers to \texttt{DdNode}s as a handle to an entire BDDs.  If $A$, $B$, and $C$ have different pointer values they will represent different BDDs.  In the pseudo code presented above, the $B$ and $C$ BDDs have their reference counts increased to prevent them from being garbage collected.  $B$ and $C$ are then combined using a boolean $\land$ operator to create the new BDD $A$.  $A$ then also has its reference count increased to prevent garbage collection, but the code now decreases the reference count of $B$ and $C$.  If $B$ and $C$ now have reference counts equal to zero they are considered \textit{dead}, and could be removed by garbage collection.
+
+To explain how BDD trace creation produces garbage, we first must consider the BDD creation algorithm.  The algorithm is simple.  For each tuple, a BDD is created to represent the single element tuple (see the work~\cite{price:06:cal} for details), call it $E$, and this BDD is OR'ed into the set of all tuples, call it $\Omega$.  The pseudo-code for the algorithm using CUDD calls is shown in Figure~\ref{fig:bddbuildset}.
+
+Notice that at the end of each loop iteration the only live nodes are those that are part of the BDD for the current $\Omega$; all other nodes are marked as dead.
+
+Now, let us examine how this algorithm interacts with the BDD package and its data structures.  Let us set $E = \bar{X}\land\bar{Y}\land\bar{Z}$ which is exactly the shape of a tuple BDD, assuming that we only had 8 possible tuples and thus 3 boolean variables (in practice there are typically 64-128 variables per tuple). In Figure~\ref{fig:bddtrace01} we can see the BDD representation of the boolean function for $E = \bar{X}\land\bar{Y}\land\bar{Z}$.
+
+As shown in the figure~\ref{fig:bddbuildset}, the start of the algorithm initializes the trace BDD as empty.  After the BDD is created for $E$, $E$ is added to the trace BDD by computing $\Omega = E \lor 0$, as shown in the pseudo-code earlier.
+
+Now we need to add our second tuple to the set, call it $E'$.  The BDD for $E'$ is shown in Figure~\ref{fig:bddtrace02} along with the BDD for $\Omega$ and the garbage created so far.
+
+Figure~\ref{fig:bddtrace03} shows the trace BDD $\Omega$ after adding $E'$.  In this new BDD, the $X$ term is now a \textit{don't - care} value because the result of the function no longer depends on the value of $X$.  The \textit{S-deletion} rule removes \textit{don't care} values from the BDD structure.  Figure~\ref{fig:bddtrace03} shows the BDD for the function $(\bar{X}\land\bar{Y}\land\bar{Z})\lor(X\land\bar{Y}\land\bar{Z})$ with the $X$ node removed.
+
+In Figure~\ref{fig:bddtrace04} we show yet another tuple $E'' = \bar{X}\land\bar{Y}\land\bar{Z}$, which will be added to $\Omega$ along with the current trace BDD and the dead BDD nodes.  At this point, notice that the entire BDD for both $E$ and $E'$ is dead and will be garbage collected.
+
+Now, notice that $E''$ is exactly the same as $E$.  However, the BDD for $E$ is garbage and is on death row.  If no garbage collection operation has taken place between the creation of $E$ and the creation of $E''$, the BDD package can quickly resurrect $E''$.  If death row has been cleared by garbage collection, then the BDD for function $\bar{X}\land\bar{Y}\land\bar{Z}$ must be recreated.
+
+Furthermore, though not shown in this simple example, a similar effect may occur even without repeated tuples.  If $\Omega$ from prior iterations of the trace creation loop contained sub-BDDs that would be useful for future $\Omega's$, they too may be garbage collected and thus have to be recreated.
+
+The garbage collection process is triggered when system memory is running low, or when the amount of garbage reaches a threshold set by the BDD package.  This threshold is generally tuned to balance garbage collection time and frequency.  If the working set of trace-BDD creation is less than the threshold for garbage collection, then the results of many BDD operations will be cached in death row and in the operation cache.  However, if the working set size of BDD creation is larger than this threshold, the BDD will free the nodes on death row. Furthermore, if the working set size of the BDD continues to grow throughout trace-BDD creation, then garbage collection will occur more often exacerbating the problem and increasing runtime.
+
+To get an idea of the working set size, we can look at the amount of garbage produced during trace-BDD construction. Figure~\ref{fig:164gzipBDDline} shows the number of live BDD nodes and the total number of BDD nodes present at each sample point in a trace compression run with automatic garbage collection enabled (a run without garbage collection quickly exhausts all system memory) vs. the number of instructions processed in for the $(DIN,DIN)$ BDD for 164.gzip.
+
+Graphs for trace creation in other SPEC INT benchmarks look similar to 164.gzip.  From the graph we can see that while the number of live nodes is small, the working set size grows quickly (the spikes in the graph) until automatic garbage collection reclaims the nodes.  Because the BDD package must manage this garbage, the package (1) spends most of its time in garbage collection (see Figure~\ref{fig:specintbreakdown} for a breakdown of garbage collection time vs. total trace creation time), and (2) removes the fraction of nodes that could accelerate BDD creation during garbage collection.
+
+SECTION: ZDD Compressed Traces
+
+
+ZDDs are a variant of BDDs where the \textit{S-deletion} compression rule is replaced by the use of the \textit{pD-deletion} compression rule.  In this section we see that ZDDs provide better compression than BDDs for trace data, and over $9\times$ faster creation times.
+
+\subsection{BDDs vs. ZDDs}
+
+Zero-suppressed BDDs, or ZDDs, replace the \textit{S-deletion} rule with a the \textit{pD-deletion} rule.  This rule states the following: \begin{itemize}
+
+ If the \textit{1} edge from a node \textit{p} leads to a zero
+ terminal node and whose \textit{0} edge a child node \textit {q}, then \textit{p} is eliminated and all nodes that lead to \textit{p} are redirected to \textit{q}.
+
+\end{itemize}
+
+Furthermore, ZDDs do not typically implement the inverting arcs optimization, i.e., ZDDs have no inverting arcs, only plain $then$ and $else$ arcs.  To see how this rule change results in a different decision diagram, consider, once again, the function $f(x,y,z)$ whose binary decision tree was shown in Figure~\ref{fig:bdtree}a. Figure~\ref{fig:rozdd} shows the ZDD for this function.
+
+Note, for this function, ZDDs are bad, as most of the values for $(x,y,z)$ cause the function to evaluate to 1.  However, for sparse functions (i.e., those with few 1's in the range), such as trace data, ZDDs are far better.
+
+\subsection{Traces as ZDDs}
+
+To see the advantage of ZDDs for trace creation, let us revisit the equation $E = \bar{X}\land\bar{Y}\land\bar{Z}$ from Section~\ref{sec:bddwork}.  The ZDD, with trace-ZDD and garbage, is shown in Figure~\ref{fig:zddtrace01}.
+
+ZDD construction does not apply the \textit{S-deletion} rule, therefore the resulting graph does contain Boolean \textit{don't - care} values. However, if a node's $then$ arc terminates at the Boolean false value, that node is removed.  In the equation $B = \bar{X}\land\bar{Y}\land\bar{Z}$ all $then$ arcs terminate at 0, therefore the $X$, $Y$ and $Z$ nodes are removed, leaving a very small ZDD. We can now construct the trace ZDD for the equation $E' = X\land\bar{Y}\land\bar{Z}$, as shown in Figure~\ref{fig:zddtrace02}.
+
+The ZDD for $E' = X\land\bar{Y}\land\bar{Z}$ now contains a node for $X$.  Notice $X$ is a boolean \textit{don't-care}, but the BDD \textit{don't-care} reduction rule has been replaced by the ZDD's \textit{zero-suppression} rule.  Therefore $X$ is not removed and the $then$ and $else$ arcs point to the same node.
+
+Figure~\ref{fig:zddtrace03} shows the state of the trace ZDD after the addition of $E'$.  Notice how little garbage is produced after this addition.  Now, like the example from Section~\ref{sec:bddwork}, we can add the function $E''=\bar{X}\land\bar{Y}\land\bar{Z}$, where $E''$ is equal to $E$.  Like trace-BDD creation, the efficiency of this final step will depend if garbage collection has occurred between the creation of $E$, $E'$, and the trace BDD.  However, the ZDD creation of this trace ZDD produced less garbage than the BDD, therefore it is less likely to invoke garbage collection.
+
+In both functions $(\bar{X}\land\bar{Y}\land\bar{Z})$ and $(X\land\bar{Y}\land\bar{Z})$ most $then$ arcs terminate at the false, or constant zero node. Note that the trace representation method described in Section~\ref{sec:bddwork} uses nodes that with zero terminating arcs to represent the binary $0$ in a trace.  Therefore, as long as the binary representation of such trace data contains many zeros, and is therefore sparse, ZDDs can achieve good compression. In fact, ZDDs have been found achieve better compression levels than BDDs for sets of combinations, as long as the data remains sparse~\cite{minato:01:STTT}.
+
+Figure~\ref{fig:zddbddSize}, as well as Table~\ref{tab:bddzddsize}, shows that for same set of traces studied in the work in \cite{price:08:pact} ZDDs achieve approximately 25\% better compression.  Figure~\ref{fig:zddbddSize} shows the number of nodes required to represent the BDDs required for various trace analyses and visualizations.  The data is for 250 million instruction traces from the SPEC INT 2000 benchmark suite.
+
+\begin{table} \small \begin{center} \subtable[DIN vs RDY]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&14776031&20191795\\ 175.vpr&26758473&39488720\\ 176.gcc&47191021&65452369\\ 181.mcf&13371337&18857151\\ 186.crafty\mpfootnotemark[2]&1426447&1989019\\ 197.parser&20298664&28928181\\ 252.eon&13438978&19243812\\ 253.perlbmk&15447265&22507110\\ 254.gap&18167754&24067457\\ 255.vortex\mpfootnotemark[2]&193184&260701\\ 256.bzip2\mpfootnotemark[2]&101730&138353\\ 300.twolf&26470707&36674682\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs SIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&2395329&2954172\\ 175.vpr&6220387&8094630\\ 176.gcc&16477762&22851246\\ 181.mcf&4166872&5302426\\ 186.crafty\mpfootnotemark[2]&664726&944032\\ 197.parser&4346929&5561810\\ 252.eon&5758390&8175031\\ 253.perlbmk&2728992&3490785\\ 254.gap&3563179&4998176\\ 255.vortex\mpfootnotemark[2]&140930&212049\\ 256.bzip2\mpfootnotemark[2]&61088&89025\\ 300.twolf&5912991&7515602\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs DIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&22014614&28903561\\ 175.vpr&27382836&41901557\\ 176.gcc&51666471&76472039\\ 181.mcf&5669206&8109996\\ 186.crafty\mpfootnotemark[2]&1438765&2081447\\ 197.parser&25075154&35929906\\ 252.eon&7925540&12075596\\ 253.perlbmk&10525806&15667727\\ 254.gap&13014623&17960509\\ 255.vortex\mpfootnotemark[2]&226433&312175\\ 256.bzip2\mpfootnotemark[2]&113627&157461\\ 300.twolf&21568405&34202383\\ \hline \end{tabular} \end{center} \footnotetext[1]{Full benchmark trace, benchmark ran to completion.} \end{minipage} } \caption{BDD vs ZDD Node Count} \end{center} \end{table}
+
+\subsection{ZDD Variable Order, Visualization, and Analysis}
+
+It is important to note that ZDD and BDD size can vary significantly depending on the choice variable order.  Furthermore, the choice of the best variable order for a ZDD may not be the same as the best order for the equivalent BDD.  This can be problematic, as discussed in Section~\ref{sec:visual}, as certain visualization algorithms depend on the variable order in the ZDD.  Fortunately, Lhot\'{a}k \textit{et. al.} found that in many cases the best BDD variable order is also the best ZDD variable order~\cite{lhotak:08:lcpc}.  Lhot\'{a}k \textit{et. al.} also show that it is trivial to convert any BDD-based program analysis into a ZDD-based analysis.  Applying Lhot\'{a}k \textit{et. al.}'s insight and the concept of BDD-encoded dynamic traces~\cite{price:06:cal}, all the standard analyses can also be applied to ZDD compressed traces.  The one non-trivial algorithm is the trace visualization algorithm used by the ParaMeter tool~\cite{price:08:pact}.  However, Section~\ref{sec:visual} shows how to adapt this algorithm used for ZDDs.
+
+\subsection{ZDD Compression Time}
+
+BDD compression time may increase as node count decreases~\cite{price:08:msthesis}. However, the ZDD unique table growth in Figure~\ref{fig:164gzipZDDline} (compared to Figure~\ref{fig:164gzipBDDline}) shows that far less garbage is produced during trace-ZDD creation. Because there is far less garbage produced, the ZDD-based trace compressor spends far less time collecting garbage. Figure~\ref{fig:zddbddGC} compares the amount of time required for garbage collection for ZDD and BDD encoded traces for the set of trace data used by ParaMeter~\cite{price:08:pact}. These figures are also presented in Table~\ref{tab:bddzddgctime}. Notice that the ZDD-based code spends far less time collecting garbage.
+
+\begin{table} \small \begin{center} \subtable[DIN vs RDY]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&6149&34744\\ 175.vpr&9395&60352\\ 176.gcc&18260&86119\\ 181.mcf&4970&33083\\ 186.crafty\mpfootnotemark[2]&69&505\\ 197.parser&7881&51172\\ 252.eon&6478&46865\\ 253.perlbmk&6417&41291\\ 254.gap&5232&34420\\ 255.vortex\mpfootnotemark[2]&1&10\\ 256.bzip2\mpfootnotemark[2]&14&97\\ 300.twolf&8511&51914\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs SIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&20522&92132\\ 175.vpr&18718&114093\\ 176.gcc&47518&201188\\ 181.mcf&7704&63987\\ 186.crafty\mpfootnotemark[2]&143&1196\\ 197.parser&20720&114329\\ 252.eon&10218&82897\\ 253.perlbmk&9549&68938\\ 254.gap&11944&75353\\ 255.vortex\mpfootnotemark[2]&3&19\\ 256.bzip2\mpfootnotemark[2]&38&216\\ 300.twolf&13663&100911\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs DIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&1964&12410\\ 175.vpr&3879&30428\\ 176.gcc&7184&44513\\ 181.mcf&3447&26368\\ 186.crafty\mpfootnotemark[2]&69&262\\ 197.parser&3042&28573\\ 252.eon&4001&32793\\ 253.perlbmk&2298&21147\\ 254.gap&2547&24172\\ 255.vortex\mpfootnotemark[2]&2&9\\ 256.bzip2\mpfootnotemark[2]&18&90\\ 300.twolf&3315&31596\\ \hline \end{tabular} \end{center} \footnotetext[1]{Full benchmark trace, benchmark ran to completion.} \end{minipage} } \caption{BDD vs ZDD Garbage Collection Time (Seconds)} \end{center} \end{table}
+
+Now that we know that ZDDs have a small working set size and that the amount of garbage produced stays almost flat during trace-ZDD creation, it is possible to further accelerate ZDD trace creation by adjusting the size of the unique table so that it will contain the working set of the trace-ZDD.
+
+In Figure ~\ref{fig:zddbddtime}, and Table ~\ref{tab:bddzddcreationtime}, we can see the time, in seconds, required to encode 250 million trace instructions into a ZDD compared to the time required by BDDs.  In this figure, the size of the unique table was manually increased to be initially 100x the normal size for both BDD and ZDD based creation. Note that because BDDs generate so much garbage, their working set size is much larger than available RAM, meaning that they gain little benefit from the 100x increase in table size.  ZDDs on the other hand are much faster because the larger unique table can fit almost the entire working set of useful BDD nodes, and garbage does not cause these nodes to be reaped from death row and the operation cache.
+
+\begin{table} \small \begin{center} \subtable[DIN vs RDY]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&11487&61046\\ 175.vpr&15699&87107\\ 176.gcc&24612&116137\\ 181.mcf&9995&57038\\ 186.crafty\mpfootnotemark[2]&219&1495\\ 197.parser&13392&79809\\ 252.eon&11817&73301\\ 253.perlbmk&11773&64993\\ 254.gap&10145&59557\\ 255.vortex\mpfootnotemark[2]&5&25\\ 256.bzip2\mpfootnotemark[2]&50&469\\ 300.twolf&14125&77106\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs SIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&6100&37454\\ 175.vpr&10532&55314\\ 176.gcc&14015&76713\\ 181.mcf&8974&48328\\ 186.crafty\mpfootnotemark[2]&268&1385\\ 197.parser&9214&52987\\ 252.eon&10503&56826\\ 253.perlbmk&7779&44185\\ 254.gap&8013&48764\\ 255.vortex\mpfootnotemark[2]&7&25\\ 256.bzip2\mpfootnotemark[2]&71&526\\ 300.twolf&9558&56593\\ \hline \end{tabular} \end{center} \end{minipage} } \subtable[DIN vs DIN]{ \begin{minipage}{\hsize} \renewcommand{\thempfootnote}{\fnsymbol{footnote}} \begin{center} \begin{tabular}{|r||r|r|r|} \hline Benchmark & ZDD & BDD\\ \hline 164.gzip&33581&156663\\ 175.vpr&34234&178788\\ 176.gcc&64607&276295\\ 181.mcf&21517&121063\\ 186.crafty\mpfootnotemark[2]&521&3711\\ 197.parser&35717&178564\\ 252.eon&24280&147433\\ 253.perlbmk&21072&125391\\ 254.gap&25234&143287\\ 255.vortex\mpfootnotemark[2]&10&61\\ 256.bzip2\mpfootnotemark[2]&132&1099\\ 300.twolf&27167&162679\\ \hline \end{tabular} \end{center} \footnotetext[1]{Full benchmark trace, benchmark ran to completion.} \end{minipage} } \caption{BDD vs ZDD Creation Time (Seconds)} \end{center} \end{table} SECTION: ZDD Dependence Visualization
+
+
+Section~\ref{sec:zddwork} described how to trivially extend BDD-based trace analysis to ZDDs by leveraging prior work.  The visualization scheme used by ParaMeter allows interactive identification, analysis, and extraction of parallelism based on BDD-compressed traces~\cite{price:08:pact}.  However, this visualization algorithm is specific to BDDs.  Given the promise of this approach, we show that it is possible to apply the same with techniques on ZDDs with only slight modifications.
+
+\subsection{DINxRDY Visualization}
+
+The ParaMeter tool, used throughout this thesis, creates a visualization based on the DINxRDY plot, originally introduced by Postiff \textit{et. al.}~\cite{postiff:98:um}.  An example DINxRDY plot is shown in Figure \ref{fig:sampledinvrdy}.
+
+DINxRDY plots can show potential regions of parallelism as follows (as first described by Iyer \textit{et. al.}~\cite{iyer:05:epic}).  Lines in a DINxRDY plot that run from the lower-left to upper right form dependence chains of relatively nearby instructions~\cite{iyer:05:epic}.  Iyer \textit{et. al.} found that diagonal lines with overlapping x-extents could potentially represent regions of code that have the potential to be parallelized (circled in the Figure).  DINxRDY plots can be used to find and extract parallelism by locating a region in a DINxRDY plot with overlapping x-extents in the 175.vpr benchmark~\cite{price:08:pact}.  Using classic program analyses applied to traces, this example extracted both data and pipeline parallelism from the benchmark.
+
+\subsection{Extended Visualization Algorithm} It is possible to generate visualizations from trace-BDDs in milliseconds by treating the BDD structure like a quad-tree~\cite{price:08:pact}.  To understand this algorithm, consider Figures~\ref{fig:quadtree} and \ref{fig:samplequadtreeds}.
+
+In graphics, a quad-tree decomposes two-dimensional image data into hierarchical regions. Figure~\ref{fig:samplequadtreeds} shows a quad tree for the DINxRDY graph shown in Figure~\ref{fig:quadtree}.  The region outlined on Figure~\ref{fig:quadtree} represents its decomposition, where node N$i$ corresponds to the region $i$ in the figure.
+
+The visualization algorithm used by ParaMeter is straightforward. Under the variable ordering used in this work, if a BDD is traversed like a tree, then the even levels correspond to bisecting each region horizontally, and the odd levels correspond to bisecting each region vertically.  Thus traversing two levels of the BDD corresponds to traversing a single level of the corresponding quad tree.  However, since BDDs use the \textit{S-deletion} rule to eliminate nodes, this algorithm must account for eliminated nodes.  Since ZDDs use a \textit{pD-deletion} rule, the algorithm for BDDs applies to ZDDs with only a change to how missing levels in the ZDD traversal are handled and what to do when the terminal state is reached.
+
+Recall that the \textit{S-deletion} rule removes nodes from a BDD when both the 1 and 0 outgoing branches lead to the same child node.  The quad-tree graphing algorithm must detect removed BDD nodes before graphing the extracted data.  For example, consider the indicator function $(\bar{X}\land\bar{Y}\land\bar{Z})\lor(X\land\bar{Y}\land\bar{Z})$. This function represents the set of two numbers $\{000, 100\}$.  In the BDD for this function, shown in Figure~\ref{fig:bddtrace03} the node for $X$ was removed because it is a boolean \textit{don't care}. Thus, the algorithm used by ParaMeter has to virtually traverse the graph shown in Figure~\ref{fig:bddGraph} instead.  To do this, ParaMeter detects that a variable was skipped during traversal and then orchestrates its traversal to virtually traverse outgoing arcs from the removed node, which is shown in grey.  If a traversal through the BDD reveals many removed nodes, the number of new arcs grows exponentially in the number of \textit{don't care} values, however, ParaMeter implements a number of optimizations to terminate traversals early, limiting the exponential explosion.
+
+To adapt this algorithm to ZDDs we must understand how to deal with missing nodes.  In practice, the final algorithm is simpler than that for BDDs because the \textit{pD-reduction} rule does not have to be undone like the \textit{S-deletion} rule.
+
+In Figure~\ref{fig:zddGraph} we can see the ZDD for the function $(\bar{X}\land\bar{Y}\land\bar{Z})\lor(X\land\bar{Y}\land\bar{Z})$ with removed nodes also highlighted in grey.  Notice that, as per the pD-deletion rule, all of the removed nodes have \textit{then} branches leading to the $0$ terminal case. Therefore, any time the graphing algorithm detects a removed node, it knows that there is no need to traverse the half of the region where the variable of the missing node is true, and thus needs to do no work.  For the half where the variable is false, the algorithm virtually traverses the else-edge of the missing node, just as the BDD-based algorithm traversed both the then and the else edges. Accordingly, Figure~\ref{fig:visualTime} shows ZDD rendering is slightly faster than BDDs.  Data is from a 2.8 GHz Intel Core i7 with 12~GB of RAM running Linux.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: ZDD-based Dynamic Trace Slicing and Chopping
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The pseudo code in Figure~\ref{fig:bddslice} shows how to compute the reverse slice of an instruction with a BDD-encoded DIN $d$~\cite{price:06:cal}.  In this pseudo-code, $e$ is given as the indicator function for the set of edges in the data dependence graph, $I_d$ is given as the indicator function for the instruction with DIN $d$, and $s$ is the indicator function for the reverse slice that is computed~\cite{price:06:cal}.  The variables in indicator function $I_d$ are in the vector $\mathbf{d^1}$, the variables in $s$ are also in vector $\mathbf{d^1}$, and the variables in $e$ are $(\mathbf{d^1},\mathbf{d^2})$.  The function $\mathrm{rename}$ takes a function $s$ and renames the variables from set $\mathbf{d^2}$ to the corresponding variables in set $\mathbf{d^1}$.
+
+Slicing depends on the use of existential quantification to remove variables.  When using BDDs, variables that are removed are interpreted as boolean \textit{don't care} values.  However, variables that are removed from a ZDD are interpreted as zero values.
+
+Thus, in order to perform operations that depend on \textit{don't care} values, an additional step is taken to insert \textit{don't care} values.  The slicing algorithm shown in Figure~\ref{fig:zddITEslice} uses the function $\mathrm{yDC}(d)$ to insert \textit{don't care} values in the $y$ variable positions.  This function, given the variable positions for the tuple $(x,y)$ and an identity function $d$, will return the ZDD dot product\cite{mishchenko:01:sc} of the function $d$ and the universal set of bits for tuple variable $y$.  A similar function, $\mathrm{xDC(s)}$, is used for forward slicing.
+
+Let $C$ and $D$ be two trace encoded ZDDs.  The unate product of two trace ZDDs is defined as $0 \ if \ \exists x(x \in C \cup D \ and \ x' \in C \cup D)$, otherwise $C \cup D$~\cite{hachtel:00:kap}.
+
+Note that the If-Then-Else (ITE) operation can be used to create a logic conjunction.  For example, $C \wedge D$ is logically equivalent to $if(C) \ then(D) \ else \ 0$.
+
+If $x$ is a literal, for $\exists x \in C \wedge \exists x \in D | $. If $x \not \in C \vee x \not \in D|0$.  Missing variables are treated like $0$, and not like a Boolean \textit{don't care}.  Thus, the $ITE$, using bit vectors encoded as ZDDs, captures the logic $and$ behavior used in slicing.
+
+When ZDD functions are unate, the ZDD intersection operation does not take the place of the logic conjunction.
+
+SECTION: ZDD Slice Performance
+
+
+It is possible for a DDG slice to iterate billions of times before reaching a fixed point.  Therefore, even a small decrease in slice time can be multiplied into substantial overall increase in performance.  This section compares the slicing performance for the \textit{ITE} and the \textit{Intersect} techniques.  The \textit{product} slicing algorithm failed to complete in a reasonable amount of time (one week) for these slicing tests.  In fact, a \textit{product} based slice failed for DDGs with only 1 million nodes.
+
+\subsection {Experimental Setup}
+
+Each ZDD slicing technique was tested using a 2.6 GHz Xeon server with 32 GB of RAM.  Each slice starts from an initial set of 10, 100, 1000, or 10000 randomly selected instructions from a set of 1 billion instructions. Each slicing operation was repeated six to ten times; the final results in Figure~\ref{fig:slicing} shows the arithmetic mean.
+
+These results show that for most operations ZDD slicing via intersection performs better than the ITE method.  Therefore, other analyses in this thesis that depend on a program slice will use intersection.  The intersection technique still requires more steps than the comparable BDD slice.  Analyses in this thesis that use slicing would likely benefit from a unification of operations used for ZDD slicing, similar to the work by Lhotak \textit{et. al.} with relational operations used for points-to analysis~\cite{lhotak:08:lcpc}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Irrelevant Component Elimination
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Irrelevant component elimination was used in prior works for removing components from high-level program abstractions~\cite{corbett:icsc:2000}.  For this thesis, a component is the dependency relation $DIN_i \rightarrow DIN_d$, which maps an instruction $DIN_i$ to instructions, $DIN_d$, that produce a value $DIN_i$ required for correct execution.  The $DIN_i \rightarrow DIN_d$ relation, which also forms a dynamic dependence graph, is stored in sets of $\{DIN_i,DIN_d\}$.
+
+Irrelevant instruction elimination removes instructions from a set $d_1$ whose forward slice does not reach any instruction in the set $d_2$.  Defining the members of the set $d_2$ will alter the outcome of an analysis.  For example, din-ready analysis creates the set $d_2$ by computing the set of instructions in the final $RDY$ position in the set $\{DIN,RDY\}$.
+
+The whole-trace irrelevant instruction elimination adds an additional set to $d_2$. This set contains any dynamic instruction that produces an output value by invoking a Linux system call.  An instruction is considered irrelevant if:
+
+\begin{itemize} An instructions from a set $d_1$ whose forward slice does no
+ reach any instruction in the set of instructions in the final $RDY$ position in the set $\{DIN,RDY\}$.
+
+ An instructions from a set $d_1$ whose forward slice does no
+ reach any instruction in the set of instructions that produce an output through a Linux system call, such as \textit{fwrite}. \end{itemize}
+
+It is possible for instructions removed by irrelevant instruction elimination to be the source of useful output.  However, irrelevant instruction captures the notion of program execution for cases when a program first performs a series of tasks while producing output to the user using system calls, or outputs values to the user at the end of the program execution using some other means. A future extension to dead-ready analysis could allowing the user to define where valuable output takes place in the source code by using the $\{DIN,SIN\}$ edge set.  The static instruction number contained in the $\{DIN,SIN\}$ set can be used to lookup source code~\cite{price:08:pact}.
+
+Figure~\ref{fig:deadslice} shows pseudo-code for irrelevant instruction dependency slice algorithm.  This algorithm contains new functions $get\_tuple\_top\_y$, $build\_tuple$, and the set $\Omega$. The function $get\_tuple\_top\_y$ returns the value of the largest value of the $y$ variable position, as an integer.  The function $build\_tuple$ builds a ZDD for the identity function as $I_{topReady}$.  $\Omega$ contains a ZDD that represents the identity function for all possible bit combinations in our universe.  Thus, in order to create the ZDD universal set $\Omega$, the dead-ready computation must know the maximum number of variables that could exist.  ParaMeter defines this number to be 128 in order to represent two 64 bit tuple members~\cite{price:10:cgo}.
+
+Additional results presented in this chapter compare irrelevant instruction dependencies for programs compiled using the \textit{-O0} and \textit{-O2} optimization settings in the \textit{gcc 4.2.4} compiler.  Comparing an optimized binary to a binary without static optimization presents a clearer view of the number of instructions that are irrelevant.  Furthermore, this technique can be used to evaluate the effectiveness of a compiler optimization.
+
+Figure ~\ref{fig:totalDeadBoth} compares the absolute number of removed dependencies from \textit{-O0} and \textit{-O2}.
+
+Figure ~\ref{fig:totalDeadDiff} presents the difference in the irrelevant dependence count from \textit{-O0} to \textit{-O2}. Note that static compiler techniques are able to remove an average of 258,791,915 more instruction dependencies in the \textit{-O0} binary trace than the \textit{-O2} trace.
+
+SECTION: Visualization Filtering
+
+
+Irrelevant instruction dependence elimination uses a ZDD-based DDG chop to find instructions that have no obvious impact on program output.  The DDG chop can use any two arbitrary sets of instructions. This section chops from \textit{hot-code} to \textit{final ready time} instructions, \textit{all instructions} to \textit{final ready time}, as well as the irrelevant instruction chop, implemented as visualization filters in the ParaMeter DINxRDY plot. Furthermore, this section presents a case study that applies each filter to the of the DINxRDY plot of 254.gap from the SPEC 2000 integer benchmark.
+
+\subsection {Experimental Setup}
+
+The visualizations and analyses performed in the study presented in this section were performed using a 1.0 to 1.2 GHz Opteron machine with 17 to 36 GB of memory using the Amazon EC2~\cite{ec2:10:web}. The traces used in this case study 1 billion dynamic instructions of the 254.gap benchmark using the first reference input. Figure~\ref{fig:254initial} shows the DINxRDY plot produced by ParaMeter for 254.gap.
+
+Note that this figures shows two regions in the DINxRDY plot that may correspond to program phases.  The first region, labeled $\alpha$ contains a series of instruction chains extending from the bottom-left corner of the DINxRDY plot.  Note that these chains are regions of potential parallel execution~\cite{price:08:pact}. The second section, $\beta$ contains a sharp increase in the slope of the DINxRDY line towards the right side of the plot.  The increase in slope is a result of in increase in the number of dynamic instructions that may execute at that same ready time.
+
+\subsection {Ready Filter}
+
+It is possible to only include the set of instructions located at the final ready time for the $d_2$ set used by the chopping algorithm. This method, called the Dead-Ready filter, performs irrelevant instruction elimination is used to filter a part of the $\alpha$ region of 254.gap.  The selection to be filtered is shown in Figure~\ref{fig:254sel01}.
+
+The filtered visualization is shown in Figure~\ref{fig:254post01}. Note that very few instructions have a forward slice that extends to the end of the DDG.  ParaMeter also contains functions necessary to examine source code from a DINxRDY plot~\cite{price:08:pact}.  The source code responsible for the region selected for this test includes lines that produced Sum, Diff, and Product functions in the source code file eval.c.  The results from these source code lines is then printed and never read again, thus ending the forward chain of dependence.
+
+The second test of dead-ready elimination involves the region in Figure~\ref{fig:254initial} labeled $\beta$.  The selected region of $\beta$ can be found in Figure~\ref{fig:254sel02}
+
+The results of the dead-ready filter for selected region in $\beta$ show very few instructions removed, as can be seen in Figure~\ref{fig:254post02}. Thus, almost all instructions contain a forward slice that reaches to the last $RDY$ time.  An inspection of the source code responsible for the instructions in $\beta$ found that almost all instructions came from the 254.gap memory management system in gasman.c, including the functions InitGasMan and NewBag.  These instructions generate memory locations that are used for future operations, and contain a long forward slice until the last $RDY$ time.
+
+\subsection {Irrelevant Instruction Filter}
+
+Irrelevant instruction dependence elimination creates a new edge set $e_f$ using a forward slice of the DDG $e$.  Then perform a reverse slice from the set of dynamic instructions collected at the last iteration of the forward slice, $d_1$.  The reverse slice is performed through the set $e$.  It is possible to find the set of instructions whose influence dies immediately by reducing the number of forward slice iterations to one.
+
+The $(DIN,RDY)$ result set created by irrelevant instruction analysis is then removed from the $(DIN,RDY)$ set used by ParaMeter for visualization. This filter was applied to the entire plot of 1 billion instructions from 254.gap.  The resulting plot, shown in Figure~\ref{fig:254quickdead}, has 72140005 $(DIN,RDY)$ fewer edges than the original plot.  However, the visualization shown in Figure~\ref{fig:254quickdead} and the original plot (Figure~\ref{fig:254initial}) appear almost identical.
+
+\subsection {Dead-Hot Filter}
+
+Figure~\ref{fig:254hotcode} contains the DINxRDY plot for 254.gap with hot code highlighted in red.  The Dead-Hot filtering method considers only the top percentage of hot code as the initial starting point for dead-ready analysis. For the case study, the hotness threshold was initially set to 25\%, then reduced by increments of one until the result from dead-ready elimination was greater than the empty set.
+
+Using dead-hot elimination as a visual filter for the entire plot of 254.gap revealed 1) The top 57\% of hot codes are eliminated through dead-ready analysis, and 2) the top 58\% of hot codes requires days of dead-ready analysis computation to converge.  Thus, this implementation of dead-hot allows the user to select a smaller region of code to begin dead-hot analysis.  The top 25\% of the hottest codes in that region were than used in dead-hot elimination.  Dead-ready analysis was unable to remove many instructions from region $\beta$, thus we used that region for this section of the case study.  The selected region can be seen in Figure~\ref{fig:254deadhotsel01}.
+
+The selected region of $\beta$ contained 2123492 dynamic instructions. The top 25\% of the hot code from this region contains 1068749 dynamic instructions.  However, Figure ~\ref{fig:254gaptop25} and Figure~\ref{fig:254gapbottom75} show that the bottom 75\% of the hot code is responsible for almost all of the DINxRDY visualization of region $\beta$.
+
+The dead-ready analysis produced 200376 dynamic instructions for this example.  The total time for the analysis was approximately 20 Minutes.  The final filtered image is shown in Figure~\ref{fig:254deadhotpost01}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Coarse-Grained Thread Level Parallelism
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Instruction level parallelism (ILP) limitations have forced processor manufacturers to develop multi-core platforms with the expectation that programs will be able to exploit thread level parallelism (TLP). An effective, popular, and widely studied mechanism for automatically exploiting parallelism is to dynamically and speculatively thread groups of instructions~\cite{steffan:00:isca,prabhu:03:ppopp,wu:2008:cdp,chen:cc:2004,vachharajani:07:pact,dou:2007:trans,wang:2009:dps,marcuello:00:ipdps,bridges:2007:micro,thies:2007:micro,raman:2010:asplos}. Recent advances in this thread level speculation~(TLS) can parallelize execute over 90\% of some codes~\cite{marcuello:00:ipdps}.  However, TLS predictor accuracy limits TLS to fine-grained or loop-level TLP~\cite{marcuello:00:ipdps,warg:2001:pact,bridges:2007:micro,thies:2007:micro,raman:2010:asplos}.
+
+This thesis explores potential coarse grain TLP that may be exploitable in conjunction with TLS and ILP techniques.  In particular, the thesis examines the SPEC INT 2006 benchmark suite, looking for parallelism with a granularity of thousands of dynamic instructions, and is not restricted to loop-level TLP.  Because the parallelism explored here is coarse grained, it may be able to work synergistically with techniques designed for a smaller granularity, such as TLS. Coarse-grained TLP is located using a dynamic trace visualization created by the ParaMeter tool~\cite{price:08:pact}. This technique, which is discussed in Section~\ref{sec:parameter}, generates a visualization of program execution, called a DINxRDY (dynamic instruction number by ready time) plot.  This plot visually shows potential coarse grain TLP as lines that overlap on the x-axis.
+
+Potential parallel regions found within DINxRDY plots are further analyzed to expose dependence relationships.  Inter-region dependence conflicts, discussed in Section~\ref{sec:chop}, are found by dynamic dependence graph (DDG) slicing~\cite{gallager:91:se,agrawal:90:pldi,agrawal:92:thesis,korel:88:ipl}. Slicing DDGs that contain a large number of instructions (e.g. billions) can take weeks~\cite{agrawal:90:pldi, zhang:03:icse}. To efficiently, and precisely, explore the dependency relationships between two regions of code this thesis extends the DDG \textit{chop} to use the ZDD-compressed trace format.  The dynamic chop~\cite{gupta:2005:ase, krinke:2004:sqc} is often faster than an intersection of a forward and reverse slice and requires no loss of precision.
+
+The thesis shows that on average, 7\% of instructions may be extracted as coarse-grained parallelism, and in some cases, as much as 44\% of instructions may be extracted as coarse-grained TLP.
+
+SECTION: TLP Visualization with ParaMeter
+
+
+The ParaMeter tool~\cite{price:08:pact}, used for analysis and visualization in this thesis, uses instruction-level dynamic trace information for program visualization.  Precise dynamic trace information can quickly grow in size and must be compressed or abstracted.  ParaMeter uses zero suppressed binary decision diagrams to create a trace representation that provides compression, but is analyzable in its compressed form.  Other tools, such as SD3~\cite{minjang:10:micro}, use also use analyzable compressed forms, such as stride compression or hierarchical grammars~\cite{larus:99:pldi}, for dynamic trace representation. Stride compressors naturally find regions of parallelism that exist inside loops.  This thesis presents a study of thread level parallelism that includes potential opportunities for parallelism without knowledge program structure, including loops.
+
+ParaMeter generates plots of $(DIN,RDY)$ as the primary form of visualization~\cite{price:08:pact}.  Dependence chains, or DDCs, form lines in the DINxRDY time plot.  DDCs that overlap in the DINxRDY plot are targets for parallel thread extraction Figure~\ref{fig:175vpr_overview} shows a sample $(DIN,RDY)$ visualization of 175.vpr used in a case study of visualization of program parallelism~\cite{price:08:pact}.  Note the lines labeled $\alpha$, $\beta$, and $\gamma$ overlap on the x-axis, which represents the $RDY$ time value.  If the lines in the $(DIN,RDY)$ plot correspond to distinct regions of code, and they overlap on the $RDY$ axis, the source code has the potential to be parallelized.  A single iteration of a reverse dynamic program slicing was used in this work to find the dependence relationship between $\alpha$, $\beta$, and $\gamma$~\cite{price:08:pact}.  The regions $\alpha$ and $\beta$ were found to be completely independent areas in the source code, and were threaded using standard pthreads. The resulting code executed all test benchmark inputs without error.
+
+SECTION: Region Selection
+
+
+The human brain has a keen ability identify patterns in images~\cite{biederman:87:pr}. Pattern recognition is used by ParaMeter to locate regions within DINxRDY visualizations that contain potential thread level parallelism, such as regions shown in Figure~\ref{fig:175vpr_overview}. The pattern that often corresponds to a \textit{good} potential TLP region may be described informally as follows:
+
+ The region should overlap another region on the RDY time axis
+ At a given RDY time location, the region should not extend over
+ the DIN axis
+
+The first point reiterates the idea that two DDCs that overlap on the READY time axis can potentially be extracted as TLP.  The second point addresses regions that contain a large amount of ILP.  The instructions that form this ILP in a \textit{bad} region often originates from many static instructions from an unrelated locations in the source code, and are difficult to compose as a thread.
+
+The pattern may be quantified by examining the selected regions and the static code.  Static instruction numbers, or SINs, connect the dynamic trace information to the program source.  However, sets of {DIN,SIN} tuples also can characterize hard-to-parallelize regions. A \textit{good} region can be clustered into nearly contiguous strides of static instructions. The number of resulting clusters should be small.
+
+The description of a \text{good} region leaves room for interpretation.  First, the distance between static instructions should be as close to contiguous as possible, with some margin for variable-length instructions. Second, a cluster is often part of a distinct section in the source code (such as a function), and a region that encompasses multiple functions may still be parallelizable.
+
+Clusters for this work were found using a standard k-means clustering algorithm.  A cluster contains a set of tuples static instructions, or SINs, and the DINs created by each SIN.  A static instruction may be executed many times within a dynamic trace, thus the {DIN,SIN} set from a region selected from the DINxRDY visualization. The RDY tuple member is removed from the selected set, and the resulting DIN values are intersected with a DINxSIN tuple set.  The clusters are then formed from {DIN,SIN} tuples.  If a DINxRDY selection requires a large number of clusters to meet this requirement, then the static source code for the region would be difficult to include in a thread.  It is important to note that this technique only requires SIN values to be contiguous in a cluster, not all SIN values in a given region.  This allows \textit{good} regions to contain function calls and other forms of branching.
+
+The regions $\alpha$, $\beta$, and $\gamma$ were found to be part of three distinct areas in source code~\cite{price:08:pact}. Figure~\ref{fig:175dinrdyblobs} presents an example of a selected region, region $\eta$, that does not contain instructions that would easily be extracted as TLP.  The region $\beta$, was identified as easily extractable TLP in prior work~\cite{price:08:pact}, can be seen in the DINxSIN plot shown in Figure~\ref{fig:175dinsinsel}.  Only a tiny point, in the upper left corner of the plot for $\beta$, deviates from the line extending across the bottom DIN axis.  A DINxSIN plot for $\eta$, shown in~\ref{fig:175dinsinsel}, contains a number of lines that extend over the DIN axis.  Each line may be a separate distinguishable section in the source code.  Further, there are a number of points that do not form a line.  Thus, composing the region $\eta$ as a thread, for TLP, requires each instructions to be removed from their original location in the source code and placed in this new thread.
+
+The regions selected from the SPEC 2006 INT benchmark suite can be found in Appendix~\ref{appdx:spec2006selreg}.  The source code for the selected regions can be found in Appendix~\ref{appdx:spec2006regioncode}.  The source code in Appendix~\ref{appdx:spec2006regioncode} has been abstracted to the function level due to the tens of thousands of lines of code, mostly C and C++, included in these regions.  Some regions also contained thousands of functions.  This number was reduced by creating an additional abstraction that truncates functions with similar letters at the beginning of the function name.  For example, the functions \textit{math::round} and \text{math::abs} may become \textit{math::}. Functions that required this additional abstraction are truncated with \textit{...}, so our example would become \textit{math::...}. Note that this truncation was determined not by the length of the function name, but the breadth of a trie containing the function name; for this thesis, the breadth limit was set at twenty.
+
+SECTION: ZDD Slicing
+
+
+Dynamic program slicing has been used in prior work to find the source of observed software bugs~\cite{gallager:91:se,agrawal:90:pldi,agrawal:92:thesis}, or to perform points-to analysis~\cite{lhotak:08:lcpc}. The BDD based slicing algorithm for ParaMeter is shown in Figure~\ref{fig:bddslice}~\cite{price:06:cal}. The pseudo code in Figure~\ref{fig:bddslice} shows how to compute the reverse slice of an instruction with DIN $d$~\cite{price:06:cal}. In this pseudo-code, $e$ is the indicator function for the set of edges in the data dependence graph, $I_d$ is the indicator function for the DIN $d$, and $s$ is the indicator function for the reverse slice that is computed.  The variables in $s$, as well as variables for indicator function $I_d$, are in the vector $\mathbf{d^1}$. The variables in $e$ are $(\mathbf{d^1},\mathbf{d^2})$.  The function $\mathrm{rename}$ takes a function $s$ and renames the variables from set $\mathbf{d^2}$ to the corresponding variables in set $\mathbf{d^1}$.
+
+The algorithm in Figure~\ref{fig:bddslice}, located in Chapter~\ref{chap:zddchop}, can be extended to return the set of indicator functions for all variables in the reverse slice of $d$ by iterating until a set $s_{full}$ converges.  The pseudo-code for this function is shown in Figure~\ref{fig:bdditerslice}.
+
+Program slicing with ZDDs requires modification to the pseudo-code in Figure~\ref{fig:bdditerslice} and Figure~\ref{fig:bddslice}. Slicing often requires the use of existential quantification, shown with the symbol $\exists$, to remove variables from a function represented by a ZDD or BDD. A missing variable in the BDD structure is interpreted as a boolean \textit{don't care} value. A variable missing from a ZDD may be interpreted as a zero value or \textit{don't care}.  An additional step is taken to insert \textit{don't care} values into a ZDD-based function to perform operations that intersect with \textit{don't care} variables.  The slicing algorithm shown in Figure~\ref{fig:zddslice} uses the function $\mathrm{yDC}(d)$ to insert \textit{don't care} values in the $y$ variable positions.  This function, given the variable positions for the tuple $(x,y)$ and an identity function $d$, will return the ZDD dot product\cite{mishchenko:01:sc} of the function $d$ and the universal set of bits for tuple variable $y$.  A similar function, $\mathrm{xDC(s)}$, is used for forward slicing.
+
+The pseudo-code shown in Figure~\ref{fig:zdditerslice} performs a union of $s$ with the result of function $f$ until $s$ converges. Note that comparison is a constant time operation with ZDDs, like BDDs~\cite{bryant:86:ieeetc}.
+
+Iteration of a dynamic dependence graph ($DDG$) slice until convergence can be $O(2^n)$ for both space and computation, where $n$ is the number instructions being sliced~\cite{agrawal:90:pldi,tip:94:cwi}.  The worst case $O(2^n)$ computation assumes each slice instruction contains at most two subsets. ZDD-based slicing also requires $O(2^n)$ space.  However, ZDD representation often provides adequate compression (better than 10x)~\cite{price:10:cgo}. The ZDD-based slice computation presented in Figure~\ref{fig:zdditerslice} computes the slice for both subsets of for a single slice iteration simultaneously.
+
+%% !!NOTE!!: Do I need a proof here? %% \begin{quote} %%   A ZDD slice is $O(N)$ where $N$ is the number of instructions in %%   the DDG. %% \end{quote}
+
+%% \noindent Let $\mathbb{D}$ be a set of dynamic instruction numbers. Let $D_{i}$ %% identify a single dynamic instruction where $D_{i} \in \mathbb{D}$.
+
+%% For any \\\\ %% \noindent Proof: by induction on $i$ %% \\\\ %% First, lets examine the command $\langle x':=x+2, \sigma \rangle \Downarrow \sigma'(x')$. %% \\\\ %% \noindent Base Case: %% $$ %% \inferrule * {n \ is \ even \\ 2 \ is \ even}{\langle x':=n+2, \sigma \rangle \Downarrow \sigma'(x') \ is \ even} %% $$
+
+SECTION: ZDD Chopping
+
+
+Unfortunately, performing a reverse slice of 1 billion dynamic instructions can take days; often the processes were terminated before completion. The survey presented in this work determines the dependence relationship of two or more sets of instructions. Therefore, for each instruction region, we can compute the slice of that region with respect to all other regions.  This operation is known as a DDG \textit{chop}~\cite{gupta:2005:ase, krinke:2004:sqc}.
+
+A ZDD chop is provided two sets of instructions $d_{1}$ and $d_{2}$ in the form of the identity functions $I_{d1}$ and $I_{d2}$ respectively. The set $e$ contains the edges of the DDG in the form $(\mathbf{d^1},\mathbf{d^2})$. The tuple $(\mathbf{d^1},\mathbf{d^2})$ may labeled as $(x,y)$, in this thesis.  In ParaMeter, the set $(\mathbf{d^1},\mathbf{d^2})$ is also called the $(DIN,DIN)$ set~\cite{price:08:pact}. The ZDD chop begins by generating the edge set during the forward slice.  The new edge set, $e_s$, contains the edges in the DDG $e$ that extend from the first instruction set to the end of the DDG.  The pseudo-code for one iteration of this function is shown in Figure~\ref{fig:forwardedgeslice}.
+
+Figure~\ref{fig:zddchop} contains pseudo-code for producing a ZDD-based DDG chop.  An initial edge set $e_{d1}$ is constructed by intersecting the union of $I_{d1}$ and the \textit{don't care} for the $y$ variable positions with the edge set $e$ that contains the entire DDG for our trace.  The iterator function is this called on the function $\mathrm{forward\_edge\_slice}$ to produce the full forward slice of edge values from $I_{d1}$, which is stored in $e_f$. Finally, the iterator function is called again using the reverse slice function for the instruction set $I_{d2}$ using the new edge set $e_f$.  This processes is illustrated in Figure~\ref{fig:choppic}
+
+SECTION: Potential Coarse-Grained Thread Level Parallelism in SPEC INT 2006
+
+
+This study explores potential coarse-grained thread level parallelism in the SPEC 2006 INT benchmark suite.  Traces were capped at one billion dynamic instructions.  The benchmarks 400.perlbench, 403.gcc, 445.go, and 483.xalanchbmk \textit{-O2} were traced completely. Traces used for this survey were collected using 64-bit x86 Intel Xeon processors.
+
+\subsection{Fine-Grained Harmony}
+
+The TLP located by the technique presented in this thesis should have a minimum impact on finer-grained TLP extraction techniques. Therefore, potential TLP detected by the techniques presented in this thesis will likely work  with thread-level speculation or instruction-level parallelism.
+
+Consider the example code presented in Figure~\ref{fig:parallelsrc}. Lets assume that the functions $processDataA()$ and $processDataB()$ do not modify the program state to simplify the example. Each call to $processDataA()$ and $processDataB()$ is independent, therefore TLS could execute all iterations of the loop in $processDataA()$.  It should also be possible to execute all iterations of $processDataA()$ as parallel threads with TLS.  This execution is illustrate in Figure~\ref{fig:illistFineGrained}.
+
+Note that Figure~\ref{fig:parallelsrc} also contains course-grained TLP.  For example, assume the DINxRDY visualization, discussed in Section~\ref{sec:parameter} can determine $processDataA()$ and $processDataB()$ do not depend on each other, but DINxRDY visualization is unable to determine each loop iteration is independent.  Thus, DINxRDY visualizations could locate the coarse-grained TLP, but not the fine-grained TLP.  In Figure~\ref{fig:illistCoarseGrained} illustrates the execution of coarse-grained TLP from the source code in Figure~\ref{fig:parallelsrc}.
+
+The course-grained parallelism and fine-grained parallelism can work independently to locate the parallel execution seen in Figure~\ref{fig:illistCoarseGrained} and Figure~\ref{fig:illistFineGrained}, respectively.  The combination of two techniques can extract greater amounts of TLP. Figure~\ref{fig:illistCoarseFineGrained} shows the execution after extracting coarse-grained parallelism using the DINxRDY visualizations, and executing each thread in a system that contains TLS.
+
+\subsection {Compiler Influence}
+
+A compiler optimization pass, such as loop unrolling, constant propagation, or constant folding, can expose opportunities for parallelism. Compiler optimization may also remove potential TLP regions though dead-code elimination.  This thesis examines TLP increases for programs compiled with gcc 4.2.4 using the \textit{-O0} and \textit{-O2} flags.  The gcc documentation describes \textit{-O0} as unoptimized code, and \textit{-O2} as ``nearly all supported optimizations that do not involve a space-speed trade-off.''
+
+A difference in potential coarse-grained TLP can be seen in the \textit{-O0} and \textit{-O2} for all benchmarks.  This thesis will look further at the output found from 401.bzip2 benchmark.  The bzip2 application is generally considered to be highly amenable to TLP optimization through manual high-level software changes~\cite{gilchrist:04:pdcs}.  In Figure~\ref{fig:tlpNaivePerf} we can seen that a large amount of potential does TLP exists for in the DINxRDY plot from both compilation settings.  However, Figure ~\ref{fig:tlpNaivePerf} does show a 12\% difference with the \textit{-O0} and \textit{-O2} compiler settings for 401.bzip2.
+
+The regions selected as potential TLP can be seen in Figure~\ref{fig:401regions}.  The parallel regions in 401.bzip for both gcc settings were traced back to source code.  Examination of the source code responsible for TLP found that, while some parallel instructions differed between optimization settings, all enclosing functions were identical.  A list of the functions that contain TLP for both \textit{-O0} and \textit{-O2} is shown in Figure~\ref{fig:401bzip2sinFuncs}.  The \textit{-O2} compiler optimization setting reduced the number of instructions in each thread, thus reducing the benefit of parallel execution.
+
+\subsection{Summary of Potential Coarse-Grained TLP}
+
+Figure~\ref{fig:tlpNaivePerf} shows the percent of instructions identified as potential coarse-grained parallelism, given optimistic speculative execution. Optimistic speculative execution ignores all dynamic dependencies. Figures~\ref{fig:tlpNaivePerf} and Figure~\ref{fig:tlpInterferPerf} show the percentage of dynamic instructions that may potentially execute in the same cycle as another instruction.  A potential parallel instruction is only allowed to be counted a single time. The Figure~\ref{fig:tlpNaiveParallel} shows the maximum number of potential parallel regions that overlap on the READY axis in the DINxRDY plot. Potential parallel instructions are allowed to be counted twice in Figure~\ref{fig:tlpNaiveParallel}; the optimistic algorithm would otherwise remove an entire region from the thread count, thus artificially restricting the optimistic thread count.
+
+It should also be noted that finding the thread counts in Figures~\ref{fig:tlpNaiveParallel} and~\ref{fig:tlpInterferParallel} can be difficult to calculate.  Fore example, it may be possible to delay the execution of a potential thread to resolve dependencies, and thus allow for a greater maximum thread count.  Therefore, Figures~\ref{fig:tlpNaiveParallel} and~\ref{fig:tlpInterferParallel} should be considered approximations of the true maximum thread count.
+
+The ZDD-chop is used to calculate interdependent instructions that exist in two or more selected regions. Figure~\ref{fig:tlpInterferParallel} was calculated using the number of overlapping selected regions on the READY time axis that contain potential parallel instructions. The results in Figure~\ref{fig:tlpInterferPerf} and Figure~\ref{fig:tlpInterferParallel} remove all interdependent instructions found in the dynamic trace, and also do not allow duplicate parallel instructions.
+
+This work further explores the potential coarse-grained TLP found in the benchmarks 445.gobmk, 400.perlbench, and 462.libquantum.  The DINxRDY visualizations and potential coarse-grained TLP for 456.hmmer and 471.omnetpp have properties that closely resemble 400.perlbench. The benchmarks 401.bzip2, 464.h264ref, and 445.gobmk produce visualizations and potential coarse-grained TLP with similar traits. Visualizations and potential coarse-grained TLP generated by 458.sjeng and 473.astar have features that closely resemble 462.libquantum.
+
+\subsection{Potential Coarse-Grained TLP in 400.perlbench}
+
+Less than 1\% of the dynamic instructions in the benchmarks 400.perlbench, 456.hmmer, and 471.omnetpp were identified as potential coarse-grained TLP.  The benchmark 400.perlbench contains two regions with potential TLP, and each region contains two potential threads. The Figure~\ref{fig:400perlselInDoc} shows the DINxRDY plot of 400.perlbench \textit{-O0} and \textit{-O2} with potential TLP highlighted.  The DINxRDY plots in Figure~\ref{fig:400perlsel} show few dynamic dependence chains that overlap on the horizontal RDY axis.
+
+Figure~\ref{fig:400perlselInDoc} corresponds to source code that performs file I/O, lexing, parsing, and other functions in the Perl interpreter. Each region for 400.perlbench contain threads with similar source code.  For example, the first thread in region 1 and region 2 contain instructions for lexing, parsing and IO (\textit{Perl\_yylex}, \textit{Perl\_yyparse}).  The second thread in region 1 and 2 both contain functions for the Perl-to-C interpreter(\textit{S\_new\_xpvbm}). Thus, it may be possible for lexing and parsing operations to work in parallel with other instructions in the Perl interpreter, perhaps as a software pipelines~\cite{Allan:1995rt,giacomoni:08:ppopp}. However, the two regions from 400.perlbench likely must execute in sequence. Therefore, 400.perlbench may contain two stages with potential coarse-grained TLP, and synchronization between stages. Figure~\ref{fig:400perlillust} illustrates the possible interaction between potential coarse-grained TLP in 400.perlbench.
+
+The Figure~\ref{fig:400perlsrcR1} and Figure~\ref{fig:400perlsrcR2} contain an abridged source code list for potential threads, with parallel threads grouped into regions.  For example, Region 1 contains two threads that could potentially execute in parallel.
+
+The DINxRDY visualization and source code for the benchmarks 456.hmmer and 471.omnetpp have properties similar to 400.perlbench.
+
+\subsection{Potential Coarse-Grained TLP in 445.gobmk}
+
+The benchmark 445.gobmk contains the greatest percentage of potential coarse-grained parallelism. Figures \ref{fig:tlpNaivePerf} and \ref{fig:tlpInterferPerf} show that TLP in 445.gobmk is reduced by 29\% when inter-region instruction dependencies are removed. Inter-region dependent instructions depend on a result from an instruction in another region.  The DINxRDY plot for \textit{-O0} in Figure~\ref{fig:445gobmkselInDoc} contains 123 selected dynamic dependence chains that overlap on the horizontal RDY axis for the \textit{-O0} binary, resulting in over 44\% of the dynamic instructions are candidates for coarse-grained TLP.  Note that many selected regions in \ref{fig:445gobmkselInDoc} also contain instructions stacked vertically; instructions that extend vertically along the DIN axis can potentially be parallelized by ILP extraction or fine-grained TLS.
+
+The source code responsible for the potential TLP shown in Figure~\ref{fig:445gobmkselInDoc} perform a variety of functions that play the game Go.  These include \textit{do\_trymove}, \textit{defend1}, \textit{order\_moves}, and \textit{is\_suicide}.  Each potential thread contains similar source code, which implies multiple Go moves can be tested at the same time.
+
+Potential coarse-grained TLP in 445.gobmk is reduced by 29\% when inter-region instruction dependencies are removed, which is the largest reduction of all surveyed benchmarks.  Instructions that depend on the result of an instruction in another parallel region include \textit{special\_attack3}, \textit{find\_defense}, and \textit{is\_suicide}.  These instructions, and some others, likely require the results from a previous Go move.  The highlighted portions of Figure~\ref{fig:445gobmkinterfer} represent instructions that do not contain an inter-region dependency.  Note that few regions shown in \textit{-O0} in Figure \ref{fig:445gobmkselInDoc} do not depend on a result from an instruction in another region.
+
+The benchmarks 401.bzip2 and 464.h264ref also contain a large percentage of coarse-grained TLP.  The DINxRDY plots for 401.bzip2 and 464.h264ref have properties similar to 445.gobmk.
+
+\subsection{Potential Coarse-Grained TLP in 462.libquantum}
+
+The benchmark 462.libquantum is generally regarded as highly amenable to manual explicit TLP extraction~\cite{glendinning:04:ppam}. However, as shown in Figure~\ref{fig:tlptlscompare}, most TLS systems extract only modest parallelism from 462.libquantum~\cite{kejariwal:2007:tap}.  The results from the coarse-grained analysis performed in this work also show a modest percentage of potential TLP from 462.libquantum. Figure~\ref{fig:462libquantumselInDoc} contain the DINxRDY visualizations for \textit{-O0} and \textit{-O2} gcc optimization levels.
+
+The source code responsible for the potential TLP shown in Figure~\ref{fig:462libquantumselInDoc} perform a number of scientific operations.  Much like the benchmark 445.gobmk, the threads in each region of 462.libquantum are nearly identical. Figure~\ref{fig:462libquantumsrcLinesR1} contains the source code of the first two threads in the first region.
+
+Between 1\% and 10\% of the instructions in the benchmarks 458.sjeng, 462.libquantum and 473.astar are identified as potential coarse-grained TLP. The DINxRDY plots and source code for 458.sjeng and 473.astar have properties similar to 462.libquantum.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: Future Work
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ZDD-compressed traces provide analyzable compression with reasonable creation time~\cite{price:10:cgo}.  ZDD-compressed traces are highly adaptable to new analyses.  This thesis begins to explore the use of dynamic visualization and analysis, but leaves a framework for further analysis and visualizations.  This section highlights ideas that for future research.
+
+SECTION: Visualization
+
+
+The visualization algorithm used in this thesis generates a simple, two dimensional representation of program execution~\cite{price:08:pact}.  The addition of coloring allows for hot-code region visualization, but the overall presentation does not provide the user with enough information to examine source code, or do simultaneous hot-code and dependence visualization.  This image could be extended into three dimensions and allow the user to perform simultaneous static and dynamic program analyses.  The combination of static and dynamic analysis has been explored by prior works with some success~\cite{eisenbarth:01:icsm,park:93:rts,lindlan:2000:tsf}.
+
+SECTION: Dynamic Dependence Chain Classification
+
+
+In addition to the standard thread-level parallelism discussed in this thesis, it may be possible to analyze a dependence chain and find other potential performance optimizations, such as software pipelines~\cite{ebcioglu:87:wmm,jones:91:wmm,Allan:1995rt}.  The ParaMeter tool can locate regions amenable to software pipelines~\cite{price:08:pact}, but such regions are not uniquely identified.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER: What Just Happened?
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This thesis demonstrated: (1) Zero-Suppressed Binary Decision Diagrams (ZDDs) enables many analyses to scale; (2) ZDD creation is practical for traces of a billion instructions for a variety of benchmarks; and, (3) ZDD-based analyses can reveal a number of performance opportunities that exist in sequential program traces.  This chapter restates the motivation for this work, as well as summarizes the contributions of this dissertation.
+
+SECTION: Dynamic Trace Compression
+
+
+Dynamic trace analysis has been used in prior work for performance tuning and hardware debugging~\cite{wu:94:micro}. Unfortunately, trace files can easily grow to terabytes in size depending on the information collected and the duration of traced execution.  Large dynamic trace sizes (e.g. 1 billion instructions or more) can make analysis and visualization intractable.
+
+Ideally, a compressed trace format should allow analyses to operate directly on the compressed representation with complexity that is a function of \textit{compressed} trace size.  Then, if large portions of compressed traces fit in memory, global analyses and interactive visualization are possible.  Larus \textit{et. al.} propose such a technique for \textit{whole program path} analysis~\cite{larus:99:pldi}. The technique uses the Sequitur compression method and works well for finding sequence matches in program execution.  It does not permit direct application of data-centric analyses (e.g., trace slicing) that are of interest to system designers and programmers. Recent work on stride compression techniques addresses this issue by forming hierarchies based on accessed memory regions~\cite{minjang:10:micro}, but is limited to analyses based on loop-level dependence.
+
+This thesis first explored reduced, ordered, binary decision diagram (ROBDDs)~\cite{bryant:86:ieeetc}, originally developed for hardware verification, as a trace representation for dynamic program analysis. BDDs can provide compression for large sets of data whose size would otherwise make analysis intractable. When BDDs are used for the analysis of large program traces~\cite{price:06:cal,price:08:pact,zhang:04:icse}, the size of dynamic program traces can be reduced by up to 60x when encoded as a BDD~\cite{price:06:cal}.  Further, this compressed representation can be analyzed without decompression, with algorithmic complexity that is a function of the compressed size~\cite{price:06:cal}.  Thus, trace-encoded BDDs provide a solution to the dynamic trace size issue by representing trace information in a compressed, yet analyzable, structure.
+
+SECTION: Dynamic Trace Analysis at Scale
+
+
+The SPEC 2006 INT benchmark suite, which is both large and diverse, requires nontrivial analyses to scale gracefully.  Unfortunately, encoding large traces as BDDs can be time consuming, requiring hours to days to complete~\cite{price:08:msthesis}.  This, in turn, makes tools that use BDD-based representations less practical.  Prior applications of BDDs depend on three methods to mitigate BDD creation time: (1) search for a variable order that allows for fast BDD creation; (2) tune the tables and caching systems used in many BDD packages; and, (3) encode an abstraction of the original data set, instead of the raw data.  This thesis showed that, without any data abstraction, ZDD-based SPEC INT 2000 benchmark traces are 25\% smaller than BDD-based traces.  Furthermore, with the modification to a ZDD caching structure, ZDD-based trace compression results in a creation time that can be $9\times$ faster than BDD creation time for the same benchmark.
+
+SECTION: Dynamic Dependency Graph Slicing and Chopping
+
+
+Slicing algorithms have been able to efficiently traverse the dynamic dependence graph (DDG) of dynamic trace data when encoded as BDDs~\cite{price:08:pact}.  Some algorithms, such as points-to analysis, have be adapted for ZDDs~\cite{lhotak:08:lcpc}.  However, ZDD-based DDG slicing algorithms have yet to be explored beyond the most straight-forward translation from BDDs~\cite{price:10:cgo}. In Chapter~\ref{chap:zddchop}, this dissertation explored two potential techniques for performing dynamic slicing with ZDD-encoded data sets.
+
+The first method uses ZDD set intersection to identify dependency relationships that should be included in the slice.  The second technique uses the If-Then-Else (ITE) operator to identify common dependencies.  Slices using intersection and slices using ITE were tested on benchmarks from the SPEC 2006 integer benchmark suite. Despite mixed results from these tests, the method based on set intersection showed good performance over most cases.  The results from these tests were later incorporated into other analysis algorithms, such as dynamic dependence graph chopping used in TLP exploration and irrelevant instruction elimination.
+
+SECTION: Coarse-Grained Thread Level Parallelism
+
+
+Instruction level parallelism (ILP) limitations have forced processor manufacturers to develop multi-core platforms with the expectation that parallel execution can be found at the thread level. This thesis examines the SPEC INT 2006 benchmark suite, looking for parallelism with a granularity of thousands of dynamic instructions, and is not restricted to loop-level thread level parallelism (TLP). Coarse-grained TLP is located using a dynamic trace visualization created by the ParaMeter tool~\cite{price:08:pact}.  This technique generates a visualization of program execution, called a DINxRDY (dynamic instruction number by ready time) plot.  This plot visually shows potential coarse grain TLP as lines that overlap on the x-axis.
+
+Potential parallel regions found within DINxRDY plots are further analyzed to expose dependence relationships.  Inter-region dependence conflicts are found by dynamic dependence graph (DDG) slicing~\cite{gallager:91:se,agrawal:90:pldi,agrawal:92:thesis,korel:88:ipl}. Slicing DDGs that contain a large number of instructions (e.g. billions) can take weeks~\cite{agrawal:90:pldi, zhang:03:icse}. To efficiently, and precisely, explore the dependency relationships between two regions of code this thesis extends the DDG \textit{chop} to use the ZDD-compressed trace format.  The dynamic chop~\cite{gupta:2005:ase, krinke:2004:sqc} is often faster than an intersection of a forward and reverse slice and requires no loss of precision.
+
+The thesis shows that on average, 7\% of instructions may be extracted as coarse-grained parallelism, and in some cases, as much as 44\% of instructions may be extracted as coarse-grained TLP.
+
+SECTION: Irrelevant Instruction Elimination
+
+
+Irrelevant component elimination has been adopted in prior work to simplify abstractions for static analysis~\cite{corbett:icsc:2000}. This thesis uses irrelevant component elimination with ZDD-encoded precise dynamic instruction dependencies.  ZDD-based irrelevant instruction dependency elimination is designed to iterative irrelevant code calculation until convergence.  However, irrelevant instruction dependency elimination can take days to complete for traces with long dynamic dependency chains. Empirical data presented in this thesis shows that, for all benchmarks in SPEC 2006 INT, the irrelevant instruction elimination algorithm reaches a steady state.  In this state, the number of instruction dependencies removed per slice iteration oscillates, but will not monotonically decrease until the analysis converges.  Thus, it is possible to approximate the number of instructions removed by iterating irrelevant instruction elimination until oscillation is detected.
+
+ZDD-based irrelevant instruction dependency elimination was used to assist the study of TLP by filtering irrelevant points from program visualizations.  Irrelevant instruction dependency elimination also can be used for code optimization or compiler evaluation.  Chapter ~\ref{chap:deadcode} contained a survey of irrelevant code removal from the SPEC 2006 INT benchmarks using both \textit{-O0} and \textit{-O2} optimization levels in the \textit{gcc} compiler.
+
+SECTION: Hot-Code Visualization
+
+
+In addition to the optimization analyzes presented in this thesis, which include thread-level parallel region location and irrelevant instruction elimination, a hot-code visualization algorithm was created to focus optimization efforts on the most frequently executed regions of code.
+
+Hot-code analysis captures static instruction execution frequency and counts the frequency of execution.  The static hot code information is combined with a mapping from $dynamic\ instruction \ \rightarrow \ static\ instructions$ to create a new relation from each dynamic instruction to hot-code value.
+
+SECTION: Contributions
+
+
+Traces from a variety of applications need be analyzed to demonstrate the efficacy of DD-based dynamic trace analysis. The results in this thesis show that ZDD-based trace compression results in 25\% smaller representation compared to BDD-based traces.  Further, ZDDs have a smaller working set, thus the ZDD creation package can tuned to cache the working set of the trace-ZDD during creation.  This reduces the number of garbage collection operations and removal of useful dead nodes. This reduces ZDD creation by up to 9$\times$.
+
+Hot code analysis can tell developers where to focus optimization and parallelization efforts. In addition to the optimization analyzes presented in this thesis, which include coarse-grained thread level parallel region location and irrelevant instruction elimination, a hot-code visualization algorithm was created to focus optimization efforts on the most frequently executed regions of code.
+
+The results from a survey of irrelevant instructions in the SPEC 2006 INT benchmark shows that over 50\% of instruction dependencies do not produce a value or reach the end of the program trace.  It is possible for an instruction to be relevant to program execution but not meet the specified requirements.  Therefore, this thesis also presents results comparing the irrelevant dependence counts from both the \textit{-O0} and \textit{-O2} compiler settings. The irrelevant dependency count from the \textit{-O0}, or non-optimized, compiler setting provides a worst-case value to normalize further comparison operations.  Furthermore, this technique can test the effectiveness of static compiler optimizations, as well as locate potential irrelevant instruction streams.
+
+Finally, this thesis explores potential coarse grain TLP that may be exploitable in conjunction with TLS and ILP techniques.  In particular, the thesis examines the SPEC INT 2006 benchmark suite, looking for parallelism with a granularity of thousands of dynamic instructions, and is not restricted to loop-level TLP. The survey presented in Chapter~\ref{chap:tlpstudy} found, on average, 7\% of instructions may be extracted as course-grained parallelism, and for the benchmark 445.gobmk, 44\% of instructions may be extracted as coarse-grained TLP.
+
+The primary contributions of this thesis include:
+
+ A ZDD-based trace compression algorithm with tuning for larg
+ traces, resulting in a 25\% reduction in BDD size and a $9\times$ reduction in trace compression time. A ZDD-based iterative analysis for locating irrelevan
+ instruction dependencies A method to quickly explore coarse-grained parallelism in serial
+ applications. A ZDD-based dependence graph chopping algorithm need for th
+ aforementioned method. A survey of coarse-grained thread level parallelism in the SPEC
+ INT 2006 benchmarks that shows up to 44\% of instructions may be extractable as coarse grain TLP.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%  Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}	% or "siam", or "alpha", or "abbrv" % see other styles (.bst files) in % $TEXHOME/texmf/bibtex/bst
+
+% \nocite{*}		% list all refs in database, cited or not.
+
+\bibliography{thesis}		% bib database file refs.bib
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%  Appendices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CHAPTER: Selected Regions from SPEC 2006
+
+
+CHAPTER: Hot Code Visualizations of SPEC 2000
+
+
+CHAPTER: Hot Code Visualizations of SPEC 2006
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% % Variable orders are brought in from an outside tex file % because they are ugly %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input variable_orders.tex
+
+CHAPTER: Functions from Parallel Region Selection
+
+
+SECTION: 400.perlbmk -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/400sinFuncsRawO0.tex} }
+
+SECTION: 400.perlbmk -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/400sinFuncsRawO2.tex} }
+
+SECTION: 401.bzip2 -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/401sinFuncsRawO0.tex} }
+
+SECTION: 401.bzip2 -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/401sinFuncsRawO2.tex} }
+
+SECTION: 403.gcc -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/403sinFuncsRawO0.tex} }
+
+SECTION: 403.gcc -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/403sinFuncsRawO2.tex} }
+
+SECTION: 445.gobmk -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/445sinFuncsRawO0.tex} }
+
+SECTION: 445.gobmk -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/445sinFuncsRawO2.tex} }
+
+SECTION: 458.sjeng -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/458sinFuncsRawO0.tex} }
+
+SECTION: 458.sjeng -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/458sinFuncsRawO2.tex} }
+
+SECTION: 462.libquantum -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/462sinFuncsRawO0.tex} }
+
+SECTION: 462.libquantum -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/462sinFuncsRawO2.tex} }
+
+SECTION: 471.omnetpp -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/471sinFuncsRawO2.tex} }
+
+SECTION: 473.astar -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/473sinFuncsRawO0.tex} }
+
+SECTION: 473.astar -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/473sinFuncsRawO0.tex} }
+
+SECTION: 483.xalancbmk -O0 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/483sinFuncsRawO0.tex} }
+
+SECTION: 483.xalancbmk -O2 Functions in Selected Regions for TLP
+ {\small \verbatiminput{sinfuncs/483sinFuncsRawO2.tex} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%   THE END   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

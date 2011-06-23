@@ -1,0 +1,13 @@
+#Benchmark,Naive TLP
+400.perlbench,0.097803
+401.bzip2,25.173997
+403.gcc,0.799556
+429.mcf,0.390485
+445.gobmk,15.797872
+456.hmmer,0.04989
+458.sjeng,5.518524
+462.libquantum,0.045125
+464.h264ref,0.936279
+471.omnetpp,1.714413
+473.astar,0.121093
+483.xalancbmk,7.382668

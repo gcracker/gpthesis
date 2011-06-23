@@ -1,0 +1,193 @@
+ --- ZDD Pass 1 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.016452 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.133330 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.004405 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.066145 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.033004 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.211840 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.107665 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.107346 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.036296 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.266082 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.107903 seconds
+ --- BDD Pass 1 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.022962 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.170059 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.005881 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.099442 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.042088 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.273065 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.134314 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.134002 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.043115 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.334107 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.134700 seconds
+ --- ZDD Pass 2 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.016586 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.133148 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.004413 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.066085 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.033101 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.211860 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.107441 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.107132 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.036025 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.265329 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.107936 seconds
+ --- BDD Pass 2 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.023013 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.169715 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.005899 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.098547 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.042131 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.272032 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.133556 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.134033 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.043142 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.335094 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.134551 seconds
+ --- ZDD Pass 3 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.016409 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.132885 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.004441 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.066539 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.032972 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.211612 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.107523 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.107376 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.036037 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.265356 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.108295 seconds
+ --- BDD Pass 3 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.022860 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.175093 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.005820 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.098072 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.042147 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.272498 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.133459 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.134862 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.043144 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.334681 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.134512 seconds
+ --- ZDD Pass 4 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.016487 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.132797 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.004415 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.066397 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.032972 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.212085 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.107448 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.107622 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.036144 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.265756 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.108215 seconds
+ --- BDD Pass 4 ----
+Loading File:/home/pricegd/bdds/
+Loading File:/home/pricegd/bdds/255.vortex_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.022867 seconds
+Loading File:/home/pricegd/bdds/175vpr_dinvsrdy_msb2lsb_250mil_021608.dd
+Time for search is 0.174017 seconds
+Loading File:/home/pricegd/bdds/256.bzip2_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.005813 seconds
+Loading File:/home/pricegd/bdds/186.crafty_dinvsrdy_032608.dd
+Time for search is 0.098075 seconds
+Loading File:/home/pricegd/bdds/254.gap_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.042103 seconds
+Loading File:/home/pricegd/bdds/197parser_dinvsrdy_032708.dd
+Time for search is 0.272859 seconds
+Loading File:/home/pricegd/bdds/300.twolf_dinvsrdy_msb2lsb_250mil_032608.dd
+Time for search is 0.133442 seconds
+Loading File:/home/pricegd/bdds/253.perlbmk_dinvsrdy_032708.dd
+Time for search is 0.133864 seconds
+Loading File:/home/pricegd/bdds/164.gzip_dinvsrdy_msb2lsb_250mil_032008.dd
+Time for search is 0.043361 seconds
+Loading File:/home/pricegd/bdds/176.gcc_dinvsrdy_msb2lsb_250mil_031708.dd
+Time for search is 0.336399 seconds
+Loading File:/home/pricegd/bdds/181mcf_dinvsrdy_msb2lsb_250mil_031908.dd
+Time for search is 0.134533 seconds
+

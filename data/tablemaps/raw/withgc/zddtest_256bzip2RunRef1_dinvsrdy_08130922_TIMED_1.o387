@@ -1,0 +1,110 @@
+*Tick Output*
+*Opcount, Slots, Keys, Dead, Time*
+Opcount:1000000,8421376,87264,0,12
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,3,1,5,1,9,4,18,16,38,34,42,42,59,88,122,190,277,384,595,560,1289,1622,2822,3149,5707,5790,10190,9331,13919,10397,11575,5351,3140,324,70,6,2
+Opcount:2000000,8421376,93244,0,26
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,3,1,5,1,9,5,19,14,44,34,62,64,109,85,153,135,222,251,407,498,769,699,1484,1777,3061,3360,6052,6095,10681,9742,14628,10978,12254,5680,3361,334,70,6,2
+Opcount:3000000,8421376,93480,0,39
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,4,1,7,4,14,8,36,34,86,60,132,79,136,86,153,134,222,251,407,497,772,699,1484,1775,3064,3361,6052,6095,10681,9742,14628,10978,12254,5680,3361,334,70,6,2
+Opcount:4000000,8421376,98919,0,54
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,3,1,5,1,9,8,22,14,52,49,119,90,204,120,230,129,247,181,321,313,528,585,921,797,1651,1895,3262,3534,6331,6324,11104,10121,15272,11528,12868,6016,3551,347,70,6,2
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 230481568
+Peak number of nodes: 1932602
+Peak number of live nodes: 132
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 50785391
+Number of cache hits: 4454948
+Number of cache insertions: 46330443
+Number of cache collisions: 3301636
+Number of cache deletions: 43026254
+Cache used slots = 99.95% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8421376
+Used buckets in unique table: 1.05% (expected 1.05%)
+Number of BDD and ADD nodes: 132
+Number of ZDD nodes: 101730
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 85725482
+Total number of nodes reclaimed: 43840509
+Garbage collections so far: 72
+Time for garbage collection: 15.96 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Post conversion DEBUG output:
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 230481568
+Peak number of nodes: 1932602
+Peak number of live nodes: 138353
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 51070611
+Number of cache hits: 4570286
+Number of cache insertions: 46500325
+Number of cache collisions: 3306697
+Number of cache deletions: 43127881
+Cache used slots = 99.95% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8421376
+Used buckets in unique table: 1.37% (expected 1.37%)
+Number of BDD and ADD nodes: 138353
+Number of ZDD nodes: 128
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 85863703
+Total number of nodes reclaimed: 43840509
+Garbage collections so far: 73
+Time for garbage collection: 16.07 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Maximum cycle to finish the program: 298303
+Total ops: 4564503
+Average IPC: 15.30

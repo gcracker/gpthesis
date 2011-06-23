@@ -1,0 +1,16 @@
+File Arguments
+/home/ubuntu/176gccRunRef1_dinvsrdy_1000mil.dd
+/home/ubuntu/176gccRunRef1_dinvsdin_1000mil.dd
+/home/ubuntu/invst/176gcc_dinvsrdy_invst_quickdead.dd
+71015911424
+Using memory size:71015911424
+Using {DIN,RDY} set from file:/home/ubuntu/176gccRunRef1_dinvsrdy_1000mil.dd
+Using {DIN_i,DIN_d} file:/home/ubuntu/176gccRunRef1_dinvsdin_1000mil.dd
+Top Din:999999999, Rdy:7000119
+Old {DIN,RDY} Size:1000000000
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:531685411
+Saving to file:/home/ubuntu/invst/176gcc_dinvsrdy_invst_quickdead.dd

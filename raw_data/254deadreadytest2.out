@@ -1,0 +1,65 @@
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:464
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:473
+
+
+Warning (60/203) from HOOPS routine 'Update_Display' -
+
+	  This copy of HOOPS has not been licensed for commercial
+	  development or distribution purposes.	 Copying is prohibited.
+	  To obtain rights to develop and/or distribute applications
+	  based on HOOPS, please contact Tech Soft 3D at
+	  510-883-2180 or email hoops@techsoft3d.com
+	  
+	  The HOOPS Web page is located at:
+	  					http://www.hoops3d.com
+
+Loading File:/home/ubuntu/254gapRunRef1_dinvsrdy_1000mil.dd
+Loading File:/home/ubuntu/tempdisk/ddmake/08162010/254gapRunRef1_dinvssin_1000mil.dd
+Done Loading DD file(s):158.577813
+DD Manager list size:2
+Time for search is 0.061472 seconds
+Largest DIN value found is: 999995867
+Smallest DIN value found is: 0
+Largest RDY value found is: 13657470
+Smallest RDY value found is: 0
+Total DINs found is: 0
+QWidget::repaint: Recursive repaint detected
+addr:0x807a026, occurs:43054
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:NewBag - line:903
+addr:0x807a02b, occurs:43054
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:NewBag - line:903
+addr:0x807a02c, occurs:43054
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:NewBag - line:903
+addr:0x807a8cb, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1218
+addr:0x807a8d1, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1218
+addr:0x807a8d6, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1218
+addr:0x807a8d9, occurs:537213
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1218
+addr:0x807a8dc, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1219
+addr:0x807a8e1, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1219
+addr:0x807a8e5, occurs:537206
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1220
+addr:0x807a8ea, occurs:537207
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1220
+addr:0x807a8eb, occurs:537207
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1220
+addr:0x807a8f0, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1217
+addr:0x807a8f5, occurs:537212
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1217
+addr:0x807a8f8, occurs:537213
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1217
+addr:0x807a8fd, occurs:537213
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1216
+addr:0x807a902, occurs:537213
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1216
+addr:0x807a910, occurs:537214
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1216
+addr:0x807a912, occurs:537214
+file:/arca/users/pricegd/254.gap/src/gasman.c - function:InitGasman - line:1216
+Time for SIN lookup is 5.035423 seconds

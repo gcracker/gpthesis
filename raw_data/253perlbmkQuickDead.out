@@ -1,0 +1,16 @@
+File Arguments
+/home/ubuntu/253perlbmkRunRef1_dinvsrdy_1000mil.dd
+/home/ubuntu/253perlbmkRunRef1_dinvsdin_1000mil.dd
+/home/ubuntu/invst/253perlbmk_dinvsrdy_invst_quickdead.dd
+35429617664
+Using memory size:35429617664
+Using {DIN,RDY} set from file:/home/ubuntu/253perlbmkRunRef1_dinvsrdy_1000mil.dd
+Using {DIN_i,DIN_d} file:/home/ubuntu/253perlbmkRunRef1_dinvsdin_1000mil.dd
+Top Din:999999999, Rdy:21337975
+Old {DIN,RDY} Size:1000000000
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:863825311
+Saving to file:/home/ubuntu/invst/253perlbmk_dinvsrdy_invst_quickdead.dd

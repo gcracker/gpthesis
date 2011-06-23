@@ -1,0 +1,561 @@
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:545548
+DistanceSum: 439431991.0
+Dist Average**2:412.211373589
+Max Average**2 Distance: 805.487310008
+Max Distance: 57500287.0
+
+Cluster size:272715
+DistanceSum: 409474261.0
+Cluster size:272833
+DistanceSum: 29952361.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:543.39713056
+Max Average**2 Distance: 1501.47318996
+Max Distance: 57500287.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:205971
+DistanceSum: 400238627.0
+Cluster size:63921
+DistanceSum: 1125825.0
+Cluster size:275656
+DistanceSum: 38062108.0
+Dist Average**2:529.451497557
+Max Average**2 Distance: 1943.17951071
+Max Distance: 57500287.0
+
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:62753
+DistanceSum: 1107137.0
+Cluster size:267283
+DistanceSum: 36772986.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:214926
+DistanceSum: 171212962.0
+Dist Average**2:733.026848289
+Max Average**2 Distance: 2694.36177474
+Max Distance: 625676.0
+
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:233191
+DistanceSum: 32332163.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:2340.18647545
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:233191
+DistanceSum: 32332163.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:0
+Dist Average**2:2005.87412182
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:40313
+DistanceSum: 1439280.0
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:50805
+DistanceSum: 679774.0
+Cluster size:233191
+DistanceSum: 32332163.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:49102
+DistanceSum: 432429.0
+Cluster size:586
+DistanceSum: 1578896.0
+Dist Average**2:1760.00910659
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:100280
+DistanceSum: 13963347.0
+Cluster size:103697
+DistanceSum: 14400253.0
+Cluster size:45372
+DistanceSum: 801545.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:82923
+DistanceSum: 8957283.0
+Cluster size:100724
+DistanceSum: 14066091.0
+Dist Average**2:1603.40338867
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:103697
+DistanceSum: 14400253.0
+Cluster size:82923
+DistanceSum: 8957283.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:40313
+DistanceSum: 1439280.0
+Cluster size:99907
+DistanceSum: 1112211.0
+Cluster size:100724
+DistanceSum: 14066091.0
+Cluster size:45372
+DistanceSum: 801545.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:100280
+DistanceSum: 13963347.0
+Cluster size:586
+DistanceSum: 1578896.0
+Dist Average**2:1445.8530151
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:103697
+DistanceSum: 14400253.0
+Cluster size:100729
+DistanceSum: 14067151.0
+Cluster size:82901
+DistanceSum: 8953469.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:100303
+DistanceSum: 13966230.0
+Cluster size:45366
+DistanceSum: 801439.0
+Cluster size:0
+Cluster size:0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:1311.87396018
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:68665
+DistanceSum: 9575255.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:70159
+DistanceSum: 9818950.0
+Cluster size:27708
+DistanceSum: 489481.0
+Cluster size:62811
+DistanceSum: 7379127.0
+Cluster size:69945
+DistanceSum: 9676441.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:27756
+DistanceSum: 490329.0
+Cluster size:68734
+DistanceSum: 9555975.0
+Cluster size:67735
+DistanceSum: 9383149.0
+Cluster size:68473
+DistanceSum: 9528892.0
+Dist Average**2:1227.99744259
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:80980
+DistanceSum: 11312737.0
+Cluster size:80401
+DistanceSum: 11221231.0
+Cluster size:76965
+DistanceSum: 9571345.0
+Cluster size:78233
+DistanceSum: 10842854.0
+Cluster size:77935
+DistanceSum: 10818964.0
+Cluster size:80262
+DistanceSum: 11119859.0
+Cluster size:40313
+DistanceSum: 1439280.0
+Cluster size:28584
+DistanceSum: 504957.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:28626
+DistanceSum: 505699.0
+Cluster size:49111
+DistanceSum: 432579.0
+Cluster size:50796
+DistanceSum: 679624.0
+Dist Average**2:1126.35110132
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:49102
+DistanceSum: 432429.0
+Cluster size:50805
+DistanceSum: 679774.0
+Cluster size:15489
+DistanceSum: 703253.0
+Cluster size:77942
+DistanceSum: 10819693.0
+Cluster size:80407
+DistanceSum: 11221298.0
+Cluster size:28584
+DistanceSum: 504931.0
+Cluster size:28635
+DistanceSum: 505838.0
+Cluster size:76984
+DistanceSum: 9575100.0
+Cluster size:80974
+DistanceSum: 11312667.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:80249
+DistanceSum: 11119001.0
+Cluster size:24824
+DistanceSum: 736019.0
+Cluster size:78211
+DistanceSum: 10839040.0
+Dist Average**2:1048.70921053
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^CTraceback (most recent call last):
+  File "./gen_sininfo.py", line 278, in <module>
+    clusters = kmeans(kMeanPoints, clusterNum, cutoff)
+  File "./gen_sininfo.py", line 78, in kmeans
+    distance = getDistance(p, clusters[i+1].centroid)
+  File "./gen_sininfo.py", line 102, in getDistance
+    return math.sqrt(ret)
+KeyboardInterrupt
+pricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ ls
+[0m[01;32madamant_ddset.py[0m              [01;32madamant_ec2_quickdead.sh[0m     [01;32madamantium_ddmake_qsub01.py[0m   [01;32madamantium_perftest.py[0m       make_amortization.py
+[01;32madamant_dirlist.py[0m            [01;32madamant_ec2_tophot.sh[0m        [01;32madamantium_ddmake_qsubhot.py[0m  [01;32madamantium_qsub01.py[0m         [01;32mmake_delta.py[0m
+[01;32madamant_ec2cron_deaditer.sh[0m   [01;32madamantium_bddmake.py[0m        [01;32madamantium_deathslice.py[0m      [01;32madamantium_revslice_qsub.py[0m  [01;32mmvAndDD.sh[0m
+[01;32madamant_ec2cron_jobpusher.py[0m  [01;32madamantium_ddmake06.py[0m       [01;32madamantium_graph.py[0m           [01;32madamantium_subgraph.py[0m       [01;32mparameter_sub.py[0m
+[01;32madamant_ec2cron_perftest.sh[0m   [01;32madamantium_ddmake06_qsub.py[0m  [01;32madamantium_memorytest.py[0m      [01;32mclean_contacts.pl[0m            [01;32mrevSliceTest.sh[0m
+[01;32madamant_ec2cron_task.sh[0m       [01;32madamantium_ddmake_hot.py[0m     [01;32madamantium_ordershift.py[0m      [01;32mgen_lines.py[0m                 screenlog.0
+[01;32madamant_ec2cron_update.sh[0m     [01;32madamantium_ddmake.py[0m         [01;32madamantium_ordertest.py[0m       [01;32mgen_sininfo.py[0m               screenlog.1
+pricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ cp screenlog.0  [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kless screenlog.0 
+[?1049h[?1h=
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:545548
+DistanceSum: 439431991.0
+Dist Average**2:412.211373589
+Max Average**2 Distance: 805.487310008
+Max Distance: 57500287.0
+
+Cluster size:272715
+DistanceSum: 409474261.0
+Cluster size:272833
+DistanceSum: 29952361.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:543.39713056
+Max Average**2 Distance: 1501.47318996
+Max Distance: 57500287.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:205971
+DistanceSum: 400238627.0
+Cluster size:63921
+DistanceSum: 1125825.0
+Cluster size:275656
+DistanceSum: 38062108.0
+Dist Average**2:529.451497557
+Max Average**2 Distance: 1943.17951071
+Max Distance: 57500287.0
+
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:62753
+DistanceSum: 1107137.0
+Cluster size:267283
+DistanceSum: 36772986.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:214926
+DistanceSum: 171212962.0
+Dist Average**2:733.026848289
+Max Average**2 Distance: 2694.36177474
+Max Distance: 625676.0
+
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:12976
+DistanceSum: 143195293.0
+[3mscreenlog.0 [23m[K[K [KESCESC[K[[[K66[K~~[KCluster size:233191
+DistanceSum: 32332163.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:2340.18647545
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:233191
+DistanceSum: 32332163.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:0
+Dist Average**2:2005.87412182
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:40313
+DistanceSum: 1439280.0
+Cluster size:238825
+DistanceSum: 32506198.0
+Cluster size:50805
+DistanceSum: 679774.0
+Cluster size:233191
+DistanceSum: 32332163.0
+Cluster size:59970
+DistanceSum: 1059443.0
+Cluster size:49102
+DistanceSum: 432429.0
+Cluster size:586
+DistanceSum: 1578896.0
+Dist Average**2:1760.00910659
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:100280
+DistanceSum: 13963347.0
+Cluster size:103697
+DistanceSum: 14400253.0
+:[K[K [KESCESC[K[[[K66[K~~[KCluster size:45372
+DistanceSum: 801545.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:82923
+DistanceSum: 8957283.0
+Cluster size:100724
+DistanceSum: 14066091.0
+Dist Average**2:1603.40338867
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:103697
+DistanceSum: 14400253.0
+Cluster size:82923
+DistanceSum: 8957283.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:40313
+DistanceSum: 1439280.0
+Cluster size:99907
+DistanceSum: 1112211.0
+Cluster size:100724
+DistanceSum: 14066091.0
+Cluster size:45372
+DistanceSum: 801545.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:100280
+DistanceSum: 13963347.0
+Cluster size:586
+DistanceSum: 1578896.0
+Dist Average**2:1445.8530151
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:103697
+DistanceSum: 14400253.0
+Cluster size:100729
+DistanceSum: 14067151.0
+Cluster size:82901
+DistanceSum: 8953469.0
+Cluster size:98990
+DistanceSum: 13709161.0
+Cluster size:100303
+DistanceSum: 13966230.0
+Cluster size:45366
+DistanceSum: 801439.0
+Cluster size:0
+:[K[K [KESCESC[K[[[K66[K~~[KCluster size:0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Dist Average**2:1311.87396018
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:68665
+DistanceSum: 9575255.0
+Cluster size:140220
+DistanceSum: 2655127.0
+Cluster size:70159
+DistanceSum: 9818950.0
+Cluster size:27708
+DistanceSum: 489481.0
+Cluster size:62811
+DistanceSum: 7379127.0
+Cluster size:69945
+DistanceSum: 9676441.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:27756
+DistanceSum: 490329.0
+Cluster size:68734
+DistanceSum: 9555975.0
+Cluster size:67735
+DistanceSum: 9383149.0
+Cluster size:68473
+DistanceSum: 9528892.0
+Dist Average**2:1227.99744259
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:80980
+DistanceSum: 11312737.0
+Cluster size:80401
+DistanceSum: 11221231.0
+Cluster size:76965
+DistanceSum: 9571345.0
+Cluster size:78233
+DistanceSum: 10842854.0
+Cluster size:77935
+DistanceSum: 10818964.0
+Cluster size:80262
+DistanceSum: 11119859.0
+Cluster size:40313
+DistanceSum: 1439280.0
+:[K[K [KESCESC[K[[[K66[K~~[KCluster size:28584
+DistanceSum: 504957.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:28626
+DistanceSum: 505699.0
+Cluster size:49111
+DistanceSum: 432579.0
+Cluster size:50796
+DistanceSum: 679624.0
+Dist Average**2:1126.35110132
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+Cluster size:49102
+DistanceSum: 432429.0
+Cluster size:50805
+DistanceSum: 679774.0
+Cluster size:15489
+DistanceSum: 703253.0
+Cluster size:77942
+DistanceSum: 10819693.0
+Cluster size:80407
+DistanceSum: 11221298.0
+Cluster size:28584
+DistanceSum: 504931.0
+Cluster size:28635
+DistanceSum: 505838.0
+Cluster size:76984
+DistanceSum: 9575100.0
+Cluster size:80974
+DistanceSum: 11312667.0
+Cluster size:12976
+DistanceSum: 143195293.0
+Cluster size:586
+DistanceSum: 1578896.0
+Cluster size:80249
+DistanceSum: 11119001.0
+Cluster size:24824
+DistanceSum: 736019.0
+Cluster size:78211
+DistanceSum: 10839040.0
+Dist Average**2:1048.70921053
+Max Average**2 Distance: 11035.3955764
+Max Distance: 625676.0
+
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^CTraceback (most recent call last):
+  File "./gen_sininfo.py", line 278, in <module>
+    clusters = kmeans(kMeanPoints, clusterNum, cutoff)
+  File "./gen_sininfo.py", line 78, in kmeans
+    distance = getDistance(p, clusters[i+1].centroid)
+  File "./gen_sininfo.py", line 102, in getDistance
+    return math.sqrt(ret)
+:[K[K [KESCESC[K[[[K66[K~~[KKeyboardInterrupt
+pricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ ls
+[3mESC[23m[0m[3mESC[23m[01;32madamant_ddset.py[3mESC[23m[0m              [3mESC[23m[01;32madamant_ec2_quickdead.sh[3mESC[23m[0m     [3mESC[23m[01;32madamantium_ddmake_qsub01.py[3mESC[23m[0m   [3mESC[23m[01;32madama ntium_perftest.py[3mESC[23m[0m       make_amortization.py
+[3mESC[23m[01;32madamant_dirlist.py[3mESC[23m[0m            [3mESC[23m[01;32madamant_ec2_tophot.sh[3mESC[23m[0m        [3mESC[23m[01;32madamantium_ddmake_qsubhot.py[3mESC[23m[0m  [3mESC[23m[01;32madamantium_ qsub01.py[3mESC[23m[0m         [3mESC[23m[01;32mmake_delta.py[3mESC[23m[0m
+[3mESC[23m[01;32madamant_ec2cron_deaditer.sh[3mESC[23m[0m   [3mESC[23m[01;32madamantium_bddmake.py[3mESC[23m[0m        [3mESC[23m[01;32madamantium_deathslice.py[3mESC[23m[0m      [3mESC[23m[01;32madamantium_ revslice_qsub.py[3mESC[23m[0m  [3mESC[23m[01;32mmvAndDD.sh[3mESC[23m[0m
+[3mESC[23m[01;32madamant_ec2cron_jobpusher.py[3mESC[23m[0m  [3mESC[23m[01;32madamantium_ddmake06.py[3mESC[23m[0m       [3mESC[23m[01;32madamantium_graph.py[3mESC[23m[0m           [3mESC[23m[01;32madamantium_ subgraph.py[3mESC[23m[0m       [3mESC[23m[01;32mparameter_sub.py[3mESC[23m[0m
+[3mESC[23m[01;32madamant_ec2cron_perftest.sh[3mESC[23m[0m   [3mESC[23m[01;32madamantium_ddmake06_qsub.py[3mESC[23m[0m  [3mESC[23m[01;32madamantium_memorytest.py[3mESC[23m[0m      [3mESC[23m[01;32mclean_conta cts.pl[3mESC[23m[0m            [3mESC[23m[01;32mrevSliceTest.sh[3mESC[23m[0m
+[3mESC[23m[01;32madamant_ec2cron_task.sh[3mESC[23m[0m       [3mESC[23m[01;32madamantium_ddmake_hot.py[3mESC[23m[0m     [3mESC[23m[01;32madamantium_ordershift.py[3mESC[23m[0m      [3mESC[23m[01;32mgen_lines.p y[3mESC[23m[0m                 screenlog.0
+[3mESC[23m[01;32madamant_ec2cron_update.sh[3mESC[23m[0m     [3mESC[23m[01;32madamantium_ddmake.py[3mESC[23m[0m         [3mESC[23m[01;32madamantium_ordertest.py[3mESC[23m[0m       [3mESC[23m[01;32mgen_sininfo .py[3mESC[23m[0m               screenlog.1
+pricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ cp scr[3m^G[23meenlog.0  
+[3m(END) [23m[K[K [KESCESC[KOO[KAA[K[HMCluster size:50805
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDistanceSum: 432429.0
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMCluster size:49102
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HM
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMMax Distance: 625676.0
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMMax Average**2 Distance: 11035.3955764
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDist Average**2:1126.35110132
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDistanceSum: 679624.0
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMCluster size:50796
+[54;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDistanceSum: 432579.0
+[54;1H[K:[K[K[?1l>[?1049lpricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ cp screenlog.0  [K/[K~/pap/home/pricegd//papers/pact11_tlpsurvey/data/[K[K[K[K[Kraw_data/kmean

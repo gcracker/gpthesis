@@ -1,0 +1,37 @@
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:464
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:473
+
+
+Warning (60/203) from HOOPS routine 'Update_Display' -
+
+	  This copy of HOOPS has not been licensed for commercial
+	  development or distribution purposes.	 Copying is prohibited.
+	  To obtain rights to develop and/or distribute applications
+	  based on HOOPS, please contact Tech Soft 3D at
+	  510-883-2180 or email hoops@techsoft3d.com
+	  
+	  The HOOPS Web page is located at:
+	  					http://www.hoops3d.com
+
+Loading File:/home/ubuntu/tempdisk/ddmake/links/175vpr_dinvsrdy_1000mil.dd
+Loading File:/home/ubuntu/tempdisk/ddmake/links/175vpr_dinvsdin_1000mil.dd
+Loading File:/home/ubuntu/tempdisk/ddmake/links/175vpr_dinvshot_1000mil.dd
+Done Loading DD file(s):494.466682
+DD Manager list size:3
+Using the value 1301140 as a lower bound
+Old DINxRDY Size:53841475
+Building forward slice...
+Time for 1000 slices:3236.359741
+Time for 2000 slices:3586.775953
+Time for 3000 slices:3727.480037
+Time for 4000 slices:3777.587862
+Time for 5000 slices:3781.967978
+Time for 6000 slices:3783.470912
+Slicing Complete. Time for 6387 slices:3783.707817
+Forward slice building complete
+Top Slice Din:999999935, Rdy:19697963
+Top Din:999999999, Rdy:19697963
+Building the reverse slice...
+Slicing Complete. Time for 10477194 slices:8679.880590
+Reverse slice building complete
+New DINxRDY Size:2048226

@@ -1,0 +1,441 @@
+Performance Tests
+Using {DIN,RDY} set from file:/home/ubuntu/ddPerfTestInput/458sjeng_test0_dinvsrdy_1000mil_syscalls_O2.dd
+Using regions from file:/home/ubuntu/ddPerfTestInput/458sjeng_test0_dinvsrdy_1000mil_syscalls_O2.dd.slr
+Using {DIN,DIN} set from file:/home/ubuntu/ddPerfTestInput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2.dd
+Saving parallel overlay DD to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:0->1,Overlap:TL X:77147 Y:89189164, BR X:646073 Y:72150177
+Shrunk Regions:0->1,Naive Size:6221257
+
+Slicing Complete. Time for 0 slices:0.000928
+Forward Slice Size:6786802
+Interference Removal Reverse Slice Size:6258197
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:6221257
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:0->2,Overlap:TL X:50055 Y:89189164, BR X:646073 Y:61558374
+Shrunk Regions:0->2,Naive Size:6402479
+
+Slicing Complete. Time for 0 slices:0.000644
+Forward Slice Size:7091481
+Interference Removal Reverse Slice Size:6402479
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:6500550
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:0->3,Overlap:TL X:77147 Y:89189164, BR X:618981 Y:53729650
+Shrunk Regions:0->3,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5722432
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:0->4,Overlap:TL X:77147 Y:89189164, BR X:646073 Y:43598361
+Shrunk Regions:0->4,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5839222
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:0->5,Overlap:TL X:158422 Y:89189164, BR X:646073 Y:34388097
+Shrunk Regions:0->5,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:4736976
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:0->6,Overlap:TL X:104239 Y:89189164, BR X:618981 Y:22875268
+Shrunk Regions:0->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5616616
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:0->7,Overlap:TL X:131330 Y:89189164, BR X:646073 Y:12283466
+Shrunk Regions:0->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5662184
+Slicing Complete. Time for 0 slices:0.000006
+Interference Removal Forward Slice Set:0
+
+Regions:0->8,Overlap:TL X:50055 Y:89189164, BR X:646073 Y:1231150
+Shrunk Regions:0->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6556209
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:0->9,Overlap:TL X:184557 Y:1015132201, BR X:646073 Y:82281466
+Shrunk Regions:0->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000027
+Interference Removal Forward Slice Set:0
+
+Regions:1->2,Overlap:TL X:77147 Y:81820953, BR X:781532 Y:61558374
+Shrunk Regions:1->2,Naive Size:1490049
+
+Slicing Complete. Time for 323 slices:9.828548
+Forward Slice Size:8788931
+Interference Removal Reverse Slice Size:1490049
+Slicing Complete. Time for 0 slices:0.000023
+Interference Removal Forward Slice Set:7748246
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:1->3,Overlap:TL X:77147 Y:81820953, BR X:618981 Y:53729650
+Shrunk Regions:1->3,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5722432
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:1->4,Overlap:TL X:77147 Y:81820953, BR X:808623 Y:43598361
+Shrunk Regions:1->4,Naive Size:298001
+
+Slicing Complete. Time for 0 slices:0.000848
+Forward Slice Size:8319200
+Interference Removal Reverse Slice Size:298001
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:7627272
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:1->5,Overlap:TL X:158422 Y:81820953, BR X:754440 Y:34388097
+Shrunk Regions:1->5,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5929013
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:1->6,Overlap:TL X:104239 Y:81820953, BR X:618981 Y:22875268
+Shrunk Regions:1->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5616616
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:0
+
+Regions:1->7,Overlap:TL X:131330 Y:81820953, BR X:754440 Y:12283466
+Shrunk Regions:1->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6854221
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:1->8,Overlap:TL X:77147 Y:81820953, BR X:781532 Y:1231150
+Shrunk Regions:1->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:7748246
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:1->9,Overlap:TL X:184557 Y:1015132201, BR X:808623 Y:72150177
+Shrunk Regions:1->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000026
+Interference Removal Forward Slice Set:0
+
+Regions:2->3,Overlap:TL X:77147 Y:69847611, BR X:618981 Y:53729650
+Shrunk Regions:2->3,Naive Size:5722432
+
+Slicing Complete. Time for 0 slices:0.000768
+Forward Slice Size:6241189
+Interference Removal Reverse Slice Size:5960185
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:5722432
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->4,Overlap:TL X:77147 Y:69847611, BR X:781532 Y:43598361
+Shrunk Regions:2->4,Naive Size:7329271
+
+Slicing Complete. Time for 0 slices:0.000719
+Forward Slice Size:7994108
+Interference Removal Reverse Slice Size:7748246
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:7329271
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->5,Overlap:TL X:158422 Y:69847611, BR X:754440 Y:34388097
+Shrunk Regions:2->5,Naive Size:5929013
+
+Slicing Complete. Time for 0 slices:0.000739
+Forward Slice Size:6466552
+Interference Removal Reverse Slice Size:6556209
+Slicing Complete. Time for 0 slices:0.000009
+Interference Removal Forward Slice Set:5929013
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->6,Overlap:TL X:104239 Y:69847611, BR X:618981 Y:22875268
+Shrunk Regions:2->6,Naive Size:5616616
+
+Slicing Complete. Time for 0 slices:0.000773
+Forward Slice Size:6126528
+Interference Removal Reverse Slice Size:5662173
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:5616616
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->7,Overlap:TL X:131330 Y:69847611, BR X:754440 Y:12283466
+Shrunk Regions:2->7,Naive Size:6854221
+
+Slicing Complete. Time for 0 slices:0.001421
+Forward Slice Size:7476556
+Interference Removal Reverse Slice Size:6854221
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:6854221
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->8,Overlap:TL X:50055 Y:69847611, BR X:781532 Y:1231150
+Shrunk Regions:2->8,Naive Size:1136378
+
+Slicing Complete. Time for 0 slices:0.001243
+Forward Slice Size:8776958
+Interference Removal Reverse Slice Size:1136378
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:8046258
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:2->9,Overlap:TL X:184557 Y:1015132201, BR X:781532 Y:61558374
+Shrunk Regions:2->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000027
+Interference Removal Forward Slice Set:0
+
+Regions:3->4,Overlap:TL X:77147 Y:60637348, BR X:618981 Y:43598361
+Shrunk Regions:3->4,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:3->5,Overlap:TL X:158422 Y:60637348, BR X:618981 Y:34388097
+Shrunk Regions:3->5,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:3->6,Overlap:TL X:104239 Y:60637348, BR X:618981 Y:22875268
+Shrunk Regions:3->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:3->7,Overlap:TL X:131330 Y:60637348, BR X:618981 Y:12283466
+Shrunk Regions:3->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5364172
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:3->8,Overlap:TL X:77147 Y:60637348, BR X:618981 Y:1231150
+Shrunk Regions:3->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5960185
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:3->9,Overlap:TL X:184557 Y:1015132201, BR X:618981 Y:53729650
+Shrunk Regions:3->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000027
+Interference Removal Forward Slice Set:0
+
+Regions:4->5,Overlap:TL X:158422 Y:51887598, BR X:754440 Y:34388097
+Shrunk Regions:4->5,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:4->6,Overlap:TL X:104239 Y:51887598, BR X:618981 Y:22875268
+Shrunk Regions:4->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:4->7,Overlap:TL X:131330 Y:51887598, BR X:754440 Y:12283466
+Shrunk Regions:4->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6854221
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:4->8,Overlap:TL X:77147 Y:51887598, BR X:781532 Y:1231150
+Shrunk Regions:4->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:7748246
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:4->9,Overlap:TL X:184557 Y:1015132201, BR X:808623 Y:43598361
+Shrunk Regions:4->9,Naive Size:298001
+
+Slicing Complete. Time for 0 slices:0.001118
+Forward Slice Size:323481
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000027
+Interference Removal Forward Slice Set:298001
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:5->6,Overlap:TL X:158422 Y:41756308, BR X:618981 Y:22875268
+Shrunk Regions:5->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:5->7,Overlap:TL X:158422 Y:41756308, BR X:754440 Y:12283466
+Shrunk Regions:5->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6556209
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:5->8,Overlap:TL X:158422 Y:41756308, BR X:754440 Y:1231150
+Shrunk Regions:5->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6556209
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:5->9,Overlap:TL X:184557 Y:1015132201, BR X:754440 Y:34388097
+Shrunk Regions:5->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000026
+Interference Removal Forward Slice Set:0
+
+Regions:6->7,Overlap:TL X:131330 Y:29782966, BR X:618981 Y:12283466
+Shrunk Regions:6->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5364172
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:6->8,Overlap:TL X:104239 Y:29782966, BR X:618981 Y:1231150
+Shrunk Regions:6->8,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:5662173
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:6->9,Overlap:TL X:184557 Y:1015132201, BR X:618981 Y:22875268
+Shrunk Regions:6->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000027
+Interference Removal Forward Slice Set:0
+
+Regions:7->8,Overlap:TL X:131330 Y:21033216, BR X:754440 Y:1231150
+Shrunk Regions:7->8,Naive Size:6854221
+
+Slicing Complete. Time for 0 slices:0.001215
+Forward Slice Size:7476554
+Interference Removal Reverse Slice Size:6854221
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:6854221
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Regions:7->9,Overlap:TL X:184557 Y:1015132201, BR X:754440 Y:12283466
+Shrunk Regions:7->9,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000046
+Interference Removal Forward Slice Set:0
+
+Regions:8->9,Overlap:TL X:184557 Y:1015132201, BR X:781532 Y:1231150
+Shrunk Regions:8->9,Naive Size:1033305
+
+Slicing Complete. Time for 0 slices:0.001146
+Forward Slice Size:7162934
+Interference Removal Reverse Slice Size:1033305
+Slicing Complete. Time for 0 slices:0.000026
+Interference Removal Forward Slice Set:6566736
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+#RegionID,Naive
+0,2
+1,3
+2,8
+3,1
+4,3
+5,1
+6,1
+7,2
+8,3
+9,2
+
+#RegionID,Interfer
+0,2
+1,3
+2,8
+3,1
+4,3
+5,1
+6,1
+7,2
+8,3
+9,2
+Saving to file:/home/ubuntu/ddPerfTestOutput/458sjeng_test0_dinvsdin_1000mil_syscalls_O2_output.dd
+
+Execution Count: 1000000000
+Naive Count: 55185244
+Naive Performance Gain: 5.518524%
+Simple Interference Count: 55185244
+Simple Interference Performance Gain: 5.518524%

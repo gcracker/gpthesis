@@ -1,0 +1,17 @@
+Detected Free Memory: 34073292800
+Top Hot:10
+Using {DIN,HOT} set from file:/home/ubuntu/176gccRunRef1_dinvshot_1000mil.dd
+Using the value 793971 as an upper bound
+Using {DIN,RDY} file:/home/ubuntu/176gccRunRef1_dinvsrdy_1000mil.dd
+Using {DIN,DIN} file:/home/ubuntu/176gccRunRef1_dinvsdin_1000mil.dd
+Old DINxRDY Size:996589234
+Building forward slice...
+Slicing Complete. Time for 2 slices:342.141184
+Forward slice building complete
+Top Slice Din:599999999, Rdy:3179568
+Top Din:999999999, Rdy:7000119
+Building the reverse slice...
+Slicing Complete. Time for 0 slices:0.000025
+Reverse slice building complete
+New DINxRDY Size:0
+Saving to file:/home/ubuntu/invst/176gcc_dinvsrdy_invst_tophot.dd

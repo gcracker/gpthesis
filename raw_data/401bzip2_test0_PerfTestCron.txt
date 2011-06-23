@@ -1,0 +1,2621 @@
+Performance Tests
+Using {DIN,DIN} set from file:/home/ubuntu/ddPerfTestInput/401bzip2_test0_dinvsdin_1000mil_syscalls_O2.dd
+Using {DIN,RDY} set from file:/home/ubuntu/ddPerfTestInput/401bzip2_test0_dinvsrdy_1000mil_syscalls_O2.dd
+Using regions from file:/home/ubuntu/ddPerfTestInput/401bzip2_test0_dinvsrdy_1000mil_syscalls_O2.dd.slr
+Using {DIN,SYS} set from file:/home/ubuntu/ddPerfTestInput/401bzip2_test0_dinvssys_1000mil_syscalls_O2.dd
+Saving parallel overlay DD to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Overlap TL X:438288 Y:91666630, BR X:1954034 Y:0
+
+Region 0 -> 1 Naive Size:7461316
+Time for 10000 slices:6292.366427
+Time for 20000 slices:7335.743371
+Time for 30000 slices:7966.150900
+Time for 40000 slices:8558.169602
+Time for 50000 slices:8906.399805
+Time for 60000 slices:9222.732736
+Time for 70000 slices:9439.609263
+Time for 80000 slices:9537.993397
+Time for 90000 slices:9633.755918
+Time for 100000 slices:9727.540285
+Time for 110000 slices:9840.383462
+Time for 120000 slices:9931.309673
+Time for 130000 slices:10132.115489
+Time for 140000 slices:10220.235710
+Time for 150000 slices:10242.743402
+Time for 160000 slices:10329.798519
+Time for 170000 slices:10414.251292
+Time for 180000 slices:10498.744440
+Time for 190000 slices:10518.982519
+Time for 200000 slices:10602.797747
+Time for 210000 slices:10682.894404
+Time for 220000 slices:10698.765097
+Time for 230000 slices:10777.909623
+Time for 240000 slices:10791.167202
+Time for 250000 slices:10804.005490
+Time for 260000 slices:10816.204195
+Time for 270000 slices:10891.969796
+Time for 280000 slices:10903.637990
+Time for 290000 slices:10915.018992
+Time for 300000 slices:10926.672328
+Time for 310000 slices:10937.573655
+Time for 320000 slices:11012.420825
+Time for 330000 slices:11021.567791
+Time for 340000 slices:11029.077734
+Time for 350000 slices:11039.086665
+Time for 360000 slices:11046.356744
+Time for 370000 slices:11053.045520
+Time for 380000 slices:11060.552390
+Time for 390000 slices:11131.507355
+Time for 400000 slices:11138.137954
+Time for 410000 slices:11143.904360
+Time for 420000 slices:11150.632754
+Time for 430000 slices:11157.334607
+Time for 440000 slices:11164.855159
+Time for 450000 slices:11172.033644
+Time for 460000 slices:11178.647648
+Time for 470000 slices:11184.294691
+Time for 480000 slices:11190.170370
+Time for 490000 slices:11196.285158
+Time for 500000 slices:11266.711128
+Time for 510000 slices:11276.887570
+Time for 520000 slices:11286.575524
+Time for 530000 slices:11295.820917
+Time for 540000 slices:11304.524722
+Time for 550000 slices:11313.363399
+Time for 560000 slices:11322.728355
+Time for 570000 slices:11332.101660
+Time for 580000 slices:11339.708729
+Time for 590000 slices:11347.033550
+Time for 600000 slices:11420.406389
+Time for 610000 slices:11429.942305
+Time for 620000 slices:11439.513763
+Time for 630000 slices:11449.404276
+Time for 640000 slices:11458.376071
+Time for 650000 slices:11465.688117
+Time for 660000 slices:11473.629644
+Time for 670000 slices:11480.558563
+Time for 680000 slices:11489.314595
+Time for 690000 slices:11497.987374
+Time for 700000 slices:11503.933208
+Time for 710000 slices:11578.069477
+Time for 720000 slices:11588.161508
+Time for 730000 slices:11598.555712
+Time for 740000 slices:11608.850638
+Time for 750000 slices:11619.303619
+Time for 760000 slices:11629.845299
+Time for 770000 slices:11640.138254
+Time for 780000 slices:11650.502773
+Time for 790000 slices:11661.237985
+Time for 800000 slices:11671.761601
+Time for 810000 slices:11745.677422
+Time for 820000 slices:11752.907354
+Time for 830000 slices:11759.242647
+Time for 840000 slices:11766.151414
+Time for 850000 slices:11775.743419
+Time for 860000 slices:11785.074422
+Time for 870000 slices:11790.508649
+Time for 880000 slices:11797.790346
+Time for 890000 slices:11808.154079
+Time for 900000 slices:11818.749656
+Time for 910000 slices:11829.582478
+Time for 920000 slices:11903.648720
+Time for 930000 slices:11913.489012
+Time for 940000 slices:11923.888345
+Time for 950000 slices:11933.861877
+Time for 960000 slices:11943.615249
+Time for 970000 slices:11953.924328
+Time for 980000 slices:11961.958037
+Time for 990000 slices:11968.838119
+Time for 1000000 slices:11975.294745
+Time for 1010000 slices:11982.714904
+Time for 1020000 slices:12052.797655
+Time for 1030000 slices:12062.786483
+Time for 1040000 slices:12073.184322
+Time for 1050000 slices:12085.132200
+Time for 1060000 slices:12095.460400
+Time for 1070000 slices:12105.986803
+Time for 1080000 slices:12116.270502
+Time for 1090000 slices:12124.612987
+Time for 1100000 slices:12131.999128
+Time for 1110000 slices:12138.279271
+Time for 1120000 slices:12208.610143
+Time for 1130000 slices:12214.286855
+Time for 1140000 slices:12220.755893
+Time for 1150000 slices:12229.102646
+Time for 1160000 slices:12234.289347
+Time for 1170000 slices:12242.631565
+Time for 1180000 slices:12251.286225
+Time for 1190000 slices:12259.860794
+Time for 1200000 slices:12268.449349
+Time for 1210000 slices:12277.673476
+Time for 1220000 slices:12286.298860
+Time for 1230000 slices:12357.442223
+Time for 1240000 slices:12364.392282
+Time for 1250000 slices:12371.333370
+Time for 1260000 slices:12377.831185
+Time for 1270000 slices:12384.516500
+Time for 1280000 slices:12391.493609
+Time for 1290000 slices:12398.732770
+Time for 1300000 slices:12406.190334
+Time for 1310000 slices:12412.953429
+Time for 1320000 slices:12423.962949
+Time for 1330000 slices:12494.797655
+Time for 1340000 slices:12503.456631
+Time for 1350000 slices:12513.024162
+Time for 1360000 slices:12520.308016
+Time for 1370000 slices:12525.802327
+Time for 1380000 slices:12531.891579
+Time for 1390000 slices:12537.776574
+Time for 1400000 slices:12546.553164
+Time for 1410000 slices:12553.108985
+Time for 1420000 slices:12559.146382
+Time for 1430000 slices:12565.803083
+Slicing Complete. Time for 1435679 slices:12632.731788
+Forward Slice Size:296258558
+Simple Reverse Slice Interfer Size:45865752
+Interference Removal Reverse Slice Size:123398
+Slicing Complete. Time for 692158 slices:488.014687
+Simple Forward Slice Interfer Set:6887578
+Interference Removal Forward Slice Set:573738
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 22012006096
+Peak number of nodes: 622958056
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 46570821028
+Number of cache hits: 6031797508
+Number of cache insertions: 40539023520
+Number of cache collisions: 40499059951
+Number of cache deletions: 39439281
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 255197184
+Used buckets in unique table: 77.89% (expected 77.76%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 417378943
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 34280177
+Total number of nodes allocated: 3774263002
+Total number of nodes reclaimed: 3610756488
+Garbage collections so far: 88
+Time for garbage collection: 5904.11 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:118703 Y:83333300, BR X:1716628 Y:0
+
+Region 0 -> 2 Naive Size:4827448
+Time for 10000 slices:3684.398486
+Time for 20000 slices:4459.906490
+Time for 30000 slices:4967.641548
+Time for 40000 slices:5214.194982
+Time for 50000 slices:5299.243670
+Time for 60000 slices:5384.127646
+Time for 70000 slices:5466.368135
+Time for 80000 slices:5478.532343
+Time for 90000 slices:5557.322855
+Time for 100000 slices:5569.257760
+Time for 110000 slices:5595.836073
+Time for 120000 slices:5672.245132
+Time for 130000 slices:5790.645129
+Time for 140000 slices:5800.401271
+Time for 150000 slices:5808.758671
+Time for 160000 slices:5817.689746
+Time for 170000 slices:5891.493719
+Time for 180000 slices:5900.480938
+Time for 190000 slices:5909.831426
+Time for 200000 slices:5982.785041
+Time for 210000 slices:5990.859849
+Time for 220000 slices:5999.320352
+Time for 230000 slices:6007.887953
+Time for 240000 slices:6081.307707
+Time for 250000 slices:6088.552733
+Time for 260000 slices:6095.382376
+Time for 270000 slices:6102.942045
+Time for 280000 slices:6110.818187
+Time for 290000 slices:6183.009843
+Time for 300000 slices:6189.998033
+Time for 310000 slices:6196.540738
+Time for 320000 slices:6203.610995
+Time for 330000 slices:6209.926666
+Time for 340000 slices:6280.933029
+Time for 350000 slices:6288.551005
+Time for 360000 slices:6293.615672
+Time for 370000 slices:6298.273956
+Time for 380000 slices:6303.488959
+Time for 390000 slices:6307.913209
+Time for 400000 slices:6312.456648
+Time for 410000 slices:6316.733286
+Time for 420000 slices:6322.149027
+Time for 430000 slices:6326.792064
+Time for 440000 slices:6396.941911
+Time for 450000 slices:6401.277024
+Time for 460000 slices:6405.815954
+Time for 470000 slices:6410.128714
+Time for 480000 slices:6414.583228
+Time for 490000 slices:6419.188244
+Time for 500000 slices:6423.835078
+Time for 510000 slices:6430.841058
+Time for 520000 slices:6438.079055
+Time for 530000 slices:6445.100521
+Time for 540000 slices:6451.871530
+Time for 550000 slices:6523.200860
+Time for 560000 slices:6529.666911
+Time for 570000 slices:6536.314396
+Time for 580000 slices:6541.846773
+Time for 590000 slices:6546.964434
+Time for 600000 slices:6553.240595
+Time for 610000 slices:6559.775274
+Time for 620000 slices:6566.635436
+Time for 630000 slices:6573.591502
+Time for 640000 slices:6580.039696
+Time for 650000 slices:6650.619846
+Time for 660000 slices:6655.828687
+Time for 670000 slices:6660.606287
+Time for 680000 slices:6666.402689
+Time for 690000 slices:6672.155569
+Time for 700000 slices:6676.424333
+Time for 710000 slices:6683.127806
+Time for 720000 slices:6689.876185
+Time for 730000 slices:6696.853440
+Time for 740000 slices:6703.886878
+Time for 750000 slices:6775.973331
+Time for 760000 slices:6782.270338
+Time for 770000 slices:6788.534488
+Time for 780000 slices:6794.931721
+Time for 790000 slices:6801.439962
+Time for 800000 slices:6808.013919
+Time for 810000 slices:6814.566793
+Time for 820000 slices:6819.998865
+Time for 830000 slices:6825.000750
+Time for 840000 slices:6830.306498
+Time for 850000 slices:6837.208179
+Time for 860000 slices:6908.578805
+Time for 870000 slices:6912.404618
+Time for 880000 slices:6917.129750
+Time for 890000 slices:6923.545695
+Time for 900000 slices:6930.123113
+Time for 910000 slices:6936.958520
+Time for 920000 slices:6943.647410
+Time for 930000 slices:6950.280263
+Time for 940000 slices:6957.018972
+Time for 950000 slices:6963.860883
+Time for 960000 slices:7035.526995
+Time for 970000 slices:7041.852429
+Time for 980000 slices:7047.182556
+Time for 990000 slices:7051.982602
+Time for 1000000 slices:7056.309666
+Time for 1010000 slices:7061.229514
+Time for 1020000 slices:7065.726097
+Time for 1030000 slices:7071.934564
+Time for 1040000 slices:7078.087320
+Time for 1050000 slices:7085.702588
+Time for 1060000 slices:7090.624776
+Time for 1070000 slices:7160.131505
+Time for 1080000 slices:7164.470389
+Time for 1090000 slices:7168.171284
+Time for 1100000 slices:7171.643033
+Time for 1110000 slices:7174.752445
+Time for 1120000 slices:7177.869119
+Time for 1130000 slices:7181.152668
+Time for 1140000 slices:7184.726019
+Time for 1150000 slices:7188.956725
+Time for 1160000 slices:7192.172304
+Time for 1170000 slices:7261.231546
+Time for 1180000 slices:7264.925372
+Time for 1190000 slices:7268.560029
+Slicing Complete. Time for 1198273 slices:7271.685071
+Forward Slice Size:179249894
+Simple Reverse Slice Interfer Size:33784042
+Interference Removal Reverse Slice Size:639183
+Slicing Complete. Time for 683642 slices:865.355621
+Simple Forward Slice Interfer Set:4647254
+Interference Removal Forward Slice Set:7208701
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 25159545136
+Peak number of nodes: 712678414
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 73232857863
+Number of cache hits: 10101206912
+Number of cache insertions: 63131650951
+Number of cache collisions: 63066611751
+Number of cache deletions: 64514912
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 74.76% (expected 74.64%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 438246735
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 30807305
+Total number of nodes allocated: 6050765096
+Total number of nodes reclaimed: 6218402033
+Garbage collections so far: 141
+Time for garbage collection: 9642.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:118703 Y:143333276, BR X:1753152 Y:0
+
+Region 0 -> 3 Naive Size:0
+Overlap TL X:1753152 Y:149999940, BR X:1954034 Y:0
+
+Region 0 -> 4 Naive Size:0
+Overlap TL X:1734890 Y:186666592, BR X:1954034 Y:0
+
+Region 0 -> 5 Naive Size:0
+Overlap TL X:0 Y:239999904, BR X:0 Y:0
+Overlap TL X:118703 Y:234999906, BR X:885707 Y:0
+
+Region 0 -> 7 Naive Size:0
+Overlap TL X:118703 Y:253333232, BR X:1954034 Y:0
+
+Region 0 -> 8 Naive Size:0
+Overlap TL X:1780545 Y:321666538, BR X:1954034 Y:0
+
+Region 0 -> 9 Naive Size:0
+Overlap TL X:1807938 Y:396666508, BR X:1954034 Y:0
+
+Region 0 -> 10 Naive Size:0
+Overlap TL X:118703 Y:298333214, BR X:748742 Y:0
+
+Region 0 -> 11 Naive Size:0
+Overlap TL X:118703 Y:349999860, BR X:830921 Y:0
+
+Region 0 -> 12 Naive Size:0
+Overlap TL X:118703 Y:446666488, BR X:602646 Y:0
+
+Region 0 -> 13 Naive Size:0
+Overlap TL X:913100 Y:448333154, BR X:1798807 Y:0
+
+Region 0 -> 14 Naive Size:0
+Overlap TL X:0 Y:449999820, BR X:0 Y:0
+Overlap TL X:1789676 Y:534999786, BR X:1954034 Y:0
+
+Region 0 -> 16 Naive Size:0
+Overlap TL X:1762283 Y:611666422, BR X:1954034 Y:0
+
+Region 0 -> 17 Naive Size:0
+Overlap TL X:1798807 Y:664999734, BR X:1954034 Y:0
+
+Region 0 -> 18 Naive Size:0
+Overlap TL X:0 Y:668333066, BR X:0 Y:0
+Overlap TL X:1780545 Y:748333034, BR X:1954034 Y:0
+
+Region 0 -> 20 Naive Size:0
+Overlap TL X:118703 Y:688333058, BR X:1862724 Y:0
+
+Region 0 -> 21 Naive Size:0
+Overlap TL X:118703 Y:663333068, BR X:602646 Y:0
+
+Region 0 -> 22 Naive Size:0
+Overlap TL X:118703 Y:889999644, BR X:657432 Y:0
+
+Region 0 -> 23 Naive Size:0
+Overlap TL X:118703 Y:788333018, BR X:995279 Y:0
+
+Region 0 -> 24 Naive Size:0
+Overlap TL X:118703 Y:726666376, BR X:840052 Y:0
+
+Region 0 -> 25 Naive Size:0
+Overlap TL X:1844462 Y:821666338, BR X:1954034 Y:0
+
+Region 0 -> 26 Naive Size:0
+Overlap TL X:0 Y:999999600, BR X:0 Y:0
+Overlap TL X:118703 Y:914999634, BR X:1954034 Y:0
+
+Region 0 -> 28 Naive Size:0
+Overlap TL X:118703 Y:999999600, BR X:1296602 Y:0
+
+Region 0 -> 29 Naive Size:0
+Overlap TL X:0 Y:898332974, BR X:0 Y:0
+Overlap TL X:0 Y:896666308, BR X:0 Y:0
+Overlap TL X:118703 Y:569999772, BR X:757873 Y:0
+
+Region 0 -> 32 Naive Size:0
+Overlap TL X:200882 Y:478333142, BR X:1488353 Y:0
+
+Region 0 -> 33 Naive Size:0
+Overlap TL X:438288 Y:91666630, BR X:1716628 Y:11666662
+
+Region 1 -> 2 Naive Size:31693471
+Time for 10000 slices:2176.150340
+Time for 20000 slices:2725.346300
+Time for 30000 slices:3142.583842
+Time for 40000 slices:3375.614285
+Time for 50000 slices:3456.546084
+Time for 60000 slices:3471.366443
+Time for 70000 slices:3550.003862
+Time for 80000 slices:3558.730837
+Time for 90000 slices:3567.350697
+Time for 100000 slices:3643.278001
+Time for 110000 slices:3651.616522
+Time for 120000 slices:3658.070921
+Time for 130000 slices:3664.167098
+Time for 140000 slices:3670.210215
+Time for 150000 slices:3676.287980
+Time for 160000 slices:3682.734906
+Time for 170000 slices:3689.310332
+Time for 180000 slices:3696.439026
+Time for 190000 slices:3703.665755
+Time for 200000 slices:3774.727719
+Time for 210000 slices:3780.803982
+Time for 220000 slices:3787.013382
+Time for 230000 slices:3793.051427
+Time for 240000 slices:3799.055574
+Time for 250000 slices:3805.003666
+Time for 260000 slices:3810.891370
+Time for 270000 slices:3817.326286
+Time for 280000 slices:3823.932145
+Time for 290000 slices:3830.222524
+Time for 300000 slices:3902.083194
+Time for 310000 slices:3907.357872
+Time for 320000 slices:3913.042363
+Time for 330000 slices:3917.855987
+Time for 340000 slices:3922.403131
+Time for 350000 slices:3927.536275
+Time for 360000 slices:3932.796029
+Time for 370000 slices:3937.657529
+Time for 380000 slices:3943.077538
+Time for 390000 slices:3947.700950
+Time for 400000 slices:4018.191841
+Time for 410000 slices:4022.102742
+Time for 420000 slices:4027.103626
+Time for 430000 slices:4031.380064
+Time for 440000 slices:4035.976656
+Time for 450000 slices:4040.509051
+Time for 460000 slices:4045.286988
+Time for 470000 slices:4049.827966
+Time for 480000 slices:4054.493660
+Time for 490000 slices:4059.301326
+Time for 500000 slices:4064.131746
+Time for 510000 slices:4136.840152
+Time for 520000 slices:4143.610323
+Time for 530000 slices:4150.182618
+Time for 540000 slices:4156.509914
+Time for 550000 slices:4162.983746
+Time for 560000 slices:4169.625238
+Time for 570000 slices:4176.482666
+Time for 580000 slices:4182.239555
+Time for 590000 slices:4187.534212
+Time for 600000 slices:4193.974062
+Time for 610000 slices:4266.471741
+Time for 620000 slices:4272.936625
+Time for 630000 slices:4279.491178
+Time for 640000 slices:4285.531946
+Time for 650000 slices:4290.994584
+Time for 660000 slices:4296.405375
+Time for 670000 slices:4301.417047
+Time for 680000 slices:4307.407732
+Time for 690000 slices:4313.357479
+Time for 700000 slices:4317.760887
+Time for 710000 slices:4324.699398
+Time for 720000 slices:4397.044768
+Time for 730000 slices:4403.586558
+Time for 740000 slices:4410.226606
+Time for 750000 slices:4416.920368
+Time for 760000 slices:4423.423760
+Time for 770000 slices:4429.893666
+Time for 780000 slices:4436.452419
+Time for 790000 slices:4443.172700
+Time for 800000 slices:4449.902529
+Time for 810000 slices:4456.623312
+Time for 820000 slices:4527.596833
+Time for 830000 slices:4532.207858
+Time for 840000 slices:4537.095659
+Time for 850000 slices:4543.574672
+Time for 860000 slices:4550.098148
+Time for 870000 slices:4554.124577
+Time for 880000 slices:4559.059340
+Time for 890000 slices:4565.743098
+Time for 900000 slices:4572.531007
+Time for 910000 slices:4579.569685
+Time for 920000 slices:4586.419783
+Time for 930000 slices:4658.327490
+Time for 940000 slices:4664.619209
+Time for 950000 slices:4671.011339
+Time for 960000 slices:4677.372699
+Time for 970000 slices:4683.985557
+Time for 980000 slices:4689.545598
+Time for 990000 slices:4694.581570
+Time for 1000000 slices:4699.138150
+Time for 1010000 slices:4704.266144
+Time for 1020000 slices:4708.979305
+Time for 1030000 slices:4780.806327
+Time for 1040000 slices:4786.512392
+Time for 1050000 slices:4793.667996
+Time for 1060000 slices:4798.172015
+Time for 1070000 slices:4802.814190
+Time for 1080000 slices:4807.390973
+Time for 1090000 slices:4811.310592
+Time for 1100000 slices:4814.988421
+Time for 1110000 slices:4818.286701
+Time for 1120000 slices:4821.594922
+Time for 1130000 slices:4825.074092
+Time for 1140000 slices:4893.909562
+Time for 1150000 slices:4897.751057
+Time for 1160000 slices:4900.620079
+Time for 1170000 slices:4904.437183
+Time for 1180000 slices:4908.357253
+Time for 1190000 slices:4912.236311
+Slicing Complete. Time for 1198273 slices:4915.552555
+Forward Slice Size:166496021
+Simple Reverse Slice Interfer Size:31693471
+Interference Removal Reverse Slice Size:0
+Slicing Complete. Time for 364057 slices:617.759800
+Simple Forward Slice Interfer Set:37314258
+Interference Removal Forward Slice Set:7807067
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 27993075088
+Peak number of nodes: 801139668
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 94151409476
+Number of cache hits: 13290362370
+Number of cache insertions: 80861047106
+Number of cache collisions: 80778581061
+Number of cache deletions: 81941757
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 75.18% (expected 75.06%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 437948244
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 30360328
+Total number of nodes allocated: 7518231530
+Total number of nodes reclaimed: 8220011085
+Garbage collections so far: 177
+Time for garbage collection: 12184.13 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:438288 Y:143333276, BR X:1753152 Y:11666662
+
+Region 1 -> 3 Naive Size:7737744
+Time for 10000 slices:3239.886108
+Time for 20000 slices:3849.826689
+Time for 30000 slices:4384.892011
+Time for 40000 slices:4809.947310
+Time for 50000 slices:5065.554061
+Time for 60000 slices:5175.603725
+Time for 70000 slices:5261.557680
+Time for 80000 slices:5279.923512
+Time for 90000 slices:5365.353919
+Time for 100000 slices:5381.339711
+Time for 110000 slices:5394.532434
+Time for 120000 slices:5404.478152
+Time for 130000 slices:5414.361041
+Time for 140000 slices:5424.147141
+Time for 150000 slices:5433.840073
+Time for 160000 slices:5511.557998
+Time for 170000 slices:5521.241137
+Time for 180000 slices:5530.915260
+Time for 190000 slices:5540.774865
+Time for 200000 slices:5548.836916
+Time for 210000 slices:5558.484410
+Time for 220000 slices:5568.253611
+Time for 230000 slices:5577.920222
+Time for 240000 slices:5587.693752
+Time for 250000 slices:5597.331177
+Time for 260000 slices:5606.531362
+Time for 270000 slices:5683.315545
+Time for 280000 slices:5693.048176
+Time for 290000 slices:5702.361150
+Time for 300000 slices:5711.743902
+Time for 310000 slices:5720.303291
+Time for 320000 slices:5729.698867
+Time for 330000 slices:5737.387657
+Time for 340000 slices:5743.775313
+Time for 350000 slices:5750.887659
+Time for 360000 slices:5758.147219
+Time for 370000 slices:5831.829713
+Time for 380000 slices:5838.739619
+Time for 390000 slices:5844.803844
+Time for 400000 slices:5851.226400
+Time for 410000 slices:5856.911603
+Time for 420000 slices:5863.404214
+Time for 430000 slices:5869.786643
+Time for 440000 slices:5876.793663
+Time for 450000 slices:5883.559368
+Time for 460000 slices:5890.061400
+Time for 470000 slices:5895.716421
+Time for 480000 slices:5968.344049
+Time for 490000 slices:5973.817138
+Time for 500000 slices:5980.111615
+Time for 510000 slices:5989.879187
+Time for 520000 slices:5999.641261
+Time for 530000 slices:6009.011600
+Time for 540000 slices:6017.794744
+Time for 550000 slices:6026.746812
+Time for 560000 slices:6036.166065
+Time for 570000 slices:6045.608755
+Time for 580000 slices:6120.095221
+Time for 590000 slices:6126.827718
+Time for 600000 slices:6136.040116
+Time for 610000 slices:6145.710060
+Time for 620000 slices:6155.395085
+Time for 630000 slices:6165.383201
+Time for 640000 slices:6174.397284
+Time for 650000 slices:6181.720645
+Time for 660000 slices:6189.720400
+Time for 670000 slices:6196.771459
+Time for 680000 slices:6205.570248
+Time for 690000 slices:6280.835812
+Time for 700000 slices:6286.260251
+Time for 710000 slices:6296.554565
+Time for 720000 slices:6306.701955
+Time for 730000 slices:6317.194489
+Time for 740000 slices:6327.580806
+Time for 750000 slices:6338.125460
+Time for 760000 slices:6348.738547
+Time for 770000 slices:6359.137208
+Time for 780000 slices:6369.590104
+Time for 790000 slices:6447.193430
+Time for 800000 slices:6457.177782
+Time for 810000 slices:6467.020816
+Time for 820000 slices:6474.350530
+Time for 830000 slices:6480.776405
+Time for 840000 slices:6487.733491
+Time for 850000 slices:6497.418294
+Time for 860000 slices:6506.845378
+Time for 870000 slices:6512.318948
+Time for 880000 slices:6519.632682
+Time for 890000 slices:6530.024153
+Time for 900000 slices:6607.120405
+Time for 910000 slices:6617.284995
+Time for 920000 slices:6627.451010
+Time for 930000 slices:6637.325652
+Time for 940000 slices:6647.778983
+Time for 950000 slices:6657.792053
+Time for 960000 slices:6667.575739
+Time for 970000 slices:6677.839068
+Time for 980000 slices:6685.878225
+Time for 990000 slices:6692.737102
+Time for 1000000 slices:6765.875115
+Time for 1010000 slices:6772.546105
+Time for 1020000 slices:6778.367323
+Time for 1030000 slices:6788.332514
+Time for 1040000 slices:6798.617346
+Time for 1050000 slices:6810.152394
+Time for 1060000 slices:6815.386391
+Time for 1070000 slices:6820.700318
+Time for 1080000 slices:6825.957353
+Time for 1090000 slices:6830.509996
+Time for 1100000 slices:6901.813158
+Time for 1110000 slices:6905.348903
+Time for 1120000 slices:6908.520591
+Time for 1130000 slices:6912.019663
+Time for 1140000 slices:6915.700247
+Time for 1150000 slices:6920.124560
+Time for 1160000 slices:6923.443407
+Time for 1170000 slices:6927.794557
+Time for 1180000 slices:6932.295191
+Time for 1190000 slices:6936.681729
+Time for 1200000 slices:6941.178484
+Time for 1210000 slices:7012.601528
+Time for 1220000 slices:7016.638763
+Time for 1230000 slices:7020.198668
+Slicing Complete. Time for 1234797 slices:7021.901155
+Forward Slice Size:219474398
+Simple Reverse Slice Interfer Size:25935741
+Interference Removal Reverse Slice Size:14
+Slicing Complete. Time for 328217 slices:932.378940
+Simple Forward Slice Interfer Set:13544393
+Interference Removal Forward Slice Set:31716508
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 126499639418
+Number of cache hits: 17474734180
+Number of cache insertions: 109024905238
+Number of cache collisions: 108921937179
+Number of cache deletions: 102443771
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 76.84% (expected 76.72%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 462509251
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 45485558
+Total number of nodes allocated: 9614902206
+Total number of nodes reclaimed: 10616558653
+Garbage collections so far: 220
+Time for garbage collection: 15355.79 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1753152 Y:149999940, BR X:2173178 Y:11666662
+
+Region 1 -> 4 Naive Size:534318
+Slicing Complete. Time for 15 slices:4.265531
+Forward Slice Size:900105
+Simple Reverse Slice Interfer Size:31
+Interference Removal Reverse Slice Size:1260081
+Slicing Complete. Time for 198875 slices:190.453311
+Simple Forward Slice Interfer Set:198876
+Interference Removal Forward Slice Set:701178
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 128653398097
+Number of cache hits: 18107863729
+Number of cache insertions: 110545534368
+Number of cache collisions: 110441534125
+Number of cache deletions: 103475955
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 74.63% (expected 74.51%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 434012850
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 4172586
+Total number of nodes allocated: 9760752776
+Total number of nodes reclaimed: 10874043975
+Garbage collections so far: 222
+Time for garbage collection: 15521.04 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1734890 Y:186666592, BR X:5478600 Y:11666662
+
+Region 1 -> 5 Naive Size:4126691
+Time for 10000 slices:9.891325
+Time for 20000 slices:11.740306
+Time for 30000 slices:13.652527
+Time for 40000 slices:15.634894
+Time for 50000 slices:17.281603
+Time for 60000 slices:18.941820
+Time for 70000 slices:20.650659
+Time for 80000 slices:113.122158
+Time for 90000 slices:114.544857
+Time for 100000 slices:116.024004
+Time for 110000 slices:117.588347
+Time for 120000 slices:119.102293
+Time for 130000 slices:120.691785
+Time for 140000 slices:122.343709
+Time for 150000 slices:124.039074
+Time for 160000 slices:125.799381
+Time for 170000 slices:127.638136
+Time for 180000 slices:198.956446
+Time for 190000 slices:200.285088
+Time for 200000 slices:201.677677
+Time for 210000 slices:203.131041
+Time for 220000 slices:204.613274
+Time for 230000 slices:206.166823
+Time for 240000 slices:207.763250
+Time for 250000 slices:209.412480
+Time for 260000 slices:211.035278
+Time for 270000 slices:212.731643
+Time for 280000 slices:214.491397
+Time for 290000 slices:285.523116
+Time for 300000 slices:286.975923
+Time for 310000 slices:288.474944
+Time for 320000 slices:290.025812
+Time for 330000 slices:291.526465
+Time for 340000 slices:293.104940
+Time for 350000 slices:294.751683
+Time for 360000 slices:296.430312
+Time for 370000 slices:298.173801
+Time for 380000 slices:299.968300
+Time for 390000 slices:371.267653
+Time for 400000 slices:372.674013
+Time for 410000 slices:374.156002
+Time for 420000 slices:375.706015
+Time for 430000 slices:377.323107
+Time for 440000 slices:378.985461
+Time for 450000 slices:380.713275
+Time for 460000 slices:382.492367
+Time for 470000 slices:384.102308
+Time for 480000 slices:385.781141
+Time for 490000 slices:457.267163
+Time for 500000 slices:460.795479
+Time for 510000 slices:462.533345
+Time for 520000 slices:464.109434
+Time for 530000 slices:465.739382
+Time for 540000 slices:467.437102
+Time for 550000 slices:469.154710
+Time for 560000 slices:470.953503
+Time for 570000 slices:472.820792
+Time for 580000 slices:474.709266
+Time for 590000 slices:476.648874
+Time for 600000 slices:548.089438
+Time for 610000 slices:549.666209
+Time for 620000 slices:551.270536
+Time for 630000 slices:552.955468
+Time for 640000 slices:554.716243
+Time for 650000 slices:556.224954
+Time for 660000 slices:557.708382
+Time for 670000 slices:559.221482
+Time for 680000 slices:560.797071
+Time for 690000 slices:562.392862
+Time for 700000 slices:633.621796
+Time for 710000 slices:634.997887
+Time for 720000 slices:636.342889
+Time for 730000 slices:637.742126
+Time for 740000 slices:639.171026
+Time for 750000 slices:640.673371
+Time for 760000 slices:642.199292
+Time for 770000 slices:643.787454
+Time for 780000 slices:645.446401
+Time for 790000 slices:647.061994
+Time for 800000 slices:648.707185
+Time for 810000 slices:719.735510
+Time for 820000 slices:721.098510
+Time for 830000 slices:722.489855
+Time for 840000 slices:723.940714
+Time for 850000 slices:725.465757
+Time for 860000 slices:726.978903
+Time for 870000 slices:728.556776
+Time for 880000 slices:730.176644
+Time for 890000 slices:731.859667
+Time for 900000 slices:733.580231
+Time for 910000 slices:804.734915
+Time for 920000 slices:806.177756
+Time for 930000 slices:807.540328
+Time for 940000 slices:808.948836
+Time for 950000 slices:810.407661
+Time for 960000 slices:811.924920
+Time for 970000 slices:813.480678
+Time for 980000 slices:815.094281
+Time for 990000 slices:816.787810
+Time for 1000000 slices:818.472529
+Time for 1010000 slices:889.817787
+Time for 1020000 slices:893.503379
+Time for 1030000 slices:895.083958
+Time for 1040000 slices:896.602115
+Time for 1050000 slices:898.194643
+Time for 1060000 slices:899.800934
+Time for 1070000 slices:901.482156
+Time for 1080000 slices:903.206765
+Time for 1090000 slices:904.993462
+Time for 1100000 slices:906.792003
+Time for 1110000 slices:908.676895
+Time for 1120000 slices:980.057465
+Time for 1130000 slices:981.571867
+Time for 1140000 slices:983.154764
+Time for 1150000 slices:984.800279
+Time for 1160000 slices:986.436159
+Time for 1170000 slices:988.002961
+Time for 1180000 slices:989.632086
+Time for 1190000 slices:991.338673
+Time for 1200000 slices:993.061649
+Time for 1210000 slices:994.852334
+Time for 1220000 slices:1066.372920
+Time for 1230000 slices:1067.813414
+Time for 1240000 slices:1069.260666
+Time for 1250000 slices:1070.773993
+Time for 1260000 slices:1072.371515
+Time for 1270000 slices:1073.992974
+Time for 1280000 slices:1075.691878
+Time for 1290000 slices:1077.456706
+Time for 1300000 slices:1079.251797
+Time for 1310000 slices:1081.015776
+Time for 1320000 slices:1152.698003
+Time for 1330000 slices:1154.163494
+Time for 1340000 slices:1155.639163
+Time for 1350000 slices:1157.185639
+Time for 1360000 slices:1158.795945
+Time for 1370000 slices:1160.452109
+Time for 1380000 slices:1162.137220
+Time for 1390000 slices:1163.886434
+Time for 1400000 slices:1165.732188
+Time for 1410000 slices:1167.603214
+Time for 1420000 slices:1169.553210
+Time for 1430000 slices:1240.866910
+Time for 1440000 slices:1242.332236
+Time for 1450000 slices:1243.729022
+Time for 1460000 slices:1245.180010
+Time for 1470000 slices:1246.704140
+Time for 1480000 slices:1248.239405
+Time for 1490000 slices:1249.841441
+Time for 1500000 slices:1251.503627
+Time for 1510000 slices:1253.211630
+Time for 1520000 slices:1254.932516
+Time for 1530000 slices:1326.271013
+Time for 1540000 slices:1327.734778
+Time for 1550000 slices:1329.212138
+Time for 1560000 slices:1330.768117
+Time for 1570000 slices:1334.202246
+Time for 1580000 slices:1335.791050
+Time for 1590000 slices:1337.425905
+Time for 1600000 slices:1339.091119
+Time for 1610000 slices:1340.816147
+Time for 1620000 slices:1342.624706
+Time for 1630000 slices:1414.268878
+Time for 1640000 slices:1415.689202
+Time for 1650000 slices:1417.173910
+Time for 1660000 slices:1418.705097
+Time for 1670000 slices:1420.277470
+Time for 1680000 slices:1421.917235
+Time for 1690000 slices:1423.642270
+Time for 1700000 slices:1425.137566
+Time for 1710000 slices:1426.694538
+Time for 1720000 slices:1428.315802
+Time for 1730000 slices:1429.972898
+Time for 1740000 slices:1501.342508
+Time for 1750000 slices:1502.695928
+Time for 1760000 slices:1504.115682
+Time for 1770000 slices:1505.499151
+Time for 1780000 slices:1506.960706
+Time for 1790000 slices:1508.501406
+Time for 1800000 slices:1510.064045
+Time for 1810000 slices:1511.682339
+Time for 1820000 slices:1513.355643
+Time for 1830000 slices:1515.092842
+Time for 1840000 slices:1586.568023
+Time for 1850000 slices:1587.906758
+Time for 1860000 slices:1589.289264
+Time for 1870000 slices:1590.711252
+Time for 1880000 slices:1592.196663
+Time for 1890000 slices:1593.740691
+Time for 1900000 slices:1595.343779
+Time for 1910000 slices:1596.938143
+Time for 1920000 slices:1598.611448
+Time for 1930000 slices:1600.351297
+Time for 1940000 slices:1671.932759
+Time for 1950000 slices:1673.340518
+Time for 1960000 slices:1674.794668
+Time for 1970000 slices:1676.328994
+Time for 1980000 slices:1677.748894
+Time for 1990000 slices:1679.249202
+Time for 2000000 slices:1680.803553
+Time for 2010000 slices:1682.422008
+Time for 2020000 slices:1684.090980
+Time for 2030000 slices:1685.837658
+Slicing Complete. Time for 2037570 slices:1687.262128
+Forward Slice Size:7915292
+Simple Reverse Slice Interfer Size:32
+Interference Removal Reverse Slice Size:4126659
+Slicing Complete. Time for 217137 slices:234.957205
+Simple Forward Slice Interfer Set:217138
+Interference Removal Forward Slice Set:4869467
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 132441266980
+Number of cache hits: 19286270766
+Number of cache insertions: 113154996214
+Number of cache collisions: 113039903549
+Number of cache deletions: 114603311
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 74.05% (expected 73.93%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 433247913
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 611364
+Total number of nodes allocated: 10222499865
+Total number of nodes reclaimed: 11851656937
+Garbage collections so far: 244
+Time for garbage collection: 17076.61 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:2191440 Y:239999904, BR X:2757562 Y:11666662
+
+Region 1 -> 6 Naive Size:672098
+Slicing Complete. Time for 0 slices:1.130879
+Forward Slice Size:794761
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:672098
+Slicing Complete. Time for 0 slices:0.000031
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:794762
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 134436166189
+Number of cache hits: 19868334488
+Number of cache insertions: 114567831701
+Number of cache collisions: 114452704102
+Number of cache deletions: 114603311
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 80.26% (expected 80.16%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 542508646
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 109361540
+Total number of nodes allocated: 10331760598
+Total number of nodes reclaimed: 12054386281
+Garbage collections so far: 244
+Time for garbage collection: 17076.61 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:438288 Y:234999906, BR X:885707 Y:11666662
+
+Region 1 -> 7 Naive Size:0
+Overlap TL X:438288 Y:253333232, BR X:1963165 Y:11666662
+
+Region 1 -> 8 Naive Size:0
+Overlap TL X:1780545 Y:321666538, BR X:5478600 Y:11666662
+
+Region 1 -> 9 Naive Size:4834018
+Time for 10000 slices:9.175334
+Slicing Complete. Time for 10110 slices:9.193953
+Forward Slice Size:5016763
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:6424902
+Slicing Complete. Time for 0 slices:0.000030
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:5005501
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 136529144440
+Number of cache hits: 20499688614
+Number of cache insertions: 116029455826
+Number of cache collisions: 115914328227
+Number of cache deletions: 114603311
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 80.88% (expected 80.78%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 549861602
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 116251448
+Total number of nodes allocated: 10339113554
+Total number of nodes reclaimed: 12385326621
+Garbage collections so far: 244
+Time for garbage collection: 17076.61 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1807938 Y:396666508, BR X:5478600 Y:11666662
+
+Region 1 -> 10 Naive Size:0
+Overlap TL X:438288 Y:298333214, BR X:748742 Y:11666662
+
+Region 1 -> 11 Naive Size:0
+Overlap TL X:438288 Y:349999860, BR X:830921 Y:11666662
+
+Region 1 -> 12 Naive Size:0
+Overlap TL X:438288 Y:446666488, BR X:602646 Y:11666662
+
+Region 1 -> 13 Naive Size:0
+Overlap TL X:913100 Y:448333154, BR X:1798807 Y:11666662
+
+Region 1 -> 14 Naive Size:0
+Overlap TL X:2657121 Y:449999820, BR X:3232374 Y:11666662
+
+Region 1 -> 15 Naive Size:0
+Overlap TL X:1789676 Y:534999786, BR X:5478600 Y:11666662
+
+Region 1 -> 16 Naive Size:0
+Overlap TL X:1762283 Y:611666422, BR X:5478600 Y:11666662
+
+Region 1 -> 17 Naive Size:0
+Overlap TL X:1798807 Y:664999734, BR X:2794086 Y:11666662
+
+Region 1 -> 18 Naive Size:0
+Overlap TL X:3168457 Y:668333066, BR X:3789365 Y:11666662
+
+Region 1 -> 19 Naive Size:0
+Overlap TL X:1780545 Y:748333034, BR X:5478600 Y:11666662
+
+Region 1 -> 20 Naive Size:0
+Overlap TL X:438288 Y:688333058, BR X:1862724 Y:11666662
+
+Region 1 -> 21 Naive Size:0
+Overlap TL X:438288 Y:663333068, BR X:602646 Y:11666662
+
+Region 1 -> 22 Naive Size:0
+Overlap TL X:438288 Y:889999644, BR X:657432 Y:11666662
+
+Region 1 -> 23 Naive Size:0
+Overlap TL X:438288 Y:788333018, BR X:995279 Y:11666662
+
+Region 1 -> 24 Naive Size:0
+Overlap TL X:438288 Y:726666376, BR X:840052 Y:11666662
+
+Region 1 -> 25 Naive Size:0
+Overlap TL X:1844462 Y:821666338, BR X:5478600 Y:11666662
+
+Region 1 -> 26 Naive Size:0
+Overlap TL X:2136654 Y:999999600, BR X:5478600 Y:11666662
+
+Region 1 -> 27 Naive Size:0
+Overlap TL X:438288 Y:914999634, BR X:2045344 Y:11666662
+
+Region 1 -> 28 Naive Size:0
+Overlap TL X:438288 Y:999999600, BR X:1296602 Y:11666662
+
+Region 1 -> 29 Naive Size:0
+Overlap TL X:2757562 Y:898332974, BR X:3615876 Y:11666662
+
+Region 1 -> 30 Naive Size:0
+Overlap TL X:3734579 Y:896666308, BR X:4255046 Y:11666662
+
+Region 1 -> 31 Naive Size:0
+Overlap TL X:438288 Y:569999772, BR X:757873 Y:11666662
+
+Region 1 -> 32 Naive Size:0
+Overlap TL X:438288 Y:478333142, BR X:1488353 Y:11666662
+
+Region 1 -> 33 Naive Size:0
+Overlap TL X:36524 Y:143333276, BR X:1716628 Y:26666656
+
+Region 2 -> 3 Naive Size:2744934
+Time for 10000 slices:2223.675940
+Time for 20000 slices:2787.428652
+Time for 30000 slices:3215.260099
+Time for 40000 slices:3452.403341
+Time for 50000 slices:3459.619661
+Time for 60000 slices:3540.227189
+Time for 70000 slices:3546.482585
+Time for 80000 slices:3549.803874
+Time for 90000 slices:3553.291188
+Time for 100000 slices:3627.918823
+Time for 110000 slices:3630.308372
+Time for 120000 slices:3632.709148
+Time for 130000 slices:3634.185320
+Time for 140000 slices:3635.656659
+Time for 150000 slices:3637.164361
+Time for 160000 slices:3638.731913
+Time for 170000 slices:3640.337598
+Time for 180000 slices:3641.986013
+Time for 190000 slices:3714.597743
+Time for 200000 slices:3715.899439
+Slicing Complete. Time for 205548 slices:3718.757512
+Forward Slice Size:128507676
+Simple Reverse Slice Interfer Size:23066200
+Interference Removal Reverse Slice Size:5058203
+Slicing Complete. Time for 328212 slices:595.517829
+Simple Forward Slice Interfer Set:8664975
+Interference Removal Forward Slice Set:25773430
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 151009157109
+Number of cache hits: 23342696034
+Number of cache insertions: 127666461075
+Number of cache collisions: 127540044415
+Number of cache deletions: 125892372
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 78.54% (expected 78.43%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 484981263
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 47760953
+Total number of nodes allocated: 11564403704
+Total number of nodes reclaimed: 14023185051
+Garbage collections so far: 268
+Time for garbage collection: 18973.05 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:0 Y:149999940, BR X:0 Y:26666656
+Overlap TL X:0 Y:186666592, BR X:0 Y:26666656
+Overlap TL X:0 Y:239999904, BR X:0 Y:26666656
+Overlap TL X:45655 Y:234999906, BR X:885707 Y:26666656
+
+Region 2 -> 7 Naive Size:0
+Overlap TL X:118703 Y:253333232, BR X:1716628 Y:26666656
+
+Region 2 -> 8 Naive Size:0
+Overlap TL X:0 Y:321666538, BR X:0 Y:26666656
+Overlap TL X:0 Y:396666508, BR X:0 Y:26666656
+Overlap TL X:36524 Y:298333214, BR X:748742 Y:26666656
+
+Region 2 -> 11 Naive Size:0
+Overlap TL X:36524 Y:349999860, BR X:830921 Y:26666656
+
+Region 2 -> 12 Naive Size:0
+Overlap TL X:45655 Y:446666488, BR X:602646 Y:26666656
+
+Region 2 -> 13 Naive Size:0
+Overlap TL X:913100 Y:448333154, BR X:1716628 Y:26666656
+
+Region 2 -> 14 Naive Size:0
+Overlap TL X:0 Y:449999820, BR X:0 Y:26666656
+Overlap TL X:0 Y:534999786, BR X:0 Y:26666656
+Overlap TL X:0 Y:611666422, BR X:0 Y:26666656
+Overlap TL X:0 Y:664999734, BR X:0 Y:26666656
+Overlap TL X:0 Y:668333066, BR X:0 Y:26666656
+Overlap TL X:0 Y:748333034, BR X:0 Y:26666656
+Overlap TL X:54786 Y:688333058, BR X:1716628 Y:26666656
+
+Region 2 -> 21 Naive Size:0
+Overlap TL X:54786 Y:663333068, BR X:602646 Y:26666656
+
+Region 2 -> 22 Naive Size:0
+Overlap TL X:54786 Y:889999644, BR X:657432 Y:26666656
+
+Region 2 -> 23 Naive Size:0
+Overlap TL X:36524 Y:788333018, BR X:995279 Y:26666656
+
+Region 2 -> 24 Naive Size:0
+Overlap TL X:36524 Y:726666376, BR X:840052 Y:26666656
+
+Region 2 -> 25 Naive Size:0
+Overlap TL X:0 Y:821666338, BR X:0 Y:26666656
+Overlap TL X:0 Y:999999600, BR X:0 Y:26666656
+Overlap TL X:100441 Y:914999634, BR X:1716628 Y:26666656
+
+Region 2 -> 28 Naive Size:0
+Overlap TL X:36524 Y:999999600, BR X:1296602 Y:26666656
+
+Region 2 -> 29 Naive Size:0
+Overlap TL X:0 Y:898332974, BR X:0 Y:26666656
+Overlap TL X:0 Y:896666308, BR X:0 Y:26666656
+Overlap TL X:36524 Y:569999772, BR X:757873 Y:26666656
+
+Region 2 -> 32 Naive Size:0
+Overlap TL X:200882 Y:478333142, BR X:1488353 Y:26666656
+
+Region 2 -> 33 Naive Size:0
+Overlap TL X:1753152 Y:149999940, BR X:1753152 Y:98333294
+
+Region 3 -> 4 Naive Size:0
+Overlap TL X:1734890 Y:186666592, BR X:1753152 Y:98333294
+
+Region 3 -> 5 Naive Size:0
+Overlap TL X:0 Y:239999904, BR X:0 Y:98333294
+Overlap TL X:45655 Y:234999906, BR X:885707 Y:98333294
+
+Region 3 -> 7 Naive Size:1798485
+Slicing Complete. Time for 0 slices:2.019420
+Forward Slice Size:1710617
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:7268935
+Slicing Complete. Time for 0 slices:0.000036
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:1798485
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28303805200
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 153019471495
+Number of cache hits: 23873231763
+Number of cache insertions: 129146239732
+Number of cache collisions: 129019823072
+Number of cache deletions: 125892372
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 289406976
+Used buckets in unique table: 83.35% (expected 83.26%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 574065457
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 120053611
+Total number of nodes allocated: 11653487898
+Total number of nodes reclaimed: 14162787016
+Garbage collections so far: 268
+Time for garbage collection: 18973.05 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:118703 Y:253333232, BR X:1753152 Y:98333294
+
+Region 3 -> 8 Naive Size:15646510
+Time for 10000 slices:2632.664603
+Time for 20000 slices:3255.841942
+Time for 30000 slices:3732.017716
+Time for 40000 slices:4085.473320
+Time for 50000 slices:4337.976393
+Time for 60000 slices:4441.105689
+Time for 70000 slices:4446.480441
+Time for 80000 slices:4452.963973
+Time for 90000 slices:4459.020042
+Time for 100000 slices:4463.501508
+Slicing Complete. Time for 103997 slices:4541.610865
+Forward Slice Size:137012386
+Simple Reverse Slice Interfer Size:7484430
+Interference Removal Reverse Slice Size:8162080
+Slicing Complete. Time for 1948 slices:0.972519
+Simple Forward Slice Interfer Set:2304
+Interference Removal Forward Slice Set:21478231
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28320582416
+Peak number of nodes: 810840492
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 169916040751
+Number of cache hits: 26561172888
+Number of cache insertions: 143354867863
+Number of cache collisions: 143218549303
+Number of cache deletions: 135794272
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 79.68% (expected 79.59%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 520725035
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 63036650
+Total number of nodes allocated: 12833608242
+Total number of nodes reclaimed: 15560069000
+Garbage collections so far: 289
+Time for garbage collection: 20759.32 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:0 Y:321666538, BR X:0 Y:98333294
+Overlap TL X:0 Y:396666508, BR X:0 Y:98333294
+Overlap TL X:36524 Y:298333214, BR X:748742 Y:98333294
+
+Region 3 -> 11 Naive Size:0
+Overlap TL X:36524 Y:349999860, BR X:830921 Y:98333294
+
+Region 3 -> 12 Naive Size:0
+Overlap TL X:45655 Y:446666488, BR X:602646 Y:98333294
+
+Region 3 -> 13 Naive Size:0
+Overlap TL X:913100 Y:448333154, BR X:1753152 Y:98333294
+
+Region 3 -> 14 Naive Size:3733200
+Time for 10000 slices:2639.630871
+Time for 20000 slices:3182.309078
+Time for 30000 slices:3736.321818
+Time for 40000 slices:4087.773051
+Time for 50000 slices:4338.745749
+Time for 60000 slices:4442.208820
+Time for 70000 slices:4447.433544
+Time for 80000 slices:4453.799581
+Time for 90000 slices:4459.772156
+Time for 100000 slices:4464.180219
+Slicing Complete. Time for 103997 slices:4465.436862
+Forward Slice Size:137012131
+Simple Reverse Slice Interfer Size:1352993
+Interference Removal Reverse Slice Size:2380207
+Slicing Complete. Time for 68074 slices:102.646204
+Simple Forward Slice Interfer Set:2304
+Interference Removal Forward Slice Set:21477976
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 186832218153
+Number of cache hits: 29268311064
+Number of cache insertions: 157563907089
+Number of cache collisions: 157417449897
+Number of cache deletions: 145932904
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 78.11% (expected 78.00%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 477379904
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 19274618
+Total number of nodes allocated: 14077651020
+Total number of nodes reclaimed: 16931286427
+Garbage collections so far: 310
+Time for garbage collection: 22559.52 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:0 Y:449999820, BR X:0 Y:98333294
+Overlap TL X:0 Y:534999786, BR X:0 Y:98333294
+Overlap TL X:0 Y:611666422, BR X:0 Y:98333294
+Overlap TL X:0 Y:664999734, BR X:0 Y:98333294
+Overlap TL X:0 Y:668333066, BR X:0 Y:98333294
+Overlap TL X:0 Y:748333034, BR X:0 Y:98333294
+Overlap TL X:54786 Y:688333058, BR X:1753152 Y:98333294
+
+Region 3 -> 21 Naive Size:11306468
+Time for 10000 slices:2617.130883
+Time for 20000 slices:3238.728315
+Time for 30000 slices:3713.490934
+Time for 40000 slices:4064.992126
+Time for 50000 slices:4315.973891
+Time for 60000 slices:4419.354500
+Time for 70000 slices:4424.620450
+Time for 80000 slices:4431.012875
+Time for 90000 slices:4437.016367
+Time for 100000 slices:4441.449887
+Slicing Complete. Time for 103997 slices:4442.713006
+Forward Slice Size:137012386
+Simple Reverse Slice Interfer Size:765289
+Interference Removal Reverse Slice Size:10541179
+Slicing Complete. Time for 2541 slices:93.840477
+Simple Forward Slice Interfer Set:2304
+Interference Removal Forward Slice Set:21478231
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 203688917262
+Number of cache hits: 31959099010
+Number of cache insertions: 171729818252
+Number of cache collisions: 171573244924
+Number of cache deletions: 156049040
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 77.04% (expected 76.94%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 472267917
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 14135726
+Total number of nodes allocated: 15327203811
+Total number of nodes reclaimed: 18270229832
+Garbage collections so far: 331
+Time for garbage collection: 24352.70 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:54786 Y:663333068, BR X:602646 Y:98333294
+
+Region 3 -> 22 Naive Size:0
+Overlap TL X:54786 Y:889999644, BR X:657432 Y:98333294
+
+Region 3 -> 23 Naive Size:0
+Overlap TL X:36524 Y:788333018, BR X:995279 Y:98333294
+
+Region 3 -> 24 Naive Size:138939
+Slicing Complete. Time for 0 slices:0.832168
+Forward Slice Size:138938
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:10292163
+Slicing Complete. Time for 0 slices:0.000030
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:138939
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 205378919830
+Number of cache hits: 32409548001
+Number of cache insertions: 172969371829
+Number of cache collisions: 172812798501
+Number of cache deletions: 156049040
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 81.12% (expected 81.03%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 545580816
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 86012455
+Total number of nodes allocated: 15400516710
+Total number of nodes reclaimed: 18414672153
+Garbage collections so far: 331
+Time for garbage collection: 24352.70 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:36524 Y:726666376, BR X:840052 Y:98333294
+
+Region 3 -> 25 Naive Size:0
+Overlap TL X:0 Y:821666338, BR X:0 Y:98333294
+Overlap TL X:0 Y:999999600, BR X:0 Y:98333294
+Overlap TL X:100441 Y:914999634, BR X:1753152 Y:98333294
+
+Region 3 -> 28 Naive Size:12540101
+Time for 10000 slices:2634.494461
+Time for 20000 slices:3178.466373
+Time for 30000 slices:3654.706991
+Time for 40000 slices:4086.816771
+Time for 50000 slices:4338.811161
+Time for 60000 slices:4442.648050
+Time for 70000 slices:4447.848141
+Time for 80000 slices:4454.191107
+Time for 90000 slices:4460.162705
+Time for 100000 slices:4464.566842
+Slicing Complete. Time for 103997 slices:4465.818598
+Forward Slice Size:136873448
+Simple Reverse Slice Interfer Size:571191
+Interference Removal Reverse Slice Size:11968910
+Slicing Complete. Time for 3306 slices:0.834826
+Simple Forward Slice Interfer Set:2304
+Interference Removal Forward Slice Set:21339292
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 222203613168
+Number of cache hits: 35089765939
+Number of cache insertions: 187113847229
+Number of cache collisions: 186948068416
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 81.75% (expected 81.66%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 541308615
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 81235410
+Total number of nodes allocated: 16578542471
+Total number of nodes reclaimed: 19808849068
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:36524 Y:999999600, BR X:1296602 Y:98333294
+
+Region 3 -> 29 Naive Size:0
+Overlap TL X:0 Y:898332974, BR X:0 Y:98333294
+Overlap TL X:0 Y:896666308, BR X:0 Y:98333294
+Overlap TL X:36524 Y:569999772, BR X:757873 Y:98333294
+
+Region 3 -> 32 Naive Size:0
+Overlap TL X:200882 Y:478333142, BR X:1488353 Y:98333294
+
+Region 3 -> 33 Naive Size:0
+Overlap TL X:1753152 Y:186666592, BR X:2173178 Y:139999944
+
+Region 4 -> 5 Naive Size:0
+Overlap TL X:0 Y:239999904, BR X:0 Y:139999944
+Overlap TL X:0 Y:234999906, BR X:0 Y:139999944
+Overlap TL X:1753152 Y:253333232, BR X:1963165 Y:139999944
+
+Region 4 -> 8 Naive Size:420028
+Slicing Complete. Time for 0 slices:0.074026
+Forward Slice Size:420059
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:424277
+Slicing Complete. Time for 0 slices:0.000018
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:420059
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 224252562488
+Number of cache hits: 35690035902
+Number of cache insertions: 188562526586
+Number of cache collisions: 188396747773
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 85.83% (expected 85.75%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 642348849
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 179335506
+Total number of nodes allocated: 16679582705
+Total number of nodes reclaimed: 20036372312
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1780545 Y:321666538, BR X:2173178 Y:139999944
+
+Region 4 -> 9 Naive Size:53413
+Slicing Complete. Time for 0 slices:0.000738
+Forward Slice Size:53411
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:462467
+Slicing Complete. Time for 0 slices:0.000038
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:53413
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 226273320405
+Number of cache hits: 36284224365
+Number of cache insertions: 189989096040
+Number of cache collisions: 189823317227
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 85.85% (expected 85.77%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 642826675
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 179732674
+Total number of nodes allocated: 16680060531
+Total number of nodes reclaimed: 20362319613
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1807938 Y:396666508, BR X:2173178 Y:139999944
+
+Region 4 -> 10 Naive Size:0
+Overlap TL X:0 Y:298333214, BR X:0 Y:139999944
+Overlap TL X:0 Y:349999860, BR X:0 Y:139999944
+Overlap TL X:0 Y:446666488, BR X:0 Y:139999944
+Overlap TL X:1753152 Y:448333154, BR X:1798807 Y:139999944
+
+Region 4 -> 14 Naive Size:0
+Overlap TL X:0 Y:449999820, BR X:0 Y:139999944
+Overlap TL X:1789676 Y:534999786, BR X:2173178 Y:139999944
+
+Region 4 -> 16 Naive Size:0
+Overlap TL X:1762283 Y:611666422, BR X:2173178 Y:139999944
+
+Region 4 -> 17 Naive Size:0
+Overlap TL X:1798807 Y:664999734, BR X:2173178 Y:139999944
+
+Region 4 -> 18 Naive Size:0
+Overlap TL X:0 Y:668333066, BR X:0 Y:139999944
+Overlap TL X:1780545 Y:748333034, BR X:2173178 Y:139999944
+
+Region 4 -> 20 Naive Size:0
+Overlap TL X:1753152 Y:688333058, BR X:1862724 Y:139999944
+
+Region 4 -> 21 Naive Size:0
+Overlap TL X:0 Y:663333068, BR X:0 Y:139999944
+Overlap TL X:0 Y:889999644, BR X:0 Y:139999944
+Overlap TL X:0 Y:788333018, BR X:0 Y:139999944
+Overlap TL X:0 Y:726666376, BR X:0 Y:139999944
+Overlap TL X:1844462 Y:821666338, BR X:2173178 Y:139999944
+
+Region 4 -> 26 Naive Size:0
+Overlap TL X:2136654 Y:999999600, BR X:2173178 Y:139999944
+
+Region 4 -> 27 Naive Size:0
+Overlap TL X:1753152 Y:914999634, BR X:2045344 Y:139999944
+
+Region 4 -> 28 Naive Size:0
+Overlap TL X:0 Y:999999600, BR X:0 Y:139999944
+Overlap TL X:0 Y:898332974, BR X:0 Y:139999944
+Overlap TL X:0 Y:896666308, BR X:0 Y:139999944
+Overlap TL X:0 Y:569999772, BR X:0 Y:139999944
+Overlap TL X:0 Y:478333142, BR X:0 Y:139999944
+Overlap TL X:2191440 Y:239999904, BR X:2757562 Y:144999942
+
+Region 5 -> 6 Naive Size:0
+Overlap TL X:0 Y:234999906, BR X:0 Y:144999942
+Overlap TL X:1734890 Y:253333232, BR X:1963165 Y:144999942
+
+Region 5 -> 8 Naive Size:0
+Overlap TL X:1780545 Y:321666538, BR X:5478600 Y:144999942
+
+Region 5 -> 9 Naive Size:0
+Overlap TL X:1807938 Y:396666508, BR X:5478600 Y:144999942
+
+Region 5 -> 10 Naive Size:0
+Overlap TL X:0 Y:298333214, BR X:0 Y:144999942
+Overlap TL X:0 Y:349999860, BR X:0 Y:144999942
+Overlap TL X:0 Y:446666488, BR X:0 Y:144999942
+Overlap TL X:1734890 Y:448333154, BR X:1798807 Y:144999942
+
+Region 5 -> 14 Naive Size:0
+Overlap TL X:2657121 Y:449999820, BR X:3232374 Y:144999942
+
+Region 5 -> 15 Naive Size:0
+Overlap TL X:1789676 Y:534999786, BR X:5478600 Y:144999942
+
+Region 5 -> 16 Naive Size:0
+Overlap TL X:1762283 Y:611666422, BR X:5478600 Y:144999942
+
+Region 5 -> 17 Naive Size:0
+Overlap TL X:1798807 Y:664999734, BR X:2794086 Y:144999942
+
+Region 5 -> 18 Naive Size:0
+Overlap TL X:3168457 Y:668333066, BR X:3789365 Y:144999942
+
+Region 5 -> 19 Naive Size:0
+Overlap TL X:1780545 Y:748333034, BR X:5478600 Y:144999942
+
+Region 5 -> 20 Naive Size:0
+Overlap TL X:1734890 Y:688333058, BR X:1862724 Y:144999942
+
+Region 5 -> 21 Naive Size:0
+Overlap TL X:0 Y:663333068, BR X:0 Y:144999942
+Overlap TL X:0 Y:889999644, BR X:0 Y:144999942
+Overlap TL X:0 Y:788333018, BR X:0 Y:144999942
+Overlap TL X:0 Y:726666376, BR X:0 Y:144999942
+Overlap TL X:1844462 Y:821666338, BR X:5478600 Y:144999942
+
+Region 5 -> 26 Naive Size:0
+Overlap TL X:2136654 Y:999999600, BR X:5478600 Y:144999942
+
+Region 5 -> 27 Naive Size:0
+Overlap TL X:1734890 Y:914999634, BR X:2045344 Y:144999942
+
+Region 5 -> 28 Naive Size:0
+Overlap TL X:0 Y:999999600, BR X:0 Y:144999942
+Overlap TL X:2757562 Y:898332974, BR X:3615876 Y:144999942
+
+Region 5 -> 30 Naive Size:0
+Overlap TL X:3734579 Y:896666308, BR X:4255046 Y:144999942
+
+Region 5 -> 31 Naive Size:0
+Overlap TL X:0 Y:569999772, BR X:0 Y:144999942
+Overlap TL X:0 Y:478333142, BR X:0 Y:144999942
+Overlap TL X:0 Y:239999904, BR X:0 Y:211666582
+Overlap TL X:0 Y:253333232, BR X:0 Y:211666582
+Overlap TL X:2191440 Y:321666538, BR X:2757562 Y:211666582
+
+Region 6 -> 9 Naive Size:0
+Overlap TL X:2191440 Y:396666508, BR X:2757562 Y:211666582
+
+Region 6 -> 10 Naive Size:0
+Overlap TL X:0 Y:298333214, BR X:0 Y:211666582
+Overlap TL X:0 Y:349999860, BR X:0 Y:211666582
+Overlap TL X:0 Y:446666488, BR X:0 Y:211666582
+Overlap TL X:0 Y:448333154, BR X:0 Y:211666582
+Overlap TL X:2657121 Y:449999820, BR X:2757562 Y:211666582
+
+Region 6 -> 15 Naive Size:0
+Overlap TL X:2191440 Y:534999786, BR X:2757562 Y:211666582
+
+Region 6 -> 16 Naive Size:0
+Overlap TL X:2191440 Y:611666422, BR X:2757562 Y:211666582
+
+Region 6 -> 17 Naive Size:0
+Overlap TL X:2191440 Y:664999734, BR X:2757562 Y:211666582
+
+Region 6 -> 18 Naive Size:0
+Overlap TL X:0 Y:668333066, BR X:0 Y:211666582
+Overlap TL X:2191440 Y:748333034, BR X:2757562 Y:211666582
+
+Region 6 -> 20 Naive Size:0
+Overlap TL X:0 Y:688333058, BR X:0 Y:211666582
+Overlap TL X:0 Y:663333068, BR X:0 Y:211666582
+Overlap TL X:0 Y:889999644, BR X:0 Y:211666582
+Overlap TL X:0 Y:788333018, BR X:0 Y:211666582
+Overlap TL X:0 Y:726666376, BR X:0 Y:211666582
+Overlap TL X:2191440 Y:821666338, BR X:2757562 Y:211666582
+
+Region 6 -> 26 Naive Size:0
+Overlap TL X:2191440 Y:999999600, BR X:2757562 Y:211666582
+
+Region 6 -> 27 Naive Size:0
+Overlap TL X:0 Y:914999634, BR X:0 Y:211666582
+Overlap TL X:0 Y:999999600, BR X:0 Y:211666582
+Overlap TL X:2757562 Y:898332974, BR X:2757562 Y:211666582
+
+Region 6 -> 30 Naive Size:0
+Overlap TL X:0 Y:896666308, BR X:0 Y:211666582
+Overlap TL X:0 Y:569999772, BR X:0 Y:211666582
+Overlap TL X:0 Y:478333142, BR X:0 Y:211666582
+Overlap TL X:118703 Y:253333232, BR X:885707 Y:216666580
+
+Region 7 -> 8 Naive Size:0
+Overlap TL X:0 Y:321666538, BR X:0 Y:216666580
+Overlap TL X:0 Y:396666508, BR X:0 Y:216666580
+Overlap TL X:45655 Y:298333214, BR X:748742 Y:216666580
+
+Region 7 -> 11 Naive Size:5396579
+Slicing Complete. Time for 48 slices:7.474710
+Forward Slice Size:6968138
+Simple Reverse Slice Interfer Size:353933
+Interference Removal Reverse Slice Size:5042646
+Slicing Complete. Time for 84 slices:1.517779
+Simple Forward Slice Interfer Set:181871
+Interference Removal Forward Slice Set:5536339
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 228065956001
+Number of cache hits: 36771539108
+Number of cache insertions: 191294416893
+Number of cache collisions: 191128638080
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 86.61% (expected 86.53%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 665344532
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 198772956
+Total number of nodes allocated: 16702578388
+Total number of nodes reclaimed: 20583348161
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:45655 Y:349999860, BR X:830921 Y:216666580
+
+Region 7 -> 12 Naive Size:5931503
+Slicing Complete. Time for 48 slices:5.127104
+Forward Slice Size:7181431
+Simple Reverse Slice Interfer Size:448205
+Interference Removal Reverse Slice Size:5861367
+Slicing Complete. Time for 86 slices:1.510678
+Simple Forward Slice Interfer Set:174352
+Interference Removal Forward Slice Set:5757151
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 229832905357
+Number of cache hits: 37255492957
+Number of cache insertions: 192577412400
+Number of cache collisions: 192411633587
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 86.83% (expected 86.76%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 672045710
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 203953485
+Total number of nodes allocated: 16709279566
+Total number of nodes reclaimed: 20824597991
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:45655 Y:446666488, BR X:602646 Y:216666580
+
+Region 7 -> 13 Naive Size:0
+Overlap TL X:0 Y:448333154, BR X:0 Y:216666580
+Overlap TL X:0 Y:449999820, BR X:0 Y:216666580
+Overlap TL X:0 Y:534999786, BR X:0 Y:216666580
+Overlap TL X:0 Y:611666422, BR X:0 Y:216666580
+Overlap TL X:0 Y:664999734, BR X:0 Y:216666580
+Overlap TL X:0 Y:668333066, BR X:0 Y:216666580
+Overlap TL X:0 Y:748333034, BR X:0 Y:216666580
+Overlap TL X:54786 Y:688333058, BR X:885707 Y:216666580
+
+Region 7 -> 21 Naive Size:0
+Overlap TL X:54786 Y:663333068, BR X:602646 Y:216666580
+
+Region 7 -> 22 Naive Size:0
+Overlap TL X:54786 Y:889999644, BR X:657432 Y:216666580
+
+Region 7 -> 23 Naive Size:0
+Overlap TL X:45655 Y:788333018, BR X:885707 Y:216666580
+
+Region 7 -> 24 Naive Size:139954
+Slicing Complete. Time for 48 slices:3.188828
+Forward Slice Size:1156061
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:9969967
+Slicing Complete. Time for 0 slices:0.000041
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:314306
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 231565500753
+Number of cache hits: 37724508696
+Number of cache insertions: 193840992057
+Number of cache collisions: 193675213244
+Number of cache deletions: 165254525
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 86.96% (expected 86.89%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 675716873
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 206764722
+Total number of nodes allocated: 16712950729
+Total number of nodes reclaimed: 21049860661
+Garbage collections so far: 351
+Time for garbage collection: 26071.31 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:45655 Y:726666376, BR X:840052 Y:216666580
+
+Region 7 -> 25 Naive Size:0
+Overlap TL X:0 Y:821666338, BR X:0 Y:216666580
+Overlap TL X:0 Y:999999600, BR X:0 Y:216666580
+Overlap TL X:100441 Y:914999634, BR X:885707 Y:216666580
+
+Region 7 -> 28 Naive Size:0
+Overlap TL X:45655 Y:999999600, BR X:885707 Y:216666580
+
+Region 7 -> 29 Naive Size:0
+Overlap TL X:0 Y:898332974, BR X:0 Y:216666580
+Overlap TL X:0 Y:896666308, BR X:0 Y:216666580
+Overlap TL X:45655 Y:569999772, BR X:757873 Y:216666580
+
+Region 7 -> 32 Naive Size:0
+Overlap TL X:200882 Y:478333142, BR X:885707 Y:216666580
+
+Region 7 -> 33 Naive Size:0
+Overlap TL X:1780545 Y:321666538, BR X:1963165 Y:229999908
+
+Region 8 -> 9 Naive Size:233310
+Time for 10000 slices:5.537468
+Time for 20000 slices:123.845077
+Time for 30000 slices:127.593789
+Time for 40000 slices:131.164301
+Time for 50000 slices:134.671875
+Time for 60000 slices:138.132546
+Time for 70000 slices:141.621396
+Time for 80000 slices:147.507675
+Time for 90000 slices:154.569525
+Time for 100000 slices:161.946957
+Time for 110000 slices:169.025091
+Time for 120000 slices:253.366830
+Time for 130000 slices:258.995473
+Time for 140000 slices:265.067051
+Slicing Complete. Time for 140916 slices:265.634895
+Forward Slice Size:489203
+Simple Reverse Slice Interfer Size:140917
+Interference Removal Reverse Slice Size:92393
+Slicing Complete. Time for 41703 slices:4.918643
+Simple Forward Slice Interfer Set:41704
+Interference Removal Forward Slice Set:306564
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 234449424026
+Number of cache hits: 38389508255
+Number of cache insertions: 196059915771
+Number of cache collisions: 195893122575
+Number of cache deletions: 166268908
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 78.92% (expected 78.82%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 491477611
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 20059067
+Total number of nodes allocated: 16753052382
+Total number of nodes reclaimed: 21435508778
+Garbage collections so far: 353
+Time for garbage collection: 26264.26 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:1807938 Y:396666508, BR X:1963165 Y:229999908
+
+Region 8 -> 10 Naive Size:271324
+Time for 10000 slices:5.132565
+Time for 20000 slices:8.842006
+Time for 30000 slices:12.977713
+Time for 40000 slices:116.445903
+Time for 50000 slices:119.810332
+Time for 60000 slices:123.165916
+Time for 70000 slices:126.526451
+Time for 80000 slices:132.313625
+Time for 90000 slices:139.241822
+Time for 100000 slices:146.539254
+Time for 110000 slices:153.510663
+Time for 120000 slices:159.845136
+Time for 130000 slices:165.812882
+Time for 140000 slices:172.247256
+Slicing Complete. Time for 140916 slices:172.856447
+Forward Slice Size:412258
+Simple Reverse Slice Interfer Size:18
+Interference Removal Reverse Slice Size:465684
+Slicing Complete. Time for 137535 slices:175.944988
+Simple Forward Slice Interfer Set:137536
+Interference Removal Forward Slice Set:133788
+Saving to file:/home/ubuntu/ddPerfTestOutput/401bzip2_test0_output.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 28754727248
+Peak number of nodes: 824394256
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 524288
+Number of cache look-ups: 237362434945
+Number of cache hits: 39070975752
+Number of cache insertions: 198291459193
+Number of cache collisions: 198123130709
+Number of cache deletions: 167804196
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 291504128
+Used buckets in unique table: 78.44% (expected 78.34%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 488730470
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 17179708
+Total number of nodes allocated: 16907146379
+Total number of nodes reclaimed: 21753439896
+Garbage collections so far: 356
+Time for garbage collection: 26520.41 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:118703 Y:298333214, BR X:748742 Y:229999908
+
+Region 8 -> 11 Naive Size:0
+Overlap TL X:118703 Y:349999860, BR X:830921 Y:229999908
+
+Region 8 -> 12 Naive Size:0
+Overlap TL X:118703 Y:446666488, BR X:602646 Y:229999908
+
+Region 8 -> 13 Naive Size:0
+Overlap TL X:913100 Y:448333154, BR X:1798807 Y:229999908
+
+Region 8 -> 14 Naive Size:111835

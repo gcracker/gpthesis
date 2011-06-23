@@ -1,0 +1,16 @@
+File Arguments
+/home/ubuntu/255vortexRunRef1_dinvsrdy_1000mil.dd
+/home/ubuntu/255vortexRunRef1_dinvsdin_1000mil.dd
+/home/ubuntu/invst/255vortex_dinvsrdy_invst_quickdead.dd
+17638973440
+Using memory size:17638973440
+Using {DIN,RDY} set from file:/home/ubuntu/255vortexRunRef1_dinvsrdy_1000mil.dd
+Using {DIN_i,DIN_d} file:/home/ubuntu/255vortexRunRef1_dinvsdin_1000mil.dd
+Top Din:407569, Rdy:8292
+Old {DIN,RDY} Size:407570
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:357340
+Saving to file:/home/ubuntu/invst/255vortex_dinvsrdy_invst_quickdead.dd

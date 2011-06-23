@@ -1,0 +1,9 @@
+Dead Code Iter Test
+Detected Free Memory: 15483469824
+Using {DIN,RDY} set from file:/home/ubuntu/ddDeathSliceInput/473astar_test0_dinvsrdy_1000mil_syscalls_O2.dd
+Top Din:999999999, Rdy:11301491
+Saving DD results to file:/home/ubuntu/ddDeathSliceOutput/473astar_test0_dinvsdin_output_1000mil_syscalls_O2.dd.working
+Using {DIN,DIN} set from file:/home/ubuntu/ddDeathSliceInput/473astar_test0_dinvsdin_1000mil_syscalls_O2.dd
+Using {DIN,SYS} set from file:/home/ubuntu/ddDeathSliceInput/473astar_test0_dinvssys_1000mil_syscalls_O2.dd
+Add Back DD Size:0
+Add Back DD Size with RDY:1

@@ -1,0 +1,10 @@
+#Benchmark,Irrelevant Dependence Percent
+400.perlbench,51
+403.gcc,61
+429.mcf,37
+445.gobmk,58
+458.sjeng,67
+464.h264ref,72
+471.omnetpp,64
+473.astar,59
+483.xalancbmk,56

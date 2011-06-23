@@ -1,0 +1,6 @@
+Detected Free Memory: 17623941120
+Top Hot:10
+Using {DIN,HOT} set from file:/home/ubuntu/175vprRunRef1_dinvshot_1000mil.dd
+Using the value 1171026 as an upper bound
+Using {DIN,RDY} file:/home/ubuntu/175vprRunRef1_dinvsrdy_1000mil.dd
+Using {DIN,DIN} file:/home/ubuntu/175vprRunRef1_dinvsdin_1000mil.dd

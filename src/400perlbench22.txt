@@ -1,0 +1,17 @@
+Perl_append_elem
+Perl_append_list
+Perl_block_start
+Perl_block_end
+Perl_gv_init
+Perl_intro_my
+Perl_leave_scope
+Perl_newOP
+Perl_newFOROP
+Perl_pregcomp
+Perl_pmruntime
+Perl_save_I32
+Perl_yyparse
+Perl_yylex
+S_lop
+S_new_xpvav
+S_new_xpvcv

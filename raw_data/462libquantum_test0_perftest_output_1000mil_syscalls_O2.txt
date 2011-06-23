@@ -1,0 +1,729 @@
+Performance Tests
+Saving parallel overlay DD to file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_perftest_output_1000mil_syscalls_O2.dd
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_dinvsrdy_1000mil_syscalls_O2.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_dinvsrdy_1000mil_syscalls_O2.dd
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_dinvsdin_1000mil_syscalls_O2.dd
+
+Regions:0->1,Overlap:TL X:0 Y:296390227, BR X:0 Y:293253318
+
+Regions:0->2,Overlap:TL X:0 Y:297087317, BR X:0 Y:293601864
+
+Regions:0->3,Overlap:TL X:0 Y:297784408, BR X:0 Y:293601864
+
+Regions:0->4,Overlap:TL X:0 Y:298830044, BR X:0 Y:293601864
+
+Regions:0->5,Overlap:TL X:0 Y:299875680, BR X:0 Y:293601864
+
+Regions:0->6,Overlap:TL X:347310 Y:308937859, BR X:373377 Y:293601864
+Shrunk Regions:0->6,Naive Size:41107
+
+Slicing Complete. Time for 1632 slices:0.452841
+Forward Slice Size:215704
+Interference Removal Reverse Slice Size:41107
+Slicing Complete. Time for 0 slices:0.000023
+Interference Removal Forward Slice Set:147526
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_perftest_output_1000mil_syscalls_O2.dd
+
+Regions:0->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:293601864
+
+Regions:0->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:293601864
+
+Regions:0->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:293601864
+
+Regions:0->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:293601864
+
+Regions:0->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:293601864
+
+Regions:0->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:293601864
+
+Regions:0->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:293601864
+
+Regions:0->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:293601864
+
+Regions:0->15,Overlap:TL X:399444 Y:298132953, BR X:484161 Y:293601864
+Shrunk Regions:0->15,Naive Size:43208
+
+Slicing Complete. Time for 1 slices:0.075439
+Forward Slice Size:421521
+Interference Removal Reverse Slice Size:0
+
+Regions:0->16,Overlap:TL X:0 Y:298132953, BR X:0 Y:293601864
+
+Regions:0->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:293601864
+
+Regions:0->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:293601864
+
+Regions:0->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:293601864
+
+Regions:0->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:293601864
+
+Regions:0->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:293601864
+
+Regions:0->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:293601864
+
+Regions:0->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:293601864
+
+Regions:1->2,Overlap:TL X:0 Y:297087317, BR X:0 Y:293253318
+
+Regions:1->3,Overlap:TL X:0 Y:297784408, BR X:0 Y:293253318
+
+Regions:1->4,Overlap:TL X:0 Y:298830044, BR X:0 Y:293253318
+
+Regions:1->5,Overlap:TL X:0 Y:299875680, BR X:0 Y:293253318
+
+Regions:1->6,Overlap:TL X:0 Y:308937859, BR X:0 Y:293253318
+
+Regions:1->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:293253318
+
+Regions:1->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:293253318
+
+Regions:1->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:293253318
+
+Regions:1->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:293253318
+
+Regions:1->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:293253318
+
+Regions:1->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:293253318
+
+Regions:1->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:293253318
+
+Regions:1->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:293253318
+
+Regions:1->15,Overlap:TL X:0 Y:298132953, BR X:0 Y:293253318
+
+Regions:1->16,Overlap:TL X:526520 Y:298132953, BR X:611238 Y:293253318
+Shrunk Regions:1->16,Naive Size:2122
+
+Slicing Complete. Time for 1 slices:0.045325
+Forward Slice Size:422906
+Interference Removal Reverse Slice Size:0
+
+Regions:1->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:293253318
+
+Regions:1->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:293253318
+
+Regions:1->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:293253318
+
+Regions:1->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:293253318
+
+Regions:1->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:293253318
+
+Regions:1->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:293253318
+
+Regions:1->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:293253318
+
+Regions:2->3,Overlap:TL X:777415 Y:297784408, BR X:780673 Y:295344591
+Shrunk Regions:2->3,Naive Size:6518
+
+Slicing Complete. Time for 0 slices:0.003171
+Forward Slice Size:6516
+Interference Removal Reverse Slice Size:0
+
+Regions:2->4,Overlap:TL X:0 Y:298830044, BR X:0 Y:295344591
+
+Regions:2->5,Overlap:TL X:0 Y:299875680, BR X:0 Y:295344591
+
+Regions:2->6,Overlap:TL X:0 Y:308937859, BR X:0 Y:295344591
+
+Regions:2->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:295344591
+
+Regions:2->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:295344591
+
+Regions:2->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:295344591
+
+Regions:2->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:295344591
+
+Regions:2->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:295344591
+
+Regions:2->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:295344591
+
+Regions:2->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:295344591
+
+Regions:2->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:295344591
+
+Regions:2->15,Overlap:TL X:0 Y:298132953, BR X:0 Y:294996045
+
+Regions:2->16,Overlap:TL X:0 Y:298132953, BR X:0 Y:295344591
+
+Regions:2->17,Overlap:TL X:712247 Y:299875680, BR X:780673 Y:295344591
+Shrunk Regions:2->17,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:261718
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:2->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:295344591
+
+Regions:2->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:295344591
+
+Regions:2->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:295344591
+
+Regions:2->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:295344591
+
+Regions:2->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:295344591
+
+Regions:2->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:295344591
+
+Regions:3->4,Overlap:TL X:0 Y:298830044, BR X:0 Y:296390227
+
+Regions:3->5,Overlap:TL X:0 Y:299875680, BR X:0 Y:296390227
+
+Regions:3->6,Overlap:TL X:0 Y:308937859, BR X:0 Y:296390227
+
+Regions:3->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:296390227
+
+Regions:3->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:296390227
+
+Regions:3->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:296390227
+
+Regions:3->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:296390227
+
+Regions:3->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:296390227
+
+Regions:3->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:296390227
+
+Regions:3->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:296390227
+
+Regions:3->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:296390227
+
+Regions:3->15,Overlap:TL X:0 Y:298132953, BR X:0 Y:294996045
+
+Regions:3->16,Overlap:TL X:0 Y:298132953, BR X:0 Y:296390227
+
+Regions:3->17,Overlap:TL X:777415 Y:299875680, BR X:783932 Y:296390227
+Shrunk Regions:3->17,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:13036
+Slicing Complete. Time for 0 slices:0.000006
+Interference Removal Forward Slice Set:0
+
+Regions:3->18,Overlap:TL X:852357 Y:302664043, BR X:862133 Y:296390227
+Shrunk Regions:3->18,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:19702
+Slicing Complete. Time for 0 slices:0.000005
+Interference Removal Forward Slice Set:0
+
+Regions:3->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:296390227
+
+Regions:3->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:296390227
+
+Regions:3->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:296390227
+
+Regions:3->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:296390227
+
+Regions:3->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:296390227
+
+Regions:4->5,Overlap:TL X:0 Y:299875680, BR X:0 Y:296738772
+
+Regions:4->6,Overlap:TL X:0 Y:308937859, BR X:0 Y:296738772
+
+Regions:4->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:296738772
+
+Regions:4->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:296738772
+
+Regions:4->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:296738772
+
+Regions:4->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:296738772
+
+Regions:4->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:296738772
+
+Regions:4->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:296738772
+
+Regions:4->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:296738772
+
+Regions:4->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:296738772
+
+Regions:4->15,Overlap:TL X:0 Y:298830044, BR X:0 Y:294996045
+
+Regions:4->16,Overlap:TL X:0 Y:298830044, BR X:0 Y:296390227
+
+Regions:4->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:296738772
+
+Regions:4->18,Overlap:TL X:897975 Y:302664043, BR X:956625 Y:296738772
+Shrunk Regions:4->18,Naive Size:69231
+
+Slicing Complete. Time for 2057 slices:1.611863
+Forward Slice Size:320897
+Interference Removal Reverse Slice Size:0
+
+Regions:4->19,Overlap:TL X:992467 Y:305452406, BR X:1051118 Y:296738772
+Shrunk Regions:4->19,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:234581
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:4->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:296738772
+
+Regions:4->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:296738772
+
+Regions:4->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:296738772
+
+Regions:4->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:296738772
+
+Regions:5->6,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:5->7,Overlap:TL X:0 Y:301269861, BR X:0 Y:298132953
+
+Regions:5->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:298132953
+
+Regions:5->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:298132953
+
+Regions:5->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:298132953
+
+Regions:5->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:298132953
+
+Regions:5->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:298132953
+
+Regions:5->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:298132953
+
+Regions:5->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:298132953
+
+Regions:5->15,Overlap:TL X:0 Y:299875680, BR X:0 Y:294996045
+
+Regions:5->16,Overlap:TL X:0 Y:299875680, BR X:0 Y:296390227
+
+Regions:5->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:298132953
+
+Regions:5->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:298132953
+
+Regions:5->19,Overlap:TL X:1054377 Y:305452406, BR X:1106510 Y:298132953
+Shrunk Regions:5->19,Naive Size:15077
+
+Slicing Complete. Time for 2050 slices:0.565949
+Forward Slice Size:236330
+Interference Removal Reverse Slice Size:0
+
+Regions:5->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:298132953
+
+Regions:5->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:298132953
+
+Regions:5->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:298132953
+
+Regions:5->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:298132953
+
+Regions:6->7,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->8,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->9,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->10,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->11,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->12,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->13,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->14,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->15,Overlap:TL X:0 Y:308937859, BR X:0 Y:294996045
+
+Regions:6->16,Overlap:TL X:0 Y:308937859, BR X:0 Y:296390227
+
+Regions:6->17,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->18,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->19,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->20,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->21,Overlap:TL X:0 Y:308937859, BR X:0 Y:297087317
+
+Regions:6->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:297087317
+
+Regions:6->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:297087317
+
+Regions:7->8,Overlap:TL X:0 Y:301269861, BR X:0 Y:299178589
+
+Regions:7->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:299178589
+
+Regions:7->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:299178589
+
+Regions:7->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:299178589
+
+Regions:7->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:299178589
+
+Regions:7->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:299178589
+
+Regions:7->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:299178589
+
+Regions:7->15,Overlap:TL X:0 Y:301269861, BR X:0 Y:294996045
+
+Regions:7->16,Overlap:TL X:0 Y:301269861, BR X:0 Y:296390227
+
+Regions:7->17,Overlap:TL X:0 Y:301269861, BR X:0 Y:298132953
+
+Regions:7->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:298830044
+
+Regions:7->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:299178589
+
+Regions:7->20,Overlap:TL X:1298754 Y:307195132, BR X:1380214 Y:299178589
+Shrunk Regions:7->20,Naive Size:9257
+
+Slicing Complete. Time for 2057 slices:0.793178
+Forward Slice Size:424340
+Interference Removal Reverse Slice Size:0
+
+Regions:7->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:299178589
+
+Regions:7->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:299178589
+
+Regions:7->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:299178589
+
+Regions:8->9,Overlap:TL X:0 Y:303012588, BR X:0 Y:300572771
+
+Regions:8->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:301269861
+
+Regions:8->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:301269861
+
+Regions:8->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:301269861
+
+Regions:8->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:301269861
+
+Regions:8->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:301269861
+
+Regions:8->15,Overlap:TL X:0 Y:301269861, BR X:0 Y:294996045
+
+Regions:8->16,Overlap:TL X:0 Y:301269861, BR X:0 Y:296390227
+
+Regions:8->17,Overlap:TL X:0 Y:301269861, BR X:0 Y:298132953
+
+Regions:8->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:298830044
+
+Regions:8->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:300224225
+
+Regions:8->20,Overlap:TL X:1383472 Y:307195132, BR X:1383472 Y:301269861
+Shrunk Regions:8->20,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:0
+
+Regions:8->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:301269861
+
+Regions:8->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:301269861
+
+Regions:8->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:301269861
+
+Regions:9->10,Overlap:TL X:0 Y:303361134, BR X:0 Y:300572771
+
+Regions:9->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:300572771
+
+Regions:9->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:300572771
+
+Regions:9->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:300572771
+
+Regions:9->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:300572771
+
+Regions:9->15,Overlap:TL X:0 Y:303012588, BR X:0 Y:294996045
+
+Regions:9->16,Overlap:TL X:0 Y:303012588, BR X:0 Y:296390227
+
+Regions:9->17,Overlap:TL X:0 Y:303012588, BR X:0 Y:298132953
+
+Regions:9->18,Overlap:TL X:0 Y:303012588, BR X:0 Y:298830044
+
+Regions:9->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:300224225
+
+Regions:9->20,Overlap:TL X:1399764 Y:307195132, BR X:1412798 Y:300572771
+Shrunk Regions:9->20,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:27654
+Slicing Complete. Time for 0 slices:0.000006
+Interference Removal Forward Slice Set:0
+
+Regions:9->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:300572771
+
+Regions:9->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:300572771
+
+Regions:9->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:300572771
+
+Regions:10->11,Overlap:TL X:0 Y:304406770, BR X:0 Y:301269861
+
+Regions:10->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:301269861
+
+Regions:10->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:301269861
+
+Regions:10->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:301269861
+
+Regions:10->15,Overlap:TL X:0 Y:303361134, BR X:0 Y:294996045
+
+Regions:10->16,Overlap:TL X:0 Y:303361134, BR X:0 Y:296390227
+
+Regions:10->17,Overlap:TL X:0 Y:303361134, BR X:0 Y:298132953
+
+Regions:10->18,Overlap:TL X:0 Y:303361134, BR X:0 Y:298830044
+
+Regions:10->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:300224225
+
+Regions:10->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:301269861
+
+Regions:10->21,Overlap:TL X:1621333 Y:307543678, BR X:1683242 Y:301269861
+Shrunk Regions:10->21,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:159994
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:10->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:301269861
+
+Regions:10->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:301269861
+
+Regions:11->12,Overlap:TL X:0 Y:305452406, BR X:0 Y:302315498
+
+Regions:11->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:302315498
+
+Regions:11->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:11->15,Overlap:TL X:0 Y:304406770, BR X:0 Y:294996045
+
+Regions:11->16,Overlap:TL X:0 Y:304406770, BR X:0 Y:296390227
+
+Regions:11->17,Overlap:TL X:0 Y:304406770, BR X:0 Y:298132953
+
+Regions:11->18,Overlap:TL X:0 Y:304406770, BR X:0 Y:298830044
+
+Regions:11->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:300224225
+
+Regions:11->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:11->21,Overlap:TL X:1696276 Y:307543678, BR X:1732118 Y:302315498
+Shrunk Regions:11->21,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000008
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:76030
+Slicing Complete. Time for 0 slices:0.000007
+Interference Removal Forward Slice Set:0
+
+Regions:11->22,Overlap:TL X:1777735 Y:309983495, BR X:1829869 Y:302315498
+Shrunk Regions:11->22,Naive Size:537
+
+Slicing Complete. Time for 2057 slices:0.820357
+Forward Slice Size:345019
+Interference Removal Reverse Slice Size:0
+
+Regions:11->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:302315498
+
+Regions:12->13,Overlap:TL X:0 Y:306846587, BR X:0 Y:302315498
+
+Regions:12->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:12->15,Overlap:TL X:0 Y:305452406, BR X:0 Y:294996045
+
+Regions:12->16,Overlap:TL X:0 Y:305452406, BR X:0 Y:296390227
+
+Regions:12->17,Overlap:TL X:0 Y:305452406, BR X:0 Y:298132953
+
+Regions:12->18,Overlap:TL X:0 Y:305452406, BR X:0 Y:298830044
+
+Regions:12->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:300224225
+
+Regions:12->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:12->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:302315498
+
+Regions:12->22,Overlap:TL X:1846161 Y:309983495, BR X:1872228 Y:302315498
+Shrunk Regions:12->22,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000007
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:107025
+Slicing Complete. Time for 0 slices:0.000008
+Interference Removal Forward Slice Set:0
+
+Regions:12->23,Overlap:TL X:1979754 Y:310680586, BR X:2009080 Y:302315498
+Shrunk Regions:12->23,Naive Size:888
+
+Slicing Complete. Time for 3 slices:0.030903
+Forward Slice Size:62647
+Interference Removal Reverse Slice Size:0
+
+Regions:13->14,Overlap:TL X:0 Y:307195132, BR X:0 Y:304755315
+
+Regions:13->15,Overlap:TL X:0 Y:306846587, BR X:0 Y:294996045
+
+Regions:13->16,Overlap:TL X:0 Y:306846587, BR X:0 Y:296390227
+
+Regions:13->17,Overlap:TL X:0 Y:306846587, BR X:0 Y:298132953
+
+Regions:13->18,Overlap:TL X:0 Y:306846587, BR X:0 Y:298830044
+
+Regions:13->19,Overlap:TL X:0 Y:306846587, BR X:0 Y:300224225
+
+Regions:13->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:13->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:304755315
+
+Regions:13->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:304755315
+
+Regions:13->23,Overlap:TL X:2031888 Y:310680586, BR X:2074247 Y:304755315
+Shrunk Regions:13->23,Naive Size:1099
+
+Slicing Complete. Time for 0 slices:0.019972
+Forward Slice Size:89884
+Interference Removal Reverse Slice Size:0
+
+Regions:14->15,Overlap:TL X:0 Y:307195132, BR X:0 Y:294996045
+
+Regions:14->16,Overlap:TL X:0 Y:307195132, BR X:0 Y:296390227
+
+Regions:14->17,Overlap:TL X:0 Y:307195132, BR X:0 Y:298132953
+
+Regions:14->18,Overlap:TL X:0 Y:307195132, BR X:0 Y:298830044
+
+Regions:14->19,Overlap:TL X:0 Y:307195132, BR X:0 Y:300224225
+
+Regions:14->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:302315498
+
+Regions:14->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:304755315
+
+Regions:14->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:304755315
+
+Regions:14->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:304755315
+
+Regions:15->16,Overlap:TL X:0 Y:298132953, BR X:0 Y:294996045
+
+Regions:15->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:294996045
+
+Regions:15->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:294996045
+
+Regions:15->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:294996045
+
+Regions:15->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:294996045
+
+Regions:15->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:294996045
+
+Regions:15->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:294996045
+
+Regions:15->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:294996045
+
+Regions:16->17,Overlap:TL X:0 Y:299875680, BR X:0 Y:296390227
+
+Regions:16->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:296390227
+
+Regions:16->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:296390227
+
+Regions:16->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:296390227
+
+Regions:16->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:296390227
+
+Regions:16->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:296390227
+
+Regions:16->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:296390227
+
+Regions:17->18,Overlap:TL X:0 Y:302664043, BR X:0 Y:298132953
+
+Regions:17->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:298132953
+
+Regions:17->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:298132953
+
+Regions:17->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:298132953
+
+Regions:17->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:298132953
+
+Regions:17->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:298132953
+
+Regions:18->19,Overlap:TL X:0 Y:305452406, BR X:0 Y:298830044
+
+Regions:18->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:298830044
+
+Regions:18->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:298830044
+
+Regions:18->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:298830044
+
+Regions:18->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:298830044
+
+Regions:19->20,Overlap:TL X:0 Y:307195132, BR X:0 Y:300224225
+
+Regions:19->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:300224225
+
+Regions:19->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:300224225
+
+Regions:19->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:300224225
+
+Regions:20->21,Overlap:TL X:0 Y:307543678, BR X:0 Y:302315498
+
+Regions:20->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:302315498
+
+Regions:20->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:302315498
+
+Regions:21->22,Overlap:TL X:0 Y:309983495, BR X:0 Y:305103860
+
+Regions:21->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:305103860
+
+Regions:22->23,Overlap:TL X:0 Y:310680586, BR X:0 Y:305452406
+#RegionID,Naive
+0,2
+1,1
+2,1
+3,1
+4,1
+5,1
+6,1
+7,1
+8,0
+9,0
+10,0
+11,1
+12,1
+13,1
+14,0
+15,1
+16,1
+17,0
+18,1
+19,1
+20,1
+21,0
+22,1
+23,2
+
+#RegionID,Interfer
+0,1
+1,0
+2,0
+3,0
+4,0
+5,0
+6,1
+7,0
+8,0
+9,0
+10,0
+11,0
+12,0
+13,0
+14,0
+15,0
+16,0
+17,0
+18,0
+19,0
+20,0
+21,0
+22,0
+23,0
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/462libquantum_test0_perftest_output_1000mil_syscalls_O2.dd
+
+Execution Count: 311988516
+Naive Count: 189044
+Naive Performance Gain: 0.060593%
+Simple Interference Count: 41107
+Simple Interference Performance Gain: 0.013176%

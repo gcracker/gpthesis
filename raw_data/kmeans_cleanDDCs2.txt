@@ -1,0 +1,341 @@
+
+Cluster size:158122
+DistanceSum: 3467850.0
+Cluster size:137775
+DistanceSum: 1997151302.0
+Dist Average**2:7258.8383673
+Max Average**2 Distance: 14495.7452513
+Max Distance: 996650474.0
+
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:146731
+DistanceSum: 3217806.0
+Cluster size:149113
+DistanceSum: 3254050.0
+Dist Average**2:5363.31378599
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:98750
+DistanceSum: 2162678.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:98519
+DistanceSum: 2159422.0
+Cluster size:98575
+DistanceSum: 2149408.0
+Dist Average**2:4027.95321308
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:74948
+DistanceSum: 1622492.0
+Cluster size:73703
+DistanceSum: 1613960.0
+Cluster size:74087
+DistanceSum: 1629554.0
+Cluster size:73106
+DistanceSum: 1605154.0
+Cluster size:53
+DistanceSum: 850448.0
+Dist Average**2:3226.73734878
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:59093
+DistanceSum: 1293896.0
+Cluster size:58789
+DistanceSum: 1285888.0
+Cluster size:58983
+DistanceSum: 1302234.0
+Cluster size:59153
+DistanceSum: 1297174.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:59826
+DistanceSum: 1291620.0
+Dist Average**2:2692.5924014
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:49020
+DistanceSum: 1076138.0
+Cluster size:49925
+DistanceSum: 1081352.0
+Cluster size:49187
+DistanceSum: 1076312.0
+Cluster size:49079
+DistanceSum: 1076816.0
+Cluster size:49787
+DistanceSum: 1076744.0
+Cluster size:48846
+DistanceSum: 1083102.0
+Cluster size:53
+DistanceSum: 850448.0
+Dist Average**2:2311.06065373
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:41753
+DistanceSum: 915872.0
+Cluster size:42978
+DistanceSum: 926652.0
+Cluster size:41606
+DistanceSum: 913450.0
+Cluster size:42810
+DistanceSum: 929052.0
+Cluster size:42037
+DistanceSum: 921280.0
+Cluster size:42199
+DistanceSum: 921736.0
+Cluster size:42461
+DistanceSum: 942074.0
+Dist Average**2:2024.9108867
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:36727
+DistanceSum: 806680.0
+Cluster size:37624
+DistanceSum: 811180.0
+Cluster size:36893
+DistanceSum: 805232.0
+Cluster size:36508
+DistanceSum: 801844.0
+Cluster size:36903
+DistanceSum: 821898.0
+Cluster size:36486
+DistanceSum: 800522.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:37442
+DistanceSum: 812972.0
+Cluster size:37261
+DistanceSum: 809440.0
+Dist Average**2:1802.35016261
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:31960
+DistanceSum: 714406.0
+Cluster size:33004
+DistanceSum: 722044.0
+Cluster size:33287
+DistanceSum: 730678.0
+Cluster size:32797
+DistanceSum: 709072.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:32996
+DistanceSum: 711308.0
+Cluster size:32619
+DistanceSum: 708960.0
+Cluster size:32468
+DistanceSum: 713290.0
+Cluster size:33361
+DistanceSum: 731488.0
+Cluster size:33352
+DistanceSum: 728500.0
+Dist Average**2:1624.3020353
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:30100
+DistanceSum: 647850.0
+Cluster size:29745
+DistanceSum: 646824.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:29887
+DistanceSum: 647104.0
+Cluster size:29014
+DistanceSum: 650182.0
+Cluster size:29534
+DistanceSum: 647876.0
+Cluster size:29749
+DistanceSum: 647344.0
+Cluster size:29809
+DistanceSum: 653046.0
+Cluster size:29463
+DistanceSum: 642888.0
+Cluster size:29322
+DistanceSum: 644556.0
+Cluster size:29221
+DistanceSum: 641728.0
+Dist Average**2:1478.62603329
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:26907
+DistanceSum: 589368.0
+Cluster size:26731
+DistanceSum: 583456.0
+Cluster size:27317
+DistanceSum: 598150.0
+Cluster size:27172
+DistanceSum: 591700.0
+Cluster size:26970
+DistanceSum: 583620.0
+Cluster size:27042
+DistanceSum: 583284.0
+Cluster size:26983
+DistanceSum: 582280.0
+Cluster size:26304
+DistanceSum: 589974.0
+Cluster size:26552
+DistanceSum: 583820.0
+Cluster size:26850
+DistanceSum: 589836.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:27016
+DistanceSum: 593236.0
+Dist Average**2:1357.22702236
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:25080
+DistanceSum: 542748.0
+Cluster size:24608
+DistanceSum: 537140.0
+Cluster size:24517
+DistanceSum: 539248.0
+Cluster size:24863
+DistanceSum: 541808.0
+Cluster size:24239
+DistanceSum: 531310.0
+Cluster size:25183
+DistanceSum: 542200.0
+Cluster size:24379
+DistanceSum: 534640.0
+Cluster size:24138
+DistanceSum: 530580.0
+Cluster size:25053
+DistanceSum: 541056.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:24450
+DistanceSum: 548934.0
+Cluster size:24558
+DistanceSum: 536700.0
+Cluster size:24776
+DistanceSum: 542012.0
+Dist Average**2:1254.50645553
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:22938
+DistanceSum: 498204.0
+Cluster size:22553
+DistanceSum: 494816.0
+Cluster size:23025
+DistanceSum: 498000.0
+Cluster size:22506
+DistanceSum: 493274.0
+Cluster size:22559
+DistanceSum: 496808.0
+Cluster size:23250
+DistanceSum: 499980.0
+Cluster size:22775
+DistanceSum: 498224.0
+Cluster size:22838
+DistanceSum: 499748.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:23119
+DistanceSum: 499312.0
+Cluster size:22594
+DistanceSum: 494692.0
+Cluster size:22852
+DistanceSum: 497932.0
+Cluster size:22459
+DistanceSum: 505234.0
+Cluster size:22376
+DistanceSum: 491804.0
+Dist Average**2:1166.45975178
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:21662
+DistanceSum: 472916.0
+Cluster size:20543
+DistanceSum: 450790.0
+Cluster size:21302
+DistanceSum: 464900.0
+Cluster size:21490
+DistanceSum: 467524.0
+Cluster size:21469
+DistanceSum: 462976.0
+Cluster size:20610
+DistanceSum: 452508.0
+Cluster size:21520
+DistanceSum: 465364.0
+Cluster size:20697
+DistanceSum: 454728.0
+Cluster size:20847
+DistanceSum: 456048.0
+Cluster size:20875
+DistanceSum: 457264.0
+Cluster size:21494
+DistanceSum: 463196.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:20963
+DistanceSum: 456584.0
+Cluster size:21023
+DistanceSum: 461960.0
+Cluster size:21349
+DistanceSum: 480922.0
+Dist Average**2:1090.15144805
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+Cluster size:19492
+DistanceSum: 424732.0
+Cluster size:20043
+DistanceSum: 436368.0
+Cluster size:20117
+DistanceSum: 435080.0
+Cluster size:20074
+DistanceSum: 433732.0
+Cluster size:19891
+DistanceSum: 431152.0
+Cluster size:20112
+DistanceSum: 439884.0
+Cluster size:19453
+DistanceSum: 426654.0
+Cluster size:19235
+DistanceSum: 423440.0
+Cluster size:19625
+DistanceSum: 429296.0
+Cluster size:19369
+DistanceSum: 425298.0
+Cluster size:19460
+DistanceSum: 425420.0
+Cluster size:20221
+DistanceSum: 434056.0
+Cluster size:19389
+DistanceSum: 427704.0
+Cluster size:19513
+DistanceSum: 426856.0
+Cluster size:53
+DistanceSum: 850448.0
+Cluster size:19850
+DistanceSum: 447854.0
+Dist Average**2:1023.38340515
+Max Average**2 Distance: 16046.1886792
+Max Distance: 181126.0
+
+^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^CTraceback (most recent call last):
+  File "./gen_sininfo.py", line 278, in <module>
+    clusters = kmeans(kMeanPoints, clusterNum, cutoff)
+  File "./gen_sininfo.py", line 78, in kmeans
+    distance = getDistance(p, clusters[i+1].centroid)
+  File "./gen_sininfo.py", line 101, in getDistance
+    ret = ret+pow((a.coords[i]-b.coords[i]), 2)
+KeyboardInterrupt
+pricegd@hudson:/home/pricegd/hgrepo/scripts/adaman$ exit
+exit

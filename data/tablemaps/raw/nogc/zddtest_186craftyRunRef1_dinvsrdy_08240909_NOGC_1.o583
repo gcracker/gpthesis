@@ -1,0 +1,124 @@
+*Tick Output*
+*Opcount, Slots, Keys, Dead, Time*
+Opcount:1000000,8421376,678360,346061,14
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,33938,1,33939,1,33941,1,33928,1,32,1,1199,4,16463,12,16459,22925,16615,15443,16920,17619,18901,12795,22272,12729,27498,17444,35552,28489,47128,40579,56772,38391,38120,14379,7270,429,73,6,2
+Opcount:2000000,8421376,1183395,735640,31
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,67894,1,67895,1,67897,1,67848,1,68,1,2387,1,32881,33929,32819,35243,32696,44259,32978,9554,34987,31866,40576,27564,44609,25506,50600,30177,54742,38755,60048,46604,63445,41911,40602,14940,7508,433,73,6,2
+Opcount:3000000,8421376,1824145,1193261,49
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,101840,1,2,1,101842,1,101845,1,12,1,101783,1,36348,52106,36398,46582,49141,47593,49243,62443,50060,29425,53330,34508,59865,39144,65948,37968,73445,46297,81622,69926,92672,73698,90898,57284,52964,18651,8649,441,73,6,2
+Opcount:4000000,8421376,860875,51896,70
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4794,1,4795,1,4797,1,4801,1,16,1,4639,1,246,2639,356,2333,664,3128,1573,5215,4688,3832,11435,11773,23163,22785,36087,30342,56905,43247,78508,62240,99483,77188,103474,64317,60148,21178,9463,451,73,6,2
+Opcount:5000000,8421376,1189375,330729,88
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,38656,1,2,1,3,1,38660,1,38538,1,146,1,165,1,203,21676,6118,20611,17207,12404,18543,27388,23816,5542,30580,22258,40091,32494,48310,37796,64910,46937,84001,65083,103575,79759,106180,65354,60869,21352,9527,450,73,6,2
+Opcount:6000000,8454144,1812497,870711,107
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,72720,1,2,1,72722,1,72725,1,12,1,72742,1,72494,36498,7285,13080,33344,12916,33876,1677,35323,52079,42142,10716,47786,25064,60000,50312,71306,51977,89076,59078,107922,87162,127048,97347,121961,74392,66546,22677,9864,456,73,6,2
+Opcount:7000000,8519680,2327452,1255879,129
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,106816,1,106817,1,4,1,106822,1,14,1,106395,1,500,59083,41411,47236,41557,55712,50509,3538,51948,67676,59956,16497,66578,40999,80018,66069,91323,55181,110535,75185,129346,101169,147707,115006,137870,81875,71482,23784,10206,458,73,6,2
+Opcount:8000000,8519680,1254703,111380,153
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9882,1,9883,1,9885,1,9889,1,16,1,9247,1,726,5295,829,5302,1160,1473,2155,1941,5731,11294,15237,10080,25669,23091,44000,41031,61397,47974,90125,65562,114904,87330,134560,100695,128987,76658,68757,23263,10047,458,73,6,2
+Opcount:9000000,8519680,1614305,407413,174
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,43312,1,2,1,3,1,5,1,43320,1,18,1,35,1,43205,21927,369,21631,11158,2623,18348,2322,23438,33138,32274,12710,44290,33501,65235,55626,82771,58313,108809,73274,127734,94875,141608,105477,131775,77872,69302,23305,10073,458,73,6,2
+Opcount:10000000,8585216,2095526,763428,196
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,77506,1,2,1,3,1,77510,1,77066,1,468,1,487,3,526,39059,12193,40585,33922,6403,34987,5786,40760,53400,49111,16454,62766,44255,83835,69034,102318,73101,128540,82972,148857,110486,162648,119974,145918,84964,74150,24483,10366,460,73,6,2
+Opcount:11000000,8585216,2781959,1359717,219
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,111682,1,2,1,111684,1,6,1,11,1,111702,1,111723,87818,111064,26015,46406,26192,46981,5202,52190,34355,60305,71646,69265,41904,82473,52764,94363,78953,109023,77795,136101,93687,154675,118585,169535,126485,153776,91147,79230,25930,10654,462,73,6,2
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 268260192
+Peak number of nodes: 3071110
+Peak number of live nodes: 132
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 162448194
+Number of cache hits: 9038889
+Number of cache insertions: 153409305
+Number of cache collisions: 16168584
+Number of cache deletions: 137216701
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8585216
+Used buckets in unique table: 7.30% (expected 7.30%)
+Number of BDD and ADD nodes: 132
+Number of ZDD nodes: 1426447
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 239368173
+Total number of nodes reclaimed: 31832744
+Garbage collections so far: 168
+Time for garbage collection: 68.63 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Post conversion DEBUG output:
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 699050
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 419430
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 281389376
+Peak number of nodes: 3415524
+Peak number of live nodes: 1989019
+Number of BDD variables: 128
+Number of ZDD variables: 128
+Number of cache entries: 4194304
+Number of cache look-ups: 166695224
+Number of cache hits: 10738791
+Number of cache insertions: 155956433
+Number of cache collisions: 16981716
+Number of cache deletions: 138237378
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 699050
+Number of buckets in unique table: 8847360
+Used buckets in unique table: 8.69% (expected 8.70%)
+Number of BDD and ADD nodes: 1989019
+Number of ZDD nodes: 128
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 0
+Total number of nodes allocated: 241357060
+Total number of nodes reclaimed: 31832744
+Garbage collections so far: 169
+Time for garbage collection: 69.07 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+Maximum cycle to finish the program: 72628
+Total ops: 11033525
+Average IPC: 151.92

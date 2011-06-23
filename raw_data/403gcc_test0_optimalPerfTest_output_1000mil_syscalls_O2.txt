@@ -1,0 +1,259 @@
+Optimal Performance Tests
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/403gcc_test0_dinvsrdy_1000mil_syscalls_O2.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/403gcc_test0_dinvsrdy_1000mil_syscalls_O2.dd
+
+Regions:0->1,Overlap:TL X:6556140 Y:225368920, BR X:13527810 Y:116708905
+Shrunk Regions:0->1,Naive Size:680727
+
+
+Regions:0->2,Overlap:TL X:0 Y:387956498, BR X:0 Y:221344475
+
+Regions:0->3,Overlap:TL X:0 Y:375883163, BR X:0 Y:221344475
+
+Regions:0->4,Overlap:TL X:0 Y:437054727, BR X:0 Y:221344475
+
+Regions:0->5,Overlap:TL X:0 Y:424981392, BR X:0 Y:221344475
+
+Regions:0->6,Overlap:TL X:0 Y:248710701, BR X:0 Y:221344475
+
+Regions:0->7,Overlap:TL X:0 Y:235027588, BR X:0 Y:221344475
+
+Regions:0->8,Overlap:TL X:0 Y:287345373, BR X:0 Y:221344475
+
+Regions:0->9,Overlap:TL X:0 Y:280101372, BR X:0 Y:221344475
+
+Regions:0->10,Overlap:TL X:0 Y:319540933, BR X:0 Y:221344475
+
+Regions:0->11,Overlap:TL X:0 Y:308272487, BR X:0 Y:221344475
+
+Regions:0->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:221344475
+
+Regions:0->13,Overlap:TL X:0 Y:225368920, BR X:0 Y:84513345
+
+Regions:0->14,Overlap:TL X:0 Y:225368920, BR X:0 Y:58756897
+
+Regions:1->2,Overlap:TL X:0 Y:387956498, BR X:0 Y:116708905
+
+Regions:1->3,Overlap:TL X:0 Y:375883163, BR X:0 Y:116708905
+
+Regions:1->4,Overlap:TL X:0 Y:437054727, BR X:0 Y:116708905
+
+Regions:1->5,Overlap:TL X:0 Y:424981392, BR X:0 Y:116708905
+
+Regions:1->6,Overlap:TL X:0 Y:248710701, BR X:0 Y:116708905
+
+Regions:1->7,Overlap:TL X:0 Y:235027588, BR X:0 Y:116708905
+
+Regions:1->8,Overlap:TL X:0 Y:287345373, BR X:0 Y:116708905
+
+Regions:1->9,Overlap:TL X:0 Y:280101372, BR X:0 Y:116708905
+
+Regions:1->10,Overlap:TL X:0 Y:319540933, BR X:0 Y:116708905
+
+Regions:1->11,Overlap:TL X:0 Y:308272487, BR X:0 Y:116708905
+
+Regions:1->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:116708905
+
+Regions:1->13,Overlap:TL X:0 Y:214100474, BR X:0 Y:84513345
+
+Regions:1->14,Overlap:TL X:0 Y:214100474, BR X:0 Y:58756897
+
+Regions:2->3,Overlap:TL X:20591820 Y:387956498, BR X:23916060 Y:318736044
+Shrunk Regions:2->3,Naive Size:10992
+
+
+Regions:2->4,Overlap:TL X:0 Y:437054727, BR X:0 Y:378297830
+
+Regions:2->5,Overlap:TL X:0 Y:424981392, BR X:0 Y:378297830
+
+Regions:2->6,Overlap:TL X:0 Y:387956498, BR X:0 Y:237442255
+
+Regions:2->7,Overlap:TL X:0 Y:387956498, BR X:0 Y:224564031
+
+Regions:2->8,Overlap:TL X:0 Y:387956498, BR X:0 Y:284125817
+
+Regions:2->9,Overlap:TL X:0 Y:387956498, BR X:0 Y:259979147
+
+Regions:2->10,Overlap:TL X:0 Y:387956498, BR X:0 Y:313101821
+
+Regions:2->11,Overlap:TL X:0 Y:387956498, BR X:0 Y:303443153
+
+Regions:2->12,Overlap:TL X:0 Y:387956498, BR X:0 Y:284125817
+
+Regions:2->13,Overlap:TL X:0 Y:387956498, BR X:0 Y:84513345
+
+Regions:2->14,Overlap:TL X:0 Y:387956498, BR X:0 Y:58756897
+
+Regions:3->4,Overlap:TL X:23962230 Y:437054727, BR X:23962230 Y:318736044
+Shrunk Regions:3->4,Naive Size:0
+
+
+Regions:3->5,Overlap:TL X:0 Y:424981392, BR X:0 Y:318736044
+
+Regions:3->6,Overlap:TL X:0 Y:375883163, BR X:0 Y:237442255
+
+Regions:3->7,Overlap:TL X:0 Y:375883163, BR X:0 Y:224564031
+
+Regions:3->8,Overlap:TL X:0 Y:375883163, BR X:0 Y:284125817
+
+Regions:3->9,Overlap:TL X:0 Y:375883163, BR X:0 Y:259979147
+
+Regions:3->10,Overlap:TL X:0 Y:375883163, BR X:0 Y:313101821
+
+Regions:3->11,Overlap:TL X:0 Y:375883163, BR X:0 Y:303443153
+
+Regions:3->12,Overlap:TL X:0 Y:375883163, BR X:0 Y:284125817
+
+Regions:3->13,Overlap:TL X:0 Y:375883163, BR X:0 Y:84513345
+
+Regions:3->14,Overlap:TL X:0 Y:375883163, BR X:0 Y:58756897
+
+Regions:4->5,Overlap:TL X:24931800 Y:437054727, BR X:26593920 Y:391980943
+Shrunk Regions:4->5,Naive Size:1422524
+
+
+Regions:4->6,Overlap:TL X:0 Y:437054727, BR X:0 Y:237442255
+
+Regions:4->7,Overlap:TL X:0 Y:437054727, BR X:0 Y:224564031
+
+Regions:4->8,Overlap:TL X:0 Y:437054727, BR X:0 Y:284125817
+
+Regions:4->9,Overlap:TL X:0 Y:437054727, BR X:0 Y:259979147
+
+Regions:4->10,Overlap:TL X:0 Y:437054727, BR X:0 Y:313101821
+
+Regions:4->11,Overlap:TL X:0 Y:437054727, BR X:0 Y:303443153
+
+Regions:4->12,Overlap:TL X:0 Y:437054727, BR X:0 Y:284125817
+
+Regions:4->13,Overlap:TL X:0 Y:437054727, BR X:0 Y:84513345
+
+Regions:4->14,Overlap:TL X:0 Y:437054727, BR X:0 Y:58756897
+
+Regions:5->6,Overlap:TL X:0 Y:424981392, BR X:0 Y:237442255
+
+Regions:5->7,Overlap:TL X:0 Y:424981392, BR X:0 Y:224564031
+
+Regions:5->8,Overlap:TL X:0 Y:424981392, BR X:0 Y:284125817
+
+Regions:5->9,Overlap:TL X:0 Y:424981392, BR X:0 Y:259979147
+
+Regions:5->10,Overlap:TL X:0 Y:424981392, BR X:0 Y:313101821
+
+Regions:5->11,Overlap:TL X:0 Y:424981392, BR X:0 Y:303443153
+
+Regions:5->12,Overlap:TL X:0 Y:424981392, BR X:0 Y:284125817
+
+Regions:5->13,Overlap:TL X:0 Y:424981392, BR X:0 Y:84513345
+
+Regions:5->14,Overlap:TL X:0 Y:424981392, BR X:0 Y:58756897
+
+Regions:6->7,Overlap:TL X:14543550 Y:248710701, BR X:15236100 Y:224564031
+Shrunk Regions:6->7,Naive Size:1017753
+
+
+Regions:6->8,Overlap:TL X:0 Y:287345373, BR X:0 Y:237442255
+
+Regions:6->9,Overlap:TL X:0 Y:280101372, BR X:0 Y:237442255
+
+Regions:6->10,Overlap:TL X:0 Y:319540933, BR X:0 Y:237442255
+
+Regions:6->11,Overlap:TL X:0 Y:308272487, BR X:0 Y:237442255
+
+Regions:6->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:237442255
+
+Regions:6->13,Overlap:TL X:0 Y:248710701, BR X:0 Y:84513345
+
+Regions:6->14,Overlap:TL X:0 Y:248710701, BR X:0 Y:58756897
+
+Regions:7->8,Overlap:TL X:0 Y:287345373, BR X:0 Y:224564031
+
+Regions:7->9,Overlap:TL X:0 Y:280101372, BR X:0 Y:224564031
+
+Regions:7->10,Overlap:TL X:0 Y:319540933, BR X:0 Y:224564031
+
+Regions:7->11,Overlap:TL X:0 Y:308272487, BR X:0 Y:224564031
+
+Regions:7->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:224564031
+
+Regions:7->13,Overlap:TL X:0 Y:235027588, BR X:0 Y:84513345
+
+Regions:7->14,Overlap:TL X:0 Y:235027588, BR X:0 Y:58756897
+
+Regions:8->9,Overlap:TL X:16898220 Y:287345373, BR X:17821620 Y:259979147
+Shrunk Regions:8->9,Naive Size:0
+
+
+Regions:8->10,Overlap:TL X:17775450 Y:319540933, BR X:17821620 Y:284125817
+Shrunk Regions:8->10,Naive Size:0
+
+
+Regions:8->11,Overlap:TL X:0 Y:308272487, BR X:0 Y:284125817
+
+Regions:8->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:284125817
+
+Regions:8->13,Overlap:TL X:0 Y:287345373, BR X:0 Y:84513345
+
+Regions:8->14,Overlap:TL X:0 Y:287345373, BR X:0 Y:58756897
+
+Regions:9->10,Overlap:TL X:17775450 Y:319540933, BR X:17913960 Y:259979147
+Shrunk Regions:9->10,Naive Size:0
+
+
+Regions:9->11,Overlap:TL X:17913960 Y:308272487, BR X:17913960 Y:259979147
+Shrunk Regions:9->11,Naive Size:0
+
+
+Regions:9->12,Overlap:TL X:0 Y:297004041, BR X:0 Y:259979147
+
+Regions:9->13,Overlap:TL X:0 Y:280101372, BR X:0 Y:84513345
+
+Regions:9->14,Overlap:TL X:0 Y:280101372, BR X:0 Y:58756897
+
+Regions:10->11,Overlap:TL X:17913960 Y:319540933, BR X:19022040 Y:303443153
+Shrunk Regions:10->11,Naive Size:490192
+
+
+Regions:10->12,Overlap:TL X:18098640 Y:319540933, BR X:19022040 Y:284125817
+Shrunk Regions:10->12,Naive Size:26284
+
+
+Regions:10->13,Overlap:TL X:0 Y:319540933, BR X:0 Y:84513345
+
+Regions:10->14,Overlap:TL X:0 Y:319540933, BR X:0 Y:58756897
+
+Regions:11->12,Overlap:TL X:18098640 Y:308272487, BR X:19114380 Y:284125817
+Shrunk Regions:11->12,Naive Size:144757
+
+
+Regions:11->13,Overlap:TL X:0 Y:308272487, BR X:0 Y:84513345
+
+Regions:11->14,Overlap:TL X:0 Y:308272487, BR X:0 Y:58756897
+
+Regions:12->13,Overlap:TL X:0 Y:297004041, BR X:0 Y:84513345
+
+Regions:12->14,Overlap:TL X:0 Y:297004041, BR X:0 Y:58756897
+
+Regions:13->14,Overlap:TL X:3139560 Y:95781791, BR X:4432320 Y:58756897
+Shrunk Regions:13->14,Naive Size:68103
+
+#RegionID,Naive
+0,1
+1,1
+2,1
+3,1
+4,1
+5,1
+6,1
+7,1
+8,0
+9,0
+10,2
+11,2
+12,2
+13,1
+14,1
+
+Execution Count: 482934421
+Naive Count: 3861332
+Naive Performance Gain: 0.799556%

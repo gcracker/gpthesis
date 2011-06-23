@@ -1,0 +1,13 @@
+#Benchmark,Max Threads Naive,Max Threads W/O Interference
+400.perlbench,3,2
+401.bzip2,24,14
+403.gcc,3,3
+429.mcf,2,2
+445.gobmk,80,25
+456.hmmer,1,1
+458.sjeng,31,10
+462.libquantum,122,33
+464.h264ref,28,18
+471.omnetpp,2,2
+473.astar,30,1
+483.xalancbmk,6,6

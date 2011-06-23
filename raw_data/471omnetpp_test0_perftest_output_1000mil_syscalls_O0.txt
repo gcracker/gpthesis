@@ -1,0 +1,155 @@
+Performance Tests
+Saving parallel overlay DD to file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_perftest_output_1000mil_syscalls_O0.dd
+Using regions from file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+Using {DIN,RDY} set from file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_dinvsrdy_1000mil_syscalls_O0.dd
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_dinvsdin_1000mil_syscalls_O0.dd
+Overlap TL X:0 Y:997427511, BR X:0 Y:737403998
+Overlap TL X:0 Y:998636923, BR X:0 Y:737403998
+Overlap TL X:0 Y:999846334, BR X:0 Y:697493412
+Overlap TL X:0 Y:997427511, BR X:0 Y:737403998
+Overlap TL X:0 Y:998636923, BR X:0 Y:691446353
+
+Regions:1->2 Naive Size:1,Overlap TL X:1758627 Y:998636923, BR X:1758627 Y:737403998
+Slicing Complete. Time for 0 slices:0.000009
+Forward Slice Size:0
+Simple Reverse Slice Interfer Size:0
+Interference Removal Reverse Slice Size:1
+Slicing Complete. Time for 0 slices:0.000007
+Simple Forward Slice Interfer Set:0
+Interference Removal Forward Slice Set:1
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_perftest_output_1000mil_syscalls_O0.dd
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 134217728
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 80530636
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 6825919536
+Peak number of nodes: 160610366
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 33554432
+Number of cache look-ups: 538183438
+Number of cache hits: 102492447
+Number of cache insertions: 435690991
+Number of cache collisions: 383125770
+Number of cache deletions: 19014806
+Cache used slots = 99.99% (expected 99.99%)
+Soft limit for cache size: 134217728
+Number of buckets in unique table: 59173632
+Used buckets in unique table: 92.63% (expected 92.53%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 160610348
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 36584014
+Total number of nodes allocated: 192695549
+Total number of nodes reclaimed: 119930601
+Garbage collections so far: 1
+Time for garbage collection: 14.89 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:0 Y:999846334, BR X:0 Y:697493412
+Overlap TL X:0 Y:997427511, BR X:0 Y:794246347
+Overlap TL X:0 Y:998636923, BR X:0 Y:691446353
+Overlap TL X:1169823 Y:999846334, BR X:1253938 Y:697493412
+
+Regions: 2->3 Naive Size:79350,Overlap TL X:1169823 Y:999846334, BR X:1253938 Y:697493412
+Slicing Complete. Time for 177 slices:0.778694
+Forward Slice Size:111816
+Simple Reverse Slice Interfer Size:79350
+Interference Removal Reverse Slice Size:0
+Slicing Complete. Time for 0 slices:0.115101
+Simple Forward Slice Interfer Set:79350
+Interference Removal Forward Slice Set:32113
+Performance Info
+**** CUDD modifiable parameters ****
+Hard limit for cache size: 134217728
+Cache hit threshold for resizing: 30%
+Garbage collection enabled: yes
+Limit for fast unique table growth: 80530636
+Maximum number of variables sifted per reordering: 1000
+Maximum number of variable swaps per reordering: 2000000
+Maximum growth while sifting a variable: 1.2
+Dynamic reordering of BDDs enabled: no
+Default BDD reordering method: 4
+Dynamic reordering of ZDDs enabled: no
+Default ZDD reordering method: 4
+Realignment of ZDDs to BDDs enabled: no
+Realignment of BDDs to ZDDs enabled: no
+Dead nodes counted in triggering reordering: no
+Group checking criterion: 7
+Recombination threshold: 0
+Symmetry violation threshold: 0
+Arc violation threshold: 0
+GA population size: 0
+Number of crossovers for GA: 0
+Next reordering threshold: 4004
+**** CUDD non-modifiable parameters ****
+Memory in use: 6981294832
+Peak number of nodes: 165460778
+Peak number of live nodes: 4
+Number of BDD variables: 0
+Number of ZDD variables: 128
+Number of cache entries: 33554432
+Number of cache look-ups: 886353815
+Number of cache hits: 190829869
+Number of cache insertions: 695523946
+Number of cache collisions: 642058420
+Number of cache deletions: 44394281
+Cache used slots = 100.00% (expected 100.00%)
+Soft limit for cache size: 134217728
+Number of buckets in unique table: 59174912
+Used buckets in unique table: 86.70% (expected 86.60%)
+Number of BDD and ADD nodes: 4
+Number of ZDD nodes: 127146463
+Number of dead BDD and ADD nodes: 0
+Number of dead ZDD nodes: 532914
+Total number of nodes allocated: 197821783
+Total number of nodes reclaimed: 192302155
+Garbage collections so far: 2
+Time for garbage collection: 46.20 sec
+Reorderings so far: 0
+Time for reordering: 0.00 sec
+
+Overlap TL X:0 Y:998636923, BR X:0 Y:737403998
+Overlap TL X:0 Y:998636923, BR X:0 Y:691446353
+Overlap TL X:0 Y:999846334, BR X:0 Y:697493412
+Overlap TL X:0 Y:999846334, BR X:0 Y:691446353
+Overlap TL X:0 Y:998636923, BR X:0 Y:691446353
+Saving to file:/home/sdr/pricegd/ddstore/1000mil/471omnetpp_test0_perftest_output_1000mil_syscalls_O0.dd
+
+#RegionID,Naive
+1,1
+2,2
+3,1
+
+#RegionID,Interfer
+1,1
+2,2
+3,1
+
+Execution Count: 1000000000
+Naive Count: 79351
+Naive Performance Gain: 0.007935%
+Simple Interference Count: 1
+Simple Interference Performance Gain: 0.000000%

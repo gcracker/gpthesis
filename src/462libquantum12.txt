@@ -1,0 +1,13 @@
+quantum_cnot
+quantum_decohere
+quantum_objcode_put
+quantum_qec_get_status
+quantum_sigma_x
+quantum_swaptheleads
+quantum_toffoli
+add_mod_n
+addn_inv
+madd_inv
+muxfa_inv
+muln
+test_sum

@@ -1,0 +1,13 @@
+#Benchmark,TLP W/O Interference
+400.perlbench,0.3523
+401.bzip2,12.875146
+403.gcc,0.119131
+429.mcf,0.723026
+445.gobmk,15.264728
+456.hmmer,0.0
+458.sjeng,4.807243
+462.libquantum,1.663162
+464.h264ref,16.988359
+471.omnetpp,0.0
+473.astar,3.293341
+483.xalancbmk,0.607514

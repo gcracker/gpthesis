@@ -1,0 +1,27 @@
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:464
+Object::connect: No such slot HQApplication::UpdateMenus() in HQApplication.cpp:473
+
+
+Warning (60/203) from HOOPS routine 'Update_Display' -
+
+	  This copy of HOOPS has not been licensed for commercial
+	  development or distribution purposes.	 Copying is prohibited.
+	  To obtain rights to develop and/or distribute applications
+	  based on HOOPS, please contact Tech Soft 3D at
+	  510-883-2180 or email hoops@techsoft3d.com
+	  
+	  The HOOPS Web page is located at:
+	  					http://www.hoops3d.com
+
+Loading File:/home/pricegd/backup/ddmake/08162010/164gzipRunRef1_dinvsdin_1000mil_09011014.dd
+Loading File:/home/pricegd/backup/ddmake/08162010/164gzipRunRef1_dinvsrdy_1000mil_08281021.dd
+Done Loading DD file(s):197.596038
+DD Manager list size:2
+Top Din:999999999, Rdy:183996357
+Old {DIN,RDY} Size:1000000000
+Taking one slice step forward...
+Final forward slice step...
+Taking one slice step back...
+Final reverse slice step...
+New {DIN,RDY} Size:877508138
+New DINxRDY fileName: invst_dinrdy_1284582104.dd

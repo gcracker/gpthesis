@@ -1,0 +1,50 @@
+Detected Free Memory: 14090690560
+RandSeed:1298451086
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000601
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000660
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000651
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000715
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000643
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000567
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000616
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000628
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000629
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000702
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with Intersect: Max Count:100
+Intersect Slice:1,10,0.000851
+Using {DIN,DIN} set from file:/home/sdr/pricegd/ddfiles/400perlbench_test7_dinvsdin_1000mil_syscalls_O2.dd
+Building start DIN set with 10 instructions
+Starting reverse slice with ITE: Max Count:100
+ITE Slice:1,10,0.000763

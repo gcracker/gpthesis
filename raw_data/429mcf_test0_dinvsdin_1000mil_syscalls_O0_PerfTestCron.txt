@@ -1,0 +1,175 @@
+Performance Tests
+Using {DIN,RDY} set from file:/home/ubuntu/ddPerfTestInput/429mcf_test0_dinvsrdy_1000mil_syscalls_O0.dd
+Using regions from file:/home/ubuntu/ddPerfTestInput/429mcf_test0_dinvsrdy_1000mil_syscalls_O0.dd.slr
+Using {DIN,DIN} set from file:/home/ubuntu/ddPerfTestInput/429mcf_test0_dinvsdin_1000mil_syscalls_O0.dd
+Saving parallel overlay DD to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Regions:0->1,Overlap:TL X:747959 Y:205327689, BR X:1005361 Y:107419042
+Shrunk Regions:0->1,Naive Size:2891247
+
+Time for 10000 slices:12.425142
+Time for 20000 slices:30.848037
+Time for 30000 slices:45.526020
+Time for 40000 slices:57.618572
+Time for 50000 slices:72.458771
+Time for 60000 slices:87.464879
+Time for 70000 slices:148.086476
+Time for 80000 slices:158.096343
+Time for 90000 slices:168.458676
+Time for 100000 slices:178.910180
+Time for 110000 slices:189.299921
+Time for 120000 slices:198.492412
+Time for 130000 slices:207.961966
+Time for 140000 slices:256.912119
+Time for 150000 slices:265.692244
+Time for 160000 slices:274.226932
+Time for 170000 slices:283.008628
+Time for 180000 slices:292.119241
+Time for 190000 slices:300.733571
+Time for 200000 slices:309.423729
+Slicing Complete. Time for 208104 slices:317.201048
+Forward Slice Size:23145081
+Interference Removal Reverse Slice Size:203994
+Slicing Complete. Time for 18401 slices:29.671843
+Interference Removal Forward Slice Set:1647134
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Regions:0->2,Overlap:TL X:0 Y:147623076, BR X:0 Y:107419042
+
+Regions:0->3,Overlap:TL X:542037 Y:203199240, BR X:670738 Y:107419042
+Shrunk Regions:0->3,Naive Size:7024830
+
+Slicing Complete. Time for 0 slices:1.204431
+Forward Slice Size:8441883
+Interference Removal Reverse Slice Size:9168892
+Slicing Complete. Time for 0 slices:0.000039
+Interference Removal Forward Slice Set:7024830
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Regions:0->4,Overlap:TL X:0 Y:409810440, BR X:0 Y:107419042
+
+Regions:0->5,Overlap:TL X:0 Y:404607565, BR X:0 Y:107419042
+
+Regions:0->6,Overlap:TL X:0 Y:397985725, BR X:0 Y:107419042
+
+Regions:0->7,Overlap:TL X:0 Y:392309861, BR X:0 Y:107419042
+
+Regions:1->2,Overlap:TL X:0 Y:205327689, BR X:0 Y:117351803
+
+Regions:1->3,Overlap:TL X:0 Y:205327689, BR X:0 Y:146677099
+
+Regions:1->4,Overlap:TL X:0 Y:409810440, BR X:0 Y:146677099
+
+Regions:1->5,Overlap:TL X:0 Y:404607565, BR X:0 Y:146677099
+
+Regions:1->6,Overlap:TL X:0 Y:397985725, BR X:0 Y:146677099
+
+Regions:1->7,Overlap:TL X:0 Y:392309861, BR X:0 Y:146677099
+
+Regions:2->3,Overlap:TL X:413336 Y:203199240, BR X:516297 Y:117351803
+Shrunk Regions:2->3,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000010
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:6134511
+Slicing Complete. Time for 0 slices:0.000037
+Interference Removal Forward Slice Set:0
+
+Regions:2->4,Overlap:TL X:0 Y:409810440, BR X:0 Y:117351803
+
+Regions:2->5,Overlap:TL X:0 Y:404607565, BR X:0 Y:117351803
+
+Regions:2->6,Overlap:TL X:0 Y:397985725, BR X:0 Y:117351803
+
+Regions:2->7,Overlap:TL X:0 Y:392309861, BR X:0 Y:117351803
+
+Regions:3->4,Overlap:TL X:0 Y:409810440, BR X:0 Y:147150087
+
+Regions:3->5,Overlap:TL X:0 Y:404607565, BR X:0 Y:147150087
+
+Regions:3->6,Overlap:TL X:0 Y:397985725, BR X:0 Y:147150087
+
+Regions:3->7,Overlap:TL X:0 Y:392309861, BR X:0 Y:147150087
+
+Regions:4->5,Overlap:TL X:25941482 Y:409810440, BR X:27485894 Y:402242622
+Shrunk Regions:4->5,Naive Size:703
+
+Slicing Complete. Time for 0 slices:0.000682
+Forward Slice Size:746
+Interference Removal Reverse Slice Size:703
+Slicing Complete. Time for 0 slices:0.000012
+Interference Removal Forward Slice Set:703
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Regions:4->6,Overlap:TL X:25941482 Y:409810440, BR X:27485894 Y:396803253
+Shrunk Regions:4->6,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000010
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:767
+Slicing Complete. Time for 0 slices:0.000010
+Interference Removal Forward Slice Set:0
+
+Regions:4->7,Overlap:TL X:25992963 Y:409810440, BR X:27434414 Y:383559571
+Shrunk Regions:4->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000010
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:8018543
+Slicing Complete. Time for 0 slices:0.000037
+Interference Removal Forward Slice Set:0
+
+Regions:5->6,Overlap:TL X:25941482 Y:404607565, BR X:27666075 Y:396803253
+Shrunk Regions:5->6,Naive Size:703
+
+Slicing Complete. Time for 0 slices:0.000733
+Forward Slice Size:950
+Interference Removal Reverse Slice Size:703
+Slicing Complete. Time for 0 slices:0.000012
+Interference Removal Forward Slice Set:895
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Regions:5->7,Overlap:TL X:25992963 Y:404607565, BR X:27434414 Y:383559571
+Shrunk Regions:5->7,Naive Size:0
+
+Slicing Complete. Time for 0 slices:0.000010
+Forward Slice Size:0
+Interference Removal Reverse Slice Size:8018543
+Slicing Complete. Time for 0 slices:0.000038
+Interference Removal Forward Slice Set:0
+
+Regions:6->7,Overlap:TL X:25992963 Y:397985725, BR X:27434414 Y:383559571
+Shrunk Regions:6->7,Naive Size:287
+
+Slicing Complete. Time for 1404 slices:15.572083
+Forward Slice Size:12237555
+Interference Removal Reverse Slice Size:31
+Slicing Complete. Time for 9282 slices:100.177676
+Interference Removal Forward Slice Set:5619762
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+#RegionID,Naive
+0,2
+1,1
+2,0
+3,1
+4,1
+5,2
+6,2
+7,1
+
+#RegionID,Interfer
+0,2
+1,1
+2,0
+3,1
+4,1
+5,2
+6,2
+7,1
+Saving to file:/home/ubuntu/ddPerfTestOutput/429mcf_test0_dinvsdin_1000mil_syscalls_O0_output.dd
+
+Execution Count: 1000000000
+Naive Count: 9917770
+Naive Performance Gain: 0.991777%
+Simple Interference Count: 7230261
+Simple Interference Performance Gain: 0.723026%
